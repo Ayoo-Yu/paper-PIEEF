@@ -52,3 +52,7 @@ python scripts/train.py --config configs/main_public_demo_quick.yaml --dry-run
 ```bash
 python scripts/train.py --config configs/main_public_demo_quick.yaml
 ```
+
+## License
+
+This project is released under the MIT License. See `LICENSE` for details.
