@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+artifacts/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.ipynb_checkpoints/
+data/raw/
+DMS.csv
+Manuscript*.docx
+Manuscript*.pdf
+.pytest_cache/

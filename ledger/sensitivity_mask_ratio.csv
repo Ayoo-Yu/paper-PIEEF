@@ -1,0 +1,1 @@
+run_id,exp_type,model,variant,seed,horizon,eval_scope,data_version,config_id,code_commit,artifact_path,start_time,end_time,status,fail_reason,scan_id,mask_ratio,other_hparams_frozen,best_value_by_nrmse,nmae,nrmse,r2

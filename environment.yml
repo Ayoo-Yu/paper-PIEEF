@@ -1,0 +1,17 @@
+name: pi-eef
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - pyyaml
+  - psutil
+  - lightgbm
+  - xgboost
+  - pytorch

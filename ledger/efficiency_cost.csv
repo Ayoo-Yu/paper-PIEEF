@@ -1,0 +1,1 @@
+run_id,exp_type,model,variant,seed,horizon,eval_scope,data_version,config_id,code_commit,artifact_path,start_time,end_time,status,fail_reason,train_time_s,inference_latency_ms,params_k,memory_gb,hardware_env,latency_warmup,latency_repeat,latency_stat,train_time_sec,inference_time_ms_per_batch,peak_memory_mb,num_params,flops

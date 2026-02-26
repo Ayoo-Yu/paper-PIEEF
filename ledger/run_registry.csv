@@ -1,0 +1,2 @@
+run_id,exp_type,model,variant,seed,horizon,eval_scope,data_version,config_id,code_commit,artifact_path,start_time,end_time,status,fail_reason
+main_Ours_h16_s42_20260226_220409,main,PI-EEF,Ours,42,16,all-sample,public_demo_synth_v1,main_public_demo_quick_v1,205668cf28f326edd6fed9d23bbde77a4b59a73b,/Users/yuzhongze/Desktop/PI-EEF/open_source_release/artifacts/public_demo/main_quick/main_Ours_h16_s42_20260226_220409,2026-02-26T22:04:09,2026-02-26T22:04:11,success,NA
