@@ -5,9 +5,9 @@ This folder stores synthetic demonstration data for public reproducibility.
 Generate files with:
 
 ```bash
-python /Users/yuzhongze/Desktop/PI-EEF/scripts/generate_public_demo_data.py \
-  --output-dir /Users/yuzhongze/Desktop/PI-EEF/data/public_demo \
-  --turbines 29 \
+python scripts/generate_public_demo_data.py \
+  --output-dir data/public_demo \
+  --turbines 3 \
   --days 60 \
   --seed 2026
 ```
