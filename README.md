@@ -2,7 +2,7 @@
 
 Code for **A physics-guided framework for robust wind power forecasting under non-ideal observations**.
 
-Version: `vf-revision-20261028`. The earlier public implementation is retained under the tag `legacy-pre-vf-20261028`.
+Version: `vf-revision-20261028`.
 
 PI-EEF combines masked reconstruction of power histories, differentiable weather calibration and turbine power curves, and graph attention across turbines. This release provides the revised **VF** implementation used by the main model: **V1 + F2 + F3 + F6**. See [Method and data protocol](docs/METHOD_AND_PROTOCOL.md) and [CHANGELOG.md](CHANGELOG.md).
 
