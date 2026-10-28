@@ -1,0 +1,102 @@
+experiment:
+  model: PI-EEF
+  horizon: 16
+  eval_scope: measured-target
+  finalized: true
+  group: main
+  site: DMS
+  exp_type: energy_r3_stage2
+  models:
+  - PI-EEF
+  variant: PI-EEF
+  seeds:
+  - 3407
+data:
+  data_version: energy_revision_DMS_author_prepared_EC_20261017
+  dms_path: data/raw/DMS.csv
+  turbines_path: data/raw/turbines.csv
+  seq_len: 96
+  split:
+  - 0.7
+  - 0.1
+  - 0.2
+  capacity_mw: 2.0
+  revision_protocol:
+    nwp_alignment_verified: false
+    nwp_preparation_author_confirmed: true
+    timezone: Asia/Shanghai
+    step_minutes: 15
+    power_unit: kW
+    wind_height_m: 10
+    nwp_timing_rule: author_prepared_ecmwf
+    nwp_feature_columns:
+    - Direct_solar_radiation_10
+    - Total_sky_direct_short-wave_(solar)_radiation_at_surface_10
+    - Surface_pressure_10
+    - 2_metre_temperature_10
+    - 10_metre_U_wind_component_10
+    - 10_metre V_wind_component_10
+    - wind_speed200_10
+    - wind_speed100_10
+    - wind_speed10_10
+    input_filling: forward-only
+    target_policy: raw-measured-valid-power
+model:
+  d_model: 128
+  encoder_depth: 3
+  graph_depth: 1
+  mask_ratio: 0.4
+  num_control_points: 15
+  use_prior_input: true
+  use_bound_loss: true
+  use_derivative_loss: true
+  use_density: true
+  nwp_target_speed_index: 7
+  use_terrain_bias: true
+  use_mask_indicators: true
+  joint_masking: false
+  cut_in_speed: 3.0
+  rated_wind_speed: 10.0
+  cut_out_speed: 22.0
+  sensitivity_mode: symmetric
+  manufacturer_curve_path: data/raw/manufacturer_curve.csv
+  use_calibration: true
+  use_physics_curve: true
+  curve_mode: bspline
+  use_direction_bias: true
+  use_sensitivity_gate: true
+  revin_missing_policy: train_stats_20
+  forecast_head_policy: target_nwp_physics_mlp
+  graph_score_policy: cosine_temperature
+  forecast_skip_policy: last_obs_linear
+train:
+  batch_size: 16
+  epochs_stage1: 5
+  epochs_stage2: 5
+  epochs_stage3: 20
+  lr_stage1: 0.001
+  lr_stage2: 0.001
+  lr_stage3: 0.0003
+  stage3_mode: joint
+  loss_name: huber
+  huber_delta: 0.1
+  quantile: 0.5
+  patience: 5
+  checkpoint_metric: nrmse
+  reconstruction_weight: 0.05
+  calibration_weight: 0.05
+  auxiliary_decay: 0.1
+  record_gradient_conflicts: true
+  epochs: 50
+  lr: 0.001
+  stage3_decoder_policy: frozen
+  stage3_forecast_corruption: f2_block
+tracking:
+  implementation_id: energy-r3-vf-F2F3F6
+  config_id: energy_r3s2_main_PI-EEF_h16_seed3407
+  artifact_root: artifacts/paper/main
+  ledger_dir: artifacts/paper/summary
+  source_manifest: provenance/production_source_manifest.json
+  original_config_sha256: 4833b430d0133ac1822e2512cdc3bf415c0a1edd05ec5606ba8fe9bcd449af64
+  release_note: Research configuration; private input files must be supplied. Legacy
+    inherited code Git/SHA labels are not VF source identities.

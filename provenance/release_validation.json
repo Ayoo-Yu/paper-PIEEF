@@ -1,0 +1,30 @@
+{
+  "release": "vf-revision-20261028",
+  "scientific_core_files_verified_against_frozen_deployment": 23,
+  "main_configuration_files_verified": 25,
+  "scientific_configuration_fields_changed": false,
+  "cpu_tests_passed": 11,
+  "optional_reference_source_comparison_executed_locally": true,
+  "reference_comparison": "Separate CPU processes: exact equality of model state, intermediate forward outputs, Huber loss and parameter gradients for a synthetic fixture.",
+  "three_stage_synthetic_smoke": {
+    "status": "passed",
+    "device": "cpu",
+    "validation_samples": 80,
+    "finite_predictions": true,
+    "checkpoints": ["weights_stage1.pt", "weights_stage2.pt", "weights_best.pt", "weights_last.pt"],
+    "indexed_predictions": "val_predictions.npz",
+    "preprocessing": "preprocessing.npz",
+    "paper_results_retrained": false
+  },
+  "local_validation_environment": {
+    "platform": "Windows",
+    "python": "3.10.19",
+    "torch": "2.5.1+cu121",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "PyYAML": "6.0.3",
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "cpu_threads": 2
+  },
+  "scope": "Software release verification, not re-execution of private-data paper experiments or a cross-device numerical equivalence claim."
+}

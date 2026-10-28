@@ -29,7 +29,7 @@ class DataBundle:
     handler: "RealDataHandler"
     num_turbines: int
     nwp_dim: int
-    capacity_mw: float
+    capacity_mw: float | np.ndarray
     dist_tensor: torch.Tensor
     rel_coords_tensor: torch.Tensor
 
@@ -117,7 +117,7 @@ class RealDataHandler:
         nwp_mat: np.ndarray,
         mask_mat: np.ndarray,
         coords: np.ndarray,
-        capacity_mw: float = 2.0,
+        capacity_mw: float | np.ndarray = 2.0,
         seq_len: int = 96,
         horizon: int = 1,
         train_ratio: float = 0.7,
@@ -234,9 +234,17 @@ def build_data_bundle(
     batch_size: int,
     train_ratio: float,
     val_ratio: float,
-    capacity_mw: float,
+    capacity_mw: float | np.ndarray,
     max_turbines: int | None = None,
+    revision_protocol: dict | None = None,
 ) -> DataBundle:
+    if revision_protocol is not None:
+        from .revision_data import build_revision_bundle
+        return build_revision_bundle(
+            dms_path, turbines_path, seq_len, horizon, batch_size,
+            train_ratio, val_ratio, capacity_mw, max_turbines,
+            revision_protocol,
+        )
     if not dms_path.exists():
         raise FileNotFoundError(f"Missing dataset: {dms_path}")
 

@@ -1,0 +1,625 @@
+{
+  "schema_version": 1,
+  "purpose": "Byte-level provenance for the published VF scientific core; public configurations adapt only paths and tracking metadata.",
+  "audited_utc": "2026-10-28T15:47:20.416494+00:00",
+  "implementation_id": "energy-r3-vf-F2F3F6",
+  "frozen_deployment_archive": {
+    "filename": "round3_code_opt.tar.gz",
+    "bytes": 1368476,
+    "sha256": "e72d4eedd99531def8b69334f690b8c90204f29a49ba3a38a59eb0d3794bab1d",
+    "verified_source_python_members": 105,
+    "all_members_match_retained_source": true
+  },
+  "source_ancestry": {
+    "development_commit": "d1f2fa338ca7c1e9bbcf66e2c0a7c80a7497cea1",
+    "post_commit_changes_in_frozen_archive": [
+      "src/pieef/models/pretrain.py",
+      "src/pieef/train_main.py",
+      "src/pieef/forecast_corruption.py"
+    ],
+    "warning": "The commit alone does not contain the complete executed source. Use the per-file hashes, which include the archived fixes and corruption optimization."
+  },
+  "inherited_tracking_metadata": {
+    "source_manifest_sha256": "69ad299e9b651c396d1a1bbf88306108dca9a65e5a49382c498d9c626e5b385f",
+    "code_git_commit": "4844f3e1aae8513f358c6ad9af6f8cf98b536b93",
+    "meaning": "Inherited F1/F4-base metadata in the historical run configurations; NOT the hash or commit of the final VF source."
+  },
+  "scientific_core_files": [
+    {
+      "path": "src/pieef/__init__.py",
+      "bytes": 507,
+      "sha256": "11d49d9491596419fe3d889bcbe730fd7f61f5ce9102fddf01aa90f2a00d44bd",
+      "frozen_archive_member": "src/pieef/__init__.py"
+    },
+    {
+      "path": "src/pieef/core.py",
+      "bytes": 2089,
+      "sha256": "8f6c3c6ff81aa5436f6093412adf823493d0844bbcb3ac3f82df9bb4499e66cd",
+      "frozen_archive_member": "src/pieef/core.py"
+    },
+    {
+      "path": "src/pieef/data.py",
+      "bytes": 12599,
+      "sha256": "c283675175b79f4f3b3bb7dcc17e75365e9751dcabd25ac7d60c36d928d58653",
+      "frozen_archive_member": "src/pieef/data.py"
+    },
+    {
+      "path": "src/pieef/ledger.py",
+      "bytes": 7724,
+      "sha256": "02e38d7b4bcfca97841f969b2b057c24d09a766043c8137f6cbf5ad7b852a055",
+      "frozen_archive_member": "src/pieef/ledger.py"
+    },
+    {
+      "path": "src/pieef/model_main.py",
+      "bytes": 558,
+      "sha256": "ae13fe986302a27898c8a76b30148616de6ef2b21e1bda01742e63ec3a5f6d06",
+      "frozen_archive_member": "src/pieef/model_main.py"
+    },
+    {
+      "path": "src/pieef/model_registry.py",
+      "bytes": 5313,
+      "sha256": "cb8561fcba3abe25fc854006d6415db24c4bfea44837a72b68dd5e9551e38775",
+      "frozen_archive_member": "src/pieef/model_registry.py"
+    },
+    {
+      "path": "src/pieef/model_factory.py",
+      "bytes": 3053,
+      "sha256": "8cdab98ea89f6ce60c90500380876e6cba78b3f32afd7a416bcd066dae010c73",
+      "frozen_archive_member": "src/pieef/model_factory.py"
+    },
+    {
+      "path": "src/pieef/train_main.py",
+      "bytes": 25475,
+      "sha256": "38cfbf3a0368d6f438d9b1e6cf2dce1ab7a74d79dc1bd456a53ca867d9ec04a7",
+      "frozen_archive_member": "src/pieef/train_main.py"
+    },
+    {
+      "path": "src/pieef/artifacts.py",
+      "bytes": 2492,
+      "sha256": "4b601a2404d7a98507264d0c568bc874c8cf3626867052f50ba1a302abd2e936",
+      "frozen_archive_member": "src/pieef/artifacts.py"
+    },
+    {
+      "path": "src/pieef/training_timing.py",
+      "bytes": 4007,
+      "sha256": "b118893ed0e497b10e3708c4df20908ce2b75ca637804a75f55cef00329ea86a",
+      "frozen_archive_member": "src/pieef/training_timing.py"
+    },
+    {
+      "path": "src/pieef/revision_data.py",
+      "bytes": 18498,
+      "sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+      "frozen_archive_member": "src/pieef/revision_data.py"
+    },
+    {
+      "path": "src/pieef/forecast_vintages.py",
+      "bytes": 9409,
+      "sha256": "682c9d7f22f1b69b33a3ff61c537515d97247e139678db8d33ccbfc1bd5e8caa",
+      "frozen_archive_member": "src/pieef/forecast_vintages.py"
+    },
+    {
+      "path": "src/pieef/power_training_stats.py",
+      "bytes": 6145,
+      "sha256": "31ea99de82c5df30cbc332cc1d6371a1d1dc98262b061958e0832cd6ef1f6867",
+      "frozen_archive_member": "src/pieef/power_training_stats.py"
+    },
+    {
+      "path": "src/pieef/faults.py",
+      "bytes": 11656,
+      "sha256": "a7c5863af5b9e1984dff6c792eacd912f208e8e52cf3624f250cb0938b7b5956",
+      "frozen_archive_member": "src/pieef/faults.py"
+    },
+    {
+      "path": "src/pieef/forecast_corruption.py",
+      "bytes": 7001,
+      "sha256": "a28760760ad2a7bbbffdc6ad2f857b2cdc7111c851df08828b81563df367aa3b",
+      "frozen_archive_member": "src/pieef/forecast_corruption.py"
+    },
+    {
+      "path": "src/pieef/models/__init__.py",
+      "bytes": 526,
+      "sha256": "62814f6a6e77c50cf1378ca80ee24635a37b369071eca1996406462bb222fece",
+      "frozen_archive_member": "src/pieef/models/__init__.py"
+    },
+    {
+      "path": "src/pieef/models/e2e.py",
+      "bytes": 18917,
+      "sha256": "2f81a286c7b2aa45735eab805ca61a7b9e6dbc60331c7fdbbede3074fa1a44b9",
+      "frozen_archive_member": "src/pieef/models/e2e.py"
+    },
+    {
+      "path": "src/pieef/models/forecast.py",
+      "bytes": 2597,
+      "sha256": "cbf241caca51ef502700ca5fd4c5372819a26811affc9b5bf00ac9ff94401639",
+      "frozen_archive_member": "src/pieef/models/forecast.py"
+    },
+    {
+      "path": "src/pieef/models/forecast_skip.py",
+      "bytes": 3159,
+      "sha256": "a7f7ca829333191dbdfb9a52b9efcedd911b7056d6b7cbac639f96c0dd04d0a8",
+      "frozen_archive_member": "src/pieef/models/forecast_skip.py"
+    },
+    {
+      "path": "src/pieef/models/graph.py",
+      "bytes": 7010,
+      "sha256": "c1e78287f1700ed0df0a8ae3db668e10686d0ece31721e256a2256049d2e0bf3",
+      "frozen_archive_member": "src/pieef/models/graph.py"
+    },
+    {
+      "path": "src/pieef/models/physics.py",
+      "bytes": 11585,
+      "sha256": "7a26993fad91f4485de7a631a7c08c0ca002e93efcc1a208c089564e31261144",
+      "frozen_archive_member": "src/pieef/models/physics.py"
+    },
+    {
+      "path": "src/pieef/models/pretrain.py",
+      "bytes": 10986,
+      "sha256": "0d08240689c559df56a4301a26fcbdfe6161241601ffcdebb470b2e31c771beb",
+      "frozen_archive_member": "src/pieef/models/pretrain.py"
+    },
+    {
+      "path": "scripts/train.py",
+      "bytes": 14375,
+      "sha256": "7cbec3558e760bdf4b3073156d18b2a7aceda1d41398f3cc7e0a7992785e8bfd",
+      "frozen_archive_member": "scripts/train.py"
+    }
+  ],
+  "main_table": {
+    "count": 25,
+    "horizon_steps": [
+      1,
+      4,
+      16,
+      48,
+      96
+    ],
+    "seeds": [
+      13,
+      21,
+      42,
+      87,
+      3407
+    ],
+    "evaluation_split": "test",
+    "config_manifest_filename": "_stage2_manifest.json",
+    "config_manifest_sha256": "198d86996855abc60e9aa5a2310e8bd3a7f7489c34af04c59a32e654e49a62c6",
+    "entries": [
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h1_seed13",
+        "horizon_steps": 1,
+        "horizon_minutes": 15,
+        "seed": 13,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h1_seed13.yaml",
+        "original_config_sha256": "9a36b064961243a931eddbe52464e883fabbb91110ba03d580d504482fb4f4bb",
+        "run_id": "energy_r3_stage2_PI-EEF_h1_s13_20261020_222157",
+        "metrics_sha256": "77401d7680c5cc1f219a6922432971cdef09b62134acce97aa7ca44e081a45c9",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.08538118768556129,
+        "nmae": 0.03939143719288989,
+        "r2": 0.9025737181625743
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h1_seed21",
+        "horizon_steps": 1,
+        "horizon_minutes": 15,
+        "seed": 21,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h1_seed21.yaml",
+        "original_config_sha256": "fea4813c6276f75b0d9850d03d041f03c958b0f44564777109affe9c57b586f4",
+        "run_id": "energy_r3_stage2_PI-EEF_h1_s21_20261020_234032",
+        "metrics_sha256": "a561a1cdf165448610a92cfec268f9865ba1cd4524dbd636a866cd161d54f6ce",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.0858296369427371,
+        "nmae": 0.03988747626580631,
+        "r2": 0.9015475733387378
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h1_seed42",
+        "horizon_steps": 1,
+        "horizon_minutes": 15,
+        "seed": 42,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h1_seed42.yaml",
+        "original_config_sha256": "b79f4187e72ceca906979087c722bf049d3e2a2e4e76665659075cb7d868bfbc",
+        "run_id": "energy_r3_stage2_PI-EEF_h1_s42_20261020_235242",
+        "metrics_sha256": "6009c99b790337538e337f87f9708aa462d236cc5b4c6cd079dd1db5d764b551",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.08532321523786436,
+        "nmae": 0.03942248583515631,
+        "r2": 0.9027059546556951
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h1_seed87",
+        "horizon_steps": 1,
+        "horizon_minutes": 15,
+        "seed": 87,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h1_seed87.yaml",
+        "original_config_sha256": "7c67a4a937d99bc6b08209b0a3538a6ca23bc5b426fb7bd74aa49c0ef90ae1f2",
+        "run_id": "energy_r3_stage2_PI-EEF_h1_s87_20261021_000152",
+        "metrics_sha256": "f6c3fb0aec23ae58b49c44d9b0f06edca70185d09084ed5b7d048ae3176f4e83",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.08560301520542155,
+        "nmae": 0.040919532035361535,
+        "r2": 0.9020668079046176
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h1_seed3407",
+        "horizon_steps": 1,
+        "horizon_minutes": 15,
+        "seed": 3407,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h1_seed3407.yaml",
+        "original_config_sha256": "434de02e007d81a2175bfbb1fbd06f21862c1f21d39a3c7e039ccc756bdd7192",
+        "run_id": "energy_r3_stage2_PI-EEF_h1_s3407_20261021_003214",
+        "metrics_sha256": "461fda443d439cf07caa6b28808e2e430c35b4c6bc11f22bed45ea9ffb5d1948",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.08511237906519162,
+        "nmae": 0.0395617949176869,
+        "r2": 0.9031862029574123
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h4_seed13",
+        "horizon_steps": 4,
+        "horizon_minutes": 60,
+        "seed": 13,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h4_seed13.yaml",
+        "original_config_sha256": "4661af35394158222dc478ca4bbb5049fc9fd020182536195d29c523db57a796",
+        "run_id": "energy_r3_stage2_PI-EEF_h4_s13_20261020_231359",
+        "metrics_sha256": "86500743ea1bd9cedebde62fdb4252b9cfefe7b0ae740514ccabefb831cfc564",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.1353215323918681,
+        "nmae": 0.0707813491390265,
+        "r2": 0.7552708659345213
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h4_seed21",
+        "horizon_steps": 4,
+        "horizon_minutes": 60,
+        "seed": 21,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h4_seed21.yaml",
+        "original_config_sha256": "a8c29c8bf787a70694d9b14cf4f64d2d706b16ae3df306fe9c5ff11fbff43f52",
+        "run_id": "energy_r3_stage2_PI-EEF_h4_s21_20261020_231402",
+        "metrics_sha256": "5f1581f7ba19ed86c6236e8f19502de69d75733e9a844c93ef30d386fb7e3e4a",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.13629855354227613,
+        "nmae": 0.06949262137390226,
+        "r2": 0.7517242780076289
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h4_seed42",
+        "horizon_steps": 4,
+        "horizon_minutes": 60,
+        "seed": 42,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h4_seed42.yaml",
+        "original_config_sha256": "2a9b604d2bdc76ff8338dc7501e4d20401734013141fe3c48c859a0d9dbadf9a",
+        "run_id": "energy_r3_stage2_PI-EEF_h4_s42_20261020_231404",
+        "metrics_sha256": "101058106f5885b0bcc552f88075fba939d7aef0bdbbaf3fa49fab39ceb2c0b5",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.13614216436507057,
+        "nmae": 0.06950418674537402,
+        "r2": 0.752293668435663
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h4_seed87",
+        "horizon_steps": 4,
+        "horizon_minutes": 60,
+        "seed": 87,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h4_seed87.yaml",
+        "original_config_sha256": "4c718b7cf982b6da2e16b07924c5ba612637b64c0cd30b4d1f6fc7dc740428c8",
+        "run_id": "energy_r3_stage2_PI-EEF_h4_s87_20261021_005938",
+        "metrics_sha256": "5fa6736f82859efb038c78658697cef67e3b7f10faa032a2edaa7127d22dd450",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.13642599173962414,
+        "nmae": 0.0722062521657155,
+        "r2": 0.7512597589277357
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h4_seed3407",
+        "horizon_steps": 4,
+        "horizon_minutes": 60,
+        "seed": 3407,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h4_seed3407.yaml",
+        "original_config_sha256": "1720bf0deed5fefbec0ae64f4bd48ce9e3e46536b91615ae9bedc2cb7e15d6aa",
+        "run_id": "energy_r3_stage2_PI-EEF_h4_s3407_20261021_005940",
+        "metrics_sha256": "4d673f332f0cfbe1ecbb4ba4eae802830cf950f9437ad424091499d3333a4a2c",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.1344570075139826,
+        "nmae": 0.06843699424119144,
+        "r2": 0.7583878869629095
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h16_seed13",
+        "horizon_steps": 16,
+        "horizon_minutes": 240,
+        "seed": 13,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h16_seed13.yaml",
+        "original_config_sha256": "e8de9fb32875ccdc987ef8e27b39cd4deb4b3c2d014dd4a0b3765db35306451e",
+        "run_id": "energy_r3_stage2_PI-EEF_h16_s13_20261021_011452",
+        "metrics_sha256": "80939ab7032515a53a0b266e85a642e8496bbc8b4afac22825ea4c54f73a5a8e",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.19662966246728705,
+        "nmae": 0.11165309305914778,
+        "r2": 0.483286373156371
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h16_seed21",
+        "horizon_steps": 16,
+        "horizon_minutes": 240,
+        "seed": 21,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h16_seed21.yaml",
+        "original_config_sha256": "42f3947773722718407a1040507e6749ff558010cd95e838d63a377d4447b2a4",
+        "run_id": "energy_r3_stage2_PI-EEF_h16_s21_20261021_013908",
+        "metrics_sha256": "b9b2c4691ad1a41bc2cd7ea23b8dcb99f0aab79735d5db5ef30e3e32748460cf",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.19823887123784012,
+        "nmae": 0.11750562599340635,
+        "r2": 0.4747942218086124
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h16_seed42",
+        "horizon_steps": 16,
+        "horizon_minutes": 240,
+        "seed": 42,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h16_seed42.yaml",
+        "original_config_sha256": "4a761f0690fc7fbe47c812a8646db8e053ca554df00cfcd2b894b9b804b606e5",
+        "run_id": "energy_r3_stage2_PI-EEF_h16_s42_20261021_015419",
+        "metrics_sha256": "69f409698db88e0a458ce8bc65d6b766c350c8ccf1ef1792a2b277c11c33a729",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.20611114673247968,
+        "nmae": 0.11982723199067094,
+        "r2": 0.43225316831765714
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h16_seed87",
+        "horizon_steps": 16,
+        "horizon_minutes": 240,
+        "seed": 87,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h16_seed87.yaml",
+        "original_config_sha256": "15e737d9fce81ed532018ade07f682e29543e5fbe08a5569dca37ecbd73705fd",
+        "run_id": "energy_r3_stage2_PI-EEF_h16_s87_20261021_021233",
+        "metrics_sha256": "78f9450230f7fcd49b63a223c1f37851a0643abf0cba100ad7f9509721d43183",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.1981908438082614,
+        "nmae": 0.11252990120494016,
+        "r2": 0.4750486725048074
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h16_seed3407",
+        "horizon_steps": 16,
+        "horizon_minutes": 240,
+        "seed": 3407,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h16_seed3407.yaml",
+        "original_config_sha256": "4833b430d0133ac1822e2512cdc3bf415c0a1edd05ec5606ba8fe9bcd449af64",
+        "run_id": "energy_r3_stage2_PI-EEF_h16_s3407_20261021_023047",
+        "metrics_sha256": "3da969a7e1e3b0470cb31c57bcbf7dc92d37f9a14ea44aafa2799b56089dd4a7",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.2000877885949982,
+        "nmae": 0.11551790782757182,
+        "r2": 0.4649517704316861
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h48_seed13",
+        "horizon_steps": 48,
+        "horizon_minutes": 720,
+        "seed": 13,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h48_seed13.yaml",
+        "original_config_sha256": "67c85360a6631de60a8a6f0aeb9ad0289b1aedbf2e8d63b3b6e60fa542f2bb1c",
+        "run_id": "energy_r3_stage2_PI-EEF_h48_s13_20261021_023652",
+        "metrics_sha256": "cafbcef4e984f2251d1bd61e2d4d0ad80f3939e6539dcfd14e4b3693c9f7ce87",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.2352153939394623,
+        "nmae": 0.13123104161060023,
+        "r2": 0.2605934569527648
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h48_seed21",
+        "horizon_steps": 48,
+        "horizon_minutes": 720,
+        "seed": 21,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h48_seed21.yaml",
+        "original_config_sha256": "b0d6e60772e5c4f49445422a6d1e31cc8825c385861ce40da94bad2a41b94cdf",
+        "run_id": "energy_r3_stage2_PI-EEF_h48_s21_20261021_023654",
+        "metrics_sha256": "90587f06a6a7e6ccd1c993e4dad2c97c2a31c09d0f36e505fbb4b3f8f6d8caaa",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.2399495474546098,
+        "nmae": 0.13652171403112565,
+        "r2": 0.23053008055017832
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h48_seed42",
+        "horizon_steps": 48,
+        "horizon_minutes": 720,
+        "seed": 42,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h48_seed42.yaml",
+        "original_config_sha256": "53b77ef4bdfb818ac21ba93bd37d48f0242060b3060d9b9e7cc181ed017b5070",
+        "run_id": "energy_r3_stage2_PI-EEF_h48_s42_20261021_025507",
+        "metrics_sha256": "657052752c30f3cb3d903db5874cca5be90f17b617530f7382fa06d4b7aab7cd",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.24348180502821523,
+        "nmae": 0.14388993031987757,
+        "r2": 0.20770880797459745
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h48_seed87",
+        "horizon_steps": 48,
+        "horizon_minutes": 720,
+        "seed": 87,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h48_seed87.yaml",
+        "original_config_sha256": "5d1147dea6546440a6cef4d002f18cf061ee90956b7ce4f723121c4c163463f4",
+        "run_id": "energy_r3_stage2_PI-EEF_h48_s87_20261021_031624",
+        "metrics_sha256": "6912700d89390adab45ee62c629fe02607ccbbf3063883732eb36876dab6b6b7",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.24413930974341216,
+        "nmae": 0.1434015820236886,
+        "r2": 0.20342400510609138
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h48_seed3407",
+        "horizon_steps": 48,
+        "horizon_minutes": 720,
+        "seed": 3407,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h48_seed3407.yaml",
+        "original_config_sha256": "2bf34c866d2da9d36f51999ab6c4edb7550f2725ff35bb2031df4bf3445d6930",
+        "run_id": "energy_r3_stage2_PI-EEF_h48_s3407_20261021_032230",
+        "metrics_sha256": "874d6a52a4f6088139214a7ed398c8f754a23625fe48105f0ad8f6d28d53cdbf",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.23582779044663657,
+        "nmae": 0.1362747719581695,
+        "r2": 0.2567383246105772
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h96_seed13",
+        "horizon_steps": 96,
+        "horizon_minutes": 1440,
+        "seed": 13,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h96_seed13.yaml",
+        "original_config_sha256": "fddca3e2008dcaaaf993e26275d8efa6b4ef73027c0561f7a354684f36ffcc53",
+        "run_id": "energy_r3_stage2_PI-EEF_h96_s13_20261021_032232",
+        "metrics_sha256": "0c2defee277065930b4b572011cf8dbbaeb189ce68e17c827e17855932956b8c",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.24616709721828278,
+        "nmae": 0.15044619387356759,
+        "r2": 0.1901365506683007
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h96_seed21",
+        "horizon_steps": 96,
+        "horizon_minutes": 1440,
+        "seed": 21,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h96_seed21.yaml",
+        "original_config_sha256": "8203c6fede5bf6687ffa9d448363359aae83f3cfc9f05137400d65ee86aa2627",
+        "run_id": "energy_r3_stage2_PI-EEF_h96_s21_20261021_034045",
+        "metrics_sha256": "61b56d918ed7d78cac5ba271fa89e514bfaab07be0a3e1ce1db34e69ab1c31f6",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.2414765868799388,
+        "nmae": 0.14601856634394245,
+        "r2": 0.22070503864606594
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h96_seed42",
+        "horizon_steps": 96,
+        "horizon_minutes": 1440,
+        "seed": 42,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h96_seed42.yaml",
+        "original_config_sha256": "9791b45f826fb77f5249e011b6754d36726cbea51bbe62292939c835ded7ff4d",
+        "run_id": "energy_r3_stage2_PI-EEF_h96_s42_20261021_035558",
+        "metrics_sha256": "da48bb066f9de28950f0a7caa574d5fd42c4eafe50629d36d6367114f066cda6",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.2508482960982489,
+        "nmae": 0.14651600675823082,
+        "r2": 0.15904234398427086
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h96_seed87",
+        "horizon_steps": 96,
+        "horizon_minutes": 1440,
+        "seed": 87,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h96_seed87.yaml",
+        "original_config_sha256": "f045a4e8edf40563dadc001a241e3f4f1fb998b43359f9d75654867b90b0d906",
+        "run_id": "energy_r3_stage2_PI-EEF_h96_s87_20261021_040504",
+        "metrics_sha256": "90c86eb097a6283731abbdb88bd0b183e26a87f52d0a28cf4000a6158c678ddd",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.2357449451635024,
+        "nmae": 0.14081865710799993,
+        "r2": 0.2572603127155245
+      },
+      {
+        "config_id": "energy_r3s2_main_PI-EEF_h96_seed3407",
+        "horizon_steps": 96,
+        "horizon_minutes": 1440,
+        "seed": 3407,
+        "original_config_filename": "energy_r3s2_main_PI-EEF_h96_seed3407.yaml",
+        "original_config_sha256": "c71cea776035862bbba3e53e725a46ebd52e81fe7aa77a9e0fc717592e821e3b",
+        "run_id": "energy_r3_stage2_PI-EEF_h96_s3407_20261021_041109",
+        "metrics_sha256": "e17d145a907342ad319f39941e452aa9754437e0f116446554bbebacb0b8155c",
+        "saved_config_matches_manifest": true,
+        "nrmse": 0.25189446855984815,
+        "nmae": 0.15164168481955895,
+        "r2": 0.15201341737539453
+      }
+    ]
+  },
+  "frozen_model_options": {
+    "d_model": 128,
+    "encoder_depth": 3,
+    "graph_depth": 1,
+    "mask_ratio": 0.4,
+    "num_control_points": 15,
+    "use_prior_input": true,
+    "use_bound_loss": true,
+    "use_derivative_loss": true,
+    "use_density": true,
+    "nwp_target_speed_index": 7,
+    "use_terrain_bias": true,
+    "use_mask_indicators": true,
+    "joint_masking": false,
+    "cut_in_speed": 3.0,
+    "rated_wind_speed": 10.0,
+    "cut_out_speed": 22.0,
+    "sensitivity_mode": "symmetric",
+    "manufacturer_curve_path": "data/raw/manufacturer_curve.csv",
+    "use_calibration": true,
+    "use_physics_curve": true,
+    "curve_mode": "bspline",
+    "use_direction_bias": true,
+    "use_sensitivity_gate": true,
+    "revin_missing_policy": "train_stats_20",
+    "forecast_head_policy": "target_nwp_physics_mlp",
+    "graph_score_policy": "cosine_temperature",
+    "forecast_skip_policy": "last_obs_linear"
+  },
+  "common_training_options": {
+    "batch_size": 16,
+    "epochs_stage1": 5,
+    "epochs_stage2": 5,
+    "epochs_stage3": 20,
+    "lr_stage1": 0.001,
+    "lr_stage2": 0.001,
+    "lr_stage3": 0.0003,
+    "stage3_mode": "joint",
+    "loss_name": "huber",
+    "huber_delta": 0.1,
+    "quantile": 0.5,
+    "patience": 5,
+    "checkpoint_metric": "nrmse",
+    "reconstruction_weight": 0.05,
+    "calibration_weight": 0.05,
+    "auxiliary_decay": 0.1,
+    "epochs": 50,
+    "lr": 0.001,
+    "stage3_decoder_policy": "frozen",
+    "stage3_forecast_corruption": "f2_block"
+  },
+  "diagnostic_option_note": "record_gradient_conflicts=true only for h16 (five seeds); false at the other four horizons. This is retained in the per-run configurations.",
+  "data_contract": {
+    "nwp_alignment_verified": false,
+    "nwp_preparation_author_confirmed": true,
+    "timezone": "Asia/Shanghai",
+    "step_minutes": 15,
+    "power_unit": "kW",
+    "wind_height_m": 10,
+    "nwp_timing_rule": "author_prepared_ecmwf",
+    "nwp_feature_columns": [
+      "Direct_solar_radiation_10",
+      "Total_sky_direct_short-wave_(solar)_radiation_at_surface_10",
+      "Surface_pressure_10",
+      "2_metre_temperature_10",
+      "10_metre_U_wind_component_10",
+      "10_metre V_wind_component_10",
+      "wind_speed200_10",
+      "wind_speed100_10",
+      "wind_speed10_10"
+    ],
+    "input_filling": "forward-only",
+    "target_policy": "raw-measured-valid-power"
+  },
+  "environment_evidence": {
+    "cloud_pytorch": "2.5.1+cu124",
+    "cuda_runtime_family": "12.4",
+    "hardware_classes": [
+      "NVIDIA GeForce RTX 4090 D",
+      "NVIDIA GeForce RTX 3080 Ti"
+    ],
+    "source": "retained onboarding metadata for all five round-3 cloud execution nodes",
+    "python_version": "not established from the inspected round-3 node records",
+    "dependency_lock": "The retained requirements.txt is unpinned; this provenance record is not a complete environment lock."
+  },
+  "verification_scope": "Read-only archive, file-hash, manifest, saved configuration and result identity audit. No training was executed. Historical metrics do not contain a freshly bound per-run VF source digest; the lineage is reconstructed from the retained deployment bundle, dispatcher/configuration evidence and completed-run metadata rather than pretending the inherited digest is a VF digest."
+}

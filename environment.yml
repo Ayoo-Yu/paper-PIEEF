@@ -1,17 +1,8 @@
-name: pi-eef
+name: pi-eef-public
 channels:
-  - pytorch
   - conda-forge
-  - defaults
 dependencies:
-  - python=3.11
-  - numpy
-  - pandas
-  - scipy
-  - scikit-learn
-  - matplotlib
-  - pyyaml
-  - psutil
-  - lightgbm
-  - xgboost
-  - pytorch
+  - python=3.10
+  - pip
+  - pip:
+      - -r requirements.txt

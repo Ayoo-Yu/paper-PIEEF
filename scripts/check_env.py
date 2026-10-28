@@ -1,48 +1,26 @@
 #!/usr/bin/env python3
-from __future__ import annotations
-
+"""Report only the dependencies used by this curated public release."""
+from importlib import import_module
 import json
 import platform
 import sys
-from pathlib import Path
 
+def main():
+    report = {'python': sys.version, 'platform': platform.platform(), 'dependencies': {}}
+    missing = []
+    for name in ('numpy', 'pandas', 'yaml', 'torch'):
+        try:
+            module = import_module(name)
+            report['dependencies'][name] = str(module.__version__)
+        except ImportError:
+            report['dependencies'][name] = 'MISSING'
+            missing.append(name)
+    if 'torch' not in missing:
+        import torch
+        report['cuda_available'] = torch.cuda.is_available()
+    print(json.dumps(report, indent=2))
+    if missing:
+        raise SystemExit(1)
 
-def safe_import(name: str):
-    try:
-        mod = __import__(name)
-        return getattr(mod, "__version__", "unknown")
-    except Exception as exc:
-        return f"MISSING: {exc}"
-
-
-def main() -> None:
-    root = Path(__file__).resolve().parents[1]
-    report = {
-        "python": sys.version,
-        "platform": platform.platform(),
-        "cwd": str(Path.cwd()),
-        "paths": {
-            "repo": str(root),
-            "demo_dms_exists": (root / "data/public_demo/DMS.csv").exists(),
-            "demo_turbines_exists": (root / "data/public_demo/turbines.csv").exists(),
-            "train_script_exists": (root / "scripts/train.py").exists(),
-            "public_demo_config_exists": (root / "configs/main_h16_public_demo.yaml").exists(),
-            "quick_config_exists": (root / "configs/main_public_demo_quick.yaml").exists(),
-        },
-        "deps": {
-            "numpy": safe_import("numpy"),
-            "pandas": safe_import("pandas"),
-            "yaml": safe_import("yaml"),
-            "sklearn": safe_import("sklearn"),
-            "scipy": safe_import("scipy"),
-            "torch": safe_import("torch"),
-            "lightgbm": safe_import("lightgbm"),
-            "xgboost": safe_import("xgboost"),
-            "psutil": safe_import("psutil"),
-        },
-    }
-    print(json.dumps(report, ensure_ascii=False, indent=2))
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -15,3 +15,17 @@ DMS.csv
 Manuscript*.docx
 Manuscript*.pdf
 .pytest_cache/
+data/private/
+data/generated/
+*.npz
+*.npy
+*.zip
+*.tar
+*.tar.gz
+*.key
+*.pem
+id_rsa*
+id_ed25519*
+.env.*
+*.docx
+*.pdf
