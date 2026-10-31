@@ -57,10 +57,12 @@ Historical SCADA inputs are filled causally; forecasting targets remain the orig
 
 Two weather protocols are supported:
 
-- `author_prepared_ecmwf` uses the supplied weather series by target valid time. Author confirmation records the declared source; it is **not** independent proof of forecast-origin availability. The archived Wind Farm A 12-h and 24-h benchmark is retrospective under this prepared series.
+- `author_prepared_ecmwf` uses the supplied weather series by target valid time. Author confirmation records the declared source; it is **not** independent proof of forecast-origin availability. The released main configurations retain `nwp_alignment_verified: false`.
 - `forecast_vintages` selects a run with recorded availability no later than the origin, then interpolates leads within that run. Actual provenance metadata are required; the code does not manufacture issue or availability times.
 
-The [protocol document](docs/METHOD_AND_PROTOCOL.md) explains training, inputs and interpretation in detail.
+**ECMWF timing and the 24-h benchmark.** The current manuscript describes the following supply schedule for Wind Farms A and B: a run initialised at 18:00 UTC on Day 1 becomes available at 08:00 Beijing Time (UTC+8) on Day 2 and supplies the target-time inputs for Day 3. Under this declared schedule, Wind Farm A's rolling 24-h forecasts issued from 00:00 to 07:45 on Day 2 use a batch that arrives after their origin, by up to 8 h. These are 32 of 96 daily 15-min origin slots, about one third. The full-day 24-h results therefore represent a partly non-causal offline comparison, not a verified operational 24-h evaluation. Giving the learning-based models the same NWP inputs does not remove this availability limitation.
+
+The 15-min, 1-h, 4-h and 12-h horizons do not have this specific early-origin exception under the declared schedule. That timing deduction is not an independent audit of the archived forecast vintages. The [protocol document](docs/METHOD_AND_PROTOCOL.md#4-weather-timing-contracts) gives the cycle, interpolation and origin-time examples. This documentation clarification does not rerun experiments or change the archived predictions and scores.
 
 See [release provenance](docs/PROVENANCE.md) for source/configuration identities and the recorded training and demonstration environments. The following commands inspect the environment, verify bundled source/configuration identities, and run the CPU checks:
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-31 — Clarify NWP availability and 24-h evaluation scope
+
+- Align the README and weather timing contract with the current manuscript's declared 18:00 UTC ECMWF cycle, next-day 08:00 Beijing Time availability and following-day target inputs.
+- Identify the rolling 24-h origins from 00:00 to 07:45 as preceding their assigned batch's availability, making the full-day Wind Farm A 24-h benchmark a partly non-causal offline comparison.
+- Distinguish this exception from the 15-min, 1-h, 4-h and 12-h horizons under the declared schedule, while retaining the lack of independently verified row-level provenance for prepared inputs.
+- Update documentation only. Scientific code, configuration flags, archived predictions and reported scores are unchanged; no training or evaluation was rerun.
+
 ## 2026-10-28 — Revised VF implementation and public demonstration
 
 This release synchronises the public implementation with the revised VF method. The earlier public snapshot represented an earlier model and should not be used as an implementation reference for the revised paper.

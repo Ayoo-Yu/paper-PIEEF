@@ -87,7 +87,25 @@ Terrain edge features use elevation differences and differences divided by horiz
 
 `nwp_timing_rule: author_prepared_ecmwf` consumes the supplied weather series at target valid times. It requires `nwp_preparation_author_confirmed: true`. This records the author's confirmation of the prepared source and does not independently verify availability at every forecast origin. In the archived main template, `nwp_alignment_verified` is explicitly false.
 
-The audited Wind Farm A prepared series was assembled using a 00:00 UTC run selected relative to target valid time, with an eight-hour minimum run-to-valid-time gap; hourly leads were 8–31 h before 15-min interpolation. This construction is not an origin-based vintage-selection rule. In particular, the archived 12-h and 24-h experiments are retrospective weather-conditioned benchmarks, not evidence of operational forecasts available at those origins. Adjacent prepared hourly values can also come from different runs. Wind Farm B's prepared series must not be assigned Farm A's provenance rule without supporting records.
+The current manuscript (Sections 3.1 and 3.4, and Supplementary Section S3.4) describes the following provider/author-declared supply schedule for Wind Farms A and B. Times below are Beijing Time (UTC+8), unless marked UTC.
+
+| Event | Declared timing |
+|---|---|
+| ECMWF initialisation | 18:00 UTC on Day 1, or 02:00 on Day 2 |
+| Batch availability after computation and transmission | 08:00 on Day 2 |
+| Forecast coverage | 48 hourly steps, from 02:00 on Day 2 through 01:00 on Day 4 |
+| Assigned target day | Day 3, from 00:00 through 23:45 on the 15-min grid |
+| Hourly leads used for the target day and interpolation | 22–46 h from initialisation |
+
+Each target value is linearly interpolated between the two bracketing hourly leads of the assigned batch; an exact hourly target uses that lead directly. For example, 23:45 on Day 3 uses the hourly leads for 23:00 on Day 3 and 00:00 on Day 4 from the same batch, with weights 0.25 and 0.75. This describes the manuscript's declared preparation rule. The prepared-series loader consumes the supplied values and does not independently reconstruct or validate their issue and availability timestamps.
+
+**Origin-time limitation at 24 h.** A rolling 24-h forecast for a Day 3 target has its origin at the same clock time on Day 2. Origins from 00:00 to 07:45 therefore precede the assigned batch's 08:00 availability. On a complete daily 15-min grid, these are 32 of 96 origin slots, about one third; the earliest uses a batch received 8 h after the origin. A 24-h forecast issued at 12:00 on Day 2 does have that batch available, but this example does not establish availability for the earlier origins.
+
+The full-day Wind Farm A 24-h benchmark, including its 24-h fault comparisons, is consequently a partly non-causal offline evaluation under the declared schedule. Common NWP inputs establish a shared input condition for the learning-based models, not an operational availability guarantee. Persistence uses historical power rather than target-time NWP. Strict operational 24-h evaluation requires eligible forecast vintages at every origin, or a clearly defined restricted set of issue times, followed by matched reevaluation of the compared models.
+
+For the 12-h horizon, the earliest origin for a Day 3 target is 12:00 on Day 2, after batch availability. The 15-min, 1-h and 4-h horizons also avoid this specific exception. This is a deduction from the declared schedule, not independent verification of every archived input. Wind Farm B's reported extension evaluates 15 min, 1 h and 4 h; the rolling 24-h limitation above refers to the Wind Farm A benchmark.
+
+This 2026-10-31 documentation clarification replaces the earlier description of a 00:00 UTC cycle and 8–31 h leads with the current manuscript's declared schedule. It does not re-audit the private archive, establish row-level provenance, alter verification flags, or report new training or evaluation results. The archived source, configurations, predictions and scores retain their existing identities.
 
 ### Forecast-vintage archive
 
