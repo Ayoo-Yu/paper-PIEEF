@@ -1,0 +1,15 @@
+Baseline,Architecture settings,Learning rate,Batch size,Maximum epochs / trees,Early stopping
+Persistence,Last causal power observation,—,—,—,Not applicable
+LightGBM,trees 300; leaves 64; row subsampling 0.8; column subsampling 0.8,0.05,—,300 trees,Fixed tree count
+XGBoost,trees 200; max depth 6; row subsampling 0.8; column subsampling 0.8; tree method hist,0.05,—,200 trees,Fixed tree count
+GRU,hidden 64,0.001,16,50,Validation loss; patience 5; min Δ 0
+TCN,channels 32,0.001,16,50,Validation loss; patience 5; min Δ 0
+DLinear,"One linear layer over the input window, without the moving-average decomposition",0.001,16,50,Validation loss; patience 5; min Δ 0
+iTransformer,model width 128; heads 4,0.001,16,50,Validation loss; patience 5; min Δ 0
+TimesNet,model width 64,0.001,16,50,Validation loss; patience 5; min Δ 0
+TimeMixer,hidden 64,0.001,16,50,Validation loss; patience 5; min Δ 0
+PatchTST,patch length 16; stride 8; model width 64,0.001,16,50,Validation loss; patience 5; min Δ 0
+ACFormer,model width 96; patch kernel 10; stride 2; heads 8; layers 1,0.001,16,50,Validation loss; patience 5; min Δ 0
+STAN,hidden 64; GRU hidden 200; GAT hidden 64; gravity α 0.35; gravity β 0.37; gravity radius 30.0,0.001,16,50,Validation loss; patience 5; min Δ 0
+Wake-GNN,hidden 64; wake expansion 0.05,0.001,16,50,Validation loss; patience 5; min Δ 0
+Jensen-Net,hidden 64; wake expansion 0.05,0.001,16,50,Validation loss; patience 5; min Δ 0

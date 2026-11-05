@@ -1,0 +1,14 @@
+Panel a
+Turbine,Training median |φ| (°),Training P90 |φ| (°)
+1,5.1205,15.2601
+2,4.9077,14.0787
+3,5.3295,15.3421
+4,5.5287,16.0400
+5,5.4296,15.8234
+6,5.7771,18.1177
+
+Panel b
+Reference wind speed,[equation: figures/table_equations/table_s22_p2_r1_c2_e1.wmf],[equation: figures/table_equations/table_s22_p2_r1_c3_e1.wmf] 95% CI lower,[equation: figures/table_equations/table_s22_p2_r1_c4_e1.wmf] 95% CI upper,2° bins used
+Own nacelle anemometer,0.0898,−0.1428,0.3405,12
+Median of the other five turbines,7.9407,7.2230,8.5869,13
+

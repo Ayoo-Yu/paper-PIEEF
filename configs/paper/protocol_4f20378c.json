@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "experiment_id": "energy_learning_rate_20261022",
+  "status": "prepared_not_started",
+  "authorized_scope": "Exactly 3 fixed schedules by 3 seeds; final VF diagnostic, no model reselection or test-based tuning.",
+  "seeds": [
+    13,
+    42,
+    3407
+  ],
+  "schedules": {
+    "LR0": [
+      0.001,
+      0.001,
+      0.0003
+    ],
+    "LR1": [
+      0.001,
+      0.001,
+      0.001
+    ],
+    "LR2": [
+      0.0003,
+      0.0003,
+      0.0003
+    ]
+  },
+  "evaluation_split": "val",
+  "horizon_steps": 16,
+  "horizon_minutes": 240,
+  "batch_size": 16,
+  "precision": "FP32; frozen source float32 data and model, no autocast/scaler; do not add ignored precision configuration keys",
+  "epochs_max": [
+    5,
+    5,
+    20
+  ],
+  "patience": 5,
+  "checkpoint_metric": "nrmse",
+  "record_gradient_conflicts": true,
+  "base_metrics_path": "artifacts/released/metrics.json",
+  "base_metrics_sha256": "80939ab7032515a53a0b266e85a642e8496bbc8b4afac22825ea4c54f73a5a8e",
+  "source_data_manifest_sha256": "79bba690ac0c94dfd6b550b10e84c0bc97d9881e6ea2b55a6d5cbb5d523596af",
+  "orders": {
+    "release_host": [
+      "LR0_seed13",
+      "LR1_seed13",
+      "LR2_seed13"
+    ],
+    "local": [
+      "LR1_seed42",
+      "LR2_seed42",
+      "LR0_seed42",
+      "LR2_seed3407",
+      "LR0_seed3407",
+      "LR1_seed3407"
+    ]
+  },
+  "expected_GPU": {
+    "release_host": "RTX 4060",
+    "local": "RTX 4070 SUPER"
+  },
+  "comparisons": {
+    "primary": "Matched-seed validation NRMSE LR1-LR0 and LR2-LR0; show every run, means and sample SD, no model reselection.",
+    "secondary": "Validation NMAE/R2, best epoch, epochs completed, all validation trajectories, observed first-batch gradient cosines and complete child wallclock.",
+    "interpretation": "LR1 isolates Stage-3 rate; LR2 jointly changes pretraining rates, not separate Stage-1/2 effects. Gradient cosine is a function of sampled batch/weights/loss support; the scalar LR does not directly rotate the gradient.",
+    "inference": "Three paired seeds give limited power; descriptive results and paired differences primary, no equivalence or optimality claim."
+  },
+  "test_policy": "selection_scope validation exports only val_predictions.npz and validation metrics; frozen trainer still saves an unlabeled first-test input latency sample, not test performance. No test selection, no revised main model.",
+  "failure_policy": "Preserve partial files and logs; stop on any child/strict-artifact failure; no automatic retries or duplicate completed training.",
+  "runner_policy": "One native locked serial runner per machine; same seed stays on same hardware; verify PID/create_time/cmd/cwd and GPU occupancy; LR0 is newly trained with own identity."
+}

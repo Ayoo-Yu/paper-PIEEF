@@ -1,0 +1,109 @@
+{
+  "experiment": {
+    "exp_type": "main",
+    "model": "Jensen-Net",
+    "variant": "Jensen-Net",
+    "seeds": [
+      3407
+    ],
+    "horizon": 16,
+    "eval_scope": "measured-target",
+    "finalized": false,
+    "group": "main",
+    "models": [
+      "Jensen-Net"
+    ],
+    "independent_baseline_protocol": true
+  },
+  "data": {
+    "data_version": "energy_revision_wind_farm_A_author_prepared_EC_20261017",
+    "scada_path": "data/wind_farm_A/scada_ecmwf_15min.csv",
+    "turbines_path": "data/wind_farm_A/turbines.csv",
+    "seq_len": 96,
+    "split": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "capacity_mw": 2.0,
+    "revision_protocol": {
+      "nwp_alignment_verified": false,
+      "nwp_preparation_author_confirmed": true,
+      "timezone": "Asia/Shanghai",
+      "step_minutes": 15,
+      "power_unit": "kW",
+      "wind_height_m": 10,
+      "nwp_timing_rule": "author_prepared_ecmwf",
+      "nwp_feature_columns": [
+        "nwp_direct_solar_radiation",
+        "nwp_total_sky_direct_shortwave",
+        "nwp_surface_pressure_pa",
+        "nwp_temperature_2m_k",
+        "nwp_u10_ms",
+        "nwp_v10_ms",
+        "nwp_wind_speed200_ms",
+        "nwp_wind_speed100_ms",
+        "nwp_wind_speed10_ms"
+      ],
+      "input_filling": "forward-only",
+      "target_policy": "raw-measured-valid-power"
+    }
+  },
+  "model": {
+    "baseline_factory": "Jensen-Net",
+    "architecture": {
+      "seq_len": "data.seq_len",
+      "hidden": 64,
+      "kw": 0.05,
+      "coords_xy": "data.turbines_path",
+      "rotor_d": "data.turbines_path"
+    },
+    "weather_dimension": "declared_site_fields_plus_3",
+    "weather_semantics": "actual_data_bundle"
+  },
+  "train": {
+    "batch_size": 16,
+    "epochs": 50,
+    "lr": 0.001,
+    "patience": 5,
+    "min_delta": 0.0
+  },
+  "baselines": {
+    "models": [
+      "Jensen-Net"
+    ]
+  },
+  "baseline_protocol": {
+    "version": 1,
+    "scope": "fixed_submitted_baseline",
+    "model": "Jensen-Net",
+    "factory": "scripts/train_baselines.py",
+    "model_settings": {
+      "baseline_factory": "Jensen-Net",
+      "architecture": {
+        "seq_len": "data.seq_len",
+        "hidden": 64,
+        "kw": 0.05,
+        "coords_xy": "data.turbines_path",
+        "rotor_d": "data.turbines_path"
+      },
+      "weather_dimension": "declared_site_fields_plus_3",
+      "weather_semantics": "actual_data_bundle"
+    },
+    "training_settings": {
+      "batch_size": 16,
+      "epochs": 50,
+      "lr": 0.001,
+      "patience": 5,
+      "min_delta": 0.0
+    },
+    "loss": "mse",
+    "checkpoint_selection": "validation_loss",
+    "pi_selection_dependency": false
+  },
+  "tracking": {
+    "artifact_root": "artifacts/public",
+    "ledger_dir": "artifacts/public/summary",
+    "source_manifest": "provenance/source_manifest.json"
+  }
+}

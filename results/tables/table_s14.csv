@@ -1,0 +1,7 @@
+Horizon,Baseline,PI-EEF NRMSE / NMAE (%),Baseline NRMSE / NMAE (%),Scenarios with lower NRMSE,Scenarios with lower NMAE
+4 h,ACFormer (original loss),20.69 / 12.03,21.65 / 12.67,39/39,35/39
+4 h,ACFormer (Huber loss),20.69 / 12.03,21.69 / 13.14,39/39,37/39
+24 h,ACFormer (original loss),25.39 / 15.34,24.03 / 15.26,0/39,27/39
+24 h,ACFormer (Huber loss),25.39 / 15.34,23.97 / 15.71,0/39,34/39
+24 h,TCN (Huber loss),25.39 / 15.34,23.48 / 16.12,0/39,35/39
+24 h,TimesNet (Huber loss),25.39 / 15.34,23.37 / 15.56,0/39,31/39

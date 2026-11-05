@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "Local CPU validation, no training or timing remeasurement",
+  "cpu_tests": 13,
+  "requirements_imports": 10,
+  "public_demo": {
+    "inference_only": true,
+    "validation_windows": 80
+  },
+  "frozen_model_windows_per_site": 208,
+  "maximum_prediction_error_pu": {
+    "wind_farm_A": 1.7881393432617188e-07,
+    "kelmarsh": 4.172325134277344e-07,
+    "wind_farm_B": 3.5762786865234375e-07
+  },
+  "prediction_tolerance_pu": 0.0001,
+  "paper_items_exported": 67,
+  "result_csv_numeric_cells_unchanged": 3152153,
+  "workbook_numeric_cells_unchanged": 16804,
+  "limits": [
+    "Wind Farm A terrain withheld",
+    "Table 7 raw per-run timing logs not retained",
+    "Complete global GFS GRIB archive not included",
+    "Full CFD solve not executed",
+    "Portable quantitative redraw layouts may differ; schematic SVG exports retain original EMF snapshots"
+  ]
+}

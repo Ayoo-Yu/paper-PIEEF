@@ -1,0 +1,21 @@
+{
+  "task": "P",
+  "device": "cpu",
+  "seeds": [
+    13,
+    21,
+    42,
+    87,
+    3407
+  ],
+  "horizon": 16,
+  "P4_families": {
+    "MSE": "one global calibrated vs raw NWP comparison; time DM, seed t, seed sign each separately BH within a singleton family",
+    "MAE": "one global calibrated vs raw NWP comparison; same separate singleton families"
+  },
+  "time_estimand": "mean of per-seed losses, then mean over identical valid turbines per timestamp; no prediction ensemble",
+  "seed_estimand": "five paired global mean losses on same observed test period",
+  "P4_strata": "descriptive only; SCADA <3, [3,10), [10,15], >15; finite nonnegative raw measured wind, no imputation",
+  "P5": "50 common full batches of 16 sampled without replacement from a random training permutation, seed 2026; F2 RNG seed 2026; torch masks/dropout seed 2026 reset per model; final best weights, decay at saved best_epoch-1; no optimizer",
+  "plot_contract": "Python quantitative grid; show actual learned curves, numerical derivatives, density levels and hard cut-out separately; all turbines and seeds retained; PNG and editable SVG; no claim until computed"
+}

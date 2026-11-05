@@ -1,0 +1,323 @@
+{
+  "source_project": "artifacts/released/v1_original_model_with_vf_evaluator",
+  "source_snapshot_sha256": "3aa3067fe05e2e83d98600f4d9947ad14afe5e181caca565fbe08d4e74c95e4e",
+  "source_files": [
+    {
+      "relative_path": "src/pieef/__init__.py",
+      "path": "artifacts/released/__init__.py",
+      "bytes": 507,
+      "sha256": "11d49d9491596419fe3d889bcbe730fd7f61f5ce9102fddf01aa90f2a00d44bd",
+      "original": "artifacts/released/__init__.py"
+    },
+    {
+      "relative_path": "src/pieef/analysis.py",
+      "path": "artifacts/released/analysis.py",
+      "bytes": 3822,
+      "sha256": "b16f73c94d6681480ec84773bf2e2907f9473d7bcf55528e9c68f14685e7f49e",
+      "original": "artifacts/released/analysis.py"
+    },
+    {
+      "relative_path": "src/pieef/artifacts.py",
+      "path": "artifacts/released/artifacts.py",
+      "bytes": 2492,
+      "sha256": "4b601a2404d7a98507264d0c568bc874c8cf3626867052f50ba1a302abd2e936",
+      "original": "artifacts/released/artifacts.py"
+    },
+    {
+      "relative_path": "src/pieef/baseline_protocol.py",
+      "path": "artifacts/released/baseline_protocol.py",
+      "bytes": 6161,
+      "sha256": "92af18b3693e427b9c8c4f78290a06e39a14cdd8a66a1f18a9486862ddc400aa",
+      "original": "artifacts/released/baseline_protocol.py"
+    },
+    {
+      "relative_path": "src/pieef/baselines.py",
+      "path": "artifacts/released/baselines.py",
+      "bytes": 51278,
+      "sha256": "e81ddd672e865543971194056e40a737995a83b2497db8132368d3f4769d767b",
+      "original": "artifacts/released/baselines.py"
+    },
+    {
+      "relative_path": "src/pieef/core.py",
+      "path": "artifacts/released/core.py",
+      "bytes": 2089,
+      "sha256": "8f6c3c6ff81aa5436f6093412adf823493d0844bbcb3ac3f82df9bb4499e66cd",
+      "original": "artifacts/released/core.py"
+    },
+    {
+      "relative_path": "src/pieef/data.py",
+      "path": "artifacts/released/data.py",
+      "bytes": 12599,
+      "sha256": "c283675175b79f4f3b3bb7dcc17e75365e9751dcabd25ac7d60c36d928d58653",
+      "original": "artifacts/released/data.py"
+    },
+    {
+      "relative_path": "src/pieef/faults.py",
+      "path": "artifacts/released/faults.py",
+      "bytes": 11656,
+      "sha256": "a7c5863af5b9e1984dff6c792eacd912f208e8e52cf3624f250cb0938b7b5956",
+      "original": "artifacts/released/faults.py"
+    },
+    {
+      "relative_path": "src/pieef/forecast_vintages.py",
+      "path": "artifacts/released/forecast_vintages.py",
+      "bytes": 9409,
+      "sha256": "682c9d7f22f1b69b33a3ff61c537515d97247e139678db8d33ccbfc1bd5e8caa",
+      "original": "artifacts/released/forecast_vintages.py"
+    },
+    {
+      "relative_path": "src/pieef/gfs_forecasts.py",
+      "path": "artifacts/released/gfs_forecasts.py",
+      "bytes": 29625,
+      "sha256": "eb344791c9f9f6af088596be5b5a6f61f95a20fe4179b40bcd95e25a6b1758d5",
+      "original": "artifacts/released/gfs_forecasts.py"
+    },
+    {
+      "relative_path": "src/pieef/grib1.py",
+      "path": "artifacts/released/grib1.py",
+      "bytes": 9208,
+      "sha256": "1ffcdfdd60aed52a5ab48c754924845be27bd7ecdca8b64048a8af066690027c",
+      "original": "artifacts/released/grib1.py"
+    },
+    {
+      "relative_path": "src/pieef/ledger.py",
+      "path": "artifacts/released/ledger.py",
+      "bytes": 7724,
+      "sha256": "02e38d7b4bcfca97841f969b2b057c24d09a766043c8137f6cbf5ad7b852a055",
+      "original": "artifacts/released/ledger.py"
+    },
+    {
+      "relative_path": "src/pieef/model_factory.py",
+      "path": "artifacts/released/model_factory.py",
+      "bytes": 3053,
+      "sha256": "8cdab98ea89f6ce60c90500380876e6cba78b3f32afd7a416bcd066dae010c73",
+      "original": "artifacts/released/model_factory.py"
+    },
+    {
+      "relative_path": "src/pieef/model_main.py",
+      "path": "artifacts/released/model_main.py",
+      "bytes": 558,
+      "sha256": "ae13fe986302a27898c8a76b30148616de6ef2b21e1bda01742e63ec3a5f6d06",
+      "original": "artifacts/released/model_main.py"
+    },
+    {
+      "relative_path": "src/pieef/model_registry.py",
+      "path": "artifacts/released/model_registry.py",
+      "bytes": 5313,
+      "sha256": "cb8561fcba3abe25fc854006d6415db24c4bfea44837a72b68dd5e9551e38775",
+      "original": "artifacts/released/model_registry.py"
+    },
+    {
+      "relative_path": "src/pieef/models/__init__.py",
+      "path": "artifacts/released/__init__.py",
+      "bytes": 526,
+      "sha256": "62814f6a6e77c50cf1378ca80ee24635a37b369071eca1996406462bb222fece",
+      "original": "artifacts/released/__init__.py"
+    },
+    {
+      "relative_path": "src/pieef/models/e2e.py",
+      "path": "artifacts/released/e2e.py",
+      "bytes": 15306,
+      "sha256": "859fb6191b71eaf64e421364ccb65493d24583592420de012de6617a15f759a9",
+      "original": "artifacts/released/e2e.py"
+    },
+    {
+      "relative_path": "src/pieef/models/forecast.py",
+      "path": "artifacts/released/forecast.py",
+      "bytes": 2259,
+      "sha256": "ea0b019d172cbc01f022fa49adbccb03f79a3610d6fb03ee1f327a8d5b4061fb",
+      "original": "artifacts/released/forecast.py"
+    },
+    {
+      "relative_path": "src/pieef/models/graph.py",
+      "path": "artifacts/released/graph.py",
+      "bytes": 5132,
+      "sha256": "e5a6b55041c832bddc02f92b7a4df92a2c4317f9b165674b48f63b77c52ead23",
+      "original": "artifacts/released/graph.py"
+    },
+    {
+      "relative_path": "src/pieef/models/physics.py",
+      "path": "artifacts/released/physics.py",
+      "bytes": 11585,
+      "sha256": "7a26993fad91f4485de7a631a7c08c0ca002e93efcc1a208c089564e31261144",
+      "original": "artifacts/released/physics.py"
+    },
+    {
+      "relative_path": "src/pieef/models/pretrain.py",
+      "path": "artifacts/released/pretrain.py",
+      "bytes": 9901,
+      "sha256": "883d3c2bd87a2e29baea1ad99d873f0928f6358fe986c197b77bcfd79b589ecf",
+      "original": "artifacts/released/pretrain.py"
+    },
+    {
+      "relative_path": "src/pieef/monolith_raw.py",
+      "path": "artifacts/released/monolith_raw.py",
+      "bytes": 76843,
+      "sha256": "a47ed0d76662c507334313e7428fd0a777fd45c3ccd9609b757ee3fd234a1758",
+      "original": "artifacts/released/monolith_raw.py"
+    },
+    {
+      "relative_path": "src/pieef/power_training_stats.py",
+      "path": "artifacts/released/power_training_stats.py",
+      "bytes": 6145,
+      "sha256": "31ea99de82c5df30cbc332cc1d6371a1d1dc98262b061958e0832cd6ef1f6867",
+      "original": "artifacts/released/power_training_stats.py"
+    },
+    {
+      "relative_path": "src/pieef/profiling.py",
+      "path": "artifacts/released/profiling.py",
+      "bytes": 3091,
+      "sha256": "6ff794c083a5930f57f73dd4db770f6dff8b79ea31a69b095ff6cdb292c99405",
+      "original": "artifacts/released/profiling.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_analysis_queue.py",
+      "path": "artifacts/released/revision_analysis_queue.py",
+      "bytes": 4478,
+      "sha256": "1b1fa05366d25d7ad5654e4fdaa8aab24d3ebe95c2ce08219ee7e2ee87063942",
+      "original": "artifacts/released/revision_analysis_queue.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_analysis_summary.py",
+      "path": "artifacts/released/revision_analysis_summary.py",
+      "bytes": 9831,
+      "sha256": "8bda2b6394172c36ace7d1c2a726ea5a37e3b0ad15e8e702246eda7e923bcc9c",
+      "original": "artifacts/released/revision_analysis_summary.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_cpu_postprocessing.py",
+      "path": "artifacts/released/revision_cpu_postprocessing.py",
+      "bytes": 33433,
+      "sha256": "ce70fb8172fea9ea48e575412ab9582cadeed64500518f4cf426f01c5945d5e6",
+      "original": "artifacts/released/revision_cpu_postprocessing.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_data.py",
+      "path": "artifacts/released/revision_data.py",
+      "bytes": 18498,
+      "sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+      "original": "artifacts/released/revision_data.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_dispatch.py",
+      "path": "artifacts/released/revision_dispatch.py",
+      "bytes": 10806,
+      "sha256": "b0907e886dfa265c15db6c597cb8f4635cd5377c569585f0e44a57be237a79e3",
+      "original": "artifacts/released/revision_dispatch.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_fault_jobs.py",
+      "path": "artifacts/released/revision_fault_jobs.py",
+      "bytes": 25174,
+      "sha256": "bd888f425a99256783bad9d548ef756383895add9c2acfcb9c106cfac1372813",
+      "original": "artifacts/released/revision_fault_jobs.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_paths.py",
+      "path": "artifacts/released/revision_paths.py",
+      "bytes": 2346,
+      "sha256": "49a46d71e8b01860785014d71ad38ddc0503511bbb3b3e9f91a99a7962fe9ee4",
+      "original": "artifacts/released/revision_paths.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_plan.py",
+      "path": "artifacts/released/revision_plan.py",
+      "bytes": 9296,
+      "sha256": "617d31545f8fe5dcbf6c0b1c8c4cdaa13346fbcb73f58e7d1b313a511a4678b1",
+      "original": "artifacts/released/revision_plan.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_statistics.py",
+      "path": "artifacts/released/revision_statistics.py",
+      "bytes": 14658,
+      "sha256": "fe9239254077af59680d8c9bf506df62544859d07fdc8c8e1d4bb3f1e3e2f30e",
+      "original": "artifacts/released/revision_statistics.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_summary.py",
+      "path": "artifacts/released/revision_summary.py",
+      "bytes": 15508,
+      "sha256": "961726afd2faf0207503207f87aa656d0eff407158fd96398a027f758b731a00",
+      "original": "artifacts/released/revision_summary.py"
+    },
+    {
+      "relative_path": "src/pieef/site_alignment.py",
+      "path": "artifacts/released/site_alignment.py",
+      "bytes": 3860,
+      "sha256": "ec66c8ba4760f83cf9459833331a0c446158acc823fd5c7a355dd770eb252953",
+      "original": "artifacts/released/site_alignment.py"
+    },
+    {
+      "relative_path": "src/pieef/train_main.py",
+      "path": "artifacts/released/train_main.py",
+      "bytes": 22474,
+      "sha256": "1d14aa0dae80978c8b27efe800bf44d0adbbad9b4c3a38a035e579583f2a360b",
+      "original": "artifacts/released/train_main.py"
+    },
+    {
+      "relative_path": "src/pieef/training_timing.py",
+      "path": "artifacts/released/training_timing.py",
+      "bytes": 4007,
+      "sha256": "b118893ed0e497b10e3708c4df20908ce2b75ca637804a75f55cef00329ea86a",
+      "original": "artifacts/released/training_timing.py"
+    },
+    {
+      "relative_path": "scripts/evaluate_revision.py",
+      "path": "artifacts/released/evaluate_revision.py",
+      "bytes": 25476,
+      "sha256": "bd1a32f6ecee55fd823139b2463dddc3f08463383d6b07e98a2052e49dc7500a",
+      "original": "artifacts/released/evaluate_revision.py"
+    }
+  ],
+  "original_source_manifest": {
+    "path": "artifacts/released/source_manifest.json",
+    "bytes": 3885,
+    "sha256": "69ad299e9b651c396d1a1bbf88306108dca9a65e5a49382c498d9c626e5b385f"
+  },
+  "original_commit": "4844f3e1aae8513f358c6ad9af6f8cf98b536b93",
+  "original_model_files_verified": [
+    {
+      "path": "src/pieef/artifacts.py",
+      "sha256": "4b601a2404d7a98507264d0c568bc874c8cf3626867052f50ba1a302abd2e936",
+      "bytes": 2492
+    },
+    {
+      "path": "src/pieef/model_factory.py",
+      "sha256": "8cdab98ea89f6ce60c90500380876e6cba78b3f32afd7a416bcd066dae010c73",
+      "bytes": 3053
+    },
+    {
+      "path": "src/pieef/models/e2e.py",
+      "sha256": "859fb6191b71eaf64e421364ccb65493d24583592420de012de6617a15f759a9",
+      "bytes": 15306
+    },
+    {
+      "path": "src/pieef/models/forecast.py",
+      "sha256": "ea0b019d172cbc01f022fa49adbccb03f79a3610d6fb03ee1f327a8d5b4061fb",
+      "bytes": 2259
+    },
+    {
+      "path": "src/pieef/models/pretrain.py",
+      "sha256": "883d3c2bd87a2e29baea1ad99d873f0928f6358fe986c197b77bcfd79b589ecf",
+      "bytes": 9901
+    },
+    {
+      "path": "src/pieef/power_training_stats.py",
+      "sha256": "31ea99de82c5df30cbc332cc1d6371a1d1dc98262b061958e0832cd6ef1f6867",
+      "bytes": 6145
+    },
+    {
+      "path": "src/pieef/revision_data.py",
+      "sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+      "bytes": 18498
+    }
+  ],
+  "excluded_original_evaluator": {
+    "path": "artifacts/released/evaluate_revision.py",
+    "bytes": 25391,
+    "sha256": "463c2d1c68cc444cd25c124977f0f6388a71b760cde2ae2cc748d306671ed3a4"
+  },
+  "evaluation_source": "VF frozen evaluator; byte-identical",
+  "reason": "Original V1 evaluator differs only in passing F6 kwargs. It is not executed. Runner compatibility adapter discards hist_power/hist_power_mask for original V1 forward_stage3_forecast (F6 absent), leaving the exact VF fault/data/evaluation sources unchanged.",
+  "adapter": "def forward_compat(features,v,physics,target,hist_power=None,hist_power_mask=None): return original_forward(features,v,physics,target)"
+}

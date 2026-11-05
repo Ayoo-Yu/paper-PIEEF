@@ -1,0 +1,17 @@
+Variant,NRMSE: seeds favouring variant,NRMSE t-test [equation: figures/table_equations/table_s6_p1_r1_c3_e1.wmf],NMAE: seeds favouring variant,NMAE t-test [equation: figures/table_equations/table_s6_p1_r1_c5_e1.wmf]
+Without physical prior (Eq. (2)),3/5,0.98,3/5,0.72
+Without boundary penalty,3/5,0.98,3/5,0.77
+Without temporal-difference penalty,1/5,0.98,4/5,0.68
+Joint power–wind masking in pre-training,1/5,0.68,1/5,0.77
+Without wind-speed calibration,3/5,0.98,3/5,0.98
+Manufacturer power curve instead of learned spline,2/5,0.98,3/5,0.76
+Without cut-out boundary,1/5,0.98,4/5,0.97
+Without density correction,5/5,0.71,5/5,0.68
+Without spatial aggregation,1/5,0.78,3/5,0.78
+Without direction bias,4/5,0.71,5/5,0.68
+Without terrain bias,2/5,0.98,2/5,0.97
+Without density correction and terrain bias,1/5,0.97,3/5,0.98
+Without operating-point weighting,3/5,0.87,3/5,0.71
+Learned-curve derivative as operating-point weight,4/5,0.77,4/5,0.68
+Sequential training (encoder and calibration frozen in Stage 3),1/5,0.98,4/5,0.71
+Without pre-training (Stage 3 only),1/5,0.71,3/5,0.87

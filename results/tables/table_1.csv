@@ -1,0 +1,12 @@
+Study,Approach,Physical guidance,Missing inputs,Representation reconstruction,Forecast-driven calibration,Spatial dependencies
+Tawn et al. [14],"Multiple imputation, retraining",◐,●,○,○,●
+Wen et al. [15],Joint imputation–forecasting,◐,●,○,○,●
+Stratigakos et al. [16],Robust feature deletion,○,●,○,○,○
+Wen [17],Adaptive quantile regression,○,●,○,○,○
+Wang et al. [20],Power-curve-constrained Transformer,●,◐,○,○,○
+Phipps et al. [22],Ensemble post-processing,◐,○,○,○,○
+Fu et al. [23],Spatiotemporal attention,○,○,○,○,●
+Raissi et al. [24],PDE-residual learning,●,○,○,—,—
+Read et al. [25],Process-guided pre-training,●,○,○,—,—
+Vincent et al. [26],Denoising autoencoder,○,●,●,—,—
+PI-EEF (this study),Physics-guided end-to-end learning,●,●,●,●,●

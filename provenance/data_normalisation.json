@@ -1,0 +1,8 @@
+{
+  "policy": "Frozen training statistics unchanged. Layouts translated to relative minima. Wind Farm B nwp_geopotential unchanged.",
+  "sites": [
+    "wind_farm_A",
+    "kelmarsh",
+    "wind_farm_B"
+  ]
+}

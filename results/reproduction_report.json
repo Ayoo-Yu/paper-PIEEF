@@ -1,0 +1,1839 @@
+{
+  "training": false,
+  "network": false,
+  "items": [
+    {
+      "item": "Table 1",
+      "id": "table_1",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_1.csv",
+          "bytes": 860,
+          "sha256": "87ce451b72d56542017639885d3652e82e7f8ada4261ab6735256c31a1c7221b",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 12,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table 2",
+      "id": "table_2",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_2.csv",
+          "bytes": 634,
+          "sha256": "e4a48affaa44adf5cb28b3daf93c1e67f650c78f499ab0d1e22537d2baecf520",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 5,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table 3",
+      "id": "table_3",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_3.csv",
+          "bytes": 1279,
+          "sha256": "121c516514805acd446e1a6c827f2718a2129add5ebea2b564510a001d627c24",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 19,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table 4",
+      "id": "table_4",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_4.csv",
+          "bytes": 214,
+          "sha256": "7600a41976b6b341469699328a6c71c389e34bca25c41cf9c6dd88b5236d33d4",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 4,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table 5",
+      "id": "table_5",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_5.csv",
+          "bytes": 789,
+          "sha256": "bfc66c30efc0b86a68dd81f13bccb5bd08b41b6d5c2c88f3067029b336b99ca3",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 16,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table 6",
+      "id": "table_6",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_6.csv",
+          "bytes": 671,
+          "sha256": "cd753e6ece42153ed0d3d95fb2d0ddffa230e7ba22f1ed53f9bb04417a80745c",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 16,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table 7",
+      "id": "table_7",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_7.csv",
+          "bytes": 298,
+          "sha256": "7009ca15b27135e17750685bdce8094242c39c9a4bed8d78884d7d97556ad5a4",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 6,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table 8",
+      "id": "table_8",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_8.csv",
+          "bytes": 446,
+          "sha256": "3d4df06926c6b64c70fb01b2b7f8829e213753169cdf20b68328c65ff97629d5",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 8,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S1",
+      "id": "table_s1",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s1.csv",
+          "bytes": 1461,
+          "sha256": "1dc4e5f92c0dbd2c3eef00fdeed801f59517647dcf9987c483bbe6308b32cf1e",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 15,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S2",
+      "id": "table_s2",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s2.csv",
+          "bytes": 2097,
+          "sha256": "ff7d203e9ced47b3eb948e6818c9edcfa46a9486fe80469026aa0d0e8b517e98",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 24,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S3",
+      "id": "table_s3",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s3.csv",
+          "bytes": 2184,
+          "sha256": "7283fc523afa38e959b30641de4d3659961fae0e0547b982f78757123ab58e2f",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 36,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S4",
+      "id": "table_s4",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s4.csv",
+          "bytes": 1884,
+          "sha256": "70444737536fe483a148a6d2bef6bbb17de53919ba4662e763bf5c446ea735bd",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 34,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S5",
+      "id": "table_s5",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s5.csv",
+          "bytes": 676,
+          "sha256": "42998bf5c55e6738d2961868f82bcd99d40d8386606f7b45e9030ffab485c76b",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 9,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S6",
+      "id": "table_s6",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s6.csv",
+          "bytes": 1076,
+          "sha256": "3bc61414aa695a7ca32bfff5784cb36103c92288d1a39cf5ce34ff8ef3869677",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 17,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S7",
+      "id": "table_s7",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s7.csv",
+          "bytes": 2501,
+          "sha256": "96f21555044792a7de3b83e1fc138df26fbafc38183f056356af44131f5e9210",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 52,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S8",
+      "id": "table_s8",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s8.csv",
+          "bytes": 307,
+          "sha256": "3d22118c7d5d58afcc00052e9686a144b1c74935d0099b59ac94a0f0ca3ff9c3",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 6,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S9",
+      "id": "table_s9",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s9.csv",
+          "bytes": 144,
+          "sha256": "8998020642626ec207e25152abfe4a8dd19a904c9d3e2ec34b536bbd265d3ef0",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 3,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S10",
+      "id": "table_s10",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s10.csv",
+          "bytes": 204,
+          "sha256": "fe91badc2ca144a00648c550ab3cd494f7a2999ae661d528700085d5c4b8b07c",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 4,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S11",
+      "id": "table_s11",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s11.csv",
+          "bytes": 1509,
+          "sha256": "714c7aa4ba704732c334cecfefe1cee190cb42f00b5e00188cc1ca361633e7d0",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 13,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S12",
+      "id": "table_s12",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s12.csv",
+          "bytes": 1618,
+          "sha256": "981afb0cccbd27e7915d4d56fecf7bef219ec3dd8c5018767593f051337ab74c",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 17,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S13",
+      "id": "table_s13",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s13.csv",
+          "bytes": 1066,
+          "sha256": "77de7b97ad69c9131fec7d14cf6c2e4576a405245464b4175078110736c89726",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 16,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S14",
+      "id": "table_s14",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s14.csv",
+          "bytes": 517,
+          "sha256": "e5125aab02b424a399565c707be89d47d6993c9763b596918e4300a479ed935a",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 7,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S15",
+      "id": "table_s15",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s15.csv",
+          "bytes": 2603,
+          "sha256": "710e7ac3e31f81e33aa45a2516224670ebac33106c18800443c5e09801cf94e4",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 36,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S16",
+      "id": "table_s16",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s16.csv",
+          "bytes": 1909,
+          "sha256": "638ada2c7d52ffd1563945d5b38504d93da70afc75439d542f0ee5da558897ac",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 37,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S17",
+      "id": "table_s17",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s17.csv",
+          "bytes": 754,
+          "sha256": "eb1855a9ff1504b5177abf0ef4159aed9983b825aa99daeb48d834a47e1ecd1c",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 7,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S18",
+      "id": "table_s18",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s18.csv",
+          "bytes": 73,
+          "sha256": "0d09bbd5a5056147e9c7d6b03c7d5a53072a062a139137506632f0d36a65656b",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 4,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S19",
+      "id": "table_s19",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s19.csv",
+          "bytes": 1404,
+          "sha256": "dd1b30a3da3157e942a6bd614e15667d223985b0f4df5edca87a87290c9a4c89",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 16,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S20",
+      "id": "table_s20",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s20.csv",
+          "bytes": 1238,
+          "sha256": "7fc445bdc2a85ba4292f2e4387bcd947e221e742633e2954f39a8db72d7dde86",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 12,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S21",
+      "id": "table_s21",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s21.csv",
+          "bytes": 1536,
+          "sha256": "a2f25ffc7fda8fcfa1fb5391c00f2cee803217a4f674fc70fcf4e67d597b60d1",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 16,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S22",
+      "id": "table_s22",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s22.csv",
+          "bytes": 532,
+          "sha256": "5f88619cc561fbb2d284f96acc54b8ed492839f2ee3a030e8210811b395d95b4",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 14,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S23",
+      "id": "table_s23",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s23.csv",
+          "bytes": 2273,
+          "sha256": "44a6e81094b253c1b64e0c6f9bac5164485a4c599e3e093fc40e7370d6bdd18b",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 27,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S24",
+      "id": "table_s24",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s24.csv",
+          "bytes": 1113,
+          "sha256": "0c1481dac38adec404226931f1ff27b5a4c493b9a4fb68f782d0d50a0edc8cf9",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 12,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S25",
+      "id": "table_s25",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s25.csv",
+          "bytes": 168,
+          "sha256": "18cdd00e2095399bf23c84437db24faf89959ce0cc031c36c7dec8400e720b28",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 3,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S26",
+      "id": "table_s26",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s26.csv",
+          "bytes": 1196,
+          "sha256": "67d8439f2245349ab4387270af94a79b1c3bc8a22d4c9ed207c97232aecd637b",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 17,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S27",
+      "id": "table_s27",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s27.csv",
+          "bytes": 2383,
+          "sha256": "75fb4fb26661d5ede9574c70b95bdf4e35f97e3cec35e07af9fe544a4d2311f6",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 21,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Table S28",
+      "id": "table_s28",
+      "operation": "export_authoritative_table_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/table_cells.json",
+          "sha256": "29139a89861e7ceaf1ac0a00fb43a3a9c8f51cae18d4095b2dd6a418733bccc9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/tables/table_s28.csv",
+          "bytes": 994,
+          "sha256": "5bb9d2c34939343ec5faa1b017a9cd0d65f998b2c12a81e7d099ee091e4dd411",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 15,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Fig. 1",
+      "id": "fig_1",
+      "operation": "export_editable_schematic_svg",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "figures/source/fig_1.svg",
+          "sha256": "5ca944a133a6289c9baab995da4ab58ca8289f3da17bccccacab2de102401ecd"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_1.svg",
+          "bytes": 48428,
+          "sha256": "5ca944a133a6289c9baab995da4ab58ca8289f3da17bccccacab2de102401ecd",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "source_svg_byte_equality": true,
+        "rendered_emf": false
+      }
+    },
+    {
+      "item": "Fig. 2",
+      "id": "fig_2",
+      "operation": "export_editable_schematic_svg",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "figures/source/fig_2.svg",
+          "sha256": "4cd7d09c767e3478961272efda8d41bf915b16760a92bb21ac6f2cf73c5dff0c"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_2.svg",
+          "bytes": 52601,
+          "sha256": "4cd7d09c767e3478961272efda8d41bf915b16760a92bb21ac6f2cf73c5dff0c",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "source_svg_byte_equality": true,
+        "rendered_emf": false
+      }
+    },
+    {
+      "item": "Fig. 3",
+      "id": "fig_3",
+      "operation": "export_editable_schematic_svg",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "figures/source/fig_3.svg",
+          "sha256": "0938fae55c16c03198e0987e2513b6f3564fd52764c46eccc5558c39db37ee22"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_3.svg",
+          "bytes": 55662,
+          "sha256": "0938fae55c16c03198e0987e2513b6f3564fd52764c46eccc5558c39db37ee22",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "source_svg_byte_equality": true,
+        "rendered_emf": false
+      }
+    },
+    {
+      "item": "Fig. 4",
+      "id": "fig_4",
+      "operation": "export_editable_schematic_svg",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "figures/source/fig_4.svg",
+          "sha256": "f821315d5f44f6a9bcf7dd56763a6c7eed5f9dbd3eb4c1a64f3b8ea170bdf2ae"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_4.svg",
+          "bytes": 1268952,
+          "sha256": "f821315d5f44f6a9bcf7dd56763a6c7eed5f9dbd3eb4c1a64f3b8ea170bdf2ae",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "source_svg_byte_equality": true,
+        "rendered_emf": false
+      }
+    },
+    {
+      "item": "Fig. 5",
+      "id": "fig_5",
+      "operation": "export_editable_schematic_svg",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "figures/source/fig_5.svg",
+          "sha256": "8a5752ce47ba8650cc38b3102edd71152d183c86e0ddfa09682fb66a13c173e4"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_5.svg",
+          "bytes": 35721,
+          "sha256": "8a5752ce47ba8650cc38b3102edd71152d183c86e0ddfa09682fb66a13c173e4",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "source_svg_byte_equality": true,
+        "rendered_emf": false
+      }
+    },
+    {
+      "item": "Fig. 6",
+      "id": "fig_6",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/fig06_plotted_values.csv",
+          "sha256": "8dec2ba0f8f5c92770bf2a14e5c85041c1d2bbd7f0fc7bca541f18404d808f4e"
+        },
+        {
+          "path": "results/paper/source/fig06_power_binned_counts.csv",
+          "sha256": "e82c35c4de6bc387fc0f0d27532c5d8be2ec1b1e50824fde3fc37d67987aee8a"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_6.png",
+          "bytes": 379538,
+          "sha256": "fde52190b89c2715edcc71a0a57b7a6078003801a14788407e7c06639b241640",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_6.svg",
+          "bytes": 1467448,
+          "sha256": "fbe073c0bc3f99cf29407d1c8ed2a0d2ea3ed717764d5a0292588fe0deccebb7",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_6.pdf",
+          "bytes": 164736,
+          "sha256": "3bfe34ef2af917dd148428065e5cf7f1cbe49787aef5448f5092ae3c166a6a14",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. 7",
+      "id": "fig_7",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_7.png",
+          "bytes": 238328,
+          "sha256": "bc9b680dd47afaad9105bd0e83d12d9fb07d94beb844dfd0a6e4145c57d5d8e8",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_7.svg",
+          "bytes": 9351,
+          "sha256": "1d3fdb31889c525f4fd826a4edf0ef3cf1968521dca4c6175e41c8da2e90249d",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_7.pdf",
+          "bytes": 37290,
+          "sha256": "a7638f656d0617a7434537d31087b352f5343abf033775c2a5b7d1b8fea18cd9",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. 8",
+      "id": "fig_8",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/fig7_benchmark_heatmap_data.csv",
+          "sha256": "4fe2904204d016f26a53cbd457d46256b78c89749a2835be368138012ed2cf39"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_8.png",
+          "bytes": 338718,
+          "sha256": "b4be507eb5928d1ae2ff1e927e52c4c750205eb4d5eea89b24f0cb77b741e000",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_8.svg",
+          "bytes": 76986,
+          "sha256": "1a3c3568ad0b8a3e1157dcc28ce12e213234cd40b74f11f60c12ad2097f4c8a0",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_8.pdf",
+          "bytes": 69543,
+          "sha256": "d9611e40ecef92fc9c3ddaa8d89e05acefdc05fea29c66d858ed9a28aafbe06d",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. 9",
+      "id": "fig_9",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/fig8_robustness_components_data.csv",
+          "sha256": "caf3c30aa93e36c54014cbaff0ca642373edcfcc13b814d070354499f2fa9a15"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_9.png",
+          "bytes": 437622,
+          "sha256": "a52bd7012af00f9af7848df572b39221ec84287835705ec279562e7829c805af",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_9.svg",
+          "bytes": 97956,
+          "sha256": "52aa51c19875d000c4c963b1cc7e3d667ddc7335c80417c1a5ae885ff5e2b7c1",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_9.pdf",
+          "bytes": 38874,
+          "sha256": "bdacabfad4c3a9799f02bb2ed5b8686267e6f224feb51dd22890df734e2db72d",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. 10",
+      "id": "fig_10",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/fig09_physics_boxplots_plotted_values.csv",
+          "sha256": "ad699feb3d665f081200b3666e9da29b3c66544083316993410044a3005d6396"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_10.png",
+          "bytes": 367203,
+          "sha256": "e897628dd392bfea9b0436ab2835aa6628dcfd06dc1f3b681f2cc405ce0ad9a9",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_10.svg",
+          "bytes": 65950,
+          "sha256": "12ab7c9ff2a3086d39e38a116c9d44bf0c84237efb26b5d8c2c9f76a6ec1229f",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_10.pdf",
+          "bytes": 36923,
+          "sha256": "5e38da5e2ecfef2fcdf8120e0ac0660bae16f8c762227c2891f35ad9c14c549d",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. 11",
+      "id": "fig_11",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/fig10_gradient_densities_plotted_values.csv",
+          "sha256": "ff4d341135164c704d36e568f152ef33fddc4dcfa12706f462604ed0c531a0d9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_11.png",
+          "bytes": 172348,
+          "sha256": "2b0dc1e2c01e5f3b911504e3a6315b70a60f6b133a4dc1c487a52c6253560100",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_11.svg",
+          "bytes": 30254,
+          "sha256": "f09fff845784abe380456d3fe47944ef46d6b2d9d4a287fc84526cb98b3d1c26",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_11.pdf",
+          "bytes": 29639,
+          "sha256": "bf17fde7dfade29cb00cd638c92607c67d4a42d795d0a61dca58fb841d05aef2",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. 12",
+      "id": "fig_12",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/faults_values.csv",
+          "sha256": "db0764296695f2c8ef4d69278cce210b660b407e7a7d6095e35faf55d3cfccf1"
+        },
+        {
+          "path": "results/paper/source/reference_values.csv",
+          "sha256": "e05e00e5cc1f17fa8e1ae274f7b2407f8092f1b274aadc4dbfdf7a89177b9953"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_12.png",
+          "bytes": 314060,
+          "sha256": "69f7bfd6e0adfb8bb591eef9ba5a190f219e6b439f5b98d500f9dfb342ca14f7",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_12.svg",
+          "bytes": 35128,
+          "sha256": "621a81a0d24449390d48985c84d703fdbce9c7dab8ce1135722217c0d2380964",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_12.pdf",
+          "bytes": 34232,
+          "sha256": "dc649675d266e4746350aa47eb8f4b31dcad72c58942bfbe1d11afbf75b5fc14",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. 13",
+      "id": "fig_13",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/Fig12_events_black_frame_plotted_values.csv",
+          "sha256": "51b65b49c097eadbcd15fa527129e16fdcddf44c18bb8f8364c2ec1fde1c53d5"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_13.png",
+          "bytes": 141152,
+          "sha256": "002ac1b4ee03b4bc0660bce18e7fe7eb2cd9b5692ab91942363e60f7421df1b0",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_13.svg",
+          "bytes": 18965,
+          "sha256": "10a9d2baaa35fabb6c6c445426ef1da7b05b144d7c73211eeb8443d1e021a899",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_13.pdf",
+          "bytes": 31841,
+          "sha256": "e0d37a03fa3340f150e664f18719e2c67188c412e810c4f03d7a4f293058a0af",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. 14",
+      "id": "fig_14",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/fig9_physical_curves_v3_data.csv",
+          "sha256": "49661d28b1cc05191a7e46c798ff62343a24a264a4a9ddbb6d26c2b7f5000201"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_14.png",
+          "bytes": 561922,
+          "sha256": "03193879aaaf9e98d7a79ad13b57ff35c34fe18e85b1ba9b137537a9b7c1a519",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_14.svg",
+          "bytes": 66488,
+          "sha256": "3c86a8151d2a2dfb05534d5109aacd4c8ab816d2d7b26d9ffdb6e30946978855",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_14.pdf",
+          "bytes": 42379,
+          "sha256": "04fb5df62f1333be0e7411d2e9b5a472988564709630a1f7e4f10b5375c15064",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. 15",
+      "id": "fig_15",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/fig15_figS1_node_data.csv",
+          "sha256": "d3c8e108ff9dfe478ca9ada7c1aca1a371c14854737c7a040cd679b8cf969218"
+        },
+        {
+          "path": "results/paper/source/mean_attention_matrices.npz",
+          "sha256": "96cccbb89630c1c478f5dd79caa669504a7b53c5e57c0937c968e623c6bf1a2d"
+        },
+        {
+          "path": "results/paper/source/fig15_three_conditions_data.csv",
+          "sha256": "a4589d787f478107272b0f627c654487ad945e3305f488163b226b2240303bac"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_15.png",
+          "bytes": 589683,
+          "sha256": "af92b2a9539b0c5f100bc0e7af4e48cc0cc823a4c24147894f5a14a3b6fa81aa",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_15.svg",
+          "bytes": 50113,
+          "sha256": "f8e2e40112da91ce5184bd7c552c7d7d0eab3f259170ecb91ff5b5a7f879ab25",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_15.pdf",
+          "bytes": 43956,
+          "sha256": "458cac2225b72d2f068bc3bb946659e7395b002661eda22322f2e6af8f146e8c",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. S1",
+      "id": "fig_s1",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/fig15_figS1_node_data.csv",
+          "sha256": "d3c8e108ff9dfe478ca9ada7c1aca1a371c14854737c7a040cd679b8cf969218"
+        },
+        {
+          "path": "results/paper/source/mean_attention_matrices.npz",
+          "sha256": "96cccbb89630c1c478f5dd79caa669504a7b53c5e57c0937c968e623c6bf1a2d"
+        },
+        {
+          "path": "results/paper/source/fig15_three_conditions_data.csv",
+          "sha256": "a4589d787f478107272b0f627c654487ad945e3305f488163b226b2240303bac"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_s1.png",
+          "bytes": 377021,
+          "sha256": "6c0ea1f2c6e5700c2da8b432ac6e13450371670f0851176cbcc9e00346bf6975",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_s1.svg",
+          "bytes": 34584,
+          "sha256": "dce366fc947f293ddefb19324804aba945bc6120ea1d6ef9b67ee56b0336bb61",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_s1.pdf",
+          "bytes": 39028,
+          "sha256": "7718ff63b4db01cbec576e21dbe18c25af5844028fb6ddaaac251ab157ac9741",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. S2",
+      "id": "fig_s2",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/figS_ti_power_curves_data.csv",
+          "sha256": "6e2620f77859dc54a065484f914bcd3fe25d4a54d3d71c829f29dade8e04198d"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_s2.png",
+          "bytes": 349046,
+          "sha256": "b7c8a1e004a274f128df330f83189c6b75c0d8927c3cf0f834a47fcb6362afd0",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_s2.svg",
+          "bytes": 25715,
+          "sha256": "72b17183d3ecf02527a751e88a17a26045f6c6d13f371b407100033dbf89780c",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_s2.pdf",
+          "bytes": 34692,
+          "sha256": "84b3766785cd15744a03e9e108e3a5313d5fefe0b425284f6f2e67b58cc0d97a",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. S3",
+      "id": "fig_s3",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/figS_ti_errors_data.csv",
+          "sha256": "2b6fd73296adbf33e84d9bbae20e193745cb1b9ea60885d0249af00d7b5979db"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_s3.png",
+          "bytes": 915648,
+          "sha256": "77db346378ccd891ee32e4552d579a1d5ef1569156e9b3cf78b5962c8eb271aa",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_s3.svg",
+          "bytes": 80598,
+          "sha256": "9cfb3dd903d42484726940eebe0e0ed492cd75f363c3d092ffd49d705ab32838",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_s3.pdf",
+          "bytes": 48993,
+          "sha256": "cb75224126a6f24877d9fa51e2dec2ab626ea0ec27018f0140ba58b66f970d2f",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. S4",
+      "id": "fig_s4",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/figS_ti_attention_data.csv",
+          "sha256": "fe537d610c5f5b68bd8f119ef15eabd6cf990eae15a0e0114b8e88f804f12be2"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_s4.png",
+          "bytes": 602359,
+          "sha256": "98f3b0e81d3d526f134c2853ecacda648e2a219d3353655cb645838309fda5c4",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_s4.svg",
+          "bytes": 57080,
+          "sha256": "880c833156db9d2c190576bc3faeb5adb38560dc2614e1376f2b138efff584bb",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_s4.pdf",
+          "bytes": 45053,
+          "sha256": "a49c96021bed37a75f017ed5b823d3e65b3ec3b4c0bd4612a09e7cac30f212d4",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. S5",
+      "id": "fig_s5",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/figS_yaw_power_data.csv",
+          "sha256": "bae229b6a3b00eb1853a25f822daa6188b08c75956e98ea4a9cbc64594266796"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_s5.png",
+          "bytes": 435419,
+          "sha256": "ca1ccb445d500d2443b5bbb5a2235ebed86294d1f9d7b8b0a3652ecd45b1867d",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_s5.svg",
+          "bytes": 70053,
+          "sha256": "a8db0fae09c97a5b7f7376527697e5e60632bcc348f8254c49855f5e061b538a",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_s5.pdf",
+          "bytes": 37923,
+          "sha256": "a246991ed49ab7f50520d2ed86c6d91b433774b80dfe46d0c41777a4bb9463b6",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. S6",
+      "id": "fig_s6",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/figS_cfd_lookup_data.csv",
+          "sha256": "3573f428160db088f09b47b6aed1c405a86debf92d53ff75188c3daf9b789dab"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_s6.png",
+          "bytes": 702039,
+          "sha256": "44c6575ab530c7d5467050592435b5c900afe2c74eb61c0963ef19fd631a5157",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_s6.svg",
+          "bytes": 169911,
+          "sha256": "5cf0aa26b324015f6402679ee269e2985f36fa12d8b33b4fbcb2ae96e710361a",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_s6.pdf",
+          "bytes": 122886,
+          "sha256": "64df642cd7ab2644fd4c97b643b2e18edba94a9e7c0f048f9bf1b89331b9d12a",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Fig. S7",
+      "id": "fig_s7",
+      "operation": "redraw_published_source_values",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/paper/source/figS_cfd_checks_data.csv",
+          "sha256": "004b158d11e16d01956981cb33b0633a10f02729d509b2293eb04af9ff467e55"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "figures/reproduced/fig_s7.png",
+          "bytes": 355321,
+          "sha256": "2aba5c43e7a4726be9918c82f1ee479c33253e554d6ea0f58135c918d97c7382",
+          "unchanged_from_previous_export": true
+        },
+        {
+          "path": "figures/reproduced/fig_s7.svg",
+          "bytes": 76925,
+          "sha256": "1082f389e0cd8c25c87e4fe05565e20f4677fece3b1f5a8f4d62a29badba81c7",
+          "unchanged_from_previous_export": false
+        },
+        {
+          "path": "figures/reproduced/fig_s7.pdf",
+          "bytes": 38322,
+          "sha256": "1efb4c7f9da70ae9a25f99795afcfcf9b67ffb322577e7737e3ab00c1d575b89",
+          "unchanged_from_previous_export": false
+        }
+      ],
+      "details": {
+        "data_source": "published frozen source values",
+        "layout": "portable redraw; paper export retained separately"
+      }
+    },
+    {
+      "item": "Data S1 / README",
+      "id": "data_s1_readme",
+      "operation": "export_stored_workbook_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/Supplementary_Data_S1.xlsx",
+          "sha256": "3746df59ddbedc558bc4f03cc7c4d82942e216ade0cfa70704248383deae5c27"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/supplementary_data/README.csv",
+          "bytes": 3949,
+          "sha256": "476d1dc15910d5e04223d676d444ffafe0e91c7d1a054cb6f8c51134231289fb",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 10,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Data S1 / DM_full",
+      "id": "data_s1_dm_full",
+      "operation": "export_stored_workbook_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/Supplementary_Data_S1.xlsx",
+          "sha256": "3746df59ddbedc558bc4f03cc7c4d82942e216ade0cfa70704248383deae5c27"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/supplementary_data/DM_full.csv",
+          "bytes": 22550,
+          "sha256": "6469742ac09a1d057661f16e4f3f7d995d7cafe706684f78c66acb28766f5c39",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 141,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Data S1 / Faults_39",
+      "id": "data_s1_faults_39",
+      "operation": "export_stored_workbook_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/Supplementary_Data_S1.xlsx",
+          "sha256": "3746df59ddbedc558bc4f03cc7c4d82942e216ade0cfa70704248383deae5c27"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/supplementary_data/Faults_39.csv",
+          "bytes": 5125,
+          "sha256": "b8898a607551507cfb87d55d631fb406e0c6aca1bb4107a72bd8199a55d0b03b",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 81,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Data S1 / Extension_tests",
+      "id": "data_s1_extension_tests",
+      "operation": "export_stored_workbook_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/Supplementary_Data_S1.xlsx",
+          "sha256": "3746df59ddbedc558bc4f03cc7c4d82942e216ade0cfa70704248383deae5c27"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/supplementary_data/Extension_tests.csv",
+          "bytes": 1592,
+          "sha256": "92b556b11ed3e3ac6733d535a03b48e4f365810b841f74deadc5df896a759939",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 31,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Data S1 / TI_errors_full",
+      "id": "data_s1_ti_errors_full",
+      "operation": "export_stored_workbook_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/Supplementary_Data_S1.xlsx",
+          "sha256": "3746df59ddbedc558bc4f03cc7c4d82942e216ade0cfa70704248383deae5c27"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/supplementary_data/TI_errors_full.csv",
+          "bytes": 16098,
+          "sha256": "19361d8cda9742669bfe9eb1dec2a752356cae48e45e85a679c86aa8ce7edda9",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 92,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Data S1 / TI_attention_full",
+      "id": "data_s1_ti_attention_full",
+      "operation": "export_stored_workbook_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/Supplementary_Data_S1.xlsx",
+          "sha256": "3746df59ddbedc558bc4f03cc7c4d82942e216ade0cfa70704248383deae5c27"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/supplementary_data/TI_attention_full.csv",
+          "bytes": 10365,
+          "sha256": "ad770dda9e126f46c7efed30b17097d3dc027af3d5b98354c09877e61d3bc811",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 99,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Data S1 / Yaw_full",
+      "id": "data_s1_yaw_full",
+      "operation": "export_stored_workbook_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/Supplementary_Data_S1.xlsx",
+          "sha256": "3746df59ddbedc558bc4f03cc7c4d82942e216ade0cfa70704248383deae5c27"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/supplementary_data/Yaw_full.csv",
+          "bytes": 3256,
+          "sha256": "79d0f0ec6a7210c1729c93cd91deebab864c21d5504145ce43d4967dfde372c1",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 31,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Data S1 / Baseline_configurations",
+      "id": "data_s1_baseline_configurations",
+      "operation": "export_stored_workbook_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/Supplementary_Data_S1.xlsx",
+          "sha256": "3746df59ddbedc558bc4f03cc7c4d82942e216ade0cfa70704248383deae5c27"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/supplementary_data/Baseline_configurations.csv",
+          "bytes": 4481,
+          "sha256": "abc83212b5a97ff14df895f425063455d0d1b7fc01be1c7be604092e0a84ad28",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 15,
+        "cell_equality": true
+      }
+    },
+    {
+      "item": "Data S1 / Physics_regimes",
+      "id": "data_s1_physics_regimes",
+      "operation": "export_stored_workbook_cells",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "results/Supplementary_Data_S1.xlsx",
+          "sha256": "3746df59ddbedc558bc4f03cc7c4d82942e216ade0cfa70704248383deae5c27"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "results/supplementary_data/Physics_regimes.csv",
+          "bytes": 365412,
+          "sha256": "ca8355ea67ba4995e72c5b309345c5475b6b9271ccbfe805b6a2376b1cc6c15e",
+          "unchanged_from_previous_export": true
+        }
+      ],
+      "details": {
+        "rows": 1261,
+        "cell_equality": true
+      }
+    }
+  ],
+  "passed": 67,
+  "failed": 0
+}

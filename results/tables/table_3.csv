@@ -1,0 +1,19 @@
+Variant,NRMSE (%),Change,NMAE (%),Change
+Full model,19.99 ± 0.37,—,11.54 ± 0.34,—
+Physical prior and reconstruction,,,,
+Without physical prior of Eq. (2),20.02 ± 0.25,+0.19%,11.29 ± 0.13,−2.21%
+Without boundary penalty,19.99 ± 0.28,+0.03%,11.42 ± 0.29,−1.06%
+Without temporal-difference penalty,20.06 ± 0.22,+0.39%,11.14 ± 0.05,−3.50%
+Joint power and wind masking in pre-training,20.84 ± 0.65,+4.28%,12.06 ± 0.95,+4.49%
+Calibration and power curve,,,,
+Without wind-speed calibration,20.00 ± 0.26,+0.09%,11.50 ± 0.26,−0.33%
+Manufacturer power curve instead of learned spline,19.93 ± 0.13,−0.27%,11.34 ± 0.27,−1.72%
+Without cut-out boundary,20.04 ± 0.31,+0.26%,11.41 ± 0.34,−1.13%
+Without density correction,19.79 ± 0.15,−1.00%,11.09 ± 0.13,−3.89%
+Spatial attention,,,,
+Without spatial aggregation,20.09 ± 0.10,+0.52%,11.49 ± 0.08,−0.47%
+Without direction bias,19.89 ± 0.35,−0.46%,11.28 ± 0.27,−2.28%
+Without terrain bias,20.00 ± 0.09,+0.08%,11.42 ± 0.19,−1.03%
+Without density correction and terrain bias,20.09 ± 0.34,+0.52%,11.53 ± 0.29,−0.12%
+Without operating-point weighting,19.87 ± 0.19,−0.59%,11.21 ± 0.31,−2.83%
+Learned-curve derivative as operating-point weight,19.84 ± 0.12,−0.75%,11.16 ± 0.20,−3.32%

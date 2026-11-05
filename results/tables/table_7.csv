@@ -1,0 +1,6 @@
+Model,Parameters,Batch size,Batch latency (ms),Throughput (windows/s),Time per window (ms)
+PI-EEF,"678,131",16,14.22,"1,125",0.889
+ACFormer,"48,213",64,4.08,"15,702",0.064
+TimesNet,"93,889",64,2.21,"29,031",0.035
+TCN,"4,929",64,0.56,"114,560",0.009
+LightGBM on CPU,—,"1,856",35.19,"52,743",0.019

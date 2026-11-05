@@ -1,0 +1,97 @@
+{
+  "experiment": {
+    "exp_type": "energy_revision",
+    "model": "Persistence",
+    "variant": "fixed_submitted_baseline",
+    "seeds": [
+      13
+    ],
+    "horizon": 16,
+    "eval_scope": "measured-target",
+    "group": "multifarm",
+    "site": "kelmarsh",
+    "finalized": false,
+    "models": [
+      "Persistence"
+    ],
+    "independent_baseline_protocol": true
+  },
+  "data": {
+    "data_version": "energy_revision_kelmarsh_15min_GFS_vintages",
+    "scada_path": "data/kelmarsh/scada_15min.csv",
+    "turbines_path": "data/kelmarsh/turbines.csv",
+    "seq_len": 96,
+    "split": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "revision_protocol": {
+      "nwp_alignment_verified": true,
+      "timezone": "UTC",
+      "step_minutes": 15,
+      "power_unit": "kW",
+      "wind_height_m": 100,
+      "input_power_prefix": "input_power",
+      "capacity_column": "capacity_mw",
+      "nwp_timing_rule": "forecast_vintages",
+      "nwp_feature_columns": [
+        "u10_ms",
+        "v10_ms",
+        "surface_pressure_pa",
+        "temperature_2m_k",
+        "u100_ms",
+        "v100_ms",
+        "dewpoint_2m_k",
+        "wind_speed100_ms",
+        "wind_speed10_ms"
+      ],
+      "input_filling": "forward-only",
+      "target_policy": "raw-measured-valid-power",
+      "history_sampling": "latest-observation-before-origin",
+      "target_sampling": "actual-grid-observations-only",
+      "nwp_vintages_path": "data/kelmarsh/gfs_forecast_vintages.npz"
+    }
+  },
+  "model": {
+    "baseline_factory": "Persistence",
+    "architecture": {
+      "rule": "last_causal_power_observation"
+    },
+    "weather_dimension": "declared_site_fields_plus_3",
+    "weather_semantics": "actual_data_bundle"
+  },
+  "train": {
+    "batch_size": 16
+  },
+  "baseline_protocol": {
+    "version": 1,
+    "scope": "fixed_multifarm_baseline",
+    "model": "Persistence",
+    "factory": "scripts/train_baselines.py",
+    "model_settings": {
+      "baseline_factory": "Persistence",
+      "architecture": {
+        "rule": "last_causal_power_observation"
+      },
+      "weather_dimension": "declared_site_fields_plus_3",
+      "weather_semantics": "actual_data_bundle"
+    },
+    "training_settings": {
+      "batch_size": 16
+    },
+    "loss": "fixed_estimator_or_persistence",
+    "checkpoint_selection": "fixed_protocol",
+    "pi_selection_dependency": false
+  },
+  "baselines": {
+    "models": [
+      "Persistence"
+    ]
+  },
+  "tracking": {
+    "artifact_root": "artifacts/public",
+    "ledger_dir": "artifacts/public/summary",
+    "source_manifest": "provenance/source_manifest.json"
+  }
+}

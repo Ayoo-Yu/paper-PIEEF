@@ -1,0 +1,18 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 PI-EEF Authors for Wind Farm A/B operational data and
+all author-produced published results.
+
+Wind Farm A/B operational data and author-produced results in data/, results/,
+figures/ and the PI-EEF model asset archives are licensed under CC BY 4.0.
+You may share and adapt this material, including commercially, provided you
+give appropriate credit, link to the licence and indicate changes. No
+additional restrictions may be imposed. No warranties are given.
+
+Licence: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Please cite the manuscript in CITATION.cff and this release. Kelmarsh retains
+its original CC BY 4.0 attribution. NOAA GFS public data and the ECMWF forecast
+archive have the source notices in THIRD_PARTY_NOTICES.md. This notice does not
+relicense third-party material. Software is covered by LICENSE or its own terms.

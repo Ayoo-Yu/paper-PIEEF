@@ -1,0 +1,12 @@
+Item,Wind Farm A,Kelmarsh
+Solver,OpenFOAM v2212; neutral steady incompressible RANS; [equation: figures/table_equations/table_s24_p1_r2_c2_e1.wmf]; SIMPLE,Same
+Terrain,Copernicus GLO-30 DSM; EGM2008,Same
+Domain and top-height setting,20 × 20 km; 6000 m,12 × 12 km; 6000 m
+Target horizontal spacing,Near 30 m; far 150 m,Near 30 m; far 150 m
+Advection,First-order upwind,First-order upwind
+Reference inflow,8 m/s at 85 m,8 m/s at 78.5 m
+Turbine hub heights,All 29 turbines: 85 m,T3/T6: 68.5 m; others: 78.5 m
+Default roughness [equation: figures/table_equations/table_s24_p1_r9_c1_e1.wmf],0.3 m,0.05 m
+Alternative roughness/direction,1.5 m / 90°,0.1 m / 240°
+Default directions/turbines,16 / 29,12 / 6
+Closure coefficients,[equation: figures/table_equations/table_s24_p1_r12_c2_e1.wmf]; [equation: figures/table_equations/table_s24_p1_r12_c2_e2.wmf]; [equation: figures/table_equations/table_s24_p1_r12_c2_e3.wmf]; [equation: figures/table_equations/table_s24_p1_r12_c2_e4.wmf]; [equation: figures/table_equations/table_s24_p1_r12_c2_e5.wmf]; [equation: figures/table_equations/table_s24_p1_r12_c2_e6.wmf],Same

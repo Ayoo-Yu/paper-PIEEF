@@ -1,0 +1,4 @@
+cJSON.c
+roughFoam.cpp
+
+EXE = $(FOAM_USER_APPBIN)/roughFoam

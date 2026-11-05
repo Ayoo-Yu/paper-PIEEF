@@ -1,0 +1,376 @@
+model,seed,event_code,n_targets,n_times,nmae_pct,nrmse_pct,source_locator
+PI-EEF,13,all_valid,220401,7604,11.165309307153892,19.662966248603773,target_valid
+PI-EEF,13,normal,191205,7533,11.835748064302228,20.16998322980902,target_valid & events == normal
+PI-EEF,13,low_power_candidate,22578,2474,5.2653335681519993,15.075404298363642,target_valid & events == low_power_candidate
+PI-EEF,13,frozen_wind_candidate,94,88,4.9851774558192119,6.863032380557919,target_valid & events == frozen_wind_candidate
+PI-EEF,13,power_outlier,6524,2151,12.02357755802185,18.738830694455586,target_valid & events == power_outlier
+PI-EEF,21,all_valid,220401,7604,11.750562599631238,19.823887122636403,target_valid
+PI-EEF,21,normal,191205,7533,12.501547165666935,20.271284896533789,target_valid & events == normal
+PI-EEF,21,low_power_candidate,22578,2474,4.8408746524319701,15.227091984987966,target_valid & events == low_power_candidate
+PI-EEF,21,frozen_wind_candidate,94,88,3.7492175966109884,5.8609756767504626,target_valid & events == frozen_wind_candidate
+PI-EEF,21,power_outlier,6524,2151,13.768811672790868,20.736895614429741,target_valid & events == power_outlier
+PI-EEF,42,all_valid,220401,7604,11.982723200221745,20.611114675919865,target_valid
+PI-EEF,42,normal,191205,7533,12.56374198542691,20.846911969255135,target_valid & events == normal
+PI-EEF,42,low_power_candidate,22578,2474,6.7204576751285936,18.504439395158215,target_valid & events == low_power_candidate
+PI-EEF,42,frozen_wind_candidate,94,88,10.053627039219174,12.39562228308432,target_valid & events == frozen_wind_candidate
+PI-EEF,42,power_outlier,6524,2151,13.193494083044282,20.67364156650277,target_valid & events == power_outlier
+PI-EEF,87,all_valid,220401,7604,11.252990120547597,19.819084379408299,target_valid
+PI-EEF,87,normal,191205,7533,11.910777555290052,20.336981861725516,target_valid & events == normal
+PI-EEF,87,low_power_candidate,22578,2474,5.3493326245181319,14.935728900531647,target_valid & events == low_power_candidate
+PI-EEF,87,frozen_wind_candidate,94,88,9.5655419151026244,12.879533742032226,target_valid & events == frozen_wind_candidate
+PI-EEF,87,power_outlier,6524,2151,12.430052140279999,19.336932978297114,target_valid & events == power_outlier
+PI-EEF,3407,all_valid,220401,7604,11.551790784244844,20.008778862595332,target_valid
+PI-EEF,3407,normal,191205,7533,12.286454357857686,20.605025552037045,target_valid & events == normal
+PI-EEF,3407,low_power_candidate,22578,2474,4.9873182857850384,14.268958604506684,target_valid & events == low_power_candidate
+PI-EEF,3407,frozen_wind_candidate,94,88,9.2040825883506177,11.946398191364297,target_valid & events == frozen_wind_candidate
+PI-EEF,3407,power_outlier,6524,2151,12.772207100614564,19.371230991767117,target_valid & events == power_outlier
+Persistence,13,all_valid,220401,7604,13.102025093481021,24.537646821861255,target_valid
+Persistence,13,normal,191205,7533,14.105175296736167,25.315532436855154,target_valid & events == normal
+Persistence,13,low_power_candidate,22578,2474,3.9373077386499999,16.388989519070275,target_valid & events == low_power_candidate
+Persistence,13,frozen_wind_candidate,94,88,0.44260638588890833,1.3024125505976782,target_valid & events == frozen_wind_candidate
+Persistence,13,power_outlier,6524,2151,15.601050106124825,25.066641505770381,target_valid & events == power_outlier
+Persistence,21,all_valid,220401,7604,13.102025093481021,24.537646821861255,target_valid
+Persistence,21,normal,191205,7533,14.105175296736167,25.315532436855154,target_valid & events == normal
+Persistence,21,low_power_candidate,22578,2474,3.9373077386499999,16.388989519070275,target_valid & events == low_power_candidate
+Persistence,21,frozen_wind_candidate,94,88,0.44260638588890833,1.3024125505976782,target_valid & events == frozen_wind_candidate
+Persistence,21,power_outlier,6524,2151,15.601050106124825,25.066641505770381,target_valid & events == power_outlier
+Persistence,42,all_valid,220401,7604,13.102025093481021,24.537646821861255,target_valid
+Persistence,42,normal,191205,7533,14.105175296736167,25.315532436855154,target_valid & events == normal
+Persistence,42,low_power_candidate,22578,2474,3.9373077386499999,16.388989519070275,target_valid & events == low_power_candidate
+Persistence,42,frozen_wind_candidate,94,88,0.44260638588890833,1.3024125505976782,target_valid & events == frozen_wind_candidate
+Persistence,42,power_outlier,6524,2151,15.601050106124825,25.066641505770381,target_valid & events == power_outlier
+Persistence,87,all_valid,220401,7604,13.102025093481021,24.537646821861255,target_valid
+Persistence,87,normal,191205,7533,14.105175296736167,25.315532436855154,target_valid & events == normal
+Persistence,87,low_power_candidate,22578,2474,3.9373077386499999,16.388989519070275,target_valid & events == low_power_candidate
+Persistence,87,frozen_wind_candidate,94,88,0.44260638588890833,1.3024125505976782,target_valid & events == frozen_wind_candidate
+Persistence,87,power_outlier,6524,2151,15.601050106124825,25.066641505770381,target_valid & events == power_outlier
+Persistence,3407,all_valid,220401,7604,13.102025093481021,24.537646821861255,target_valid
+Persistence,3407,normal,191205,7533,14.105175296736167,25.315532436855154,target_valid & events == normal
+Persistence,3407,low_power_candidate,22578,2474,3.9373077386499999,16.388989519070275,target_valid & events == low_power_candidate
+Persistence,3407,frozen_wind_candidate,94,88,0.44260638588890833,1.3024125505976782,target_valid & events == frozen_wind_candidate
+Persistence,3407,power_outlier,6524,2151,15.601050106124825,25.066641505770381,target_valid & events == power_outlier
+LightGBM,13,all_valid,220401,7604,12.814017394048497,20.007573102397323,target_valid
+LightGBM,13,normal,191205,7533,13.148822756336568,20.202115320863125,target_valid & events == normal
+LightGBM,13,low_power_candidate,22578,2474,9.7452037111608991,18.374239931749216,target_valid & events == low_power_candidate
+LightGBM,13,frozen_wind_candidate,94,88,6.9154873126895211,9.8211161493857659,target_valid & events == frozen_wind_candidate
+LightGBM,13,power_outlier,6524,2151,13.706978439970218,19.808487144389169,target_valid & events == power_outlier
+LightGBM,21,all_valid,220401,7604,12.852128842792398,19.968788435300741,target_valid
+LightGBM,21,normal,191205,7533,13.148925661075733,20.164109813050015,target_valid & events == normal
+LightGBM,21,low_power_candidate,22578,2474,10.103602224411194,18.326228905485792,target_valid & events == low_power_candidate
+LightGBM,21,frozen_wind_candidate,94,88,5.0115650484733472,6.9865433670901602,target_valid & events == frozen_wind_candidate
+LightGBM,21,power_outlier,6524,2151,13.778586743867121,19.79250677862359,target_valid & events == power_outlier
+LightGBM,42,all_valid,220401,7604,12.951874309947881,20.170971213851885,target_valid
+LightGBM,42,normal,191205,7533,13.265399016808122,20.359314710436781,target_valid & events == normal
+LightGBM,42,low_power_candidate,22578,2474,10.214764424370692,18.789078535578049,target_valid & events == low_power_candidate
+LightGBM,42,frozen_wind_candidate,94,88,6.2975268933932611,9.1268963465159914,target_valid & events == frozen_wind_candidate
+LightGBM,42,power_outlier,6524,2151,13.33147027538403,19.342365838233349,target_valid & events == power_outlier
+LightGBM,87,all_valid,220401,7604,12.791252068399819,19.886731778444414,target_valid
+LightGBM,87,normal,191205,7533,13.139894653478802,20.093557896297252,target_valid & events == normal
+LightGBM,87,low_power_candidate,22578,2474,9.6175950626433853,18.154175678550651,target_valid & events == low_power_candidate
+LightGBM,87,frozen_wind_candidate,94,88,6.7485404373349631,9.6375600531419288,target_valid & events == frozen_wind_candidate
+LightGBM,87,power_outlier,6524,2151,13.643587643087503,19.636380688641854,target_valid & events == power_outlier
+LightGBM,3407,all_valid,220401,7604,12.677932753385651,19.85435324973237,target_valid
+LightGBM,3407,normal,191205,7533,13.060878893804093,20.083908079590007,target_valid & events == normal
+LightGBM,3407,low_power_candidate,22578,2474,9.2177465480036371,17.870383388223569,target_valid & events == low_power_candidate
+LightGBM,3407,frozen_wind_candidate,94,88,7.7229960543208795,11.01419936165286,target_valid & events == frozen_wind_candidate
+LightGBM,3407,power_outlier,6524,2151,13.500837630166718,19.709161123362701,target_valid & events == power_outlier
+XGBoost,13,all_valid,220401,7604,13.292935310604859,20.294949305124579,target_valid
+XGBoost,13,normal,191205,7533,13.389545851340248,20.308373779619433,target_valid & events == normal
+XGBoost,13,low_power_candidate,22578,2474,12.465613102196073,20.44464036053218,target_valid & events == low_power_candidate
+XGBoost,13,frozen_wind_candidate,94,88,4.9614612716547351,7.2525948056906069,target_valid & events == frozen_wind_candidate
+XGBoost,13,power_outlier,6524,2151,13.444685914498894,19.493116953397998,target_valid & events == power_outlier
+XGBoost,21,all_valid,220401,7604,13.264702792877969,20.211130801064765,target_valid
+XGBoost,21,normal,191205,7533,13.441504779695524,20.235720853280505,target_valid & events == normal
+XGBoost,21,low_power_candidate,22578,2474,11.730797727309405,20.220677633215377,target_valid & events == low_power_candidate
+XGBoost,21,frozen_wind_candidate,94,88,6.4166003660462367,8.7560854295141706,target_valid & events == frozen_wind_candidate
+XGBoost,21,power_outlier,6524,2151,13.490148272503777,19.564906493793472,target_valid & events == power_outlier
+XGBoost,42,all_valid,220401,7604,13.42063426647386,20.253913496751935,target_valid
+XGBoost,42,normal,191205,7533,13.601974165898268,20.372100506125328,target_valid & events == normal
+XGBoost,42,low_power_candidate,22578,2474,11.829678607752333,19.462292499623594,target_valid & events == low_power_candidate
+XGBoost,42,frozen_wind_candidate,94,88,6.2649430422870287,8.5210432265528695,target_valid & events == frozen_wind_candidate
+XGBoost,42,power_outlier,6524,2151,13.714953145726547,19.574761237467271,target_valid & events == power_outlier
+XGBoost,87,all_valid,220401,7604,13.583436253600309,20.441558299728428,target_valid
+XGBoost,87,normal,191205,7533,13.680092537226288,20.476506588135479,target_valid & events == normal
+XGBoost,87,low_power_candidate,22578,2474,12.78354691558286,20.394435850878239,target_valid & events == low_power_candidate
+XGBoost,87,frozen_wind_candidate,94,88,8.3431967807824705,10.134651983558355,target_valid & events == frozen_wind_candidate
+XGBoost,87,power_outlier,6524,2151,13.594368085834782,19.676044282165339,target_valid & events == power_outlier
+XGBoost,3407,all_valid,220401,7604,13.133903475916551,20.203701655357168,target_valid
+XGBoost,3407,normal,191205,7533,13.398053122102194,20.3363383925292,target_valid & events == normal
+XGBoost,3407,low_power_candidate,22578,2474,10.84300093646395,19.262871767779355,target_valid & events == low_power_candidate
+XGBoost,3407,frozen_wind_candidate,94,88,5.65256126704279,8.4647727137101327,target_valid & events == frozen_wind_candidate
+XGBoost,3407,power_outlier,6524,2151,13.42827971817116,19.594628254758707,target_valid & events == power_outlier
+GRU,13,all_valid,220401,7604,13.817293975225436,20.233145683347814,target_valid
+GRU,13,normal,191205,7533,14.05870720040984,20.591751297269525,target_valid & events == normal
+GRU,13,low_power_candidate,22578,2474,11.884286120967863,17.586524175391386,target_valid & events == low_power_candidate
+GRU,13,frozen_wind_candidate,94,88,4.7129456330947779,6.6196699248113626,target_valid & events == frozen_wind_candidate
+GRU,13,power_outlier,6524,2151,13.562824992424058,18.220332660108316,target_valid & events == power_outlier
+GRU,21,all_valid,220401,7604,14.562139043834716,21.014665909513074,target_valid
+GRU,21,normal,191205,7533,13.803079156978715,20.137558401413543,target_valid & events == normal
+GRU,21,low_power_candidate,22578,2474,21.054606095632121,27.734546240895103,target_valid & events == low_power_candidate
+GRU,21,frozen_wind_candidate,94,88,18.143274886793694,21.023406589408719,target_valid & events == frozen_wind_candidate
+GRU,21,power_outlier,6524,2151,14.288150356155624,19.125172602738953,target_valid & events == power_outlier
+GRU,42,all_valid,220401,7604,13.956298146017835,20.420419216502552,target_valid
+GRU,42,normal,191205,7533,14.031683227621549,20.519031733808731,target_valid & events == normal
+GRU,42,low_power_candidate,22578,2474,13.477268334797222,20.089956419865246,target_valid & events == low_power_candidate
+GRU,42,frozen_wind_candidate,94,88,8.2618718789122561,11.043259311201698,target_valid & events == frozen_wind_candidate
+GRU,42,power_outlier,6524,2151,13.486771263554356,18.688339279450489,target_valid & events == power_outlier
+GRU,87,all_valid,220401,7604,14.696405434442008,20.984139938923914,target_valid
+GRU,87,normal,191205,7533,14.592813655944742,21.035445278527835,target_valid & events == normal
+GRU,87,low_power_candidate,22578,2474,15.892464131358297,21.276438906342459,target_valid & events == low_power_candidate
+GRU,87,frozen_wind_candidate,94,88,7.2686885048243957,8.7209317246685121,target_valid & events == frozen_wind_candidate
+GRU,87,power_outlier,6524,2151,13.700215695014917,18.429597571719018,target_valid & events == power_outlier
+GRU,3407,all_valid,220401,7604,14.60908025896906,20.818677265771683,target_valid
+GRU,3407,normal,191205,7533,14.252487804014066,20.6340474626104,target_valid & events == normal
+GRU,3407,low_power_candidate,22578,2474,17.989523043922727,22.95053204496589,target_valid & events == low_power_candidate
+GRU,3407,frozen_wind_candidate,94,88,15.204615067712904,17.27497739645306,target_valid & events == frozen_wind_candidate
+GRU,3407,power_outlier,6524,2151,13.352587751146174,18.350635532137883,target_valid & events == power_outlier
+TCN,13,all_valid,220401,7604,13.199914698370049,20.095651744322762,target_valid
+TCN,13,normal,191205,7533,13.667041205997082,20.638992889830394,target_valid & events == normal
+TCN,13,low_power_candidate,22578,2474,9.2918464641549949,15.388050523385161,target_valid & events == low_power_candidate
+TCN,13,frozen_wind_candidate,94,88,2.3500231491585084,4.1273785513639378,target_valid & events == frozen_wind_candidate
+TCN,13,power_outlier,6524,2151,13.190615266565398,18.407540202291631,target_valid & events == power_outlier
+TCN,21,all_valid,220401,7604,15.420873840052998,21.169375770458196,target_valid
+TCN,21,normal,191205,7533,14.855253576243271,20.903969721781571,target_valid & events == normal
+TCN,21,low_power_candidate,22578,2474,20.60927911744373,23.926716142031733,target_valid & events == low_power_candidate
+TCN,21,frozen_wind_candidate,94,88,17.727405944544365,20.990139049759584,target_valid & events == frozen_wind_candidate
+TCN,21,power_outlier,6524,2151,14.008978403356004,18.579286023100867,target_valid & events == power_outlier
+TCN,42,all_valid,220401,7604,13.720126172156712,20.431005236885607,target_valid
+TCN,42,normal,191205,7533,13.491363488342973,20.395320320647166,target_valid & events == normal
+TCN,42,low_power_candidate,22578,2474,15.721895497974685,21.193890948969813,target_valid & events == low_power_candidate
+TCN,42,frozen_wind_candidate,94,88,10.241292040619227,12.686868920518135,target_valid & events == frozen_wind_candidate
+TCN,42,power_outlier,6524,2151,13.547169631484282,18.81284043015366,target_valid & events == power_outlier
+TCN,87,all_valid,220401,7604,13.457072667701581,20.405943455062662,target_valid
+TCN,87,normal,191205,7533,13.424577886107041,20.631911560024303,target_valid & events == normal
+TCN,87,low_power_candidate,22578,2474,13.929299485733646,19.012720439765442,target_valid & events == low_power_candidate
+TCN,87,frozen_wind_candidate,94,88,9.8384120422935588,12.528917468931059,target_valid & events == frozen_wind_candidate
+TCN,87,power_outlier,6524,2151,12.82730285103144,18.396254434564778,target_valid & events == power_outlier
+TCN,3407,all_valid,220401,7604,13.052413417209904,20.329194623177241,target_valid
+TCN,3407,normal,191205,7533,13.016372565695598,20.445573729914766,target_valid & events == normal
+TCN,3407,low_power_candidate,22578,2474,13.370173080540502,19.635157423674833,target_valid & events == low_power_candidate
+TCN,3407,frozen_wind_candidate,94,88,12.72737362249903,15.539791867317282,target_valid & events == frozen_wind_candidate
+TCN,3407,power_outlier,6524,2151,13.013689793024966,19.304552050658703,target_valid & events == power_outlier
+DLinear,13,all_valid,220401,7604,13.216300920283505,20.052028406047754,target_valid
+DLinear,13,normal,191205,7533,13.366920444926153,20.387194171717606,target_valid & events == normal
+DLinear,13,low_power_candidate,22578,2474,12.065684630961172,17.517489378317304,target_valid & events == low_power_candidate
+DLinear,13,frozen_wind_candidate,94,88,12.640831284683218,15.249605071776745,target_valid & events == frozen_wind_candidate
+DLinear,13,power_outlier,6524,2151,12.792251643270678,18.35292322216262,target_valid & events == power_outlier
+DLinear,21,all_valid,220401,7604,13.639298074538232,20.336330510203716,target_valid
+DLinear,21,normal,191205,7533,13.505960766816358,20.41471986079592,target_valid & events == normal
+DLinear,21,low_power_candidate,22578,2474,14.94084575708801,20.184401286412374,target_valid & events == low_power_candidate
+DLinear,21,frozen_wind_candidate,94,88,15.825571189201041,19.304128326023207,target_valid & events == frozen_wind_candidate
+DLinear,21,power_outlier,6524,2151,13.0112948056194,18.488877842689085,target_valid & events == power_outlier
+DLinear,42,all_valid,220401,7604,14.696019597283033,20.679667038506111,target_valid
+DLinear,42,normal,191205,7533,14.502120800579652,20.685026105076265,target_valid & events == normal
+DLinear,42,low_power_candidate,22578,2474,16.634985809038486,21.1684988782206,target_valid & events == low_power_candidate
+DLinear,42,frozen_wind_candidate,94,88,16.076915812284803,18.756987514264445,target_valid & events == frozen_wind_candidate
+DLinear,42,power_outlier,6524,2151,13.64860023039849,18.74695886013895,target_valid & events == power_outlier
+DLinear,87,all_valid,220401,7604,13.574496713343013,20.338642821263107,target_valid
+DLinear,87,normal,191205,7533,13.613193483391822,20.460230843203437,target_valid & events == normal
+DLinear,87,low_power_candidate,22578,2474,13.307289313533726,19.646051608133643,target_valid & events == low_power_candidate
+DLinear,87,frozen_wind_candidate,94,88,15.215155813270842,18.239400660864277,target_valid & events == frozen_wind_candidate
+DLinear,87,power_outlier,6524,2151,13.341475683348838,19.112291515157949,target_valid & events == power_outlier
+DLinear,3407,all_valid,220401,7604,14.049062704492668,20.799243881826946,target_valid
+DLinear,3407,normal,191205,7533,13.527430394404774,20.446124488968003,target_valid & events == normal
+DLinear,3407,low_power_candidate,22578,2474,18.648743993849752,23.947083392945185,target_valid & events == low_power_candidate
+DLinear,3407,frozen_wind_candidate,94,88,19.604827322999629,23.650642409431843,target_valid & events == frozen_wind_candidate
+DLinear,3407,power_outlier,6524,2151,13.338587509077518,19.239963644747409,target_valid & events == power_outlier
+iTransformer,13,all_valid,220401,7604,15.827464605941255,21.9054163447985,target_valid
+iTransformer,13,normal,191205,7533,15.27344232294508,21.208569849966779,target_valid & events == normal
+iTransformer,13,low_power_candidate,22578,2474,21.027335774108963,27.859746536334463,target_valid & events == low_power_candidate
+iTransformer,13,frozen_wind_candidate,94,88,9.7199104627856894,13.425219739101587,target_valid & events == frozen_wind_candidate
+iTransformer,13,power_outlier,6524,2151,14.157208547518488,18.41740026543301,target_valid & events == power_outlier
+iTransformer,21,all_valid,220401,7604,14.432504826565424,21.47112350043918,target_valid
+iTransformer,21,normal,191205,7533,14.025454997072655,21.030669692044317,target_valid & events == normal
+iTransformer,21,low_power_candidate,22578,2474,18.079333723244517,25.433759440641019,target_valid & events == low_power_candidate
+iTransformer,21,frozen_wind_candidate,94,88,18.971892182796974,21.326117084833651,target_valid & events == frozen_wind_candidate
+iTransformer,21,power_outlier,6524,2151,13.676091185771108,19.144304658415845,target_valid & events == power_outlier
+iTransformer,42,all_valid,220401,7604,14.361204442932996,22.489104165006708,target_valid
+iTransformer,42,normal,191205,7533,14.252006739578487,22.52605963612109,target_valid & events == normal
+iTransformer,42,low_power_candidate,22578,2474,15.41429756378159,22.824881631891984,target_valid & events == low_power_candidate
+iTransformer,42,frozen_wind_candidate,94,88,12.472948128855391,14.08623153858456,target_valid & events == frozen_wind_candidate
+iTransformer,42,power_outlier,6524,2151,13.944267974646996,20.218202516578277,target_valid & events == power_outlier
+iTransformer,87,all_valid,220401,7604,15.173914986746825,22.316569811389581,target_valid
+iTransformer,87,normal,191205,7533,14.092006857729697,20.912495671952605,target_valid & events == normal
+iTransformer,87,low_power_candidate,22578,2474,24.4698369910545,32.161015795474803,target_valid & events == low_power_candidate
+iTransformer,87,frozen_wind_candidate,94,88,22.790772909796399,27.338135912261091,target_valid & events == frozen_wind_candidate
+iTransformer,87,power_outlier,6524,2151,14.601709614382411,20.428503538768929,target_valid & events == power_outlier
+iTransformer,3407,all_valid,220401,7604,15.874204335306802,22.12510131471776,target_valid
+iTransformer,3407,normal,191205,7533,15.497316182823715,21.814119385827961,target_valid & events == normal
+iTransformer,3407,low_power_candidate,22578,2474,19.30925464641318,25.111829051363539,target_valid & events == low_power_candidate
+iTransformer,3407,frozen_wind_candidate,94,88,15.413900235967532,18.400066674921852,target_valid & events == frozen_wind_candidate
+iTransformer,3407,power_outlier,6524,2151,15.038766238541971,20.097521316348619,target_valid & events == power_outlier
+TimesNet,13,all_valid,220401,7604,12.685253582498285,19.982786296575497,target_valid
+TimesNet,13,normal,191205,7533,13.146883962928735,20.567728338299705,target_valid & events == normal
+TimesNet,13,low_power_candidate,22578,2474,8.8977317426980722,14.931980017855388,target_valid & events == low_power_candidate
+TimesNet,13,frozen_wind_candidate,94,88,1.9343133441771954,3.6293262415534597,target_valid & events == frozen_wind_candidate
+TimesNet,13,power_outlier,6524,2151,12.41842641989969,17.888459965430286,target_valid & events == power_outlier
+TimesNet,21,all_valid,220401,7604,16.113523585538427,21.812443957677388,target_valid
+TimesNet,21,normal,191205,7533,15.546393703585901,21.40516126520243,target_valid & events == normal
+TimesNet,21,low_power_candidate,22578,2474,21.269347020639604,25.480129829945682,target_valid & events == low_power_candidate
+TimesNet,21,frozen_wind_candidate,94,88,13.374784495743446,14.856214589260878,target_valid & events == frozen_wind_candidate
+TimesNet,21,power_outlier,6524,2151,14.931323866877976,19.875767855077751,target_valid & events == power_outlier
+TimesNet,42,all_valid,220401,7604,13.613522569319098,20.851610647274882,target_valid
+TimesNet,42,normal,191205,7533,13.347328311430132,20.806541497110263,target_valid & events == normal
+TimesNet,42,low_power_candidate,22578,2474,15.90509440680678,21.568205665851529,target_valid & events == low_power_candidate
+TimesNet,42,frozen_wind_candidate,94,88,8.2283084915500098,10.661499873623939,target_valid & events == frozen_wind_candidate
+TimesNet,42,power_outlier,6524,2151,13.562139101534493,19.729229268995756,target_valid & events == power_outlier
+TimesNet,87,all_valid,220401,7604,13.906994433199888,21.001621651437478,target_valid
+TimesNet,87,normal,191205,7533,13.704714661515949,20.895419473599397,target_valid & events == normal
+TimesNet,87,low_power_candidate,22578,2474,15.330936619959848,21.71491056114581,target_valid & events == low_power_candidate
+TimesNet,87,frozen_wind_candidate,94,88,10.971698089703382,13.21298973729348,target_valid & events == frozen_wind_candidate
+TimesNet,87,power_outlier,6524,2151,14.949768024317327,21.676447396529124,target_valid & events == power_outlier
+TimesNet,3407,all_valid,220401,7604,14.722118277488057,21.038451992598418,target_valid
+TimesNet,3407,normal,191205,7533,14.061662954133169,20.580363564904694,target_valid & events == normal
+TimesNet,3407,low_power_candidate,22578,2474,20.362389415382161,24.890213756344099,target_valid & events == low_power_candidate
+TimesNet,3407,frozen_wind_candidate,94,88,18.243349611107757,20.758553016004925,target_valid & events == frozen_wind_candidate
+TimesNet,3407,power_outlier,6524,2151,14.508341852800413,19.731029986353892,target_valid & events == power_outlier
+TimeMixer,13,all_valid,220401,7604,13.839432102847194,20.773353322371182,target_valid
+TimeMixer,13,normal,191205,7533,14.299063807646583,21.126948795069559,target_valid & events == normal
+TimeMixer,13,low_power_candidate,22578,2474,9.8966365056834675,17.874126525480481,target_valid & events == low_power_candidate
+TimeMixer,13,frozen_wind_candidate,94,88,6.3091868515488034,10.10895376099424,target_valid & events == frozen_wind_candidate
+TimeMixer,13,power_outlier,6524,2151,14.122142392580001,19.744081523179361,target_valid & events == power_outlier
+TimeMixer,21,all_valid,220401,7604,11.612228621308422,19.298212370074115,target_valid
+TimeMixer,21,normal,191205,7533,12.068039000105927,19.86344358199737,target_valid & events == normal
+TimeMixer,21,low_power_candidate,22578,2474,7.7078737945791103,14.043351965510647,target_valid & events == low_power_candidate
+TimeMixer,21,frozen_wind_candidate,94,88,5.2212694046171775,8.2494277812256378,target_valid & events == frozen_wind_candidate
+TimeMixer,21,power_outlier,6524,2151,11.857484594068442,18.286803272909818,target_valid & events == power_outlier
+TimeMixer,42,all_valid,220401,7604,15.217911396345579,22.140724791719641,target_valid
+TimeMixer,42,normal,191205,7533,14.016175458545217,20.822362111196526,target_valid & events == normal
+TimeMixer,42,low_power_candidate,22578,2474,25.334556576382681,31.208125782344169,target_valid & events == low_power_candidate
+TimeMixer,42,frozen_wind_candidate,94,88,23.792408706008537,30.388982450290879,target_valid & events == frozen_wind_candidate
+TimeMixer,42,power_outlier,6524,2151,15.303488092411232,21.677304511671348,target_valid & events == power_outlier
+TimeMixer,87,all_valid,220401,7604,13.171426621157877,20.103213179125362,target_valid
+TimeMixer,87,normal,191205,7533,13.28835934719749,20.181896530271853,target_valid & events == normal
+TimeMixer,87,low_power_candidate,22578,2474,11.939171805733997,19.25224014694253,target_valid & events == low_power_candidate
+TimeMixer,87,frozen_wind_candidate,94,88,13.069857230987104,17.580740137860047,target_valid & events == frozen_wind_candidate
+TimeMixer,87,power_outlier,6524,2151,14.010371265994195,20.7005261823011,target_valid & events == power_outlier
+TimeMixer,3407,all_valid,220401,7604,13.61460922602047,21.044387068163456,target_valid
+TimeMixer,3407,normal,191205,7533,13.326229179837851,20.652544047255457,target_valid & events == normal
+TimeMixer,3407,low_power_candidate,22578,2474,15.801718733404,23.966579054491323,target_valid & events == low_power_candidate
+TimeMixer,3407,frozen_wind_candidate,94,88,19.894976650446434,25.107055174574299,target_valid & events == frozen_wind_candidate
+TimeMixer,3407,power_outlier,6524,2151,14.406882943792688,21.536497866801948,target_valid & events == power_outlier
+PatchTST,13,all_valid,220401,7604,14.46809108550581,20.903872079394485,target_valid
+PatchTST,13,normal,191205,7533,14.666677049025603,21.150532178143738,target_valid & events == normal
+PatchTST,13,low_power_candidate,22578,2474,12.952381908860461,19.197825673427825,target_valid & events == low_power_candidate
+PatchTST,13,frozen_wind_candidate,94,88,11.248826019607108,15.787862574282062,target_valid & events == frozen_wind_candidate
+PatchTST,13,power_outlier,6524,2151,13.939835958542442,19.298451150328173,target_valid & events == power_outlier
+PatchTST,21,all_valid,220401,7604,14.294341492248961,20.814216513208578,target_valid
+PatchTST,21,normal,191205,7533,13.547513523559301,20.299051927073673,target_valid & events == normal
+PatchTST,21,low_power_candidate,22578,2474,21.025141934499043,25.350580567613477,target_valid & events == low_power_candidate
+PatchTST,21,frozen_wind_candidate,94,88,19.120375445531185,24.106676195179986,target_valid & events == frozen_wind_candidate
+PatchTST,21,power_outlier,6524,2151,12.819108839976654,18.085689488352251,target_valid & events == power_outlier
+PatchTST,42,all_valid,220401,7604,13.978614107359041,20.735327162560452,target_valid
+PatchTST,42,normal,191205,7533,13.564868462431241,20.601337352809143,target_valid & events == normal
+PatchTST,42,low_power_candidate,22578,2474,17.990261157588304,22.657624153655682,target_valid & events == low_power_candidate
+PatchTST,42,frozen_wind_candidate,94,88,17.985779702963129,22.712565789445975,target_valid & events == frozen_wind_candidate
+PatchTST,42,power_outlier,6524,2151,12.163561282766411,17.388712535615866,target_valid & events == power_outlier
+PatchTST,87,all_valid,220401,7604,14.589291154339316,20.76700241694618,target_valid
+PatchTST,87,normal,191205,7533,14.196588419994708,20.641072774542206,target_valid & events == normal
+PatchTST,87,low_power_candidate,22578,2474,18.34988568587249,22.501940472794988,target_valid & events == low_power_candidate
+PatchTST,87,frozen_wind_candidate,94,88,17.004720793425186,20.620278658006615,target_valid & events == frozen_wind_candidate
+PatchTST,87,power_outlier,6524,2151,13.049280823458103,18.010737543511652,target_valid & events == power_outlier
+PatchTST,3407,all_valid,220401,7604,15.837452874319609,21.828553557127243,target_valid
+PatchTST,3407,normal,191205,7533,14.893343507128312,21.124706610867513,target_valid & events == normal
+PatchTST,3407,low_power_candidate,22578,2474,24.450898620500094,27.766882288844929,target_valid & events == low_power_candidate
+PatchTST,3407,frozen_wind_candidate,94,88,22.988611029800367,29.218795799827248,target_valid & events == frozen_wind_candidate
+PatchTST,3407,power_outlier,6524,2151,13.595246349171481,18.38098814178954,target_valid & events == power_outlier
+ACFormer,13,all_valid,220401,7604,12.656523334882325,20.901099264313135,target_valid
+ACFormer,13,normal,191205,7533,13.108500138104434,21.333649131363703,target_valid & events == normal
+ACFormer,13,low_power_candidate,22578,2474,8.7860015511644551,17.338501487596432,target_valid & events == low_power_candidate
+ACFormer,13,frozen_wind_candidate,94,88,16.556630398585224,19.422560336051241,target_valid & events == frozen_wind_candidate
+ACFormer,13,power_outlier,6524,2151,12.748768293299101,19.333036872936578,target_valid & events == power_outlier
+ACFormer,21,all_valid,220401,7604,12.77205700640009,20.940418919507447,target_valid
+ACFormer,21,normal,191205,7533,13.31331613108199,21.426053230595514,target_valid & events == normal
+ACFormer,21,low_power_candidate,22578,2474,8.2800684007971217,17.01944283679779,target_valid & events == low_power_candidate
+ACFormer,21,frozen_wind_candidate,94,88,11.348103928104775,15.518981850450068,target_valid & events == frozen_wind_candidate
+ACFormer,21,power_outlier,6524,2151,12.475079598653412,18.800217505318106,target_valid & events == power_outlier
+ACFormer,42,all_valid,220401,7604,12.119752669715171,21.069943147879314,target_valid
+ACFormer,42,normal,191205,7533,12.663846620100601,21.607466229398973,target_valid & events == normal
+ACFormer,42,low_power_candidate,22578,2474,7.3875097553455173,16.393836457260548,target_valid & events == low_power_candidate
+ACFormer,42,frozen_wind_candidate,94,88,12.672670865295196,17.099822130170406,target_valid & events == frozen_wind_candidate
+ACFormer,42,power_outlier,6524,2151,12.542671496632252,19.495411690105236,target_valid & events == power_outlier
+ACFormer,87,all_valid,220401,7604,12.931112334129491,21.096490338041871,target_valid
+ACFormer,87,normal,191205,7533,13.141068918023842,21.24154172544911,target_valid & events == normal
+ACFormer,87,low_power_candidate,22578,2474,11.092763043461186,20.257352375055884,target_valid & events == low_power_candidate
+ACFormer,87,frozen_wind_candidate,94,88,16.832897833986902,21.295899057190649,target_valid & events == frozen_wind_candidate
+ACFormer,87,power_outlier,6524,2151,13.083585329868756,19.622648036845092,target_valid & events == power_outlier
+ACFormer,3407,all_valid,220401,7604,12.269446567444412,20.764688093384933,target_valid
+ACFormer,3407,normal,191205,7533,12.687604237483658,21.18076841486679,target_valid & events == normal
+ACFormer,3407,low_power_candidate,22578,2474,8.7216997873612332,17.436508171243613,target_valid & events == low_power_candidate
+ACFormer,3407,frozen_wind_candidate,94,88,9.9751026132466034,14.387509465154336,target_valid & events == frozen_wind_candidate
+ACFormer,3407,power_outlier,6524,2151,12.325065487211209,19.050007359261372,target_valid & events == power_outlier
+STAN,13,all_valid,220401,7604,16.007032363677133,22.796393999719456,target_valid
+STAN,13,normal,191205,7533,15.907092682373245,22.910894395747704,target_valid & events == normal
+STAN,13,low_power_candidate,22578,2474,16.942498645992838,22.227668579247585,target_valid & events == low_power_candidate
+STAN,13,frozen_wind_candidate,94,88,10.786890442683758,12.829380411924626,target_valid & events == frozen_wind_candidate
+STAN,13,power_outlier,6524,2151,15.773847566337853,21.448214721164444,target_valid & events == power_outlier
+STAN,21,all_valid,220401,7604,15.897715569933935,22.90449564690832,target_valid
+STAN,21,normal,191205,7533,15.852141177772383,23.062738264982123,target_valid & events == normal
+STAN,21,low_power_candidate,22578,2474,16.664049358568768,22.320773056677005,target_valid & events == low_power_candidate
+STAN,21,frozen_wind_candidate,94,88,23.117006881264075,29.644932096074179,target_valid & events == frozen_wind_candidate
+STAN,21,power_outlier,6524,2151,14.47729159540707,19.942111549689223,target_valid & events == power_outlier
+STAN,42,all_valid,220401,7604,16.165955691975981,23.332403930791809,target_valid
+STAN,42,normal,191205,7533,15.828463806296128,22.84678972480091,target_valid & events == normal
+STAN,42,low_power_candidate,22578,2474,19.067410642389618,27.496603746074012,target_valid & events == low_power_candidate
+STAN,42,frozen_wind_candidate,94,88,16.168577725407076,21.952657983870452,target_valid & events == frozen_wind_candidate
+STAN,42,power_outlier,6524,2151,16.015869802925433,21.680127564604785,target_valid & events == power_outlier
+STAN,87,all_valid,220401,7604,14.639251440307049,21.818944754783864,target_valid
+STAN,87,normal,191205,7533,14.53927385525094,21.97367732650347,target_valid & events == normal
+STAN,87,low_power_candidate,22578,2474,15.751503748216047,21.179093548843035,target_valid & events == low_power_candidate
+STAN,87,frozen_wind_candidate,94,88,14.847948289280657,18.739698507221881,target_valid & events == frozen_wind_candidate
+STAN,87,power_outlier,6524,2151,13.717142923887721,19.351604403336665,target_valid & events == power_outlier
+STAN,3407,all_valid,220401,7604,13.503531410723015,21.774978939107033,target_valid
+STAN,3407,normal,191205,7533,13.936403736497102,22.175902786458586,target_valid & events == normal
+STAN,3407,low_power_candidate,22578,2474,9.8093555814190427,18.628889674849621,target_valid & events == low_power_candidate
+STAN,3407,frozen_wind_candidate,94,88,9.0918850847841934,15.460943467041909,target_valid & events == frozen_wind_candidate
+STAN,3407,power_outlier,6524,2151,13.665156729397063,20.025358778785922,target_valid & events == power_outlier
+Wake-GNN,13,all_valid,220401,7604,14.146282700871678,21.813299253201226,target_valid
+Wake-GNN,13,normal,191205,7533,14.851093167801061,22.644608321999314,target_valid & events == normal
+Wake-GNN,13,low_power_candidate,22578,2474,8.1793777992952101,13.265211365946927,target_valid & events == low_power_candidate
+Wake-GNN,13,frozen_wind_candidate,94,88,5.215711140710404,5.344081636915746,target_valid & events == frozen_wind_candidate
+Wake-GNN,13,power_outlier,6524,2151,14.268441999647921,20.90017388331535,target_valid & events == power_outlier
+Wake-GNN,21,all_valid,220401,7604,13.317253226805756,21.638219776418968,target_valid
+Wake-GNN,21,normal,191205,7533,14.118822591369698,22.48710630874934,target_valid & events == normal
+Wake-GNN,21,low_power_candidate,22578,2474,6.3698026841268014,12.659608050039809,target_valid & events == low_power_candidate
+Wake-GNN,21,frozen_wind_candidate,94,88,4.709472873884728,5.1788656309699101,target_valid & events == frozen_wind_candidate
+Wake-GNN,21,power_outlier,6524,2151,13.992391080014155,21.035767636823728,target_valid & events == power_outlier
+Wake-GNN,42,all_valid,220401,7604,13.466266138921165,21.518802911837671,target_valid
+Wake-GNN,42,normal,191205,7533,14.254569652767573,22.346531399486327,target_valid & events == normal
+Wake-GNN,42,low_power_candidate,22578,2474,6.644147600443735,12.797981111893616,target_valid & events == low_power_candidate
+Wake-GNN,42,frozen_wind_candidate,94,88,6.34337035905659,6.794650756430558,target_valid & events == frozen_wind_candidate
+Wake-GNN,42,power_outlier,6524,2151,14.075060007720735,20.991411830646868,target_valid & events == power_outlier
+Wake-GNN,87,all_valid,220401,7604,15.098878952308539,21.688981235506947,target_valid
+Wake-GNN,87,normal,191205,7533,15.668337106185104,22.406139129556809,target_valid & events == normal
+Wake-GNN,87,low_power_candidate,22578,2474,10.398388145640514,14.770027170446332,target_valid & events == low_power_candidate
+Wake-GNN,87,frozen_wind_candidate,94,88,10.482552863640135,10.752647493907839,target_valid & events == frozen_wind_candidate
+Wake-GNN,87,power_outlier,6524,2151,14.743019015661771,20.535804545050627,target_valid & events == power_outlier
+Wake-GNN,3407,all_valid,220401,7604,13.39571704806762,21.540890316011559,target_valid
+Wake-GNN,3407,normal,191205,7533,14.256458566448915,22.305238280141335,target_valid & events == normal
+Wake-GNN,3407,low_power_candidate,22578,2474,5.9270476859704502,13.629588817722302,target_valid & events == low_power_candidate
+Wake-GNN,3407,frozen_wind_candidate,94,88,5.4881204276945086,6.1668796912602426,target_valid & events == frozen_wind_candidate
+Wake-GNN,3407,power_outlier,6524,2151,14.130365870515455,21.23362493489843,target_valid & events == power_outlier
+Jensen-Net,13,all_valid,220401,7604,13.46756561552257,21.731666743478549,target_valid
+Jensen-Net,13,normal,191205,7533,13.977353248484039,22.410717396033608,target_valid & events == normal
+Jensen-Net,13,low_power_candidate,22578,2474,9.1027949472233196,15.084550081091519,target_valid & events == low_power_candidate
+Jensen-Net,13,frozen_wind_candidate,94,88,12.402395297775659,13.445618569073275,target_valid & events == frozen_wind_candidate
+Jensen-Net,13,power_outlier,6524,2151,13.64751254966281,21.092301609599723,target_valid & events == power_outlier
+Jensen-Net,21,all_valid,220401,7604,15.277706326337684,21.908963980738005,target_valid
+Jensen-Net,21,normal,191205,7533,15.483490296371007,22.390490569007657,target_valid & events == normal
+Jensen-Net,21,low_power_candidate,22578,2474,13.736821461969246,17.770171576158912,target_valid & events == low_power_candidate
+Jensen-Net,21,frozen_wind_candidate,94,88,15.161690962107038,16.234452924107064,target_valid & events == frozen_wind_candidate
+Jensen-Net,21,power_outlier,6524,2151,14.580906804836493,20.646593477706716,target_valid & events == power_outlier
+Jensen-Net,42,all_valid,220401,7604,14.170896510922079,21.640375965895601,target_valid
+Jensen-Net,42,normal,191205,7533,14.531683145241992,22.251299029979698,target_valid & events == normal
+Jensen-Net,42,low_power_candidate,22578,2474,11.170670523661762,15.927644622969462,target_valid & events == low_power_candidate
+Jensen-Net,42,frozen_wind_candidate,94,88,13.754656920865912,14.990287937755154,target_valid & events == frozen_wind_candidate
+Jensen-Net,42,power_outlier,6524,2151,13.986043728379155,20.704452713493556,target_valid & events == power_outlier
+Jensen-Net,87,all_valid,220401,7604,13.991876093990374,21.678161083886078,target_valid
+Jensen-Net,87,normal,191205,7533,14.453955198205353,22.266211191806015,target_valid & events == normal
+Jensen-Net,87,low_power_candidate,22578,2474,10.136673220906463,16.208707308511418,target_valid & events == low_power_candidate
+Jensen-Net,87,frozen_wind_candidate,94,88,13.475702494999611,14.469151900515786,target_valid & events == frozen_wind_candidate
+Jensen-Net,87,power_outlier,6524,2151,13.798659611060984,20.820104513795975,target_valid & events == power_outlier
+Jensen-Net,3407,all_valid,220401,7604,13.566541591136019,21.627823183676824,target_valid
+Jensen-Net,3407,normal,191205,7533,14.038764852242307,22.264085420549833,target_valid & events == normal
+Jensen-Net,3407,low_power_candidate,22578,2474,9.5470505548971154,15.552127308094063,target_valid & events == low_power_candidate
+Jensen-Net,3407,frozen_wind_candidate,94,88,12.577492377208049,13.800435547259465,target_valid & events == frozen_wind_candidate
+Jensen-Net,3407,power_outlier,6524,2151,13.65139606729845,20.857795461957494,target_valid & events == power_outlier

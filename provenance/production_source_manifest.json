@@ -1,0 +1,920 @@
+{
+  "implementation_id": "PI-EEF-R1-public",
+  "scientific_core_files": [
+    {
+      "path": "scripts/align_time.py",
+      "bytes": 1692,
+      "sha256": "7efa81fda77cbbc2bc2f69d8000cceb461edadfcf4d8fb5c7325bbc5950f4e21"
+    },
+    {
+      "path": "scripts/analysis/ablation_strata.py",
+      "bytes": 4773,
+      "sha256": "25dbf22037c78cb393c7f74bca97ace8325a44e11cbf617cb693c30561aee22a"
+    },
+    {
+      "path": "scripts/analysis/attention_completion.py",
+      "bytes": 9404,
+      "sha256": "f54edb541e49522c86e4363a26a438cc6e3b5dd4988c737dafbe53e5fc3d7ccc"
+    },
+    {
+      "path": "scripts/analysis/attention_direction_sectors.py",
+      "bytes": 40914,
+      "sha256": "02227a12688db53a09e0befb4abb53152d6ee8277dd4fba4172b475c319f8f69"
+    },
+    {
+      "path": "scripts/analysis/attention_regimes.py",
+      "bytes": 3126,
+      "sha256": "1b8fefaf766e1d47ad782c4130f1e5a234fce1af3fb306de9f0276f83be1b8a5"
+    },
+    {
+      "path": "scripts/analysis/corrected_statistics.py",
+      "bytes": 22061,
+      "sha256": "88e49bb3fdc38344511a8fdab1a9f7dcabf50f2f4567ff28cf59562ea853434b"
+    },
+    {
+      "path": "scripts/analysis/extension_events_sensitivity.py",
+      "bytes": 21989,
+      "sha256": "58beac0cbd30207bdc4ca1b31a558de34b115f61579a72307098ca1c1ef12d25"
+    },
+    {
+      "path": "scripts/analysis/extract_physical_quantities.py",
+      "bytes": 12320,
+      "sha256": "60a4a871894ed58ff2bfbd5dae9a4d6560c5f640ad1d991dfff53a59ca3ecddc"
+    },
+    {
+      "path": "scripts/analysis/gradient_alignment.py",
+      "bytes": 9009,
+      "sha256": "3ed974a7f9f7d22262f3728d2d1127cd1fa07aacf545616af6037fa547fa69df"
+    },
+    {
+      "path": "scripts/analysis/graph_ablation.py",
+      "bytes": 29249,
+      "sha256": "1a298535d3a5dc3501a96645e6d913ac2b19995c1fd5c76d4f76ae7cc3646100"
+    },
+    {
+      "path": "scripts/analysis/huber_select_verify.py",
+      "bytes": 7127,
+      "sha256": "c21fd9b91b9f325ff4239cbe75fc3a3c9df4b7bd7d4e961d7e6119f4410b5173"
+    },
+    {
+      "path": "scripts/analysis/huber_statistics.py",
+      "bytes": 14198,
+      "sha256": "25eca5fe101618c97a41e2cab3fe21d92ce8840e10189e63ab59bafdb6b7bcd6"
+    },
+    {
+      "path": "scripts/analysis/learning_curves.py",
+      "bytes": 2655,
+      "sha256": "c2f59b9f24e8eb3ebaa56ce944087c9252f9cef79da504ca202cf8b4a3f8ddca"
+    },
+    {
+      "path": "scripts/analysis/learning_rate.py",
+      "bytes": 41901,
+      "sha256": "a039386e537ff726164ab316eda1c6154c2d1fc3f6a13794028b65503d9ad267"
+    },
+    {
+      "path": "scripts/analysis/main_summary.py",
+      "bytes": 2707,
+      "sha256": "15e98ec0cd27ac887ea1d04bb169ecbf972dcffbb584cceb103f7785b048f7e6"
+    },
+    {
+      "path": "scripts/analysis/paper/analyze_physics_regimes.py",
+      "bytes": 43455,
+      "sha256": "4a05ac2864e5a3478f4828b81bab1152656591e1f227eaad095d85f1fd7c9a67"
+    },
+    {
+      "path": "scripts/analysis/paper/dsi_uniform_baseline.py",
+      "bytes": 3428,
+      "sha256": "7c4afd2e1ecd24bab90df7deb681a609679d9630d5408ff10f6824f8315ee309"
+    },
+    {
+      "path": "scripts/analysis/paper/rebuild_ti_yaw_raw.py",
+      "bytes": 7092,
+      "sha256": "1fe8296a6a568063cfa3018663334e0f9679a7950a57d8bbecee39b942c80550"
+    },
+    {
+      "path": "scripts/analysis/paper/run_gradients.py",
+      "bytes": 7700,
+      "sha256": "cfdfd5c3c87ed5a9921e353d79e6135a2252fd8d99bac8180d1ca8f87e9fc894"
+    },
+    {
+      "path": "scripts/analysis/paper_result_ledger.py",
+      "bytes": 79357,
+      "sha256": "1bb5a39e3f700c149593f198458c6f09017303f7c6c916872531e53547bb7a82"
+    },
+    {
+      "path": "scripts/analysis/physical_magnitudes.py",
+      "bytes": 2178,
+      "sha256": "65bb2257346290aace0b16023ab6e5226ee075a3ff119e2f12eec7008bbeaa6c"
+    },
+    {
+      "path": "scripts/analysis/physical_monotonicity.py",
+      "bytes": 2297,
+      "sha256": "6ca18b193a512e99e3eba8618deb024854dccda9c1e9ac088b7673b4f60090e1"
+    },
+    {
+      "path": "scripts/analysis/physical_regimes.py",
+      "bytes": 4596,
+      "sha256": "9f4f73cfba3cbddb4b775236709e1289408d4cb150a44841c0a915462ff0273b"
+    },
+    {
+      "path": "scripts/analysis/physical_report.py",
+      "bytes": 29490,
+      "sha256": "111a41b4900db354301ff31a0010de749c0c8de9e111668f687df6dd8ba3f115"
+    },
+    {
+      "path": "scripts/analysis/physical_summary.py",
+      "bytes": 3664,
+      "sha256": "ce820123afb592a3a2b27219f66a332988c8b6d4e98907df74cfb727b2aaf310"
+    },
+    {
+      "path": "scripts/analysis/power_curve_check.py",
+      "bytes": 3324,
+      "sha256": "c32983ffbb7b7d110a6af641974eda058553c5781649c8b2c00bc1227c89c593"
+    },
+    {
+      "path": "scripts/analysis/recorded_events.py",
+      "bytes": 14572,
+      "sha256": "6e47bfac3fac668385dd580e0ec1e85542188ae053eba0f7ed3033d368a4fe50"
+    },
+    {
+      "path": "scripts/analysis/recorded_events_diagnostics.py",
+      "bytes": 6136,
+      "sha256": "a24071691075ab4ece5c1fbbcb52397abb66f04e59d8f276ad01eaafcbf52fe3"
+    },
+    {
+      "path": "scripts/analysis/revision_statistics_frozen.py",
+      "bytes": 14658,
+      "sha256": "fe9239254077af59680d8c9bf506df62544859d07fdc8c8e1d4bb3f1e3e2f30e"
+    },
+    {
+      "path": "scripts/analysis/round4_cfd_prediction.py",
+      "bytes": 35233,
+      "sha256": "5613c4a12ca4f3342cb4777d219b8d951cd52096092f4abd4a1410465b64cab8"
+    },
+    {
+      "path": "scripts/analysis/sensitivity_events_loss.py",
+      "bytes": 11887,
+      "sha256": "1c8461e45918dc8a9e30a593f1d3a224196e0d24c7fd59da2833aa4e5e8cc877"
+    },
+    {
+      "path": "scripts/analysis/staged_short_horizons.py",
+      "bytes": 9222,
+      "sha256": "8f1153f8194fb7954dcde7829f9e38e5501bdb713e2968104a0284b17cb6c37e"
+    },
+    {
+      "path": "scripts/analysis/training_modes_faults.py",
+      "bytes": 17997,
+      "sha256": "db4e5a973fc247b95d418f9cc788cc45beb806f789530a26f47a4dcc9205b53d"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/apply_v2_delivery_updates.py",
+      "bytes": 6723,
+      "sha256": "c1e16db31ea8fb2a7883086db5e88985474da1068e2c6533e8fe9a914a969897"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/build_report.py",
+      "bytes": 23145,
+      "sha256": "8ec8cd327e8e951e6c839c7770b7264799568a6ae80fdaa63a43ed7889786391"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/common.py",
+      "bytes": 3732,
+      "sha256": "825fec26b3bb035b6cb7c709bb53221d29d610b565f3ce0e783ce11d606a743a"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/figure_style.py",
+      "bytes": 1096,
+      "sha256": "ef8bf06c6cdedfad0bbd72b47b3cb636eaa36ea0541b7bf9bc817b22502cf7f8"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/figure_ti_attention.py",
+      "bytes": 1748,
+      "sha256": "812528fb6dec31b44415aa9e265d3fd1a57b1585f20c11f06ac544ef6cbd1563"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/figure_ti_errors.py",
+      "bytes": 1522,
+      "sha256": "1767c108d7c2b930555b29b36dceb91f8c4394b01e37f298802e58a9e3228689"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/figure_ti_power_curves.py",
+      "bytes": 1433,
+      "sha256": "c9235ba1807d5df99e1e248f7b3f2a5a3991c34193c45bed46177541fa2b785a"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/figure_yaw_power_ratio.py",
+      "bytes": 2090,
+      "sha256": "fe1c75d11fd011233098c8077053eac5e538545d0dcf45c1054cce0f8d4cf12c"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/finalize.py",
+      "bytes": 11095,
+      "sha256": "aab807b233ef100bee0865edabe14a9fd35b854f496aeb374279b5df41098dd8"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/inspect_inputs.py",
+      "bytes": 1712,
+      "sha256": "1a8a8a1bef13ea66f26337f9091cdefc3e84c6a97b84b7c407ba6d55c484f85e"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/k0_gates.py",
+      "bytes": 5509,
+      "sha256": "6913e641664023cff7016f2bc8900b110fe59f2724637e47112c753700441fb7"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/learned_curves.py",
+      "bytes": 8680,
+      "sha256": "cd2bb0e8e6a2431e0d6ead8126d8a909ca773beccc4988e1c4df5ed1a80f3af0"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/raw_data.py",
+      "bytes": 11829,
+      "sha256": "9ff9651b109782dca5a048201b543ba19c2eb12f84f789a123a53ff5763ef939"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/run_all.py",
+      "bytes": 828,
+      "sha256": "b8a8a56686030c2f4aedc9a9a590b8a2e051416af5574847ee7b1aa571ef0aa6"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/run_analysis.py",
+      "bytes": 900,
+      "sha256": "3571023ce4e3ab1dc2f774b9e6e889d9c164098d022f5853ad290559508f4d44"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/ti_analysis.py",
+      "bytes": 13304,
+      "sha256": "7fb092a9cd5295f782c0a8d71398c32dfa2bbd4eefd65a9e76140001931253f1"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/v2_audit.py",
+      "bytes": 8323,
+      "sha256": "d432ecb340b47eb61cfc22dec10ff5b62a80e616b9fc23284bd419c63e67a4c2"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/v2_report.py",
+      "bytes": 11011,
+      "sha256": "18f810cb129f83bcd4a6b2ca0ca5a75be9c7cb7c1d7b9922c596b5b5413a93ea"
+    },
+    {
+      "path": "scripts/analysis/turbulence_yaw/yaw_analysis.py",
+      "bytes": 6375,
+      "sha256": "fe82a65c94d66270b67086c2c2fd66c1813ef8f8faa2b6332c84aa9680ff1336"
+    },
+    {
+      "path": "scripts/analysis/validation_predictions.py",
+      "bytes": 3646,
+      "sha256": "3d022fef46086d77bf144a4dd0d02b4fb517182fe4f75f2279f724ae38311c80"
+    },
+    {
+      "path": "scripts/build_all_sample_eval.py",
+      "bytes": 2154,
+      "sha256": "19b4552453b5e437de443ca21fa9f48399abf1220eef3b6cca71ac226281dcbb"
+    },
+    {
+      "path": "scripts/build_curtailment_bins.py",
+      "bytes": 2111,
+      "sha256": "67868ec46ccd715a8325c0b69ca9f0924de018bee292fb5d0dd715c5c0267e9b"
+    },
+    {
+      "path": "scripts/build_ecmwf_forecasts.py",
+      "bytes": 7790,
+      "sha256": "7d0ef9736c02d97377b73965d73178826316a8befec3fa2fc3be1bee8132e416"
+    },
+    {
+      "path": "scripts/build_features.py",
+      "bytes": 2681,
+      "sha256": "dc91b77ba490c8fd0619f026926369b61c5efaca3543521457d9d820ce24cd8e"
+    },
+    {
+      "path": "scripts/cfd/assess.py",
+      "bytes": 24191,
+      "sha256": "c049b8be4f035343a8a032ae4dc0399f215e1fa762770edc11a55a4a62856c9b"
+    },
+    {
+      "path": "scripts/cfd/build_lookup_delivery.py",
+      "bytes": 44756,
+      "sha256": "52328c2ad884e733a88ef141df12fd10775041ab340a400b5566db8613df56d4"
+    },
+    {
+      "path": "scripts/cfd/prepare_boundary_layer.py",
+      "bytes": 1601,
+      "sha256": "11dcd7ef4aeac56f9a5e0383da9849434c802c574782151216cdfef6b7eafda3"
+    },
+    {
+      "path": "scripts/cfd/prepare_relative_dem.py",
+      "bytes": 1045,
+      "sha256": "759029445b7edeeee687a72ffd23be78480a7bf9da1b1be82a8c66a068a4cf23"
+    },
+    {
+      "path": "scripts/cfd/summarize.py",
+      "bytes": 49167,
+      "sha256": "870a605f3c3ecb609a0bf31a9d2abe38f46fb0a10791595e33b01cd12827fb98"
+    },
+    {
+      "path": "scripts/check_env.py",
+      "bytes": 905,
+      "sha256": "f5e595f2cc96aeefe59d7ea7aa251c8c610a717024a94d7339ce991ea2014050"
+    },
+    {
+      "path": "scripts/dm_bh.py",
+      "bytes": 5890,
+      "sha256": "43e7bcafb95ccc175ef026b43fd7882b796b59008f14f4e5a2894830d3fa3438"
+    },
+    {
+      "path": "scripts/download_kelmarsh.py",
+      "bytes": 3063,
+      "sha256": "d7ba2cc5e6eb834571faf4588db376e4f41c85660317ccb74f7f52764329f6ea"
+    },
+    {
+      "path": "scripts/download_release_assets.py",
+      "bytes": 1280,
+      "sha256": "85930c040f5c50e3180f42d65a69865993a817dd67f04ada2b93ef288a007ead"
+    },
+    {
+      "path": "scripts/evaluate_revision.py",
+      "bytes": 25478,
+      "sha256": "dc1bc7a1295188bc04bc9d745f180b25fe433c58dfdd137cfd3249c51a9815ce"
+    },
+    {
+      "path": "scripts/evaluate_revision_efficiency.py",
+      "bytes": 22063,
+      "sha256": "1681f828cbffc89c0aa1bdd521408bd8980dc8405895629ac1d2b4d8bc4480ba"
+    },
+    {
+      "path": "scripts/evaluation/e1_aggregate.py",
+      "bytes": 4932,
+      "sha256": "e48cc3bdc258d95b885bea410f7d49d26c78d7030f2ab16743aa85ce3c5ae798"
+    },
+    {
+      "path": "scripts/evaluation/e1_common.py",
+      "bytes": 8229,
+      "sha256": "73b072fe4c48963f9b8597480ae1f05c1507de79170ca7ee0fc6ff9af96679f0"
+    },
+    {
+      "path": "scripts/evaluation/e1_compare.py",
+      "bytes": 8580,
+      "sha256": "6fd30ade3c15061a7c34618f4caaa94315ae58984221cff1174874b760714175"
+    },
+    {
+      "path": "scripts/evaluation/e1_legacy_schema.py",
+      "bytes": 11161,
+      "sha256": "98aec2eede8358de16b6e057f6393a0df4515c7f42650d079b77392eabaffddc"
+    },
+    {
+      "path": "scripts/evaluation/e1_run.py",
+      "bytes": 14089,
+      "sha256": "465297068d83ae4b3b465ece73e0e083acf1768c8afdbceed8a296dc972028d0"
+    },
+    {
+      "path": "scripts/evaluation/e2_cost.py",
+      "bytes": 25090,
+      "sha256": "cfa5a4ac3b12416280991540e991d2aa9a121e838647ea76560f282d1ec8e2d3"
+    },
+    {
+      "path": "scripts/evaluation/e2_table.py",
+      "bytes": 3362,
+      "sha256": "2891b0b7ff27be1576519b6ffbefebad7a34f06ee30a6075c6e471585609b704"
+    },
+    {
+      "path": "scripts/evaluation/graph_ablation_faults.py",
+      "bytes": 6115,
+      "sha256": "8a476dc0f7572c855e603b0fb8ac6f51338730c6de186e265baf0629fb57e89d"
+    },
+    {
+      "path": "scripts/evaluation/huber_baseline_faults.py",
+      "bytes": 7003,
+      "sha256": "b3c8e4643e3c4824a5a97617852db747cc0aed62b03efef1639b2cf875188873"
+    },
+    {
+      "path": "scripts/evaluation/main_faults_verified.py",
+      "bytes": 20123,
+      "sha256": "a5abff0c8d3119d09ca23cef42e156e2e7d628811d60e3332067c1fa6539f82e"
+    },
+    {
+      "path": "scripts/evaluation/round4_control_inference.py",
+      "bytes": 13603,
+      "sha256": "15bd7a3427f2deca20871e884204771c2b9131cd8c32aec88851defba3d465f2"
+    },
+    {
+      "path": "scripts/evaluation/training_modes_faults.py",
+      "bytes": 8838,
+      "sha256": "49dd9be121f565ea1a79429c80dc183c5075cdfb46449c9bdba36abbd4d1a562"
+    },
+    {
+      "path": "scripts/evaluation/training_modes_reference.py",
+      "bytes": 20123,
+      "sha256": "a5abff0c8d3119d09ca23cef42e156e2e7d628811d60e3332067c1fa6539f82e"
+    },
+    {
+      "path": "scripts/export_revision_interpretability.py",
+      "bytes": 14058,
+      "sha256": "019d83d93203c9c99dd3d972eb4f5a045e77f23ee30dd862e47d889a338435c8"
+    },
+    {
+      "path": "scripts/fetch_gfs_forecasts.py",
+      "bytes": 3550,
+      "sha256": "49d76637345cb57341618956dfde34b2901e3de038394a47b00282e37a5b424b"
+    },
+    {
+      "path": "scripts/figures/cfd_common.py",
+      "bytes": 140,
+      "sha256": "8b0375e6af89920eb02f20b69240d309ad481dad46081f59b4f165c072a3cdb9"
+    },
+    {
+      "path": "scripts/figures/make_fig06_layout_power.py",
+      "bytes": 305,
+      "sha256": "61d717c924f1948f109c314819d6397eb2d9b6142a70cf7966193745bebb0c52"
+    },
+    {
+      "path": "scripts/figures/make_fig09_physics_boxplots.py",
+      "bytes": 307,
+      "sha256": "3af1c87e013b3c60958297833753d3ef2b050ad71ce82b756b5882c439f72a0a"
+    },
+    {
+      "path": "scripts/figures/make_fig10_gradient_densities.py",
+      "bytes": 307,
+      "sha256": "cbfb777efd42f41d7aeca93accb83372a87e85c7448b8f03a79737411e79e445"
+    },
+    {
+      "path": "scripts/figures/make_fig11.py",
+      "bytes": 307,
+      "sha256": "2e59cf2d82dfb3f35425eb15318d4d33df673695f64d4e99570b021751cc7552"
+    },
+    {
+      "path": "scripts/figures/make_Fig12_events_black_frame.py",
+      "bytes": 307,
+      "sha256": "dda33dd67bd5e36c6a38a75ef4f4d3481042f3230c86bba63587078299b4e12b"
+    },
+    {
+      "path": "scripts/figures/make_fig15_diff.py",
+      "bytes": 307,
+      "sha256": "7026e829c2f703895b8d8569ee86299df3f4f4348b981649404a960aa3e6c210"
+    },
+    {
+      "path": "scripts/figures/make_fig7_benchmark_heatmap.py",
+      "bytes": 305,
+      "sha256": "301cfa8122d3c8c7bc12c5ad09127a7a6d84a99520738953d194781e6c9c9035"
+    },
+    {
+      "path": "scripts/figures/make_fig8_robustness_components.py",
+      "bytes": 305,
+      "sha256": "a58053c1ccdb86beddd2ef1b54e4ae446200dee05e5fc0dacf227945e7638fa1"
+    },
+    {
+      "path": "scripts/figures/make_fig9_physical_curves_v3.py",
+      "bytes": 307,
+      "sha256": "9e48cfe7318a5e4b643345a90bbef950f28f756b03550a8705d2ee81f49f086c"
+    },
+    {
+      "path": "scripts/figures/make_fig_events_bars.py",
+      "bytes": 307,
+      "sha256": "dda33dd67bd5e36c6a38a75ef4f4d3481042f3230c86bba63587078299b4e12b"
+    },
+    {
+      "path": "scripts/figures/make_fig_nwp_timeline.py",
+      "bytes": 305,
+      "sha256": "1865c2f5593e66b4410b0809ffda4ce4bafb3b597c0296e51538b80a54572e86"
+    },
+    {
+      "path": "scripts/figures/make_figS_cfd_checks.py",
+      "bytes": 307,
+      "sha256": "18c3958a665c89f3f9f88405bbc03148e40b33ace072f7c1b128a415ba7b2eb4"
+    },
+    {
+      "path": "scripts/figures/make_figS_cfd_lookup.py",
+      "bytes": 307,
+      "sha256": "c2882975c5b5f13f3244613527784d5452182578d9fe2bac71a88894921cd580"
+    },
+    {
+      "path": "scripts/figures/make_figS_ti_attention.py",
+      "bytes": 307,
+      "sha256": "6d8ee80c1b595edf4e1a8d35c0e5c0a1cc3c169659777c243ccf608e634ff218"
+    },
+    {
+      "path": "scripts/figures/make_figS_ti_errors.py",
+      "bytes": 307,
+      "sha256": "d78969bad60635f8c18ee578de26ae1e944c053a8735791ac5680a6eff33c8cc"
+    },
+    {
+      "path": "scripts/figures/make_figS_ti_power_curves.py",
+      "bytes": 307,
+      "sha256": "c133366fcc3aef9e3b6d2352dd4e7e12b52c196f4f690288bfcadc9a6e8d711e"
+    },
+    {
+      "path": "scripts/figures/make_figS_yaw_power.py",
+      "bytes": 307,
+      "sha256": "adb061f367972d6d3465fe7794d78cc8e215c24f65003fd94d284a5d133bcf17"
+    },
+    {
+      "path": "scripts/figures/public_figures.py",
+      "bytes": 11364,
+      "sha256": "f2a9b39dfb90bcf5d44bdb859ea5298ff753e26daea3554a6aeae077c741f177"
+    },
+    {
+      "path": "scripts/figures/redraw_common.py",
+      "bytes": 140,
+      "sha256": "8b0375e6af89920eb02f20b69240d309ad481dad46081f59b4f165c072a3cdb9"
+    },
+    {
+      "path": "scripts/figures/redraw_v2_common.py",
+      "bytes": 140,
+      "sha256": "8b0375e6af89920eb02f20b69240d309ad481dad46081f59b4f165c072a3cdb9"
+    },
+    {
+      "path": "scripts/figures/redraw_v2_common_76387876.py",
+      "bytes": 140,
+      "sha256": "8b0375e6af89920eb02f20b69240d309ad481dad46081f59b4f165c072a3cdb9"
+    },
+    {
+      "path": "scripts/figures/redraw_v2_common_9877759d.py",
+      "bytes": 140,
+      "sha256": "8b0375e6af89920eb02f20b69240d309ad481dad46081f59b4f165c072a3cdb9"
+    },
+    {
+      "path": "scripts/figures/render_schematics.py",
+      "bytes": 725,
+      "sha256": "462e2774235e173d283fb0bac2eff4d468aacb6b26949008dfe0ead0e59abb9e"
+    },
+    {
+      "path": "scripts/figures/ti_yaw_plot_common.py",
+      "bytes": 140,
+      "sha256": "8b0375e6af89920eb02f20b69240d309ad481dad46081f59b4f165c072a3cdb9"
+    },
+    {
+      "path": "scripts/prepare_kelmarsh.py",
+      "bytes": 10652,
+      "sha256": "1c5a1d978630276c9c0213212db1d4d8729c230afdac36e166f0839903c96623"
+    },
+    {
+      "path": "scripts/prepare_revision_scalability.py",
+      "bytes": 24906,
+      "sha256": "e66dfb54fab4e429fb7c379d0540ea8edf95d49b9665e9ac0869814df97c0316"
+    },
+    {
+      "path": "scripts/prepare_revision_sites.py",
+      "bytes": 5012,
+      "sha256": "e05d80a6e8e9268b3238729231987c6369c454ee381ba6d86e30d072f20d71fb"
+    },
+    {
+      "path": "scripts/reproduce.py",
+      "bytes": 5095,
+      "sha256": "735118c2c9d743f0cbc9496736213029fcec75edb1b67aa26f9b9a3de0df0110"
+    },
+    {
+      "path": "scripts/run_frozen_inference.py",
+      "bytes": 3296,
+      "sha256": "df4dbc458dbb679fe327ba7478fd144ceb34c55d7c08757a80eb9099140c34ca"
+    },
+    {
+      "path": "scripts/run_public_demo.py",
+      "bytes": 6667,
+      "sha256": "7a82e39dd66c31a1923703b1ae318a85f68321cb1eedc30eebe0c5e07b70848a"
+    },
+    {
+      "path": "scripts/run_significance.py",
+      "bytes": 1429,
+      "sha256": "138c0e9dff0f466d3c027a5bf0b0467bc40b9a12aac10009bd885e993a8c0e23"
+    },
+    {
+      "path": "scripts/train.py",
+      "bytes": 14709,
+      "sha256": "adf200b1fa4399b1f081f3b7319467eb8aba55dbaf74831ed8e7bd0d7cf5bba9"
+    },
+    {
+      "path": "scripts/train_baselines.py",
+      "bytes": 21265,
+      "sha256": "c0d78dcd33e5122bd952a4d3cf5ba8383ea3e679deb8f14cc74050f452bed3e4"
+    },
+    {
+      "path": "scripts/train_baselines_huber.py",
+      "bytes": 1080,
+      "sha256": "17bb3192ec8aa42b53d10a04a29341e9f662d1edc266af1f1330d87ed36a03d5"
+    },
+    {
+      "path": "scripts/train_huber_retrained.py",
+      "bytes": 16627,
+      "sha256": "c9cbf667d2113a0933f576806e66439cc15e2265cb97bc507e16078359189ada"
+    },
+    {
+      "path": "scripts/train_r4_lightgbm_cfd.py",
+      "bytes": 11346,
+      "sha256": "fafb67205822022311832736f8cd23ea3ad7155f3dcef19ae6f02d3e32b6333a"
+    },
+    {
+      "path": "scripts/verify_anonymisation.py",
+      "bytes": 1147,
+      "sha256": "6968f1d11a9ab28445e0e165a0ecccdb56e5bd2f85d4bf28dcc8d9dc60771497"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "bytes": 1103,
+      "sha256": "eea304c60195fab8128325bcaf0e6550b368518ab14b316e0487051e5db4d449"
+    },
+    {
+      "path": "src/pieef/__init__.py",
+      "bytes": 488,
+      "sha256": "b37037be266fa5e33c51a36ba7999736257df7d5bc4d37a5e51105c78ee39018"
+    },
+    {
+      "path": "src/pieef/analysis.py",
+      "bytes": 3692,
+      "sha256": "c8ed23d725bdf41d7ff0aa6ffa6c73c55517121fb0ce58063cdb6a770c9e7eb2"
+    },
+    {
+      "path": "src/pieef/artifacts.py",
+      "bytes": 2492,
+      "sha256": "4b601a2404d7a98507264d0c568bc874c8cf3626867052f50ba1a302abd2e936"
+    },
+    {
+      "path": "src/pieef/baseline_protocol.py",
+      "bytes": 6169,
+      "sha256": "ff940f855c90148fe1c7a028a45e6c19d5b27b83afbc6fd085347af2f71f950d"
+    },
+    {
+      "path": "src/pieef/baselines.py",
+      "bytes": 52061,
+      "sha256": "a4448ada97b5f1dc936e740804f9402d999f28868493c636f1f4966dd2c537fc"
+    },
+    {
+      "path": "src/pieef/cfd_engine/base/solver/adjustBoundaryPatchTypes.py",
+      "bytes": 2930,
+      "sha256": "22d8d83b0f287b018ba2f59f9fc7f6a639ad05e512da63462ac3b8e4ff67faec"
+    },
+    {
+      "path": "src/pieef/cfd_engine/base/solver/buildTerrain.py",
+      "bytes": 21846,
+      "sha256": "403119bda9acc3bc9ba069fd7279d9bfcf9f93688ccd55e831f3e0bd0181347e"
+    },
+    {
+      "path": "src/pieef/cfd_engine/base/solver/initializeABL.py",
+      "bytes": 7381,
+      "sha256": "320e8643a018809b20654e8090d4e2b8083de838179615502b11a143c76f3862"
+    },
+    {
+      "path": "src/pieef/cfd_engine/base/solver/makeGmsh.py",
+      "bytes": 11224,
+      "sha256": "e65586d29c2f853c88cca44b606a7b25b577e2f8efa475d86f616e0638135499"
+    },
+    {
+      "path": "src/pieef/cfd_engine/base/solver/makeInput.py",
+      "bytes": 1188,
+      "sha256": "13e3b5fdcef4d000dba0583d9c901ec7cb16b3ab34adb02dc845df7af8f927d7"
+    },
+    {
+      "path": "src/pieef/cfd_engine/base/solver/post.py",
+      "bytes": 9722,
+      "sha256": "0ea956084806e7256cb6497128cb2331bdc7878aef9626301e133f48fcdf43b6"
+    },
+    {
+      "path": "src/pieef/cfd_engine/base/solver/utils/interpolate.py",
+      "bytes": 438,
+      "sha256": "45a9666d0cf5d0d66694dc20b19831aba3f2ed2b79bba3b6160690bd80408e88"
+    },
+    {
+      "path": "src/pieef/cfd_engine/base/solver/validateInput.py",
+      "bytes": 8199,
+      "sha256": "3dc1fab322c9c8a9bd3abb7cea874223596555c908326248d530798e44b5c897"
+    },
+    {
+      "path": "src/pieef/cfd_engine/base/solver/writeBoundaryFields.py",
+      "bytes": 24653,
+      "sha256": "05bbd504c2fd3a03306cc72165c1750f13b35d10e2f8f848b2a099d097b7317a"
+    },
+    {
+      "path": "src/pieef/cfd_engine/quality.py",
+      "bytes": 17004,
+      "sha256": "3ed900f32e083048be38cf1cbf73b56f0454015efd094f38f5499e46741ba311"
+    },
+    {
+      "path": "src/pieef/cfd_engine/utils/experimental_cfd_slice.py",
+      "bytes": 54085,
+      "sha256": "f8ec2d1f8600deaa7d0059873539442d409b44e142cf6967ecca82d73997fb10"
+    },
+    {
+      "path": "src/pieef/cfd_engine/utils/precompute_visualization.py",
+      "bytes": 15370,
+      "sha256": "a247cc8f494f0421162a5eacaadc91f13b6a99871eca094e63584111a4485a18"
+    },
+    {
+      "path": "src/pieef/cfd_engine/utils/preStreamLines.py",
+      "bytes": 14366,
+      "sha256": "2965aa5d62ccd7ddcf1e0646544316329d7db6db6f0d19462e63210f0d2249ac"
+    },
+    {
+      "path": "src/pieef/cfd_engine/utils/process_vtk.py",
+      "bytes": 4020,
+      "sha256": "927af820a6f0a51d453baa4906105ee9eb6c9926aba83a0d529045367a2e5f4d"
+    },
+    {
+      "path": "src/pieef/cfd_engine/utils/query_speed.py",
+      "bytes": 3099,
+      "sha256": "9e4689e98ae81c02f7e48482a8d89cecb50deff3e7d5a4b50da574aec69e00d8"
+    },
+    {
+      "path": "src/pieef/cfd_engine/utils/streamline_geometry.py",
+      "bytes": 5686,
+      "sha256": "12b6a5cad4c31a9ad247e66228fa598e012dcd2447fd5a33d706ec6f545815bf"
+    },
+    {
+      "path": "src/pieef/cfd_engine/utils/visualization_contract.py",
+      "bytes": 5101,
+      "sha256": "68f828c5136aefad31331ae872089f9f644d4cad32f15a6e1965cafcb4582a49"
+    },
+    {
+      "path": "src/pieef/cfd_features.py",
+      "bytes": 14984,
+      "sha256": "61bf8a484bbd173b09ff9ace945df3247626de9ebdaa1e4a782de874bd0d2b83"
+    },
+    {
+      "path": "src/pieef/core.py",
+      "bytes": 2039,
+      "sha256": "a143a776c3aa50b0928d383584c635609a4d5cb07feb25484ef842e03c88c055"
+    },
+    {
+      "path": "src/pieef/data.py",
+      "bytes": 12254,
+      "sha256": "2bc9ec815a9b699a0ca5af0c94af16937f807039f4eabfc15a9ea68a084ad005"
+    },
+    {
+      "path": "src/pieef/faults.py",
+      "bytes": 11656,
+      "sha256": "a7c5863af5b9e1984dff6c792eacd912f208e8e52cf3624f250cb0938b7b5956"
+    },
+    {
+      "path": "src/pieef/forecast_corruption.py",
+      "bytes": 7001,
+      "sha256": "a28760760ad2a7bbbffdc6ad2f857b2cdc7111c851df08828b81563df367aa3b"
+    },
+    {
+      "path": "src/pieef/forecast_vintages.py",
+      "bytes": 9409,
+      "sha256": "682c9d7f22f1b69b33a3ff61c537515d97247e139678db8d33ccbfc1bd5e8caa"
+    },
+    {
+      "path": "src/pieef/gfs_forecasts.py",
+      "bytes": 29625,
+      "sha256": "eb344791c9f9f6af088596be5b5a6f61f95a20fe4179b40bcd95e25a6b1758d5"
+    },
+    {
+      "path": "src/pieef/grib1.py",
+      "bytes": 9208,
+      "sha256": "1ffcdfdd60aed52a5ab48c754924845be27bd7ecdca8b64048a8af066690027c"
+    },
+    {
+      "path": "src/pieef/ledger.py",
+      "bytes": 7447,
+      "sha256": "fb6b6eac7304cb4fce6fc8a931b9f24c6b54b60f70433a62115e967ecf68d27e"
+    },
+    {
+      "path": "src/pieef/legacy_v1/__init__.py",
+      "bytes": 74,
+      "sha256": "bb4f2f4d4ab0edf7f95d1fcfec6daabb16288c8f8f26a8a4df5c8bef7a6a2358"
+    },
+    {
+      "path": "src/pieef/legacy_v1/models/__init__.py",
+      "bytes": 509,
+      "sha256": "c7cf04a515a2b5da6a4efa711ca4b2a1ffeef9e852873d7a4200717f7ff71cbd"
+    },
+    {
+      "path": "src/pieef/legacy_v1/models/e2e.py",
+      "bytes": 15303,
+      "sha256": "8a87391d5dc8d5aae70b2c76050c5532079373af5b3e2ba15ce28c00600749f3"
+    },
+    {
+      "path": "src/pieef/legacy_v1/models/forecast.py",
+      "bytes": 2215,
+      "sha256": "b4834bd2a3720324e8ecb815f64230b5e17e89ba3ea7d3e12e01ef9c322fca2c"
+    },
+    {
+      "path": "src/pieef/legacy_v1/models/graph.py",
+      "bytes": 5019,
+      "sha256": "5320716ea8a87fe3b762a2dca7827acffb5f1bac79cf39e03f99a6a669a7d591"
+    },
+    {
+      "path": "src/pieef/legacy_v1/models/physics.py",
+      "bytes": 11346,
+      "sha256": "f9f0cc8ac30e2e1e0d51b8ca1e4d014f2cfb700b32ec49f0490c5b8471ae6201"
+    },
+    {
+      "path": "src/pieef/legacy_v1/models/pretrain.py",
+      "bytes": 9713,
+      "sha256": "5d778c4fc29297839267c9b09552de61b0a69b2d46da9bb10682894a5b1fcb67"
+    },
+    {
+      "path": "src/pieef/model_factory.py",
+      "bytes": 3554,
+      "sha256": "f694ef7c5ed1fd24ff83a00861b2bf657caa4f7593815415f20076fc4aa19b80"
+    },
+    {
+      "path": "src/pieef/model_main.py",
+      "bytes": 532,
+      "sha256": "0a90463f9d252292f818953e8ad544a4976d8cb009630ec88b603a300d5a6e29"
+    },
+    {
+      "path": "src/pieef/model_registry.py",
+      "bytes": 5159,
+      "sha256": "ea52070bfdbd35ffdc35da4b55bea60defd26e6f684eece3457ae5c5aa139a27"
+    },
+    {
+      "path": "src/pieef/models/__init__.py",
+      "bytes": 509,
+      "sha256": "c7cf04a515a2b5da6a4efa711ca4b2a1ffeef9e852873d7a4200717f7ff71cbd"
+    },
+    {
+      "path": "src/pieef/models/e2e.py",
+      "bytes": 20174,
+      "sha256": "13416fe174cd31a2f7b69eca4d6c80b95728862f9f5ca761d47e70def6dc8b92"
+    },
+    {
+      "path": "src/pieef/models/forecast.py",
+      "bytes": 2565,
+      "sha256": "002f1e833c0a7b5a99bbc6a857fe13db9352388e43d3bcfc236e870a96ea2b35"
+    },
+    {
+      "path": "src/pieef/models/forecast_skip.py",
+      "bytes": 3159,
+      "sha256": "a7f7ca829333191dbdfb9a52b9efcedd911b7056d6b7cbac639f96c0dd04d0a8"
+    },
+    {
+      "path": "src/pieef/models/graph.py",
+      "bytes": 9004,
+      "sha256": "a32c4ef07813d99a16c83dea03dc01f70b5a872434a8326188f5ca940b3ba6aa"
+    },
+    {
+      "path": "src/pieef/models/physics.py",
+      "bytes": 11346,
+      "sha256": "f9f0cc8ac30e2e1e0d51b8ca1e4d014f2cfb700b32ec49f0490c5b8471ae6201"
+    },
+    {
+      "path": "src/pieef/models/pretrain.py",
+      "bytes": 10782,
+      "sha256": "3c4ddc174bb0d208eae9d9ad869db47020ae07e767f416884357f1a54e43ef29"
+    },
+    {
+      "path": "src/pieef/power_training_stats.py",
+      "bytes": 6145,
+      "sha256": "31ea99de82c5df30cbc332cc1d6371a1d1dc98262b061958e0832cd6ef1f6867"
+    },
+    {
+      "path": "src/pieef/profiling.py",
+      "bytes": 3091,
+      "sha256": "6ff794c083a5930f57f73dd4db770f6dff8b79ea31a69b095ff6cdb292c99405"
+    },
+    {
+      "path": "src/pieef/r4_attention.py",
+      "bytes": 4817,
+      "sha256": "3a860b9eb39cb65eaf960693ea500a4c2603194623b7b0bbb7c8ef47e468c5d7"
+    },
+    {
+      "path": "src/pieef/r4_lightgbm_features.py",
+      "bytes": 4596,
+      "sha256": "fc668a14e077fb6a9eaebf015a6d57987f5b6c02467d66b083c024a80db41ac9"
+    },
+    {
+      "path": "src/pieef/revision_data.py",
+      "bytes": 18468,
+      "sha256": "eb2519a18cf1d0b3860c7b225800b0b9a09fa406d628f892fd7c38f72668f342"
+    },
+    {
+      "path": "src/pieef/revision_statistics.py",
+      "bytes": 14658,
+      "sha256": "fe9239254077af59680d8c9bf506df62544859d07fdc8c8e1d4bb3f1e3e2f30e"
+    },
+    {
+      "path": "src/pieef/site_alignment.py",
+      "bytes": 3860,
+      "sha256": "ec66c8ba4760f83cf9459833331a0c446158acc823fd5c7a355dd770eb252953"
+    },
+    {
+      "path": "src/pieef/train_main.py",
+      "bytes": 24930,
+      "sha256": "a3c2b922b69cdfe6ba625cfb85dbc51c9f98537f0fbe9802c8a0f4868564358a"
+    },
+    {
+      "path": "src/pieef/training_timing.py",
+      "bytes": 4007,
+      "sha256": "b118893ed0e497b10e3708c4df20908ce2b75ca637804a75f55cef00329ea86a"
+    },
+    {
+      "path": "tests/test_release_extensions_cpu.py",
+      "bytes": 1850,
+      "sha256": "d2f2527053c1ebcd7add9f9013d77f3561f1d838f7f0526a13d6a4d669973204"
+    },
+    {
+      "path": "tests/test_revision_data_cpu.py",
+      "bytes": 6465,
+      "sha256": "8e733fafb9144b86c80d0055322214570f41617452ff231ee340f15f24233319"
+    },
+    {
+      "path": "tests/test_vf_cpu.py",
+      "bytes": 10906,
+      "sha256": "91544ac90078f47b90d1f2d5eb466b5924056c4e86b1e437c823d5d6a0896707"
+    },
+    {
+      "path": "tests/vf_fixture.py",
+      "bytes": 4325,
+      "sha256": "14dcd5dac149878a0f1ed98ad473d560ebb1b7c0db4610ee68df438a1ee6257c"
+    }
+  ]
+}

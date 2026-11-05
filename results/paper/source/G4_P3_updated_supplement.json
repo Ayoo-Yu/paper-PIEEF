@@ -1,0 +1,1431 @@
+{
+  "groups": [
+    {
+      "comparison": "ablation:bound-off",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.19991322020878088,
+          "sample_sd": 0.00277520739394727
+        },
+        "nmae": {
+          "mean": 0.11418222311938062,
+          "sample_sd": 0.0028914726383249055
+        },
+        "r2": {
+          "mean": 0.46580257366410616,
+          "sample_sd": 0.014912491457424088
+        }
+      },
+      "relative_nrmse_gain_pct": -0.03080166042119803,
+      "relative_nmae_gain_pct": 1.0610548193641378,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": 1.9194191736600365e-05,
+          "sample_sd": 0.0020753333415933716,
+          "differences": [
+            0.0031469477337185206,
+            0.0005065035737797999,
+            -0.002564281497531948,
+            -0.0004712172152305169,
+            -0.000521981636052854
+          ],
+          "paired_t_statistic": 0.020680782521062847,
+          "paired_t_p_raw": 0.9844907949950645,
+          "across_seed_t_interval95": [
+            -0.0025576725027918086,
+            0.002596060886265009
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.0012251584141348554,
+          "sample_sd": 0.002802994026499813,
+          "differences": [
+            0.0005134598926511691,
+            0.0014838054955067376,
+            -0.005792429403984084,
+            -0.0008501188704320428,
+            -0.0014805091844160567
+          ],
+          "paired_t_statistic": -0.9773611614264918,
+          "paired_t_p_raw": 0.38373072911945977,
+          "across_seed_t_interval95": [
+            -0.004705535184019887,
+            0.0022552183557501765
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "ablation:calibration-off",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.20002402526781154,
+          "sample_sd": 0.002587600413145553
+        },
+        "nmae": {
+          "mean": 0.11502526961696773,
+          "sample_sd": 0.002551279978062035
+        },
+        "r2": {
+          "mean": 0.4652210829401257,
+          "sample_sd": 0.013801790567487543
+        }
+      },
+      "relative_nrmse_gain_pct": -0.08624531177798822,
+      "relative_nmae_gain_pct": 0.3305546685456462,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": 6.251740443396769e-05,
+          "sample_sd": 0.001618961546422171,
+          "differences": [
+            0.0020986206727656373,
+            -0.0004842753284058296,
+            -0.001640951953086077,
+            0.0014175365757412642,
+            -0.0010783429448451565
+          ],
+          "paired_t_statistic": 0.0863474283253576,
+          "paired_t_p_raw": 0.935339825383863,
+          "across_seed_t_interval95": [
+            -0.0019476888622347378,
+            0.0020727236711026733
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.0003825769284038799,
+          "sample_sd": 0.005636525291835161,
+          "differences": [
+            0.0065036015034706934,
+            -0.003701026466055815,
+            -0.006203962743108388,
+            0.004758108229028182,
+            -0.0032696051653540725
+          ],
+          "paired_t_statistic": -0.15177223098303866,
+          "paired_t_p_raw": 0.886713800955903,
+          "across_seed_t_interval95": [
+            -0.007381247458240577,
+            0.006616093601432818
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "ablation:derivative-regularizer-off",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.20063954838726997,
+          "sample_sd": 0.0022271839007789295
+        },
+        "nmae": {
+          "mean": 0.11137285850682573,
+          "sample_sd": 0.00045146205538352185
+        },
+        "r2": {
+          "mean": 0.4619437210336958,
+          "sample_sd": 0.011956725979873583
+        }
+      },
+      "relative_nrmse_gain_pct": -0.3942353037137192,
+      "relative_nmae_gain_pct": 3.495370458002356,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": 0.0003076235419455939,
+          "sample_sd": 0.0022685983601268677,
+          "differences": [
+            0.002877854161137852,
+            0.001005462664711028,
+            -0.0033549349131950096,
+            0.0005265945118203968,
+            0.00048314128525370204
+          ],
+          "paired_t_statistic": 0.3032123990564544,
+          "paired_t_p_raw": 0.7768438370366243,
+          "across_seed_t_interval95": [
+            -0.002509213368208041,
+            0.0031244604520992286
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 4,
+          "n_negative": 1,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.004036552898296281,
+          "sample_sd": 0.0036992256696715448,
+          "differences": [
+            0.0002525712749463366,
+            -0.005873166313888345,
+            -0.00910667268907664,
+            -0.0013429570633774895,
+            -0.004112539700085266
+          ],
+          "paired_t_statistic": -2.4399718971905004,
+          "paired_t_p_raw": 0.07121057831966073,
+          "across_seed_t_interval95": [
+            -0.008629748233558656,
+            0.0005566424369660948
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 1,
+          "n_negative": 4,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "ablation:direction-off",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.19893372496546785,
+          "sample_sd": 0.003513500391017535
+        },
+        "nmae": {
+          "mean": 0.11277305765405983,
+          "sample_sd": 0.0027121863987192908
+        },
+        "r2": {
+          "mean": 0.4709740144305621,
+          "sample_sd": 0.01889759185916151
+        }
+      },
+      "relative_nrmse_gain_pct": 0.45930947034266145,
+      "relative_nmae_gain_pct": 2.282097297912211,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": -0.00036736896671260566,
+          "sample_sd": 0.000571873489696602,
+          "differences": [
+            0.0005125367023215005,
+            -0.0005327246529103977,
+            -0.0003815707304661506,
+            -0.0003562017144955673,
+            -0.0010788844380124132
+          ],
+          "paired_t_statistic": -1.4364400469569882,
+          "paired_t_p_raw": 0.22422903277411393,
+          "across_seed_t_interval95": [
+            -0.001077443690396029,
+            0.00034270575697081763
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 1,
+          "n_negative": 4,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.002634883044383801,
+          "sample_sd": 0.0027577595617165255,
+          "differences": [
+            -6.417092026521354e-05,
+            -0.007002485704612066,
+            -0.002358719852624064,
+            -0.0005509134184177034,
+            -0.0031981253259999592
+          ],
+          "paired_t_statistic": -2.1364362875552962,
+          "paired_t_p_raw": 0.09948538417721191,
+          "across_seed_t_interval95": [
+            -0.006059093807869408,
+            0.0007893277191018066
+          ],
+          "exact_sign_p_two_sided_raw": 0.0625,
+          "n_positive": 0,
+          "n_negative": 5,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "ablation:manufacturer-curve",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.19931092461592864,
+          "sample_sd": 0.001339789433509872
+        },
+        "nmae": {
+          "mean": 0.11342352703588313,
+          "sample_sd": 0.0026796732015559616
+        },
+        "r2": {
+          "mean": 0.4690792259809098,
+          "sample_sd": 0.007142302059987161
+        }
+      },
+      "relative_nrmse_gain_pct": 0.2705696592275264,
+      "relative_nmae_gain_pct": 1.7184653002884631,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": -0.0002256850486656692,
+          "sample_sd": 0.0012625337978638353,
+          "differences": [
+            0.0005897710565046649,
+            0.0004187403425041786,
+            -0.0024358183325551494,
+            -0.00010510346717611252,
+            0.00040398515739407254
+          ],
+          "paired_t_statistic": -0.39970978295838927,
+          "paired_t_p_raw": 0.7097946086974889,
+          "across_seed_t_interval95": [
+            -0.0017933278119886648,
+            0.0013419577146573265
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 3,
+          "n_negative": 2,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.001984225451710461,
+          "sample_sd": 0.003782088369257308,
+          "differences": [
+            0.0019296386584157638,
+            -9.134368365536216e-05,
+            -0.0064372460418692795,
+            0.00030284152701073874,
+            -0.005625017718454167
+          ],
+          "paired_t_statistic": -1.1731251519067727,
+          "paired_t_p_raw": 0.30583534632119264,
+          "across_seed_t_interval95": [
+            -0.0066803084178424545,
+            0.0027118575144215317
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "ablation:prior-off",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.2002280262032599,
+          "sample_sd": 0.002488025604785744
+        },
+        "nmae": {
+          "mean": 0.11285087937898466,
+          "sample_sd": 0.0012835038620905295
+        },
+        "r2": {
+          "mean": 0.4641352533950208,
+          "sample_sd": 0.01333400040348838
+        }
+      },
+      "relative_nrmse_gain_pct": -0.1883214880862072,
+      "relative_nmae_gain_pct": 2.2146647399723496,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": 0.00014472187081489702,
+          "sample_sd": 0.0014290370304858623,
+          "differences": [
+            0.002516971922471564,
+            -0.00020425680073724722,
+            -0.001345955473830096,
+            4.468333869513813e-05,
+            -0.000287833632524874
+          ],
+          "paired_t_statistic": 0.22645175322225783,
+          "paired_t_p_raw": 0.8319515501235601,
+          "across_seed_t_interval95": [
+            -0.0016296619620394166,
+            0.0019191057036692105
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.0025566888251573857,
+          "sample_sd": 0.004396530643480782,
+          "differences": [
+            0.002871929054634348,
+            -0.0063193092127809825,
+            -0.007624927222606159,
+            0.00019706178284387144,
+            -0.001908198527878005
+          ],
+          "paired_t_statistic": -1.3003275705227049,
+          "paired_t_p_raw": 0.2633498184197041,
+          "across_seed_t_interval95": [
+            -0.00801570264216711,
+            0.0029023249918523402
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "ablation:sensitivity-off",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.19867982465477946,
+          "sample_sd": 0.001899054197670707
+        },
+        "nmae": {
+          "mean": 0.11213531035343023,
+          "sample_sd": 0.003051666428017892
+        },
+        "r2": {
+          "mean": 0.47241664006082795,
+          "sample_sd": 0.010087493900209864
+        }
+      },
+      "relative_nrmse_gain_pct": 0.5863538528675716,
+      "relative_nmae_gain_pct": 2.834705606739063,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": -0.0004754506938991529,
+          "sample_sd": 0.001417867760008681,
+          "differences": [
+            0.0010316252349595947,
+            -0.0006562629208668805,
+            -0.0026935126793523473,
+            -0.0004877949165691328,
+            0.00042869181233300135
+          ],
+          "paired_t_statistic": -0.7498160981539218,
+          "paired_t_p_raw": 0.49505870445996797,
+          "across_seed_t_interval95": [
+            -0.00223596604571575,
+            0.0012850646579174443
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.0032729481318156837,
+          "sample_sd": 0.005146785991298197,
+          "differences": [
+            0.0008398105048086496,
+            -0.008339505004700223,
+            -0.009214479717184781,
+            -0.0012912739708231535,
+            0.0016407075288210893
+          ],
+          "paired_t_statistic": -1.421962079236332,
+          "paired_t_p_raw": 0.2281003672994371,
+          "across_seed_t_interval95": [
+            -0.009663527003670139,
+            0.0031176307400387713
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "masking:power-and-wind",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.20840277024997697,
+          "sample_sd": 0.006544511941641584
+        },
+        "nmae": {
+          "mean": 0.12058687398074115,
+          "sample_sd": 0.009469830135305606
+        },
+        "r2": {
+          "mean": 0.41910012991263984,
+          "sample_sd": 0.03704150507714124
+        }
+      },
+      "relative_nrmse_gain_pct": -4.278727312712838,
+      "relative_nmae_gain_pct": -4.488577891944567,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": 0.003514907798780212,
+          "sample_sd": 0.0035735723203870456,
+          "differences": [
+            0.0030111296630056586,
+            0.00456186024202531,
+            -0.0007761703023602823,
+            0.008874188374108374,
+            0.0019035310171219982
+          ],
+          "paired_t_statistic": 2.199360211035397,
+          "paired_t_p_raw": 0.09271878368920121,
+          "across_seed_t_interval95": [
+            -0.0009222682964218783,
+            0.007952083893982302
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 4,
+          "n_negative": 1,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": 0.005181259785059816,
+          "sample_sd": 0.011505350188910652,
+          "differences": [
+            0.003989963228476903,
+            0.002631050358055026,
+            -0.0065140365169426145,
+            0.02442446435951312,
+            0.0013748574961966464
+          ],
+          "paired_t_statistic": 1.0069792660154266,
+          "paired_t_p_raw": 0.37091503900077155,
+          "across_seed_t_interval95": [
+            -0.009104519331237444,
+            0.019467038901357078
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 4,
+          "n_negative": 1,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "physics:cutout-off",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.20036646632246838,
+          "sample_sd": 0.003073877207660228
+        },
+        "nmae": {
+          "mean": 0.11409882054625475,
+          "sample_sd": 0.0033838532685609474
+        },
+        "r2": {
+          "mean": 0.46335924385944827,
+          "sample_sd": 0.01659415365377156
+        }
+      },
+      "relative_nrmse_gain_pct": -0.25759292542248957,
+      "relative_nmae_gain_pct": 1.1333231846577085,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": 0.00020264500499375394,
+          "sample_sd": 0.002376908508407005,
+          "differences": [
+            0.0036011863570512836,
+            0.0002526548714566479,
+            -0.0031155872697332804,
+            2.1220795609872e-05,
+            0.0002537502705842465
+          ],
+          "paired_t_statistic": 0.19063754657115636,
+          "paired_t_p_raw": 0.858094155699799,
+          "across_seed_t_interval95": [
+            -0.0027486767169194386,
+            0.0031539667269069468
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 4,
+          "n_negative": 1,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.0013083565001326485,
+          "sample_sd": 0.005882064128164179,
+          "differences": [
+            0.007836659284228997,
+            -0.00554770082278172,
+            -0.007276215135135183,
+            -0.0013303913643096937,
+            -0.00022413446266564274
+          ],
+          "paired_t_statistic": -0.4973720125036108,
+          "paired_t_p_raw": 0.6450250713536201,
+          "across_seed_t_interval95": [
+            -0.008611903763199934,
+            0.005995190762934638
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 1,
+          "n_negative": 4,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "physics:density-0_terrain-0",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.20089616617299982,
+          "sample_sd": 0.0033632611574062237
+        },
+        "nmae": {
+          "mean": 0.11526899482429513,
+          "sample_sd": 0.002872596779024494
+        },
+        "r2": {
+          "mean": 0.46049872559322313,
+          "sample_sd": 0.01808151382035517
+        }
+      },
+      "relative_nrmse_gain_pct": -0.5226394322654704,
+      "relative_nmae_gain_pct": 0.11936667212965046,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": 0.00041624558871360546,
+          "sample_sd": 0.001791477273547342,
+          "differences": [
+            0.0001839484461217955,
+            0.002047634624930683,
+            -0.002285125247909185,
+            7.320159702325912e-05,
+            0.0020615685234014747
+          ],
+          "paired_t_statistic": 0.5195452074337715,
+          "paired_t_p_raw": 0.63080557572612,
+          "across_seed_t_interval95": [
+            -0.0018081672454503697,
+            0.0026406584228775808
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 4,
+          "n_negative": 1,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.0001380572508372646,
+          "sample_sd": 0.003353026578397768,
+          "differences": [
+            0.003040593860143062,
+            -0.0028511131295187453,
+            -0.0034949009737153536,
+            -0.0011478958090348351,
+            0.003763029797939549
+          ],
+          "paired_t_statistic": -0.09206768584768488,
+          "paired_t_p_raw": 0.9310709036478089,
+          "across_seed_t_interval95": [
+            -0.004301389638254132,
+            0.004025275136579603
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "physics:density-0_terrain-1",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.1978553058344336,
+          "sample_sd": 0.0014766744318816874
+        },
+        "nmae": {
+          "mean": 0.1109152193098284,
+          "sample_sd": 0.0013169292441488733
+        },
+        "r2": {
+          "mean": 0.4768014077814703,
+          "sample_sd": 0.007799650395029757
+        }
+      },
+      "relative_nrmse_gain_pct": 0.9989192574824668,
+      "relative_nmae_gain_pct": 3.8919150179807405,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": -0.0008044443701722359,
+          "sample_sd": 0.001249723739233653,
+          "differences": [
+            -0.0003739231597060591,
+            -0.00033006315019485505,
+            -0.003031543347447742,
+            -0.00010606383368577665,
+            -0.0001806283598267469
+          ],
+          "paired_t_statistic": -1.4393519458349786,
+          "paired_t_p_raw": 0.223458386275485,
+          "across_seed_t_interval95": [
+            -0.0023561813448792547,
+            0.0007472926045347827
+          ],
+          "exact_sign_p_two_sided_raw": 0.0625,
+          "n_positive": 0,
+          "n_negative": 5,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.0044941738707796105,
+          "sample_sd": 0.0038343745962844556,
+          "differences": [
+            -0.001071519590592998,
+            -0.005309073125747091,
+            -0.010739179916906635,
+            -0.002036724029860243,
+            -0.003314372690791087
+          ],
+          "paired_t_statistic": -2.6208389465923356,
+          "paired_t_p_raw": 0.058747649763991674,
+          "across_seed_t_interval95": [
+            -0.009255178762613121,
+            0.0002668310210539003
+          ],
+          "exact_sign_p_two_sided_raw": 0.0625,
+          "n_positive": 0,
+          "n_negative": 5,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "physics:density-1_terrain-0",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.20000200905464158,
+          "sample_sd": 0.0009423142820690204
+        },
+        "nmae": {
+          "mean": 0.11421436938999589,
+          "sample_sd": 0.0018522890634818441
+        },
+        "r2": {
+          "mean": 0.4654008783145735,
+          "sample_sd": 0.0050430814734494815
+        }
+      },
+      "relative_nrmse_gain_pct": -0.07522903456220753,
+      "relative_nmae_gain_pct": 1.0332000621236737,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": 4.925435275218021e-05,
+          "sample_sd": 0.0017759657594575613,
+          "differences": [
+            0.001555257550044771,
+            0.0005484392290875315,
+            -0.002868843533155148,
+            0.0012695773462048712,
+            -0.00025815882842112475
+          ],
+          "paired_t_statistic": 0.062014754707471385,
+          "paired_t_p_raw": 0.9535261617300835,
+          "across_seed_t_interval95": [
+            -0.0021558983928088842,
+            0.0022544070983132446
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 3,
+          "n_negative": 2,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.001193175474223171,
+          "sample_sd": 0.004808470427350139,
+          "differences": [
+            0.0038761690720725828,
+            -0.004838793838399302,
+            -0.007596634192218982,
+            0.0015130381983886054,
+            0.0010803433890412412
+          ],
+          "paired_t_statistic": -0.5548586623873356,
+          "paired_t_p_raw": 0.6085544367527809,
+          "across_seed_t_interval95": [
+            -0.007163680090291318,
+            0.004777329141844977
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 3,
+          "n_negative": 2,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "physics:gate-derivative",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.1983522229162137,
+          "sample_sd": 0.0012234625914686098
+        },
+        "nmae": {
+          "mean": 0.11157757240244666,
+          "sample_sd": 0.0020147158910736257
+        },
+        "r2": {
+          "mean": 0.47417748980690116,
+          "sample_sd": 0.0064932376617119906
+        }
+      },
+      "relative_nrmse_gain_pct": 0.750276301317232,
+      "relative_nmae_gain_pct": 3.317985779869248,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": -0.0006066205124228147,
+          "sample_sd": 0.001330553208002964,
+          "differences": [
+            0.0010844086776837375,
+            -0.00015481457297272794,
+            -0.002510690715569905,
+            -0.00029951068669446107,
+            -0.001152495264560717
+          ],
+          "paired_t_statistic": -1.019459194990831,
+          "paired_t_p_raw": 0.36562771542278033,
+          "across_seed_t_interval95": [
+            -0.0022587205284946227,
+            0.0010454795036489934
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 1,
+          "n_negative": 4,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.00382962469201715,
+          "sample_sd": 0.004238551590119538,
+          "differences": [
+            0.0014276594398970749,
+            -0.007345116678037195,
+            -0.008822653020174293,
+            -0.0031117394191652464,
+            -0.0012962737826060916
+          ],
+          "paired_t_statistic": -2.020336654536399,
+          "paired_t_p_raw": 0.11345422061525531,
+          "across_seed_t_interval95": [
+            -0.009092481605997908,
+            0.001433232221963608
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 1,
+          "n_negative": 4,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "training:from-scratch",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.20232035311942848,
+          "sample_sd": 0.0010875544977200385
+        },
+        "nmae": {
+          "mean": 0.11429521207298846,
+          "sample_sd": 0.0011005009639138456
+        },
+        "r2": {
+          "mean": 0.45293239353709785,
+          "sample_sd": 0.0058912065775670605
+        }
+      },
+      "relative_nrmse_gain_pct": -1.2352614480420243,
+      "relative_nmae_gain_pct": 0.9631498427257301,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": 0.0009825432255370927,
+          "sample_sd": 0.0015801467250882465,
+          "differences": [
+            0.0020362792083853318,
+            0.0011687744433651753,
+            -0.0016586845016533028,
+            0.0023482162185201882,
+            0.0010181307590680713
+          ],
+          "paired_t_statistic": 1.3903983777266942,
+          "paired_t_p_raw": 0.23677295287438538,
+          "across_seed_t_interval95": [
+            -0.0009794680748845676,
+            0.002944554525958753
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 4,
+          "n_negative": 1,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.0011124445995111033,
+          "sample_sd": 0.0032245080627610256,
+          "differences": [
+            0.0022553936951426323,
+            -0.001274229513791969,
+            -0.006154521553761991,
+            0.001053218692318711,
+            -0.0014420843174628994
+          ],
+          "paired_t_statistic": -0.7714360445975755,
+          "paired_t_p_raw": 0.4834910739922023,
+          "across_seed_t_interval95": [
+            -0.00511620017295924,
+            0.0028913109739370333
+          ],
+          "exact_sign_p_two_sided_raw": 1.0,
+          "n_positive": 2,
+          "n_negative": 3,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    },
+    {
+      "comparison": "training:staged",
+      "seeds": [
+        13,
+        21,
+        42,
+        87,
+        3407
+      ],
+      "n_seeds": 5,
+      "supplementary_reanalysis": true,
+      "full": {
+        "nrmse": {
+          "mean": 0.19985166257832737,
+          "sample_sd": 0.003707343971589553
+        },
+        "nmae": {
+          "mean": 0.11540675202359862,
+          "sample_sd": 0.0034031050883303712
+        },
+        "r2": {
+          "mean": 0.4660668491567107,
+          "sample_sd": 0.019987302299862175
+        }
+      },
+      "candidate": {
+        "nrmse": {
+          "mean": 0.1999154859351892,
+          "sample_sd": 0.0003613227063523993
+        },
+        "nmae": {
+          "mean": 0.11306373920418042,
+          "sample_sd": 0.0031072834679129464
+        },
+        "r2": {
+          "mean": 0.4658714150644368,
+          "sample_sd": 0.001931349840939529
+        }
+      },
+      "relative_nrmse_gain_pct": -0.0319353644790521,
+      "relative_nmae_gain_pct": 2.0302216103777915,
+      "gain_direction": "positive_means_candidate_lower_error; for a removed component this is counter_full evidence",
+      "training_seed_tests": {
+        "mse": {
+          "n_seed": 5,
+          "mean": 1.3538469196305858e-05,
+          "sample_sd": 0.0013697927612797906,
+          "differences": [
+            0.0011973916931844394,
+            0.000611640597601909,
+            -0.0023242823869477555,
+            0.0005426630192214982,
+            4.027942292143816e-05
+          ],
+          "paired_t_statistic": 0.022100377728630268,
+          "paired_t_p_raw": 0.9834264031145705,
+          "across_seed_t_interval95": [
+            -0.0016872838874849364,
+            0.0017143608258775483
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 4,
+          "n_negative": 1,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        },
+        "mae": {
+          "n_seed": 5,
+          "mean": -0.002345184793892993,
+          "sample_sd": 0.003778450716147843,
+          "differences": [
+            -0.003301344626158151,
+            -0.0012184989825351489,
+            -0.008156876605471902,
+            0.002093415277311994,
+            -0.001142619032611758
+          ],
+          "paired_t_statistic": -1.3878684712050058,
+          "paired_t_p_raw": 0.23748209871798667,
+          "across_seed_t_interval95": [
+            -0.0070367510171210085,
+            0.002346381429335022
+          ],
+          "exact_sign_p_two_sided_raw": 0.375,
+          "n_positive": 1,
+          "n_negative": 4,
+          "n_zero": 0,
+          "sign_nonzero_n": 5,
+          "multiplicity": "supplementary_reanalysis_no_new_BH_family_no_significance_flag",
+          "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period"
+        }
+      }
+    }
+  ],
+  "selection": "G4_selection.json",
+  "method": "original p3_training_seed_supplement summarize_group; BH30 follows 08 final conclusions supplementary display"
+}

@@ -1,0 +1,13 @@
+Forecasting loss,Event class (targets per seed),NRMSE (%),NMAE (%)
+Huber ([equation: figures/table_equations/table_s11_p1_r2_c1_e1.wmf]),Frozen wind-speed candidates (94),10.40 ± 3.07,8.08 ± 2.71
+Huber ([equation: figures/table_equations/table_s11_p1_r3_c1_e1.wmf]),Low-power (curtailment) candidates (22578),15.95 ± 2.25,5.66 ± 0.93
+Huber ([equation: figures/table_equations/table_s11_p1_r4_c1_e1.wmf]),Event-free operation (191205),20.54 ± 0.34,12.23 ± 0.37
+Huber ([equation: figures/table_equations/table_s11_p1_r5_c1_e1.wmf]),Statistical power anomalies (6524),19.59 ± 0.99,12.66 ± 0.59
+Mean squared error,Frozen wind-speed candidates (94),6.74 ± 6.40,4.19 ± 4.64
+Mean squared error,Low-power (curtailment) candidates (22578),14.94 ± 1.74,5.12 ± 0.80
+Mean squared error,Event-free operation (191205),20.51 ± 0.15,12.31 ± 0.04
+Mean squared error,Statistical power anomalies (6524),19.63 ± 0.68,12.85 ± 0.34
+"Median (pinball, [equation: figures/table_equations/table_s11_p1_r10_c1_e1.wmf])",Frozen wind-speed candidates (94),5.35 ± 1.70,3.60 ± 1.52
+"Median (pinball, [equation: figures/table_equations/table_s11_p1_r11_c1_e1.wmf])",Low-power (curtailment) candidates (22578),15.51 ± 0.65,4.76 ± 0.31
+"Median (pinball, [equation: figures/table_equations/table_s11_p1_r12_c1_e1.wmf])",Event-free operation (191205),20.72 ± 0.31,12.08 ± 0.45
+"Median (pinball, [equation: figures/table_equations/table_s11_p1_r13_c1_e1.wmf])",Statistical power anomalies (6524),20.03 ± 0.84,12.85 ± 0.61

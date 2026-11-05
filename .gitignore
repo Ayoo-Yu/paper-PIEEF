@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+artifacts/
+assets/
+release_assets/
+*.zip
+*.pt

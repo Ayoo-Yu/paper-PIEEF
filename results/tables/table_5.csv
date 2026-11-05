@@ -1,0 +1,16 @@
+Setting,Validation NRMSE (%),Validation NMAE (%),Test NRMSE (%),Test NMAE (%)
+Encoder layers
+2,17.82 ± 0.13,11.01 ± 0.33,—,—
+3,17.89 ± 0.21,11.09 ± 0.25,—,—
+4,17.96 ± 0.39,11.01 ± 0.13,—,—
+Graph-attention layers
+1,17.89 ± 0.21,11.09 ± 0.25,—,—
+2,17.83 ± 0.36,11.01 ± 0.22,—,—
+Hidden dimension
+64,18.07 ± 0.17,11.08 ± 0.25,—,—
+128,17.89 ± 0.21,11.09 ± 0.25,—,—
+256,18.08 ± 0.00,11.15 ± 0.27,—,—
+Forecasting loss
+Huber [equation: figures/table_equations/table_5_p1_r14_c1_e1.wmf],17.89 ± 0.21,11.09 ± 0.25,20.09 ± 0.48,11.57 ± 0.41
+Mean squared error,18.00 ± 0.11,11.43 ± 0.13,19.99 ± 0.15,11.59 ± 0.12
+Median pinball [equation: figures/table_equations/table_5_p1_r16_c1_e1.wmf],18.34 ± 0.54,11.00 ± 0.20,20.22 ± 0.35,11.35 ± 0.44

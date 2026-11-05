@@ -1,0 +1,128 @@
+[
+  {
+    "model": "ACFormer",
+    "horizon": 16,
+    "seed": 13,
+    "directory": "artifacts/released/attempt_20261022_100552_eb6b4c5a"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 16,
+    "seed": 3407,
+    "directory": "artifacts/released/attempt_20261022_102500_a98020e5"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 16,
+    "seed": 42,
+    "directory": "artifacts/released/attempt_20261022_101324_c24cacc9"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 1,
+    "seed": 13,
+    "directory": "artifacts/released/attempt_20261022_085610_c13ed322"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 1,
+    "seed": 3407,
+    "directory": "artifacts/released/attempt_20261022_091914_d233cdc8"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 1,
+    "seed": 42,
+    "directory": "artifacts/released/attempt_20261022_091205_98e8a81a"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 4,
+    "seed": 13,
+    "directory": "artifacts/released/attempt_20261022_092835_8472a34c"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 4,
+    "seed": 3407,
+    "directory": "artifacts/released/attempt_20261022_095002_d5e6668b"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 4,
+    "seed": 42,
+    "directory": "artifacts/released/attempt_20261022_094245_c44c5bb0"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 48,
+    "seed": 13,
+    "directory": "artifacts/released/attempt_20261021_190552_8b606e95"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 48,
+    "seed": 3407,
+    "directory": "artifacts/released/attempt_20261021_191100_c7d91e34"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 48,
+    "seed": 42,
+    "directory": "artifacts/released/attempt_20261021_190804_ee533dbb"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 96,
+    "seed": 13,
+    "directory": "artifacts/released/attempt_20261021_191356_f361c1d5"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 96,
+    "seed": 3407,
+    "directory": "artifacts/released/attempt_20261021_192212_a4e0e720"
+  },
+  {
+    "model": "ACFormer",
+    "horizon": 96,
+    "seed": 42,
+    "directory": "artifacts/released/attempt_20261021_191744_4a821a52"
+  },
+  {
+    "model": "TCN",
+    "horizon": 96,
+    "seed": 13,
+    "directory": "artifacts/released/attempt_20261021_175611_99708fe7"
+  },
+  {
+    "model": "TCN",
+    "horizon": 96,
+    "seed": 3407,
+    "directory": "artifacts/released/attempt_20261021_180234_8dcfeef6"
+  },
+  {
+    "model": "TCN",
+    "horizon": 96,
+    "seed": 42,
+    "directory": "artifacts/released/attempt_20261021_175926_7d146c2e"
+  },
+  {
+    "model": "TimesNet",
+    "horizon": 96,
+    "seed": 13,
+    "directory": "artifacts/released/attempt_20261021_180413_2e410d8d"
+  },
+  {
+    "model": "TimesNet",
+    "horizon": 96,
+    "seed": 3407,
+    "directory": "artifacts/released/attempt_20261021_180818_7d0b06fd"
+  },
+  {
+    "model": "TimesNet",
+    "horizon": 96,
+    "seed": 42,
+    "directory": "artifacts/released/attempt_20261021_180610_9bad0cb2"
+  }
+]

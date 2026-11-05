@@ -1,0 +1,113 @@
+{
+  "run_id": "main_LightGBM_h48_s3407_20261021_074524",
+  "status": "completed",
+  "model": "LightGBM",
+  "seed": 3407,
+  "horizon": 48,
+  "metrics": {
+    "nmae": 0.15586736134145748,
+    "nrmse": 0.24488214296765318,
+    "r2": 0.19856917706306576
+  },
+  "validation_metrics": {
+    "nmae": 0.1321704784111678,
+    "nrmse": 0.20737799243104804,
+    "r2": 0.3854458921566176
+  },
+  "evaluation_split": "test",
+  "config": {
+    "experiment": {
+      "exp_type": "main",
+      "seeds": [
+        3407
+      ],
+      "horizon": 48,
+      "eval_scope": "all-sample",
+      "model": "LightGBM",
+      "site": "wind_farm_A"
+    },
+    "data": {
+      "data_version": "energy_revision_wind_farm_A_author_prepared_EC",
+      "scada_path": "data/wind_farm_A/scada_ecmwf_15min.csv",
+      "turbines_path": "data/wind_farm_A/turbines.csv",
+      "seq_len": 96,
+      "split": [
+        0.7,
+        0.1,
+        0.2
+      ],
+      "capacity_mw": 2.0,
+      "revision_protocol": {
+        "nwp_alignment_verified": false,
+        "nwp_preparation_author_confirmed": true,
+        "timezone": "Asia/Shanghai",
+        "step_minutes": 15,
+        "power_unit": "kW",
+        "wind_height_m": 10,
+        "nwp_timing_rule": "author_prepared_ecmwf",
+        "nwp_feature_columns": [
+          "nwp_direct_solar_radiation",
+          "nwp_total_sky_direct_shortwave",
+          "nwp_surface_pressure_pa",
+          "nwp_temperature_2m_k",
+          "nwp_u10_ms",
+          "nwp_v10_ms",
+          "nwp_wind_speed200_ms",
+          "nwp_wind_speed100_ms",
+          "nwp_wind_speed10_ms"
+        ],
+        "input_filling": "forward-only",
+        "target_policy": "raw-measured-valid-power"
+      }
+    },
+    "baselines": {
+      "models": [
+        "LightGBM"
+      ]
+    },
+    "train": {
+      "batch_size": 64,
+      "epochs": 5,
+      "lr": 0.001,
+      "loss_name": "huber",
+      "huber_delta": 0.1
+    },
+    "tracking": {
+      "artifact_root": "artifacts/public",
+      "ledger_dir": "artifacts/public/summary",
+      "source_manifest": "provenance/source_manifest.json"
+    }
+  },
+  "device": "cpu",
+  "training_summary": {
+    "loss_name": "huber",
+    "huber_delta": 0.1,
+    "actual_objective": "huber",
+    "actual_alpha": 0.1,
+    "lightgbm_parameters": {
+      "boosting_type": "gbdt",
+      "class_weight": null,
+      "colsample_bytree": 0.8,
+      "importance_type": "split",
+      "learning_rate": 0.05,
+      "max_depth": -1,
+      "min_child_samples": 20,
+      "min_child_weight": 0.001,
+      "min_split_gain": 0.0,
+      "n_estimators": 300,
+      "n_jobs": null,
+      "num_leaves": 64,
+      "objective": "huber",
+      "random_state": 3407,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.0,
+      "subsample": 0.8,
+      "subsample_for_bin": 200000,
+      "subsample_freq": 0,
+      "alpha": 0.1,
+      "verbosity": -1,
+      "force_col_wise": true,
+      "histogram_pool_size": 64
+    }
+  }
+}

@@ -1,0 +1,14 @@
+numpy
+shapely
+rasterio
+scipy
+pyvista
+matplotlib
+pandas
+windrose
+seaborn
+gdal
+perlin-noise
+Pillow
+PyYAML
+pyproj

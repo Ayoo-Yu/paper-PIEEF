@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170mm" height="68.745020mm" viewBox="0 0 1004 406" role="img" aria-labelledby="figure-title figure-description" data-source-node="0" font-family="Times New Roman" fill="#1A1A1A" xml:space="preserve">
+  <title id="figure-title" data-source-node="1">Data augmentation, encoder architecture and physics-consistency regularization</title>
+  <desc id="figure-description" data-source-node="2">A three-column scientific diagram, with masked power and weather tensors on the left, a Transformer and physics-guided attention in the middle, and reconstruction, bound and gradient regularization plots on the right.</desc>
+  <defs data-source-node="4">
+    <style data-source-node="5">
+/* Embedded subset fonts removed; all text remains editable. */
+</style>
+    <pattern id="missingHatch" width="4" height="4" patternUnits="userSpaceOnUse" data-source-node="18">
+      <rect width="4" height="4" fill="#FFFFFF" data-source-node="19"/>
+      <path d="M-1 1L1 -1M0 4L4 0M3 5L5 3" fill="none" stroke="#9A9A9A" stroke-width=".7" data-source-node="20"/>
+    </pattern>
+    <pattern id="attentionHatch" width="3.3" height="3.3" patternUnits="userSpaceOnUse" data-source-node="21">
+      <path d="M0 0L3.3 3.3M3.3 0L0 3.3" fill="none" stroke="#9A9A9A" stroke-width=".54" data-source-node="22"/>
+    </pattern>
+    <pattern id="denseNodeDots" width="2.5" height="2.5" patternUnits="userSpaceOnUse" data-source-node="23">
+      <rect width="2.5" height="2.5" fill="#9A9A9A" data-source-node="24"/>
+      <rect x=".75" y=".75" width="1" height="1" fill="#FFFFFF" data-source-node="25"/>
+    </pattern>
+    <pattern id="sparseNodeDots" width="4.2" height="4.2" patternUnits="userSpaceOnUse" data-source-node="26">
+      <rect width="4.2" height="4.2" fill="#9A9A9A" data-source-node="27"/>
+      <circle cx="1" cy="1" r=".68" fill="#FFFFFF" data-source-node="28"/>
+      <circle cx="3.1" cy="3.1" r=".68" fill="#FFFFFF" data-source-node="29"/>
+    </pattern>
+    <marker id="blackArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto-start-reverse" data-source-node="35">
+      <path d="M0 0L10 5 0 10 2 5Z" fill="#1A1A1A" data-source-node="36"/>
+    </marker>
+    <marker id="encoderArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8.5" markerHeight="8.5" markerUnits="userSpaceOnUse" orient="auto-start-reverse" data-source-node="37">
+      <path d="M0 0L10 5 0 10 2 5Z" fill="#1A1A1A" data-source-node="38"/>
+    </marker>
+    <marker id="smallBlackArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.7" markerHeight="5.7" markerUnits="userSpaceOnUse" orient="auto-start-reverse" data-source-node="39">
+      <path d="M0 0L10 5 0 10 2 5Z" fill="#1A1A1A" data-source-node="40"/>
+    </marker>
+    <marker id="tealArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto" data-source-node="41">
+      <path d="M0 0L10 5 0 10 2 5Z" fill="#2F5D8A" data-source-node="42"/>
+    </marker>
+    <marker id="attentionBlueArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8.5" markerHeight="8.5" markerUnits="userSpaceOnUse" orient="auto" data-source-node="43">
+      <path d="M0 0L10 5 0 10Z" fill="#2F5D8A" data-source-node="44"/>
+    </marker>
+    <marker id="attentionRedArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8.5" markerHeight="8.5" markerUnits="userSpaceOnUse" orient="auto" data-source-node="45">
+      <path d="M0 0L10 5 0 10Z" fill="#B03A2E" data-source-node="46"/>
+    </marker>
+    <g id="hadamard" fill="none" stroke="#1A1A1A" stroke-width="1.2" data-source-node="47">
+      <circle r="6.4" data-source-node="48"/><circle r="1.9" fill="#4D4D4D" stroke="none" data-source-node="49"/>
+    </g>
+    <g id="crossMark" fill="none" stroke="#2F5D8A" stroke-width="1.1" data-source-node="50">
+      <path d="M-2.3 -2.3L2.3 2.3M2.3 -2.3L-2.3 2.3" data-source-node="51"/>
+    </g>
+    <g id="priorMark" data-source-node="52"><circle r="2.45" fill="#FFFFFF" stroke="#B03A2E" stroke-width="1.05" data-source-node="53"/></g>
+    <g id="observedMark" data-source-node="54"><circle r="2.7" fill="#4D4D4D" data-source-node="55"/></g>
+    <g id="scriptL" fill="none" stroke="currentColor" stroke-width=".9" stroke-linecap="round" data-source-node="56">
+      <path d="M10 1.5C8 -.3 5 3 4.2 7.3C3.4 11.1 2 12.9 .6 12.3C2.5 10.1 5.3 12.5 8.2 12C9.4 11.8 10 10.5 10.5 9.6" data-source-node="57"/>
+    </g>
+  </defs>
+
+  <rect width="1004" height="406" fill="#FFFFFF" data-source-node="58"/>
+  <path d="M387 5V401" fill="none" stroke="#B3B3B3" stroke-width=".9" data-source-node="59"/>
+  <path d="M742 5V401" fill="none" stroke="#B3B3B3" stroke-width=".9" data-source-node="60"/>
+
+  <g id="data-augmentation" data-source-node="62">
+    <text x="13" y="24" font-size="17" data-source-node="63" id="f2-text-000" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="700" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">A</tspan></text>
+    <text x="32" y="24" font-size="14.688" data-source-node="64" id="f2-text-001" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="700" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Data augmentation &amp; tensor construction</tspan></text>
+    <text x="30" y="42" font-size="14.688" data-source-node="65" id="f2-text-002" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Power matrix</tspan></text>
+    <rect x="27" y="48" width="21" height="12" fill="url(#missingHatch)" stroke="#9A9A9A" stroke-width=".7" data-source-node="66"/>
+    <text x="54" y="60" font-size="14.688" data-source-node="67" id="f2-text-003" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="400" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Missing/NaN</tspan></text>
+    <rect x="27" y="64" width="90" height="89" fill="#E3ECF5" data-source-node="68"/>
+    <path id="restored-power-grid" d="M45 64V153M63 64V153M81 64V153M99 64V153M27 86.25H117M27 108.5H117M27 130.75H117" fill="none" stroke="#4D4D4D" stroke-width=".8" opacity="1"/><rect x="49" y="65" width="34" height="87" fill="url(#missingHatch)" data-source-node="70"/>
+    <rect x="27" y="64" width="90" height="89" fill="none" stroke="#1A1A1A" stroke-width="1.1" data-source-node="71"/>
+    <text x="154" y="57" font-size="14.688" data-source-node="73" id="f2-text-005" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Wind speed matrix</tspan></text>
+    <rect x="156" y="64" width="79" height="89" fill="#E3ECF5" data-source-node="74"/>
+    <path id="restored-wind-grid" d="M175.75 64V153M195.5 64V153M215.25 64V153M156 86.25H235M156 108.5H235M156 130.75H235" fill="none" stroke="#4D4D4D" stroke-width=".8" opacity="1"/><rect x="156" y="64" width="79" height="89" fill="none" stroke="#1A1A1A" stroke-width="1.1" data-source-node="75"/>
+    <text x="158" y="168" font-size="14.688" data-source-node="79" id="f2-text-007" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">NWP matrix</tspan></text>
+    <rect x="156" y="175" width="79" height="78" fill="#E3ECF5" data-source-node="80"/>
+    <path id="restored-nwp-grid" d="M175.75 175V253M195.5 175V253M215.25 175V253M156 194.5H235M156 214H235M156 233.5H235" fill="none" stroke="#4D4D4D" stroke-width=".8" opacity="1"/><rect x="156" y="175" width="79" height="78" fill="none" stroke="#1A1A1A" stroke-width="1.1" data-source-node="82"/>
+    <text x="247" y="101" font-size="14.688" data-source-node="86" id="f2-text-009" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Physics</tspan></text>
+    <text x="243" y="119" font-size="14.688" data-source-node="87" id="f2-text-010" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">mapping</tspan></text>
+    <path d="M239 122H292" fill="none" stroke="#B03A2E" stroke-width="1.8" data-source-node="88"/>
+    <path d="M291 118L299 122L291 126Z" fill="#B03A2E" data-source-node="89"/>
+    <text x="289" y="54" font-size="13.8" data-source-node="90" id="f2-text-011" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".07" font-style="normal" font-weight="400" opacity="1"><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">π</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">: physics prior</tspan></text>
+    <rect x="301" y="65" width="68" height="88" fill="#B03A2E" data-source-node="95"/>
+    <path id="restored-prior-grid" d="M318 65V153M335 65V153M352 65V153M301 87H369M301 109H369M301 131H369" fill="none" stroke="#F4DEDB" stroke-width=".8" opacity="1"/><rect x="301" y="65" width="68" height="88" fill="none" stroke="#1A1A1A" stroke-width="1" data-source-node="96"/>
+
+    <path d="M117 109H129V261H194" fill="none" stroke="#1A1A1A" stroke-width="1.25" data-source-node="97"/>
+    <path d="M194 261V270" fill="none" stroke="#1A1A1A" stroke-width="1.25" marker-end="url(#blackArrow)" data-source-node="98"/>
+    <rect x="25" y="228" width="18" height="16" fill="#E3ECF5" data-source-node="101" stroke="#2F5D8A" stroke-width=".7"/>
+    <text x="34" y="241" text-anchor="middle" font-size="14.688" data-source-node="102" id="f2-text-013" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">0</tspan></text>
+    <rect x="25" y="247" width="18" height="17" fill="#FFFFFF" stroke="#9A9A9A" stroke-width=".85" data-source-node="103"/>
+    <text x="34" y="261" text-anchor="middle" font-size="14.688" data-source-node="104" id="f2-text-014" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">1</tspan></text>
+    <text x="48" y="242" font-size="14.688" data-source-node="105" id="f2-text-015" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Visible</tspan></text>
+    <text x="48" y="262" font-size="14.688" data-source-node="106" id="f2-text-016" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Masked</tspan></text>
+
+    <g id="binary-mask" data-source-node="107">
+      <rect x="25" y="271" width="92" height="97" fill="#E3ECF5" data-source-node="108"/>
+      <g fill="#FFFFFF" data-source-node="109">
+        <rect x="44" y="291" width="19" height="19" data-source-node="110"/>
+        <rect x="81" y="291" width="36" height="19" data-source-node="111"/>
+        <rect x="25" y="329" width="19" height="19" data-source-node="112"/>
+        <rect x="62" y="329" width="19" height="19" data-source-node="113"/>
+        <rect x="99" y="329" width="18" height="19" data-source-node="114"/>
+      </g>
+      <g font-size="11.2" text-anchor="middle" data-source-node="115">
+        <text y="285" data-source-node="116" id="f2-text-017" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-size="15.0" opacity="1"><tspan x="34" data-source-node="117" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="53" data-source-node="118" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="72" data-source-node="119" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="91" data-source-node="120" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="110" data-source-node="121" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan></text>
+        <text y="305" data-source-node="122" id="f2-text-018" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-size="15.0" opacity="1"><tspan x="34" data-source-node="123" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="53" data-source-node="124" stroke="none" fill="#1A1A1A" font-family="Times New Roman" font-size="15.0" opacity="1">1</tspan><tspan x="72" data-source-node="125" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="91" data-source-node="126" stroke="none" fill="#1A1A1A" font-family="Times New Roman" font-size="15.0" opacity="1">1</tspan><tspan x="110" data-source-node="127" stroke="none" fill="#1A1A1A" font-family="Times New Roman" font-size="15.0" opacity="1">1</tspan></text>
+        <text y="324" data-source-node="128" id="f2-text-019" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-size="15.0" opacity="1"><tspan x="34" data-source-node="129" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="53" data-source-node="130" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="72" data-source-node="131" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="91" data-source-node="132" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="110" data-source-node="133" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan></text>
+        <text y="344" data-source-node="134" id="f2-text-020" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-size="15.0" opacity="1"><tspan x="34" data-source-node="135" stroke="none" fill="#1A1A1A" font-family="Times New Roman" font-size="15.0" opacity="1">1</tspan><tspan x="53" data-source-node="136" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="72" data-source-node="137" stroke="none" fill="#1A1A1A" font-family="Times New Roman" font-size="15.0" opacity="1">1</tspan><tspan x="91" data-source-node="138" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="110" data-source-node="139" stroke="none" fill="#1A1A1A" font-family="Times New Roman" font-size="15.0" opacity="1">1</tspan></text>
+        <text y="363" data-source-node="140" id="f2-text-021" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-size="15.0" opacity="1"><tspan x="34" data-source-node="141" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="53" data-source-node="142" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="72" data-source-node="143" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="91" data-source-node="144" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan><tspan x="110" data-source-node="145" font-family="Times New Roman" stroke="none" fill="#1A1A1A" font-size="15.0" opacity="1">0</tspan></text>
+      </g>
+      <path id="restored-binary-mask-grid" d="M43.4 271V368M61.8 271V368M80.2 271V368M98.6 271V368M25 290.4H117M25 309.8H117M25 329.2H117M25 348.6H117" fill="none" stroke="#7FA6CC" stroke-width=".8" opacity="1"/><rect x="25" y="271" width="92" height="97" fill="none" stroke="#1A1A1A" stroke-width=".8" data-source-node="146"/>
+      <text x="24" y="384" font-size="14.688" data-source-node="147" id="f2-text-022" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">M</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">: binary mask</tspan></text>
+      </g>
+
+    <g id="masked-matrix" data-source-node="149">
+      <rect x="148" y="271" width="93" height="97" fill="#E3ECF5" data-source-node="150"/>
+      <g fill="#FFFFFF" data-source-node="152">
+        <rect x="167" y="291" width="19" height="19" data-source-node="153"/>
+        <rect x="204" y="291" width="37" height="19" data-source-node="154"/>
+        <rect x="148" y="329" width="19" height="19" data-source-node="155"/>
+        <rect x="186" y="331" width="17" height="17" data-source-node="156"/>
+        <rect x="222" y="331" width="19" height="17" data-source-node="157"/>
+      </g>
+      <path id="restored-masked-power-grid" d="M166.6 271V368M185.2 271V368M203.8 271V368M222.4 271V368M148 290.4H241M148 309.8H241M148 329.2H241M148 348.6H241" fill="none" stroke="#4D4D4D" stroke-width=".8" opacity="1"/><rect x="148" y="271" width="93" height="97" fill="none" stroke="#1A1A1A" stroke-width="1.1" data-source-node="158"/>
+      <text x="147" y="385" font-size="14.688" data-source-node="159" id="f2-text-024" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Masked power</tspan></text>
+    </g>
+    <path d="M244 318H267" fill="none" stroke="#1A1A1A" stroke-width="1.4" marker-end="url(#blackArrow)" data-source-node="160"/>
+
+    <g id="concatenated-tensor" data-source-node="161">
+      <path d="M277 281L308 250H375V328L344 359H277Z" fill="#2F5D8A" data-source-node="162"/>
+      <path d="M277 281H344V359H277Z" fill="#2F5D8A" data-source-node="163"/>
+      <path d="M277 281L308 250H375L344 281Z" fill="#9A9A9A" data-source-node="164"/>
+      <path d="M344 281L375 250V328L344 359Z" fill="#4D4D4D" data-source-node="165"/>
+      <path d="M284.75 273.25H351.75L359.5 265.5H292.5Z" fill="#B03A2E" data-source-node="166"/>
+      <path d="M351.75 273.25L359.5 265.5V285L351.75 292.75Z" fill="#B03A2E" data-source-node="167"/>
+      <path d="M351.75 292.75L359.5 285V304.5L351.75 312.25Z" fill="#B03A2E" data-source-node="168"/>
+      <path d="M359.5 285L367.25 277.25V296.75L359.5 304.5Z" fill="#B03A2E" data-source-node="169"/>
+      <path d="M359.5 304.5L367.25 296.75V316.25L359.5 324Z" fill="#B03A2E" data-source-node="170"/>
+      <path d="M359.5 324L367.25 316.25V335.75L359.5 343.5Z" fill="#B03A2E" data-source-node="171"/>
+      <g fill="none" stroke="#1A1A1A" stroke-width=".95" data-source-node="172">
+        <path d="M293.75 281V359M310.5 281V359M327.25 281V359M277 300.5H344M277 320H344M277 339.5H344" data-source-node="173"/>
+        <path d="M293.75 281L324.75 250M310.5 281L341.5 250M327.25 281L358.25 250M284.75 273.25H351.75M292.5 265.5H359.5M300.25 257.75H367.25" data-source-node="174"/>
+        <path d="M351.75 273.25V351.25M359.5 265.5V343.5M367.25 257.75V335.75M344 300.5L375 269.5M344 320L375 289M344 339.5L375 308.5" data-source-node="175"/>
+      </g>
+      <path d="M277 281L308 250H375V328L344 359H277ZM277 281H344L375 250M344 281V359" fill="none" stroke="#1A1A1A" stroke-width="1.25" data-source-node="176"/>
+      <g fill="none" stroke="#1A1A1A" stroke-width="1.1" marker-end="url(#blackArrow)" data-source-node="177">
+        <path d="M270 281V359" data-source-node="178"/>
+        <path d="M273 275L304 245" data-source-node="179"/>
+        <path d="M277 371H345" data-source-node="180"/>
+        <path d="M349 361L379 332" data-source-node="181"/>
+      </g>
+      <text x="252" y="396" font-size="14.688" data-source-node="189" id="f2-text-028" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Masked input </tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">X</tspan><tspan font-style="normal" font-size="12.605" baseline-shift="sub" fill="#1A1A1A" opacity="1" stroke="none">mask</tspan></text>
+      </g>
+  <path d="M117 318H147" fill="none" stroke="#1A1A1A" stroke-width="1.3" marker-end="url(#smallBlackArrow)" id="mask-to-masked-power"/><text x="72" y="177" fill="#1A1A1A" font-family="Times New Roman" font-size="12.605" stroke="none" text-anchor="middle" id="mask-operation-label">Apply block mask</text></g>
+
+  <g id="encoder-and-feature-bifurcation" data-source-node="192">
+    <text x="406" y="24" font-size="17" data-source-node="193" id="f2-text-030" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="700" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">B</tspan></text>
+    <text x="427" y="24" font-size="14.688" data-source-node="194" id="f2-text-031" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="700" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Encoder architecture &amp; feature bifurcation</tspan></text>
+    <rect x="404.5" y="63.5" width="126" height="284" rx="22" fill="#F2F2F2" stroke="#1A1A1A" stroke-width=".9" data-source-node="195"/>
+
+    <g id="attention-pattern-background" data-source-node="196" opacity=".24" transform="translate(-10 0)">
+      <path d="M534 242L550 214V331L534 282Z" fill="url(#attentionHatch)" data-source-node="197"/>
+      <rect x="547" y="197" width="113" height="168" rx="22" fill="url(#attentionHatch)" data-source-node="198"/>
+    </g>
+
+    <g id="encoder-arrows" transform="translate(.5 0)" fill="none" stroke="#1A1A1A" stroke-width="1.6" stroke-linejoin="miter" data-source-node="199">
+      <path d="M462 74V51" marker-end="url(#encoderArrow)" data-source-node="200"/>
+      <path d="M462 114V100" marker-end="url(#encoderArrow)" data-source-node="201"/>
+      <path d="M462 155V141" marker-end="url(#encoderArrow)" data-source-node="202"/>
+      <path d="M462 197V181" marker-end="url(#encoderArrow)" data-source-node="203"/>
+      <path d="M462 241V224" marker-end="url(#encoderArrow)" data-source-node="204"/>
+      <path d="M462 305V283" marker-end="url(#encoderArrow)" data-source-node="205"/>
+      <path d="M462 362V332" marker-end="url(#encoderArrow)" data-source-node="206"/>
+      <path d="M462 342H521V210H512" stroke-width="1.25" marker-end="url(#encoderArrow)" data-source-node="208"/>
+      <path d="M462 189H521V86H512" stroke-width="1.25" marker-end="url(#encoderArrow)" data-source-node="209"/>
+    </g>
+    <g id="encoder-blocks" stroke="#2F5D8A" stroke-width=".95" data-source-node="210">
+      <rect x="413.5" y="74" width="98" height="25" rx="4.5" fill="#E3ECF5" data-source-node="211"/>
+      <rect x="413.5" y="114.5" width="98" height="25" rx="4.5" fill="#E3ECF5" data-source-node="212"/>
+      <rect x="413.5" y="155" width="98" height="25" rx="4.5" fill="#E3ECF5" data-source-node="213"/>
+      <rect x="413.5" y="197" width="98" height="26" rx="4.5" fill="#E3ECF5" data-source-node="214"/>
+      <rect x="413.5" y="241" width="98" height="41" rx="5.5" fill="#E3ECF5" data-source-node="215"/>
+      <rect x="413.5" y="305" width="98" height="26" rx="4.5" fill="#E3ECF5" data-source-node="216"/>
+    </g>
+    <g text-anchor="middle" data-source-node="217">
+      <text x="462" y="47" font-size="14.688" data-source-node="218" id="f2-text-032" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="400" text-anchor="middle" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Output</tspan></text>
+      <text x="462" y="90" font-size="14.688" data-source-node="219" id="f2-text-033" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".16" text-anchor="middle" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Add (Residual)</tspan></text>
+      <text x="462" y="131" font-size="14.688" data-source-node="220" id="f2-text-034" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="400" text-anchor="middle" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">FFN</tspan></text>
+      <text x="462" y="171" font-size="14.688" data-source-node="221" id="f2-text-035" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".16" text-anchor="middle" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">LayerNorm</tspan></text>
+      <text x="462" y="214" font-size="14.688" data-source-node="222" id="f2-text-036" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".16" text-anchor="middle" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Add (Residual)</tspan></text>
+      <text x="462" y="259" font-size="14.688" data-source-node="223" id="f2-text-037" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".16" text-anchor="middle" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Multi-Head</tspan></text>
+      <text x="462" y="275" font-size="14.688" data-source-node="224" id="f2-text-038" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".16" text-anchor="middle" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Attention</tspan></text>
+      <text x="462" y="321" font-size="14.688" data-source-node="225" id="f2-text-039" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".16" text-anchor="middle" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">LayerNorm</tspan></text>
+      <text x="462" y="380" font-size="14.688" data-source-node="226" id="f2-text-040" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="700" text-anchor="middle" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Input</tspan></text>
+      </g>
+
+    <path d="M462.5 55H543V129.5H554" fill="none" stroke="#1A1A1A" stroke-width="1.4" marker-end="url(#blackArrow)" data-source-node="228"/>
+    <g id="feature-cube" stroke="#2F5D8A" stroke-width="1.15" data-source-node="229">
+      <path d="M555 108L571 92H619V137L603 153H555Z" fill="#B7D0E5" data-source-node="230"/>
+      <path d="M555 108L571 92H619L603 108Z" fill="#DCE9F3" data-source-node="231"/>
+      <path d="M603 108L619 92V137L603 153Z" fill="#9EBFDC" data-source-node="232"/>
+      <path d="M555 108H603V153H555Z" fill="#B7D0E5" data-source-node="233"/>
+    </g>
+    <text x="579" y="126" text-anchor="middle" font-size="14.688" data-source-node="234" id="f2-text-042" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".09" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Feature</tspan></text>
+    <text x="579" y="144" text-anchor="middle" font-size="14.688" data-source-node="235" id="f2-text-043" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".09" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">cube</tspan></text>
+    <text x="586" y="174" font-size="14.688" data-source-node="236" id="f2-text-044" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" text-anchor="middle" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Encoder output </tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">H</tspan></text>
+    <path d="M619 130H676V85" fill="none" data-source-node="241" stroke="#2F5D8A" stroke-width="2.0" marker-end="url(#attentionBlueArrow)"/>
+    <rect x="622" y="46" width="109" height="39" fill="none" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="5 4" data-source-node="243"/>
+    <text x="676" y="60" text-anchor="middle" font-size="14.688" data-source-node="244" id="f2-text-046" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="700" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">To Stage 3:</tspan></text>
+    <text x="676" y="79" text-anchor="middle" font-size="14.688" data-source-node="245" id="f2-text-047" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Graph forecasting</tspan></text>
+    <path d="M620 139L696 181V266" fill="none" stroke="#2F5D8A" stroke-width="1.85" stroke-dasharray="4 3" marker-end="url(#attentionBlueArrow)" data-source-node="246"/>
+    <rect x="652" y="268" width="85" height="57" rx="4" fill="#FFFFFF" stroke="#2F5D8A" stroke-width=".95" id="auxiliary-head-frame"/><g text-anchor="middle" font-size="12.8" font-weight="700" data-source-node="247" fill="#2F5D8A" stroke="none" stroke-width=".18" paint-order="stroke">
+      <text x="694.5" y="282" data-source-node="248" id="f2-text-048" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".18" font-size="12.8" text-anchor="middle" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Auxiliary</tspan></text>
+      <text x="694.5" y="299" data-source-node="249" id="f2-text-049" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".18" font-size="12.8" text-anchor="middle" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Reconstruction</tspan></text>
+      <text x="694.5" y="316" data-source-node="250" id="f2-text-050" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".18" font-size="12.8" text-anchor="middle" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Head</tspan></text>
+    </g>
+
+    <g id="physics-guided-attention" data-source-node="251" transform="translate(-10 0)">
+      <text x="605" y="210" text-anchor="middle" font-size="13.6" data-source-node="252" id="f2-text-051" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".55" font-weight="700" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Physics-guided</tspan></text>
+      <text x="605" y="227" text-anchor="middle" font-size="13.6" data-source-node="253" id="f2-text-052" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".55" font-weight="700" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">attention mechanism</tspan></text>
+      <g fill="none" stroke="#2F5D8A" stroke-width="4" marker-end="url(#attentionBlueArrow)" stroke-linejoin="round" data-source-node="254">
+        <path d="M558 316L641 260" data-source-node="255"/>
+        <path d="M607 319V260" data-source-node="256"/>
+        <path d="M607 319C593 315 587 284 584 261" data-source-node="257"/>
+        <path d="M607 319C578 317 564 298 562 260" data-source-node="258"/>
+      </g>
+      <g fill="none" stroke="#B03A2E" stroke-width="4" marker-end="url(#attentionRedArrow)" stroke-linejoin="round" data-source-node="259">
+        <path d="M645 319C621 307 588 282 584 261" data-source-node="260"/>
+        <path d="M645 319L607 261" data-source-node="261"/>
+        <path d="M645 319V260" data-source-node="262"/>
+      </g>
+      <g data-source-node="263">
+        <circle cx="562" cy="249" r="9.5" fill="url(#denseNodeDots)" data-source-node="264"/>
+        <circle cx="584" cy="249" r="9.5" fill="url(#sparseNodeDots)" data-source-node="265"/>
+        <circle cx="607" cy="249" r="9.5" fill="url(#denseNodeDots)" data-source-node="266"/>
+        <circle cx="644" cy="249" r="9.5" fill="url(#sparseNodeDots)" data-source-node="267"/>
+        <circle cx="607" cy="327" r="9.5" fill="url(#denseNodeDots)" data-source-node="268"/>
+        <circle cx="645" cy="327" r="9.5" fill="url(#denseNodeDots)" data-source-node="269"/>
+      </g>
+      <text x="550" y="312" font-size="14.688" data-source-node="270" id="f2-text-053" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".4" font-weight="400" font-style="italic" opacity="1"><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">Q</tspan></text>
+      <text x="611" y="311" font-size="14.688" font-style="italic" data-source-node="271" id="f2-text-054" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-weight="400" opacity="1"><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">K</tspan></text>
+      <text x="645" y="311" font-size="14.688" font-style="italic" data-source-node="272" id="f2-text-055" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-weight="400" opacity="1"><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">V</tspan></text>
+      <circle cx="558" cy="327" r="9.5" fill="none" stroke="#1A1A1A" stroke-width="1.1" data-source-node="273"/>
+      <path d="M548.5 328C552 320 558 333.5 567.5 326.5" fill="none" stroke="#1A1A1A" stroke-width="1" data-source-node="274"/>
+      <path d="M570 327H591" fill="none" stroke="#1A1A1A" stroke-width="1.7" marker-end="url(#blackArrow)" data-source-node="275"/>
+      <text x="562" y="357" text-anchor="middle" font-size="13.6" data-source-node="276" id="f2-text-056" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".4" font-weight="400" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Positional</tspan></text>
+      <text x="562" y="375" text-anchor="middle" font-size="13.6" data-source-node="277" id="f2-text-057" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".4" font-weight="400" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">encoding</tspan></text>
+      </g>
+  <path d="M694.5 325V350" fill="none" stroke="#2F5D8A" stroke-width="1.6" marker-end="url(#attentionBlueArrow)" id="aux-head-to-reconstructed-power"/><text x="694.5" y="367" fill="#1A1A1A" font-family="Times New Roman" font-size="12.605" stroke="none" text-anchor="middle" id="reconstructed-output-title">Reconstructed</text><text x="694.5" y="385" fill="#1A1A1A" font-family="Times New Roman" font-size="12.605" stroke="none" text-anchor="middle" id="reconstructed-output-variable">power <tspan font-style="italic" fill="#1A1A1A" stroke="none">ŷ</tspan></text></g>
+
+  <g id="physics-consistency-regularization" data-source-node="283">
+    <text x="761" y="24" font-size="14.688" data-source-node="284" id="f2-text-062" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="700" font-style="normal" opacity="1"><tspan font-size="17" font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">C</tspan><tspan font-size="14.688" font-style="normal" dx="6" fill="#1A1A1A" opacity="1" stroke="none">  Physics-consistency</tspan></text>
+    <text x="874" y="43" font-size="14.688" data-source-node="285" id="f2-text-063" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="700" font-style="normal" text-anchor="middle" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">regularization</tspan></text>
+
+    <g id="reconstruction-and-bound-plot" data-source-node="286">
+      <rect x="814" y="83" width="78" height="105" fill="url(#missingHatch)" data-source-node="287"/>
+      <rect x="769" y="188" width="214" height="49" fill="#F2F2F2" data-source-node="288"/>
+      <rect x="814" y="188" width="78" height="49" fill="#F2F2F2" data-source-node="289"/>
+      <path d="M769 188H983" fill="none" stroke="#9A9A9A" stroke-width=".65" data-source-node="290"/>
+      <path d="M769 167L784 146L799 130L814 110L829 127L845 146L853 159L869 174L888 178L893 185L909 178L924 180L939 175L954 166L969 151L984 144" fill="none" stroke="#2F5D8A" stroke-width="1.2" stroke-dasharray="3.5 2.2" data-source-node="298"/>
+      <path d="M769 167L784 157L799 153L814 126L829 108L845 96L869 116L892 120L909 147L924 180L939 181L954 171L969 159L984 151" fill="none" stroke="#B03A2E" stroke-width="1.2" stroke-dasharray="3.5 2.2" data-source-node="299"/>
+      <g stroke="#2F5D8A" stroke-width="1.35" fill="none" data-source-node="300">
+        <path d="M845 96V146M853 83V159M869 110V174" data-source-node="301"/>
+      </g>
+      <g data-source-node="302">
+        <use xlink:href="#crossMark" x="769" y="167" data-source-node="303"/><use xlink:href="#crossMark" x="784" y="146" data-source-node="304"/>
+        <use xlink:href="#crossMark" x="799" y="130" data-source-node="305"/><use xlink:href="#crossMark" x="814" y="110" data-source-node="306"/>
+        <use xlink:href="#crossMark" x="829" y="127" data-source-node="307"/><use xlink:href="#crossMark" x="845" y="146" data-source-node="308"/>
+        <use xlink:href="#crossMark" x="853" y="159" data-source-node="309"/><use xlink:href="#crossMark" x="869" y="174" data-source-node="310"/>
+        <use xlink:href="#crossMark" x="888" y="178" data-source-node="311"/><use xlink:href="#crossMark" x="893" y="185" data-source-node="312"/>
+        <use xlink:href="#crossMark" x="909" y="178" data-source-node="313"/><use xlink:href="#crossMark" x="924" y="180" data-source-node="314"/>
+        <use xlink:href="#crossMark" x="939" y="175" data-source-node="315"/><use xlink:href="#crossMark" x="954" y="166" data-source-node="316"/>
+        <use xlink:href="#crossMark" x="969" y="151" data-source-node="317"/><use xlink:href="#crossMark" x="984" y="144" data-source-node="318"/>
+      </g>
+      <g data-source-node="319">
+        <use xlink:href="#priorMark" x="769" y="167" data-source-node="320"/><use xlink:href="#priorMark" x="784" y="157" data-source-node="321"/>
+        <use xlink:href="#priorMark" x="799" y="153" data-source-node="322"/><use xlink:href="#priorMark" x="814" y="126" data-source-node="323"/>
+        <use xlink:href="#priorMark" x="829" y="108" data-source-node="324"/><use xlink:href="#priorMark" x="845" y="96" data-source-node="325"/>
+        <use xlink:href="#priorMark" x="869" y="116" data-source-node="326"/><use xlink:href="#priorMark" x="892" y="120" data-source-node="327"/>
+        <use xlink:href="#priorMark" x="909" y="147" data-source-node="328"/><use xlink:href="#priorMark" x="924" y="180" data-source-node="329"/>
+        <use xlink:href="#priorMark" x="939" y="181" data-source-node="330"/><use xlink:href="#priorMark" x="954" y="171" data-source-node="331"/>
+        <use xlink:href="#priorMark" x="969" y="159" data-source-node="332"/><use xlink:href="#priorMark" x="984" y="151" data-source-node="333"/>
+      </g>
+      <g data-source-node="334">
+        <use xlink:href="#observedMark" x="845" y="96" data-source-node="335"/><use xlink:href="#observedMark" x="853" y="83" data-source-node="336"/>
+        <use xlink:href="#observedMark" x="869" y="110" data-source-node="337"/><use xlink:href="#observedMark" x="893" y="185" data-source-node="341"/><use xlink:href="#observedMark" x="924" y="180" data-source-node="342"/>
+        <use xlink:href="#observedMark" x="954" y="166" data-source-node="343"/><use xlink:href="#observedMark" x="969" y="151" data-source-node="344"/>
+      </g>
+      <path d="M769 237V82" marker-end="url(#smallBlackArrow)" data-source-node="345" fill="none" stroke="#1A1A1A" stroke-width="1.05"/>
+      <path d="M769 237H990" marker-end="url(#smallBlackArrow)" data-source-node="346" fill="none" stroke="#1A1A1A" stroke-width="1.05"/>
+      <text x="876" y="250" text-anchor="middle" font-size="14.688" data-source-node="347" id="f2-text-067" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".15" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Time (</tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">t</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">)</tspan></text>
+      <text x="770" y="213" font-size="14.688" data-source-node="348" id="f2-text-068" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="400" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Infeasible</tspan></text>
+      <text x="779" y="231" font-size="14.688" data-source-node="349" id="f2-text-069" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".3" font-weight="400" font-style="normal" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">region</tspan></text>
+
+      <g id="clean-value-legend"><circle cx="779" cy="55" r="2.7" fill="#1A1A1A"/><text x="788" y="60" fill="#1A1A1A" font-family="Times New Roman" font-size="12.605" stroke="none">y observed</text><path d="M869 55H883" fill="none" stroke="#2F5D8A" stroke-width="1.25"/><use x="876" y="55" xlink:href="#crossMark"/><text x="887" y="60" fill="#1A1A1A" font-family="Times New Roman" font-size="12.605" stroke="none">ŷ reconstruction</text><path d="M772 72H786" fill="none" stroke="#B03A2E" stroke-width="1.1"/><use x="779" y="72" xlink:href="#priorMark"/><text x="788" y="77" fill="#1A1A1A" font-family="Times New Roman" font-size="12.605" stroke="none">π prior</text><rect x="870" y="65" width="13" height="12" fill="url(#missingHatch)" stroke="#9A9A9A" stroke-width=".45"/><text x="888" y="77" fill="#1A1A1A" font-family="Times New Roman" font-size="12.605" stroke="none">Masked region M</text></g><path d="M912 125H884L854 121" fill="none" stroke="#1A1A1A" stroke-width="0.95" marker-end="url(#smallBlackArrow)" id="lrec-residual-leader"/><text x="918" y="129" fill="#1A1A1A" font-family="Times New Roman" font-size="14.688" stroke="none" id="lrec-clear-label">ℒ<tspan font-size="12.605" baseline-shift="sub" fill="#1A1A1A" stroke="none">rec</tspan></text><path d="M916 190V220" fill="none" stroke="#B03A2E" stroke-width="0.9" marker-start="url(#smallBlackArrow)" marker-end="url(#smallBlackArrow)" id="lbound-distance"/><use x="909" y="222" id="lbound-prediction" xlink:href="#crossMark"/><text x="895" y="234" fill="#1A1A1A" font-family="Times New Roman" font-size="14.688" stroke="none" font-style="italic" id="lbound-prediction-label">ŷᵢ</text><text x="932" y="215" fill="#1A1A1A" font-family="Times New Roman" font-size="14.688" stroke="none" id="lbound-clear-label">ℒ<tspan font-size="12.605" baseline-shift="sub" fill="#1A1A1A" stroke="none">bound</tspan></text></g>
+
+    <g id="gradient-plot" data-source-node="388">
+      <rect x="814" y="295" width="78" height="84" fill="url(#missingHatch)" data-source-node="389"/>
+      <path d="M769 333.5H791.5V317.5H814V296H854V333.5H894.5V359.5H917V355.5H939.5V347.5H962V333.5H984" fill="none" stroke="#2F5D8A" stroke-width="1.75" data-source-node="390"/>
+      <path d="M769 333.5H791.5V320.5H814V307H854V333.5H894.5V373H917V366H939.5V343.5H962V333.5H984" fill="none" stroke="#B03A2E" stroke-width="1.75" data-source-node="391"/>
+      <path d="M769 379V257" marker-end="url(#smallBlackArrow)" data-source-node="392" fill="none" stroke="#1A1A1A" stroke-width="1.05"/>
+      <path d="M769 379H990" marker-end="url(#smallBlackArrow)" data-source-node="393" fill="none" stroke="#1A1A1A" stroke-width="1.05"/>
+      <text x="876" y="392" text-anchor="middle" font-size="14.688" data-source-node="394" id="f2-text-085" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".2" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Time (</tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">t</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">)</tspan></text>
+      <text transform="translate(763 374) rotate(-90)" font-size="14.688" data-source-node="395" id="f2-text-086" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".2" font-style="normal" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Δ</tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">P</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">/Δ</tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">t</tspan></text>
+      <path d="M775 263H787" fill="none" stroke="#2F5D8A" stroke-width="1.6" data-source-node="396"/>
+      <text x="791" y="268" font-size="14.688" font-style="normal" data-source-node="397" id="f2-text-087" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".2" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Δ</tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">ŷ</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none"> (reconstruction)</tspan></text>
+      <path d="M775 280H787" fill="none" stroke="#B03A2E" stroke-width="1.6" data-source-node="401"/>
+      <text x="791" y="285" font-size="14.688" font-style="normal" data-source-node="402" id="f2-text-089" font-family="Times New Roman" fill="#1A1A1A" stroke="none" stroke-width=".2" font-weight="400" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Δ</tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">π</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none"> (prior)</tspan></text>
+      <path d="M838 297.2V305.8" fill="none" stroke="#1A1A1A" stroke-width="0.85" id="ltd-step-distance"/><path d="M835.5 297.2H840.5M835.5 305.8H840.5" fill="none" stroke="#1A1A1A" stroke-width="0.85" id="ltd-distance-caps"/><path d="M841 302H865L875 313" fill="none" stroke="#1A1A1A" stroke-width="0.85" id="ltd-distance-leader"/><text x="879" y="323" fill="#1A1A1A" font-family="Times New Roman" font-size="14.688" stroke="none" id="ltd-clear-label">ℒ<tspan font-size="12.605" baseline-shift="sub" fill="#1A1A1A" stroke="none">td</tspan></text></g>
+  </g>
+
+  <rect id="complete-outer-frame" x="1.5" y="1.5" width="1001" height="403" fill="none" stroke="#B3B3B3" stroke-width="0.9" stroke-linejoin="miter" aria-label="Complete outer frame"/><text id="add-f2-size-power" x="19" y="109" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" text-anchor="middle" transform="rotate(-90 19 109)" opacity="1"><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">N</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none"> × </tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">T</tspan></text><text id="add-f2-size-wind" x="146" y="109" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" text-anchor="middle" transform="rotate(-90 146 109)" opacity="1"><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">N</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none"> × </tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">T</tspan></text><text id="add-f2-size-nwp" x="146" y="214" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" text-anchor="middle" transform="rotate(-90 146 214)" opacity="1"><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">N</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none"> × </tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">T</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none"> × variables</tspan></text><text id="add-f2-mask-note-1" x="18" y="200.4" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Mask on power only;</tspan></text><text id="add-f2-mask-note-2" x="18" y="212.4" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">wind speed and NWP</tspan></text><text id="add-f2-mask-note-3" x="18" y="224.4" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">stay visible</tspan></text><text id="add-f2-channels-note-1" x="250" y="173" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">Channels: masked power,</tspan></text><text id="add-f2-channels-note-2" x="250" y="189" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">wind speed, NWP,</tspan></text><text id="add-f2-channels-note-3" x="250" y="205" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">prior </tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">π</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">, indicators</tspan></text><text id="add-f2-channels-note-4" x="250" y="221" font-family="Times New Roman" font-size="12.8" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" opacity="1"><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">m</tspan><tspan font-style="italic" font-size="12.605" baseline-shift="super" fill="#1A1A1A" opacity="1" stroke="none">p</tspan><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">, </tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">m</tspan><tspan font-style="italic" font-size="12.605" baseline-shift="super" fill="#1A1A1A" opacity="1" stroke="none">w</tspan></text><text id="add-f2-cube-turbines" x="263" y="286" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" text-anchor="middle" transform="rotate(-90 263 286)" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">turbines </tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">N</tspan></text><text id="add-f2-cube-channels" x="338" y="384" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">channels</tspan></text><text id="add-f2-cube-time" x="311" y="383" font-family="Times New Roman" font-size="12.605" font-style="normal" font-weight="400" fill="#1A1A1A" stroke="none" text-anchor="middle" opacity="1"><tspan font-style="normal" fill="#1A1A1A" opacity="1" stroke="none">time </tspan><tspan font-style="italic" fill="#1A1A1A" opacity="1" stroke="none">T</tspan></text></svg>

@@ -1,0 +1,7 @@
+site,turbine_id,longitude,latitude,x_east_m,y_north_m,hub_height_agl_m,rotor_diameter_m,source_elevation_m,dem_dsm_elevation_m,dem_minus_source_elevation_m,vertical_datum_of_source_elevation
+kelmarsh,1,-0.947133,52.400604,-286.0483277228556,-87.27566242395038,78.5,92.0,145.598,144.21024532809608,-1.3877546719039344,not independently confirmed; diagnostic difference only
+kelmarsh,2,-0.949527,52.402551,-448.4642570220476,129.22085975314482,78.5,92.0,156.577,155.2056211948734,-1.3713788051265965,not independently confirmed; diagnostic difference only
+kelmarsh,3,-0.94419,52.403834,-86.38664020091521,271.8839506382039,68.5,92.0,153.477,152.17426468449017,-1.3027353155098353,not independently confirmed; diagnostic difference only
+kelmarsh,4,-0.94115,52.398781,119.85580970281539,-289.9840136971682,78.5,92.0,146.313,144.95562836816373,-1.3573716318362585,not independently confirmed; diagnostic difference only
+kelmarsh,5,-0.940537,52.402308,161.443514239331,102.2004925779993,78.5,92.0,142.901,141.60917985485133,-1.2918201451486766,not independently confirmed; diagnostic difference only
+kelmarsh,6,-0.936093,52.400687,462.93741140123893,-78.04648351284091,68.5,92.0,135.039,134.30357678796315,-0.7354232120368351,not independently confirmed; diagnostic difference only

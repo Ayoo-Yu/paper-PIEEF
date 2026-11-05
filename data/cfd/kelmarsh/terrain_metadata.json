@@ -1,0 +1,108 @@
+{
+  "site": "kelmarsh",
+  "created_utc": "2026-10-23T09:50:25.141971+00:00",
+  "status": "freeze_ready_inputs_only_no_CFD_run",
+  "source_turbines": "artifacts/released/turbines.csv",
+  "source_turbines_sha256": "f70d2bec7a4475b44a8205fba2d824619e50bce65dd273704317ce59b649fc9f",
+  "turbine_count": 6,
+  "terrain_relative_path": "inputs/dem/kelmarsh/terrain.tif",
+  "terrain_sha256": "55c43797fd4044a970403b6dc22acdfd5d168996b70f680df497c3b40d67893b",
+  "terrain_bytes": 980006,
+  "source_tiles": [
+    {
+      "tile": "N52W002",
+      "sha256": "421f11080a0398d1cbe93b6eb8b9bd476409040e12c8e24a24fcffd6f874de55"
+    },
+    {
+      "tile": "N52W001",
+      "sha256": "e58112d5b86e632219dca08d51258aa31cd9f50b110887115a6d06e11332fa3a"
+    }
+  ],
+  "product": "Copernicus GLO-30 DSM",
+  "vertical_datum": "EGM2008",
+  "horizontal_crs": "EPSG:4326",
+  "crop_method": "native pixel-aligned crop from original COG(s), no resampling/no filling",
+  "width": 637,
+  "height": 583,
+  "dtype": "float32",
+  "pixel_size_degrees": [
+    0.00041666666666666664,
+    0.0002777777777777778
+  ],
+  "bounds_W_S_E_N": [
+    -1.0756249999999998,
+    52.32041666666667,
+    -0.8102083333333332,
+    52.48236111111111
+  ],
+  "domain_center_lon": -0.9429166666666665,
+  "domain_center_lat": 52.40138888888889,
+  "local_bounds_m": [
+    -9003.31966753559,
+    9003.31966753559,
+    -9003.700310246884,
+    9003.700310246884
+  ],
+  "domain_side_m": 12000.0,
+  "all_angle_radial_requirement_m": 8485.28137423857,
+  "minimum_all_angle_boundary_buffer_m": 518.0382932970206,
+  "nodata_count": 0,
+  "nonfinite_count": 0,
+  "full_rotated_domain_coverage": true,
+  "outside_DEM_domain_points": 0,
+  "rotated_corner_checks": [
+    {
+      "angle_deg": 0,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 30,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 60,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 90,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 120,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 150,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 180,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 210,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 240,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 270,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 300,
+      "all_four_domain_corners_supported": true
+    },
+    {
+      "angle_deg": 330,
+      "all_four_domain_corners_supported": true
+    }
+  ],
+  "dem_mean_elevation_m": 132.69991325106972,
+  "dem_min_elevation_m": 71.45523071289062,
+  "dem_max_elevation_m": 213.267822265625,
+  "source_elevation_comparison": "Diagnostic only: source vertical datum is not confirmed; no elevation shift applied",
+  "geometry_csv_sha256": "64b9fd15141b8b2ec2e324feb4bd9e96b3bcd03d0da3c9fce0db6abbae0a03d4"
+}

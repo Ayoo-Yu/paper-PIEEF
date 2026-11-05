@@ -1,0 +1,17 @@
+Site,Variant,Horizon,Seeds,NRMSE (%),NMAE (%)
+Wind Farm A,PI-EEF (10-m farm-level direction),4 h,5,19.99 ± 0.37,11.54 ± 0.34
+Wind Farm A,100-m farm-level direction,4 h,5,19.89 ± 0.18,11.33 ± 0.12
+Wind Farm A,CFD local directions,4 h,5,19.99 ± 0.14,11.35 ± 0.26
+Wind Farm A,CFD local directions + speed-up correction,4 h,5,20.01 ± 0.06,11.37 ± 0.16
+Wind Farm A,Without direction bias,4 h,5,19.89 ± 0.35,11.28 ± 0.27
+Wind Farm A,LightGBM,4 h,5,19.98 ± 0.12,12.82 ± 0.10
+Wind Farm A,LightGBM with CFD features,4 h,5,19.91 ± 0.08,12.74 ± 0.03
+Kelmarsh,PI-EEF (100-m farm-level direction),15 min,3,9.31 ± 0.09,5.63 ± 0.08
+Kelmarsh,CFD local directions,15 min,3,9.30 ± 0.06,5.61 ± 0.13
+Kelmarsh,Measured direction anomalies,15 min,3,9.36 ± 0.05,5.74 ± 0.04
+Kelmarsh,PI-EEF (100-m farm-level direction),1 h,3,12.45 ± 0.15,7.84 ± 0.10
+Kelmarsh,CFD local directions,1 h,3,12.43 ± 0.07,7.89 ± 0.08
+Kelmarsh,Measured direction anomalies,1 h,3,12.44 ± 0.08,7.81 ± 0.01
+Kelmarsh,PI-EEF (100-m farm-level direction),4 h,3,15.41 ± 0.39,9.95 ± 0.35
+Kelmarsh,CFD local directions,4 h,3,15.46 ± 0.09,10.01 ± 0.25
+Kelmarsh,Measured direction anomalies,4 h,3,15.18 ± 0.20,9.92 ± 0.18

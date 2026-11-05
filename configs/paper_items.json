@@ -1,0 +1,982 @@
+{
+  "item_count": 67,
+  "default_command": "python scripts/reproduce.py --item all --from-results",
+  "items": [
+    {
+      "item": "Table 1",
+      "id": "table_1",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_1.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_1.csv"
+      ]
+    },
+    {
+      "item": "Table 2",
+      "id": "table_2",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_2.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_2.csv"
+      ]
+    },
+    {
+      "item": "Table 3",
+      "id": "table_3",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_3.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_3.csv"
+      ]
+    },
+    {
+      "item": "Table 4",
+      "id": "table_4",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_4.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_4.csv"
+      ]
+    },
+    {
+      "item": "Table 5",
+      "id": "table_5",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_5.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_5.csv"
+      ]
+    },
+    {
+      "item": "Table 6",
+      "id": "table_6",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_6.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_6.csv"
+      ]
+    },
+    {
+      "item": "Table 7",
+      "id": "table_7",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_7.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_7.csv"
+      ]
+    },
+    {
+      "item": "Table 8",
+      "id": "table_8",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_8.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_8.csv"
+      ]
+    },
+    {
+      "item": "Table S1",
+      "id": "table_s1",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s1.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s1.csv"
+      ]
+    },
+    {
+      "item": "Table S2",
+      "id": "table_s2",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s2.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s2.csv"
+      ]
+    },
+    {
+      "item": "Table S3",
+      "id": "table_s3",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s3.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s3.csv"
+      ]
+    },
+    {
+      "item": "Table S4",
+      "id": "table_s4",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s4.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s4.csv"
+      ]
+    },
+    {
+      "item": "Table S5",
+      "id": "table_s5",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s5.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s5.csv"
+      ]
+    },
+    {
+      "item": "Table S6",
+      "id": "table_s6",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s6.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s6.csv"
+      ]
+    },
+    {
+      "item": "Table S7",
+      "id": "table_s7",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s7.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s7.csv"
+      ]
+    },
+    {
+      "item": "Table S8",
+      "id": "table_s8",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s8.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s8.csv"
+      ]
+    },
+    {
+      "item": "Table S9",
+      "id": "table_s9",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s9.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s9.csv"
+      ]
+    },
+    {
+      "item": "Table S10",
+      "id": "table_s10",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s10.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s10.csv"
+      ]
+    },
+    {
+      "item": "Table S11",
+      "id": "table_s11",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s11.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s11.csv"
+      ]
+    },
+    {
+      "item": "Table S12",
+      "id": "table_s12",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s12.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s12.csv"
+      ]
+    },
+    {
+      "item": "Table S13",
+      "id": "table_s13",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s13.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s13.csv"
+      ]
+    },
+    {
+      "item": "Table S14",
+      "id": "table_s14",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s14.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s14.csv"
+      ]
+    },
+    {
+      "item": "Table S15",
+      "id": "table_s15",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s15.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s15.csv"
+      ]
+    },
+    {
+      "item": "Table S16",
+      "id": "table_s16",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s16.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s16.csv"
+      ]
+    },
+    {
+      "item": "Table S17",
+      "id": "table_s17",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s17.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s17.csv"
+      ]
+    },
+    {
+      "item": "Table S18",
+      "id": "table_s18",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s18.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s18.csv"
+      ]
+    },
+    {
+      "item": "Table S19",
+      "id": "table_s19",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s19.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s19.csv"
+      ]
+    },
+    {
+      "item": "Table S20",
+      "id": "table_s20",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s20.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s20.csv"
+      ]
+    },
+    {
+      "item": "Table S21",
+      "id": "table_s21",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s21.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s21.csv"
+      ]
+    },
+    {
+      "item": "Table S22",
+      "id": "table_s22",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s22.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s22.csv"
+      ]
+    },
+    {
+      "item": "Table S23",
+      "id": "table_s23",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s23.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s23.csv"
+      ]
+    },
+    {
+      "item": "Table S24",
+      "id": "table_s24",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s24.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s24.csv"
+      ]
+    },
+    {
+      "item": "Table S25",
+      "id": "table_s25",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s25.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s25.csv"
+      ]
+    },
+    {
+      "item": "Table S26",
+      "id": "table_s26",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s26.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s26.csv"
+      ]
+    },
+    {
+      "item": "Table S27",
+      "id": "table_s27",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s27.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s27.csv"
+      ]
+    },
+    {
+      "item": "Table S28",
+      "id": "table_s28",
+      "operation": "export_authoritative_table_cells",
+      "inputs": [
+        "results/paper/table_cells.json"
+      ],
+      "outputs": [
+        "results/tables/table_s28.csv"
+      ],
+      "paper_outputs": [
+        "results/tables/table_s28.csv"
+      ]
+    },
+    {
+      "item": "Fig. 1",
+      "id": "fig_1",
+      "operation": "export_editable_schematic_svg",
+      "inputs": [
+        "figures/source/fig_1.svg"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_1.svg"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_1.emf"
+      ]
+    },
+    {
+      "item": "Fig. 2",
+      "id": "fig_2",
+      "operation": "export_editable_schematic_svg",
+      "inputs": [
+        "figures/source/fig_2.svg"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_2.svg"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_2.emf"
+      ]
+    },
+    {
+      "item": "Fig. 3",
+      "id": "fig_3",
+      "operation": "export_editable_schematic_svg",
+      "inputs": [
+        "figures/source/fig_3.svg"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_3.svg"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_3.png"
+      ]
+    },
+    {
+      "item": "Fig. 4",
+      "id": "fig_4",
+      "operation": "export_editable_schematic_svg",
+      "inputs": [
+        "figures/source/fig_4.svg"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_4.svg"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_4.emf"
+      ]
+    },
+    {
+      "item": "Fig. 5",
+      "id": "fig_5",
+      "operation": "export_editable_schematic_svg",
+      "inputs": [
+        "figures/source/fig_5.svg"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_5.svg"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_5.emf"
+      ]
+    },
+    {
+      "item": "Fig. 6",
+      "id": "fig_6",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/fig06_plotted_values.csv",
+        "results/paper/source/fig06_power_binned_counts.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_6.png",
+        "figures/reproduced/fig_6.svg",
+        "figures/reproduced/fig_6.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_6.png"
+      ]
+    },
+    {
+      "item": "Fig. 7",
+      "id": "fig_7",
+      "operation": "redraw_published_source_values",
+      "inputs": [],
+      "outputs": [
+        "figures/reproduced/fig_7.png",
+        "figures/reproduced/fig_7.svg",
+        "figures/reproduced/fig_7.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_7.png"
+      ]
+    },
+    {
+      "item": "Fig. 8",
+      "id": "fig_8",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/fig7_benchmark_heatmap_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_8.png",
+        "figures/reproduced/fig_8.svg",
+        "figures/reproduced/fig_8.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_8.png"
+      ]
+    },
+    {
+      "item": "Fig. 9",
+      "id": "fig_9",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/fig8_robustness_components_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_9.png",
+        "figures/reproduced/fig_9.svg",
+        "figures/reproduced/fig_9.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_9.png"
+      ]
+    },
+    {
+      "item": "Fig. 10",
+      "id": "fig_10",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/fig09_physics_boxplots_plotted_values.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_10.png",
+        "figures/reproduced/fig_10.svg",
+        "figures/reproduced/fig_10.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_10.png"
+      ]
+    },
+    {
+      "item": "Fig. 11",
+      "id": "fig_11",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/fig10_gradient_densities_plotted_values.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_11.png",
+        "figures/reproduced/fig_11.svg",
+        "figures/reproduced/fig_11.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_11.png"
+      ]
+    },
+    {
+      "item": "Fig. 12",
+      "id": "fig_12",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/faults_values.csv",
+        "results/paper/source/reference_values.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_12.png",
+        "figures/reproduced/fig_12.svg",
+        "figures/reproduced/fig_12.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_12.png"
+      ]
+    },
+    {
+      "item": "Fig. 13",
+      "id": "fig_13",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/Fig12_events_black_frame_plotted_values.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_13.png",
+        "figures/reproduced/fig_13.svg",
+        "figures/reproduced/fig_13.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_13.png"
+      ]
+    },
+    {
+      "item": "Fig. 14",
+      "id": "fig_14",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/fig9_physical_curves_v3_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_14.png",
+        "figures/reproduced/fig_14.svg",
+        "figures/reproduced/fig_14.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_14.png"
+      ]
+    },
+    {
+      "item": "Fig. 15",
+      "id": "fig_15",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/fig15_figS1_node_data.csv",
+        "results/paper/source/mean_attention_matrices.npz",
+        "results/paper/source/fig15_three_conditions_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_15.png",
+        "figures/reproduced/fig_15.svg",
+        "figures/reproduced/fig_15.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_15.png"
+      ]
+    },
+    {
+      "item": "Fig. S1",
+      "id": "fig_s1",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/fig15_figS1_node_data.csv",
+        "results/paper/source/mean_attention_matrices.npz",
+        "results/paper/source/fig15_three_conditions_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_s1.png",
+        "figures/reproduced/fig_s1.svg",
+        "figures/reproduced/fig_s1.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_s1.png"
+      ]
+    },
+    {
+      "item": "Fig. S2",
+      "id": "fig_s2",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/figS_ti_power_curves_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_s2.png",
+        "figures/reproduced/fig_s2.svg",
+        "figures/reproduced/fig_s2.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_s2.png"
+      ]
+    },
+    {
+      "item": "Fig. S3",
+      "id": "fig_s3",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/figS_ti_errors_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_s3.png",
+        "figures/reproduced/fig_s3.svg",
+        "figures/reproduced/fig_s3.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_s3.png"
+      ]
+    },
+    {
+      "item": "Fig. S4",
+      "id": "fig_s4",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/figS_ti_attention_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_s4.png",
+        "figures/reproduced/fig_s4.svg",
+        "figures/reproduced/fig_s4.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_s4.png"
+      ]
+    },
+    {
+      "item": "Fig. S5",
+      "id": "fig_s5",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/figS_yaw_power_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_s5.png",
+        "figures/reproduced/fig_s5.svg",
+        "figures/reproduced/fig_s5.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_s5.png"
+      ]
+    },
+    {
+      "item": "Fig. S6",
+      "id": "fig_s6",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/figS_cfd_lookup_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_s6.png",
+        "figures/reproduced/fig_s6.svg",
+        "figures/reproduced/fig_s6.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_s6.png"
+      ]
+    },
+    {
+      "item": "Fig. S7",
+      "id": "fig_s7",
+      "operation": "redraw_published_source_values",
+      "inputs": [
+        "results/paper/source/figS_cfd_checks_data.csv"
+      ],
+      "outputs": [
+        "figures/reproduced/fig_s7.png",
+        "figures/reproduced/fig_s7.svg",
+        "figures/reproduced/fig_s7.pdf"
+      ],
+      "paper_outputs": [
+        "figures/paper/fig_s7.png"
+      ]
+    },
+    {
+      "item": "Data S1 / README",
+      "id": "data_s1_readme",
+      "operation": "export_stored_workbook_cells",
+      "inputs": [
+        "results/Supplementary_Data_S1.xlsx"
+      ],
+      "outputs": [
+        "results/supplementary_data/README.csv"
+      ],
+      "paper_outputs": [
+        "results/supplementary_data/README.csv"
+      ]
+    },
+    {
+      "item": "Data S1 / DM_full",
+      "id": "data_s1_dm_full",
+      "operation": "export_stored_workbook_cells",
+      "inputs": [
+        "results/Supplementary_Data_S1.xlsx"
+      ],
+      "outputs": [
+        "results/supplementary_data/DM_full.csv"
+      ],
+      "paper_outputs": [
+        "results/supplementary_data/DM_full.csv"
+      ]
+    },
+    {
+      "item": "Data S1 / Faults_39",
+      "id": "data_s1_faults_39",
+      "operation": "export_stored_workbook_cells",
+      "inputs": [
+        "results/Supplementary_Data_S1.xlsx"
+      ],
+      "outputs": [
+        "results/supplementary_data/Faults_39.csv"
+      ],
+      "paper_outputs": [
+        "results/supplementary_data/Faults_39.csv"
+      ]
+    },
+    {
+      "item": "Data S1 / Extension_tests",
+      "id": "data_s1_extension_tests",
+      "operation": "export_stored_workbook_cells",
+      "inputs": [
+        "results/Supplementary_Data_S1.xlsx"
+      ],
+      "outputs": [
+        "results/supplementary_data/Extension_tests.csv"
+      ],
+      "paper_outputs": [
+        "results/supplementary_data/Extension_tests.csv"
+      ]
+    },
+    {
+      "item": "Data S1 / TI_errors_full",
+      "id": "data_s1_ti_errors_full",
+      "operation": "export_stored_workbook_cells",
+      "inputs": [
+        "results/Supplementary_Data_S1.xlsx"
+      ],
+      "outputs": [
+        "results/supplementary_data/TI_errors_full.csv"
+      ],
+      "paper_outputs": [
+        "results/supplementary_data/TI_errors_full.csv"
+      ]
+    },
+    {
+      "item": "Data S1 / TI_attention_full",
+      "id": "data_s1_ti_attention_full",
+      "operation": "export_stored_workbook_cells",
+      "inputs": [
+        "results/Supplementary_Data_S1.xlsx"
+      ],
+      "outputs": [
+        "results/supplementary_data/TI_attention_full.csv"
+      ],
+      "paper_outputs": [
+        "results/supplementary_data/TI_attention_full.csv"
+      ]
+    },
+    {
+      "item": "Data S1 / Yaw_full",
+      "id": "data_s1_yaw_full",
+      "operation": "export_stored_workbook_cells",
+      "inputs": [
+        "results/Supplementary_Data_S1.xlsx"
+      ],
+      "outputs": [
+        "results/supplementary_data/Yaw_full.csv"
+      ],
+      "paper_outputs": [
+        "results/supplementary_data/Yaw_full.csv"
+      ]
+    },
+    {
+      "item": "Data S1 / Baseline_configurations",
+      "id": "data_s1_baseline_configurations",
+      "operation": "export_stored_workbook_cells",
+      "inputs": [
+        "results/Supplementary_Data_S1.xlsx"
+      ],
+      "outputs": [
+        "results/supplementary_data/Baseline_configurations.csv"
+      ],
+      "paper_outputs": [
+        "results/supplementary_data/Baseline_configurations.csv"
+      ]
+    },
+    {
+      "item": "Data S1 / Physics_regimes",
+      "id": "data_s1_physics_regimes",
+      "operation": "export_stored_workbook_cells",
+      "inputs": [
+        "results/Supplementary_Data_S1.xlsx"
+      ],
+      "outputs": [
+        "results/supplementary_data/Physics_regimes.csv"
+      ],
+      "paper_outputs": [
+        "results/supplementary_data/Physics_regimes.csv"
+      ]
+    }
+  ]
+}

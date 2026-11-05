@@ -1,0 +1,8 @@
+# Optional tooling for terrain preparation and CFD engine visualisation.
+# OpenFOAM and its compiler/build tools must be provided separately.
+# The published LUT and frozen PI-EEF inference do not import these modules.
+gmsh
+vtk
+rasterio
+xarray
+requests

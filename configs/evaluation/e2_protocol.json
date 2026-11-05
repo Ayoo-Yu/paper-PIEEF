@@ -1,0 +1,36 @@
+{
+  "horizon_steps": 16,
+  "history_steps": 96,
+  "counts": [
+    10,
+    20,
+    29,
+    50,
+    72,
+    100,
+    200
+  ],
+  "sweeps": 2,
+  "shuffle_seed": 20261027,
+  "inference_batches": [
+    1,
+    16
+  ],
+  "training_batch": 4,
+  "warmup_iterations": 10,
+  "timed_iterations": 100,
+  "epoch_windows": 26500,
+  "weights": "random_initialization_no_accuracy_evaluation",
+  "parameter_formula": "677609 + 18 * N",
+  "expected_parameters": {
+    "10": 677789,
+    "20": 677969,
+    "29": 678131,
+    "50": 678509,
+    "72": 678905,
+    "100": 679409,
+    "200": 681209
+  },
+  "N72": "synthetic_matched_workload_not_Wind_Farm_B",
+  "training_step_scope": "joint Stage3 epoch1 Huber + reconstruction + calibration + Adam, frozen decoder, 50% fixed F2 corruption; excludes data I/O/host transfer/CPU corruption sampler/first-batch gradient diagnostic"
+}

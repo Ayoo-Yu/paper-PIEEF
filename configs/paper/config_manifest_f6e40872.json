@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "protocol_sha256": "4f20378c05b4e18fedbf3e7b4a5cdd3e6fd4f86695b30c2180c0eef55dacaaf3",
+  "source_data_manifest_sha256": "79bba690ac0c94dfd6b550b10e84c0bc97d9881e6ea2b55a6d5cbb5d523596af",
+  "configs": [
+    {
+      "config_id": "energy_lr20261022_LR0_h16_seed13",
+      "schedule": "LR0",
+      "seed": 13,
+      "worker": "release_host",
+      "file": "configs/energy_lr20261022_LR0_h16_seed13.yaml",
+      "sha256": "cf0db3421d7eebf8dd78a5929bead2891ccd43fe0f5a49299f2a9f4b1f2d6de8",
+      "artifact_root": "artifacts/energy_learning_rate_20261022/runs/energy_lr20261022_LR0_h16_seed13"
+    },
+    {
+      "config_id": "energy_lr20261022_LR0_h16_seed42",
+      "schedule": "LR0",
+      "seed": 42,
+      "worker": "local",
+      "file": "configs/energy_lr20261022_LR0_h16_seed42.yaml",
+      "sha256": "e886ab9d0e67f0d34ac88e921d59d4d2b31dfb4183effe37df34d92cbaeb8974",
+      "artifact_root": "artifacts/energy_learning_rate_20261022/runs/energy_lr20261022_LR0_h16_seed42"
+    },
+    {
+      "config_id": "energy_lr20261022_LR0_h16_seed3407",
+      "schedule": "LR0",
+      "seed": 3407,
+      "worker": "local",
+      "file": "configs/energy_lr20261022_LR0_h16_seed3407.yaml",
+      "sha256": "3505a9b264cea7b8fe59746a87d88913eb0e71555c6ac3b1658c9d87fb5c5897",
+      "artifact_root": "artifacts/energy_learning_rate_20261022/runs/energy_lr20261022_LR0_h16_seed3407"
+    },
+    {
+      "config_id": "energy_lr20261022_LR1_h16_seed13",
+      "schedule": "LR1",
+      "seed": 13,
+      "worker": "release_host",
+      "file": "configs/energy_lr20261022_LR1_h16_seed13.yaml",
+      "sha256": "0f7b19f5dc8391e991ce7b8c73b1995ed3d943a89e8d461e3977f53a88d35b81",
+      "artifact_root": "artifacts/energy_learning_rate_20261022/runs/energy_lr20261022_LR1_h16_seed13"
+    },
+    {
+      "config_id": "energy_lr20261022_LR1_h16_seed42",
+      "schedule": "LR1",
+      "seed": 42,
+      "worker": "local",
+      "file": "configs/energy_lr20261022_LR1_h16_seed42.yaml",
+      "sha256": "31aa7c11229bbf88a921d2781a7eb9afe7740b3f53ce49ec4dfef0a15eb56003",
+      "artifact_root": "artifacts/energy_learning_rate_20261022/runs/energy_lr20261022_LR1_h16_seed42"
+    },
+    {
+      "config_id": "energy_lr20261022_LR1_h16_seed3407",
+      "schedule": "LR1",
+      "seed": 3407,
+      "worker": "local",
+      "file": "configs/energy_lr20261022_LR1_h16_seed3407.yaml",
+      "sha256": "4e66858d11cab1b099fa4414fffec82150b61eeb576be0b6bf8646e596f36adb",
+      "artifact_root": "artifacts/energy_learning_rate_20261022/runs/energy_lr20261022_LR1_h16_seed3407"
+    },
+    {
+      "config_id": "energy_lr20261022_LR2_h16_seed13",
+      "schedule": "LR2",
+      "seed": 13,
+      "worker": "release_host",
+      "file": "configs/energy_lr20261022_LR2_h16_seed13.yaml",
+      "sha256": "4cce43e6ad1aabb12b3f849e37968ebd02d742ab7a53a55285e422526c14fa3d",
+      "artifact_root": "artifacts/energy_learning_rate_20261022/runs/energy_lr20261022_LR2_h16_seed13"
+    },
+    {
+      "config_id": "energy_lr20261022_LR2_h16_seed42",
+      "schedule": "LR2",
+      "seed": 42,
+      "worker": "local",
+      "file": "configs/energy_lr20261022_LR2_h16_seed42.yaml",
+      "sha256": "dbe5403b487f51a6e150e97360d9ccc8d43dac4328f1c9dbbfa006f8b03d5a44",
+      "artifact_root": "artifacts/energy_learning_rate_20261022/runs/energy_lr20261022_LR2_h16_seed42"
+    },
+    {
+      "config_id": "energy_lr20261022_LR2_h16_seed3407",
+      "schedule": "LR2",
+      "seed": 3407,
+      "worker": "local",
+      "file": "configs/energy_lr20261022_LR2_h16_seed3407.yaml",
+      "sha256": "dd2194827f72209c474967ab5d5977138972eaaea98df537b04a5ec97b9fd6a5",
+      "artifact_root": "artifacts/energy_learning_rate_20261022/runs/energy_lr20261022_LR2_h16_seed3407"
+    }
+  ]
+}

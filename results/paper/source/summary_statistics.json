@@ -1,0 +1,550 @@
+{
+  "methods": {
+    "population": "fixed deterministic turbine-by-direction CFD response, not training seeds or stochastic replicates",
+    "weights": "equal turbine x equal direction; no observed-frequency weighting",
+    "quantile": "linear interpolation at (n-1)*q",
+    "paired_sign": "alternative/loaded minus baseline/terrain",
+    "direction_change": "wrapped to [-180,180) degrees",
+    "spatial_sd": "population SD (ddof0); no CI/p values or hypothesis test"
+  },
+  "default_lut": {
+    "wind_farm_A": {
+      "speedup": {
+        "n_spatial_rows": 464,
+        "mean": 1.2822127996009325,
+        "population_sd": 0.21686647563499128,
+        "median": 1.3121923047148436,
+        "p90": 1.5424311128780976,
+        "minimum": 0.4827994078055556,
+        "maximum": 1.7210656419857657,
+        "minimum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T19",
+          "sector_deg": 225.0,
+          "run_id": "energy-r4-wind_farm_A-sector-a225p00-z0p3-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T23",
+          "sector_deg": 337.5,
+          "run_id": "energy-r4-wind_farm_A-sector-a337p50-z0p3-ct0-v1"
+        },
+        "negative_count": 0,
+        "positive_count": 464,
+        "zero_count": 0,
+        "absolute_values": false,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      },
+      "signed_deflection_deg": {
+        "n_spatial_rows": 464,
+        "mean": 0.03829909444000983,
+        "population_sd": 9.157799123551214,
+        "median": 0.11681000302939992,
+        "p90": 11.711673899916896,
+        "minimum": -25.811919227399557,
+        "maximum": 22.833080787864105,
+        "minimum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T18",
+          "sector_deg": 202.5,
+          "run_id": "energy-r4-wind_farm_A-sector-a202p50-z0p3-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T19",
+          "sector_deg": 90.0,
+          "run_id": "energy-r4-wind_farm_A-sector-a090p00-z0p3-ct0-v1"
+        },
+        "negative_count": 230,
+        "positive_count": 234,
+        "zero_count": 0,
+        "absolute_values": false,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      },
+      "absolute_deflection_deg": {
+        "n_spatial_rows": 464,
+        "mean": 7.697034396959158,
+        "population_sd": 4.962097651193282,
+        "median": 7.312361772594343,
+        "p90": 14.58718123378689,
+        "minimum": 0.02077359941503687,
+        "maximum": 25.811919227399557,
+        "minimum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T07",
+          "sector_deg": 180.0,
+          "run_id": "energy-r4-wind_farm_A-sector-a180p00-z0p3-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T18",
+          "sector_deg": 202.5,
+          "run_id": "energy-r4-wind_farm_A-sector-a202p50-z0p3-ct0-v1"
+        },
+        "negative_count": 0,
+        "positive_count": 464,
+        "zero_count": 0,
+        "absolute_values": true,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      }
+    },
+    "kelmarsh": {
+      "speedup": {
+        "n_spatial_rows": 72,
+        "mean": 0.9879221542042276,
+        "population_sd": 0.023243925780117438,
+        "median": 0.9887200853358664,
+        "p90": 1.018703705552158,
+        "minimum": 0.9371864517257268,
+        "maximum": 1.0349425884308197,
+        "minimum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "1",
+          "sector_deg": 180.0,
+          "run_id": "energy-r4-kelmarsh-sector-a180p00-z0p05-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "3",
+          "sector_deg": 240.0,
+          "run_id": "energy-r4-kelmarsh-sector-a240p00-z0p05-ct0-v1"
+        },
+        "negative_count": 0,
+        "positive_count": 72,
+        "zero_count": 0,
+        "absolute_values": false,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      },
+      "signed_deflection_deg": {
+        "n_spatial_rows": 72,
+        "mean": 0.01028191800997686,
+        "population_sd": 0.6025804986017668,
+        "median": 0.007861639477170002,
+        "p90": 0.8628334713981359,
+        "minimum": -1.0230835525703696,
+        "maximum": 1.1754846541402628,
+        "minimum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "3",
+          "sector_deg": 60.0,
+          "run_id": "energy-r4-kelmarsh-sector-a060p00-z0p05-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "5",
+          "sector_deg": 0.0,
+          "run_id": "energy-r4-kelmarsh-sector-a000p00-z0p05-ct0-v1"
+        },
+        "negative_count": 35,
+        "positive_count": 37,
+        "zero_count": 0,
+        "absolute_values": false,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      },
+      "absolute_deflection_deg": {
+        "n_spatial_rows": 72,
+        "mean": 0.5070231789560395,
+        "population_sd": 0.32578592838615605,
+        "median": 0.5145238151322502,
+        "p90": 0.9278494671043631,
+        "minimum": 0.0018326505979473495,
+        "maximum": 1.1754846541402628,
+        "minimum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "2",
+          "sector_deg": 150.0,
+          "run_id": "energy-r4-kelmarsh-sector-a150p00-z0p05-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "5",
+          "sector_deg": 0.0,
+          "run_id": "energy-r4-kelmarsh-sector-a000p00-z0p05-ct0-v1"
+        },
+        "negative_count": 0,
+        "positive_count": 72,
+        "zero_count": 0,
+        "absolute_values": true,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      }
+    }
+  },
+  "interpolation": {
+    "signed_direction_error_deg": {
+      "n_spatial_rows": 116,
+      "mean": -0.2414804398311966,
+      "population_sd": 0.8125266546957697,
+      "median": -0.19032491359917003,
+      "p90": 0.7100311030839634,
+      "minimum": -2.071519590207913,
+      "maximum": 2.1289531087879254,
+      "minimum_at": {
+        "turbine_id": "T01",
+        "check_direction_deg": "101.25",
+        "direct_run_id": "energy-r4-wind_farm_A-intersector_check-a101p25-z0p3-ct0-v1"
+      },
+      "maximum_at": {
+        "turbine_id": "T02",
+        "check_direction_deg": "101.25",
+        "direct_run_id": "energy-r4-wind_farm_A-intersector_check-a101p25-z0p3-ct0-v1"
+      },
+      "negative_count": 67,
+      "positive_count": 49,
+      "zero_count": 0,
+      "absolute_values": false,
+      "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+      "independent_seed_replicates": false,
+      "CI_or_p_value_computed": false
+    },
+    "absolute_direction_error_deg": {
+      "n_spatial_rows": 116,
+      "mean": 0.6819883456083526,
+      "population_sd": 0.5033927530929989,
+      "median": 0.5682980312587489,
+      "p90": 1.398446327632172,
+      "minimum": 0.01734633702861288,
+      "maximum": 2.1289531087879254,
+      "minimum_at": {
+        "turbine_id": "T07",
+        "check_direction_deg": "146.25",
+        "direct_run_id": "energy-r4-wind_farm_A-intersector_check-a146p25-z0p3-ct0-v1"
+      },
+      "maximum_at": {
+        "turbine_id": "T02",
+        "check_direction_deg": "101.25",
+        "direct_run_id": "energy-r4-wind_farm_A-intersector_check-a101p25-z0p3-ct0-v1"
+      },
+      "negative_count": 0,
+      "positive_count": 116,
+      "zero_count": 0,
+      "absolute_values": true,
+      "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+      "independent_seed_replicates": false,
+      "CI_or_p_value_computed": false
+    },
+    "signed_speedup_error": {
+      "n_spatial_rows": 116,
+      "mean": -0.003837363414839891,
+      "population_sd": 0.04468944885958722,
+      "median": -0.00040635212610251603,
+      "p90": 0.04855274059115844,
+      "minimum": -0.11109758630417788,
+      "maximum": 0.14410516828248654,
+      "minimum_at": {
+        "turbine_id": "T01",
+        "check_direction_deg": "146.25",
+        "direct_run_id": "energy-r4-wind_farm_A-intersector_check-a146p25-z0p3-ct0-v1"
+      },
+      "maximum_at": {
+        "turbine_id": "T25",
+        "check_direction_deg": "146.25",
+        "direct_run_id": "energy-r4-wind_farm_A-intersector_check-a146p25-z0p3-ct0-v1"
+      },
+      "negative_count": 59,
+      "positive_count": 57,
+      "zero_count": 0,
+      "absolute_values": false,
+      "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+      "independent_seed_replicates": false,
+      "CI_or_p_value_computed": false
+    },
+    "absolute_speedup_error": {
+      "n_spatial_rows": 116,
+      "mean": 0.03504500587177766,
+      "population_sd": 0.027994995281269155,
+      "median": 0.02813396764206655,
+      "p90": 0.07045392327628808,
+      "minimum": 0.00033701795926188716,
+      "maximum": 0.14410516828248654,
+      "minimum_at": {
+        "turbine_id": "T11",
+        "check_direction_deg": "348.75",
+        "direct_run_id": "energy-r4-wind_farm_A-intersector_check-a348p75-z0p3-ct0-v1"
+      },
+      "maximum_at": {
+        "turbine_id": "T25",
+        "check_direction_deg": "146.25",
+        "direct_run_id": "energy-r4-wind_farm_A-intersector_check-a146p25-z0p3-ct0-v1"
+      },
+      "negative_count": 0,
+      "positive_count": 116,
+      "zero_count": 0,
+      "absolute_values": true,
+      "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+      "independent_seed_replicates": false,
+      "CI_or_p_value_computed": false
+    }
+  },
+  "wake": {
+    "signed_speed_change_mps": {
+      "n_spatial_rows": 116,
+      "mean": -2.3695602686801718,
+      "population_sd": 0.39795928818536075,
+      "median": -2.3462666826955703,
+      "p90": -1.8572835128917,
+      "minimum": -3.4230749299544634,
+      "maximum": -1.4706623027815935,
+      "minimum_at": {
+        "site": "wind_farm_A",
+        "turbine_id": "T07",
+        "sector_deg": "90.0",
+        "loaded_run_id": "energy-r4-wind_farm_A-wake_pair-a090p00-z0p3-ct0p8-v1"
+      },
+      "maximum_at": {
+        "site": "wind_farm_A",
+        "turbine_id": "T19",
+        "sector_deg": "90.0",
+        "loaded_run_id": "energy-r4-wind_farm_A-wake_pair-a090p00-z0p3-ct0p8-v1"
+      },
+      "negative_count": 116,
+      "positive_count": 0,
+      "zero_count": 0,
+      "absolute_values": false,
+      "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+      "independent_seed_replicates": false,
+      "CI_or_p_value_computed": false
+    },
+    "signed_direction_change_deg": {
+      "n_spatial_rows": 116,
+      "mean": 1.0780899973550664,
+      "population_sd": 1.497743907823897,
+      "median": 1.2870117884580452,
+      "p90": 2.71915346104268,
+      "minimum": -3.4883610424072344,
+      "maximum": 4.232334757259736,
+      "minimum_at": {
+        "site": "wind_farm_A",
+        "turbine_id": "T29",
+        "sector_deg": "135.0",
+        "loaded_run_id": "energy-r4-wind_farm_A-wake_pair-a135p00-z0p3-ct0p8-v1"
+      },
+      "maximum_at": {
+        "site": "wind_farm_A",
+        "turbine_id": "T05",
+        "sector_deg": "112.5",
+        "loaded_run_id": "energy-r4-wind_farm_A-wake_pair-a112p50-z0p3-ct0p8-v1"
+      },
+      "negative_count": 28,
+      "positive_count": 88,
+      "zero_count": 0,
+      "absolute_values": false,
+      "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+      "independent_seed_replicates": false,
+      "CI_or_p_value_computed": false
+    },
+    "absolute_direction_change_deg": {
+      "n_spatial_rows": 116,
+      "mean": 1.553150706196907,
+      "population_sd": 0.9966131344010543,
+      "median": 1.4934420217081055,
+      "p90": 2.8993307988839234,
+      "minimum": 0.009338715164744826,
+      "maximum": 4.232334757259736,
+      "minimum_at": {
+        "site": "wind_farm_A",
+        "turbine_id": "T27",
+        "sector_deg": "337.5",
+        "loaded_run_id": "energy-r4-wind_farm_A-wake_pair-a337p50-z0p3-ct0p8-v1"
+      },
+      "maximum_at": {
+        "site": "wind_farm_A",
+        "turbine_id": "T05",
+        "sector_deg": "112.5",
+        "loaded_run_id": "energy-r4-wind_farm_A-wake_pair-a112p50-z0p3-ct0p8-v1"
+      },
+      "negative_count": 0,
+      "positive_count": 116,
+      "zero_count": 0,
+      "absolute_values": true,
+      "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+      "independent_seed_replicates": false,
+      "CI_or_p_value_computed": false
+    }
+  },
+  "roughness": {
+    "wind_farm_A": {
+      "signed_speedup_change": {
+        "n_spatial_rows": 29,
+        "mean": 0.07762485247485496,
+        "population_sd": 0.021428385925846127,
+        "median": 0.07703373862295804,
+        "p90": 0.10470757315973564,
+        "minimum": 0.02073171199958479,
+        "maximum": 0.11337037690018836,
+        "minimum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T01",
+          "sector_deg": "90.0",
+          "alternative_run_id": "energy-r4-wind_farm_A-roughness_sensitivity-a090p00-z1p5-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T15",
+          "sector_deg": "90.0",
+          "alternative_run_id": "energy-r4-wind_farm_A-roughness_sensitivity-a090p00-z1p5-ct0-v1"
+        },
+        "negative_count": 0,
+        "positive_count": 29,
+        "zero_count": 0,
+        "absolute_values": false,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      },
+      "signed_direction_change_deg": {
+        "n_spatial_rows": 29,
+        "mean": 0.2186883697699941,
+        "population_sd": 0.38014446537403485,
+        "median": 0.21796332486906067,
+        "p90": 0.596356878671122,
+        "minimum": -0.35356770857526953,
+        "maximum": 1.2571667370237947,
+        "minimum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T07",
+          "sector_deg": "90.0",
+          "alternative_run_id": "energy-r4-wind_farm_A-roughness_sensitivity-a090p00-z1p5-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T01",
+          "sector_deg": "90.0",
+          "alternative_run_id": "energy-r4-wind_farm_A-roughness_sensitivity-a090p00-z1p5-ct0-v1"
+        },
+        "negative_count": 10,
+        "positive_count": 19,
+        "zero_count": 0,
+        "absolute_values": false,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      },
+      "absolute_direction_change_deg": {
+        "n_spatial_rows": 29,
+        "mean": 0.35209163857842013,
+        "population_sd": 0.26146872790131437,
+        "median": 0.3141061378705672,
+        "p90": 0.596356878671122,
+        "minimum": 0.007930657821759723,
+        "maximum": 1.2571667370237947,
+        "minimum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T03",
+          "sector_deg": "90.0",
+          "alternative_run_id": "energy-r4-wind_farm_A-roughness_sensitivity-a090p00-z1p5-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "wind_farm_A",
+          "turbine_id": "T01",
+          "sector_deg": "90.0",
+          "alternative_run_id": "energy-r4-wind_farm_A-roughness_sensitivity-a090p00-z1p5-ct0-v1"
+        },
+        "negative_count": 0,
+        "positive_count": 29,
+        "zero_count": 0,
+        "absolute_values": true,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      }
+    },
+    "kelmarsh": {
+      "signed_speedup_change": {
+        "n_spatial_rows": 6,
+        "mean": -0.0033471179201200276,
+        "population_sd": 0.0006525461018994124,
+        "median": -0.0033668355770126723,
+        "p90": -0.002626322707779627,
+        "minimum": -0.004542501786751307,
+        "maximum": -0.0026030913945458423,
+        "minimum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "1",
+          "sector_deg": "240.0",
+          "alternative_run_id": "energy-r4-kelmarsh-roughness_sensitivity-a240p00-z0p1-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "4",
+          "sector_deg": "240.0",
+          "alternative_run_id": "energy-r4-kelmarsh-roughness_sensitivity-a240p00-z0p1-ct0-v1"
+        },
+        "negative_count": 6,
+        "positive_count": 0,
+        "zero_count": 0,
+        "absolute_values": false,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      },
+      "signed_direction_change_deg": {
+        "n_spatial_rows": 6,
+        "mean": -0.003121987864948513,
+        "population_sd": 0.005718009869010956,
+        "median": -0.003006992111622253,
+        "p90": 0.0033288006807197235,
+        "minimum": -0.010108554193152486,
+        "maximum": 0.005753873717907254,
+        "minimum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "6",
+          "sector_deg": "240.0",
+          "alternative_run_id": "energy-r4-kelmarsh-roughness_sensitivity-a240p00-z0p1-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "3",
+          "sector_deg": "240.0",
+          "alternative_run_id": "energy-r4-kelmarsh-roughness_sensitivity-a240p00-z0p1-ct0-v1"
+        },
+        "negative_count": 4,
+        "positive_count": 2,
+        "zero_count": 0,
+        "absolute_values": false,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      },
+      "absolute_direction_change_deg": {
+        "n_spatial_rows": 6,
+        "mean": 0.005341188318761662,
+        "population_sd": 0.0037301678828862957,
+        "median": 0.005730752644439008,
+        "p90": 0.00968777216394301,
+        "minimum": 0.00030635265227374475,
+        "maximum": 0.010108554193152486,
+        "minimum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "1",
+          "sector_deg": "240.0",
+          "alternative_run_id": "energy-r4-kelmarsh-roughness_sensitivity-a240p00-z0p1-ct0-v1"
+        },
+        "maximum_at": {
+          "site": "kelmarsh",
+          "turbine_id": "6",
+          "sector_deg": "240.0",
+          "alternative_run_id": "energy-r4-kelmarsh-roughness_sensitivity-a240p00-z0p1-ct0-v1"
+        },
+        "negative_count": 0,
+        "positive_count": 6,
+        "zero_count": 0,
+        "absolute_values": true,
+        "weighting": "equal_turbine_x_direction_rows_not_wind_frequency",
+        "independent_seed_replicates": false,
+        "CI_or_p_value_computed": false
+      }
+    }
+  }
+}

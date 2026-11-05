@@ -1,0 +1,112 @@
+{
+  "MSE": {
+    "time": {
+      "dm_stat": -4.289220897750198,
+      "p_value": 1.8151946939591006e-05,
+      "mean_loss_difference": -0.1792123650028528,
+      "long_run_variance": 13.220530502610982,
+      "hln_factor": 0.9979615969920708,
+      "hac_lag": 15,
+      "horizon": 16,
+      "n_time": 7604,
+      "status": "ok",
+      "ci_low": -0.27126873823333697,
+      "ci_high": -0.09557974121734332,
+      "confidence": 0.95,
+      "block_length": 20,
+      "n_bootstrap": 2000,
+      "relative_loss_gain_pct": 2.809502099880845,
+      "inference_unit": "timestamp_mean_loss_over_identical_valid_turbines",
+      "estimand": "conditional_on_saved_trained_models",
+      "bootstrap_seed": 13,
+      "alternative": "two_sided",
+      "loss_difference_direction": "candidate_minus_reference",
+      "p_value_bh": 1.8151946939591006e-05
+    },
+    "seed": {
+      "n_seed": 5,
+      "mean": -0.1792123650028527,
+      "sample_sd": 0.0482463288959353,
+      "differences": [
+        -0.1716496909751486,
+        -0.17317612294010498,
+        -0.17426908124673268,
+        -0.2556432002933251,
+        -0.12132372955895221
+      ],
+      "paired_t_statistic": -8.305938290543056,
+      "paired_t_p_raw": 0.0011474988668019757,
+      "across_seed_t_interval95": [
+        -0.23911809463843364,
+        -0.11930663536727176
+      ],
+      "exact_sign_p_two_sided_raw": 0.0625,
+      "n_positive": 0,
+      "n_negative": 5,
+      "n_zero": 0,
+      "sign_nonzero_n": 5,
+      "multiplicity": "predeclared singleton global family; paired t and exact sign each adjusted separately with BH",
+      "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period",
+      "paired_t_p_raw_bh": 0.0011474988668019757,
+      "exact_sign_p_two_sided_raw_bh": 0.0625
+    },
+    "n_time": 7604,
+    "n_valid": 220516,
+    "family": "singleton global comparison; each inference level adjusted separately"
+  },
+  "MAE": {
+    "time": {
+      "dm_stat": -5.036628733389277,
+      "p_value": 4.847067936705754e-07,
+      "mean_loss_difference": -0.028120881283843317,
+      "long_run_variance": 0.23607377418660805,
+      "hln_factor": 0.9979615969920708,
+      "hac_lag": 15,
+      "horizon": 16,
+      "n_time": 7604,
+      "status": "ok",
+      "ci_low": -0.039769384007371074,
+      "ci_high": -0.016638113801212013,
+      "confidence": 0.95,
+      "block_length": 20,
+      "n_bootstrap": 2000,
+      "relative_loss_gain_pct": 1.4665944823672006,
+      "inference_unit": "timestamp_mean_loss_over_identical_valid_turbines",
+      "estimand": "conditional_on_saved_trained_models",
+      "bootstrap_seed": 13,
+      "alternative": "two_sided",
+      "loss_difference_direction": "candidate_minus_reference",
+      "p_value_bh": 4.847067936705754e-07
+    },
+    "seed": {
+      "n_seed": 5,
+      "mean": -0.02812088128384329,
+      "sample_sd": 0.007529625901636534,
+      "differences": [
+        -0.028028072403091908,
+        -0.028295976808788703,
+        -0.027531416014962007,
+        -0.03901086351299132,
+        -0.017738077679382513
+      ],
+      "paired_t_statistic": -8.35103934236738,
+      "paired_t_p_raw": 0.001124018301069223,
+      "across_seed_t_interval95": [
+        -0.03747014668584795,
+        -0.01877161588183863
+      ],
+      "exact_sign_p_two_sided_raw": 0.0625,
+      "n_positive": 0,
+      "n_negative": 5,
+      "n_zero": 0,
+      "sign_nonzero_n": 5,
+      "multiplicity": "predeclared singleton global family; paired t and exact sign each adjusted separately with BH",
+      "uncertainty_scope": "training_seed_difference_conditional_on_this_observed_test_period",
+      "paired_t_p_raw_bh": 0.001124018301069223,
+      "exact_sign_p_two_sided_raw_bh": 0.0625
+    },
+    "n_time": 7604,
+    "n_valid": 220516,
+    "family": "singleton global comparison; each inference level adjusted separately"
+  }
+}

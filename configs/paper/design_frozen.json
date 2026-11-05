@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "purpose": "post-hoc explanatory attention diagnostics; no model selection or training",
+  "seeds": [
+    13,
+    21,
+    42,
+    87,
+    3407
+  ],
+  "horizon_steps": 16,
+  "horizon_minutes": 240,
+  "split": "test",
+  "batch_size": 16,
+  "precision": "FP32",
+  "proxy": "sample standard deviation / mean of five raw nonnegative finite wind-speed observations ending at forecast origin, spanning 60 min",
+  "minimum_mean_wind_ms": 3.0,
+  "threshold": "90th percentile of eligible turbine-origin coefficients on chronological training rows only",
+  "strata": [
+    "event_free_low_variability",
+    "event_free_high_variability",
+    "candidate_low_power"
+  ],
+  "row_unit": "query turbine and forecast origin; valid measured target required; candidate class from saved target event label",
+  "selection": "all eligible rows; no downsampling",
+  "interpretation": "15-min historical variability proxy, not IEC turbulence intensity; not confirmed curtailment",
+  "statistics": "descriptive per-seed means and sample SD, no tests or CI",
+  "direction": "Pearson correlation across 28 off-diagonal keys between attention and signed alignment with the actual model NWP vector, each query row"
+}

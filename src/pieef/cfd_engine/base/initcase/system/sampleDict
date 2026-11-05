@@ -1,0 +1,25 @@
+ FoamFile
+  {
+      version     2.0;
+      format      ascii;
+      class       dictionary;
+      object      sampleDict;
+  }
+  
+  type                surfaces;
+  libs                ("libsampling.so");
+  
+  interpolationScheme face; // 更适合从 STL 表面采样
+  fields              (U);
+  
+  surfaceFormat       vtk; // 更常见的输出格式，便于可视化
+  
+  surfaces
+  (
+      translatedSurface
+      {
+          type    sampledTriSurfaceMesh;
+          surface "bot_translated.stl";
+          source  cells; // 根据你的需求选择 cells 或 insideCells
+      }
+  );

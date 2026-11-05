@@ -1,0 +1,2572 @@
+{
+  "created_utc": "2026-10-23T10:04:40.697856+00:00",
+  "training": false,
+  "seeds": [
+    13,
+    21,
+    42,
+    87,
+    3407
+  ],
+  "fault_seed": 2026,
+  "scenarios": [
+    {
+      "name": "missing_power_1t_1h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 1,
+      "duration_hours": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_1t_1h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 1,
+      "duration_hours": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_3t_1h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 3,
+      "duration_hours": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_3t_1h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 3,
+      "duration_hours": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_6t_1h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 6,
+      "duration_hours": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_6t_1h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 6,
+      "duration_hours": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_10t_1h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 10,
+      "duration_hours": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_10t_1h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 10,
+      "duration_hours": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_1t_4h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 1,
+      "duration_hours": 4,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_1t_4h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 1,
+      "duration_hours": 4,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_3t_4h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 3,
+      "duration_hours": 4,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_3t_4h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 3,
+      "duration_hours": 4,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_6t_4h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 6,
+      "duration_hours": 4,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_6t_4h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 6,
+      "duration_hours": 4,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_10t_4h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 10,
+      "duration_hours": 4,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_10t_4h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 10,
+      "duration_hours": 4,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_1t_12h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 1,
+      "duration_hours": 12,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_1t_12h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 1,
+      "duration_hours": 12,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_3t_12h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 3,
+      "duration_hours": 12,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_3t_12h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 3,
+      "duration_hours": 12,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_6t_12h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 6,
+      "duration_hours": 12,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_6t_12h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 6,
+      "duration_hours": 12,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_10t_12h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 10,
+      "duration_hours": 12,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_10t_12h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 10,
+      "duration_hours": 12,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_1t_24h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 1,
+      "duration_hours": 24,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_1t_24h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 1,
+      "duration_hours": 24,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_3t_24h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 3,
+      "duration_hours": 24,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_3t_24h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 3,
+      "duration_hours": 24,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_6t_24h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 6,
+      "duration_hours": 24,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_6t_24h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 6,
+      "duration_hours": 24,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_power_10t_24h",
+      "kind": "missing",
+      "channels": "power",
+      "turbine_count": 10,
+      "duration_hours": 24,
+      "step_minutes": 15
+    },
+    {
+      "name": "missing_both_10t_24h",
+      "kind": "missing",
+      "channels": "both",
+      "turbine_count": 10,
+      "duration_hours": 24,
+      "step_minutes": 15
+    },
+    {
+      "name": "frozen_both_1t_1h",
+      "kind": "frozen",
+      "channels": "both",
+      "turbine_count": 1,
+      "duration_hours": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "frozen_both_3t_1h",
+      "kind": "frozen",
+      "channels": "both",
+      "turbine_count": 3,
+      "duration_hours": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "frozen_both_1t_4h",
+      "kind": "frozen",
+      "channels": "both",
+      "turbine_count": 1,
+      "duration_hours": 4,
+      "step_minutes": 15
+    },
+    {
+      "name": "frozen_both_3t_4h",
+      "kind": "frozen",
+      "channels": "both",
+      "turbine_count": 3,
+      "duration_hours": 4,
+      "step_minutes": 15
+    },
+    {
+      "name": "wind_drift_0.5ms_4h",
+      "kind": "drift",
+      "channels": "wind",
+      "drift_ms": 0.5,
+      "duration_hours": 4,
+      "turbine_count": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "wind_drift_1ms_4h",
+      "kind": "drift",
+      "channels": "wind",
+      "drift_ms": 1.0,
+      "duration_hours": 4,
+      "turbine_count": 1,
+      "step_minutes": 15
+    },
+    {
+      "name": "wind_drift_2ms_4h",
+      "kind": "drift",
+      "channels": "wind",
+      "drift_ms": 2.0,
+      "duration_hours": 4,
+      "turbine_count": 1,
+      "step_minutes": 15
+    }
+  ],
+  "source_project": "artifacts/released/source_project",
+  "source_snapshot_sha256": "8e0f34c85af5b80cba827aba89d011df2bda2bc658a9f1966d83980e9ab2e4a3",
+  "source_files": [
+    {
+      "relative_path": "scripts/align_time.py",
+      "path": "artifacts/released/align_time.py",
+      "bytes": 1716,
+      "sha256": "dfb64f8e05c859c88dc6813a9a6996982e976566150d1dd0413d55d76ba85918",
+      "original": "artifacts/released/align_time.py"
+    },
+    {
+      "relative_path": "scripts/build_all_sample_eval.py",
+      "path": "artifacts/released/build_all_sample_eval.py",
+      "bytes": 2192,
+      "sha256": "4e6d5b165ce8ce6f3e7c8799e36a0df9baa8cb5979b8d1f3d67c1b6251101ea0",
+      "original": "artifacts/released/build_all_sample_eval.py"
+    },
+    {
+      "relative_path": "scripts/build_curtailment_bins.py",
+      "path": "artifacts/released/build_curtailment_bins.py",
+      "bytes": 2147,
+      "sha256": "2824b7656cf21ee43fe9089356afbd99905ac25391211471f48d596e0f20f49a",
+      "original": "artifacts/released/build_curtailment_bins.py"
+    },
+    {
+      "relative_path": "scripts/build_dataset.py",
+      "path": "artifacts/released/build_dataset.py",
+      "bytes": 1904,
+      "sha256": "90b7a98475851fc3722651c82cbf3a072db6c6fd696d4d86a9c2d34aea1051f4",
+      "original": "artifacts/released/build_dataset.py"
+    },
+    {
+      "relative_path": "scripts/build_ecmwf_forecasts.py",
+      "path": "artifacts/released/build_ecmwf_forecasts.py",
+      "bytes": 7774,
+      "sha256": "7a105a3c46b5137201f4e59a576bd49a4713d4b6a1d29b3a07bb01cbc498fbb5",
+      "original": "artifacts/released/build_ecmwf_forecasts.py"
+    },
+    {
+      "relative_path": "scripts/build_features.py",
+      "path": "artifacts/released/build_features.py",
+      "bytes": 2783,
+      "sha256": "f853e5aa0c21c0357a525f4474895d88563fb7daa5d9df1b9104b956e0d32762",
+      "original": "artifacts/released/build_features.py"
+    },
+    {
+      "relative_path": "scripts/capture_energy_v2_support.py",
+      "path": "artifacts/released/capture_energy_v2_support.py",
+      "bytes": 20064,
+      "sha256": "493ef5d39c6b5c78cd602dd9ef167d0d1547c72ce55f7a9e6969ea310ac7cfca",
+      "original": "artifacts/released/capture_energy_v2_support.py"
+    },
+    {
+      "relative_path": "scripts/check_env.py",
+      "path": "artifacts/released/check_env.py",
+      "bytes": 1432,
+      "sha256": "67b9561a5ae821a273f05ad34b519dedb240415aea577f6c32f333d1eaf51f84",
+      "original": "artifacts/released/check_env.py"
+    },
+    {
+      "relative_path": "scripts/dedup_main_runs.py",
+      "path": "artifacts/released/dedup_main_runs.py",
+      "bytes": 3603,
+      "sha256": "d49d0d683d5d1ec7fb2d7c857b60d67419a1384ba096600ae7f04b3ac100e143",
+      "original": "artifacts/released/dedup_main_runs.py"
+    },
+    {
+      "relative_path": "scripts/dm_bh.py",
+      "path": "artifacts/released/dm_bh.py",
+      "bytes": 6055,
+      "sha256": "a8b310545e826a4eb8ac89ff279273a7fa066815bc414b71866b01315dd76de2",
+      "original": "artifacts/released/dm_bh.py"
+    },
+    {
+      "relative_path": "scripts/download_kelmarsh.py",
+      "path": "artifacts/released/download_kelmarsh.py",
+      "bytes": 3067,
+      "sha256": "42e032a85424ba5e866d4da3e786bae3bd37a0ca2b2d42ed5b8f790ff15f721b",
+      "original": "artifacts/released/download_kelmarsh.py"
+    },
+    {
+      "relative_path": "scripts/evaluate_revision.py",
+      "path": "artifacts/released/evaluate_revision.py",
+      "bytes": 25476,
+      "sha256": "bd1a32f6ecee55fd823139b2463dddc3f08463383d6b07e98a2052e49dc7500a",
+      "original": "artifacts/released/evaluate_revision.py"
+    },
+    {
+      "relative_path": "scripts/evaluate_revision_efficiency.py",
+      "path": "artifacts/released/evaluate_revision_efficiency.py",
+      "bytes": 22061,
+      "sha256": "2277f9d7905d2cd422cac259d84bfc4d333ea8cd6b474dce59dd03ba65e738e9",
+      "original": "artifacts/released/evaluate_revision_efficiency.py"
+    },
+    {
+      "relative_path": "scripts/export_revision_interpretability.py",
+      "path": "artifacts/released/export_revision_interpretability.py",
+      "bytes": 14058,
+      "sha256": "019d83d93203c9c99dd3d972eb4f5a045e77f23ee30dd862e47d889a338435c8",
+      "original": "artifacts/released/export_revision_interpretability.py"
+    },
+    {
+      "relative_path": "scripts/fetch_gfs_forecasts.py",
+      "path": "artifacts/released/fetch_gfs_forecasts.py",
+      "bytes": 3542,
+      "sha256": "9141e042e737958544d681685792871a0b924765fbc415290c24267478cb559f",
+      "original": "artifacts/released/fetch_gfs_forecasts.py"
+    },
+    {
+      "relative_path": "scripts/generate_public_demo_data.py",
+      "path": "artifacts/released/generate_public_demo_data.py",
+      "bytes": 5203,
+      "sha256": "06e0bfe456081639a33fd6cf3bddd0f62503c603dbdef8cd5b636ad692b92dd3",
+      "original": "artifacts/released/generate_public_demo_data.py"
+    },
+    {
+      "relative_path": "scripts/init_run.py",
+      "path": "artifacts/released/init_run.py",
+      "bytes": 1835,
+      "sha256": "3171a2944633c2af1b92e07111e20d21c986a30ef3fe473c5baadd9f0f4a3cd7",
+      "original": "artifacts/released/init_run.py"
+    },
+    {
+      "relative_path": "scripts/make_round3_reference.py",
+      "path": "artifacts/released/make_round3_reference.py",
+      "bytes": 6563,
+      "sha256": "44fe3ee51d3920c56aa314372f17f2d8fba6c595ae4ab05b3976025a33ac53ce",
+      "original": "artifacts/released/make_round3_reference.py"
+    },
+    {
+      "relative_path": "scripts/manage_revision_analysis.py",
+      "path": "artifacts/released/manage_revision_analysis.py",
+      "bytes": 27138,
+      "sha256": "54978a32f4c7568d944b147e818a49ce4b3ed668f862c042ba6e53f59fb71be1",
+      "original": "artifacts/released/manage_revision_analysis.py"
+    },
+    {
+      "relative_path": "scripts/manage_revision_postprocessing.py",
+      "path": "artifacts/released/manage_revision_postprocessing.py",
+      "bytes": 15354,
+      "sha256": "568a66efb69ee97d55d9df20d3ad86ff452ce3914232c6c3010e70726583b9a9",
+      "original": "artifacts/released/manage_revision_postprocessing.py"
+    },
+    {
+      "relative_path": "scripts/migrate_ledger_headers.py",
+      "path": "artifacts/released/migrate_ledger_headers.py",
+      "bytes": 1204,
+      "sha256": "647e3c8418df4d02f30be382870a18870cadf21980e5c865417c203bfdd492c8",
+      "original": "artifacts/released/migrate_ledger_headers.py"
+    },
+    {
+      "relative_path": "scripts/monitor_energy_v2_local.py",
+      "path": "artifacts/released/monitor_energy_v2_local.py",
+      "bytes": 24759,
+      "sha256": "53c619cc4fbf288d6177fe076493f39b482f751ab18918c37365a28a0bbd2b20",
+      "original": "artifacts/released/monitor_energy_v2_local.py"
+    },
+    {
+      "relative_path": "scripts/monitor_revision_concurrency.py",
+      "path": "artifacts/released/monitor_revision_concurrency.py",
+      "bytes": 24499,
+      "sha256": "21afd672175668aadc73868ff8572493421c63587584c9ab1fc5752b7b778f24",
+      "original": "artifacts/released/monitor_revision_concurrency.py"
+    },
+    {
+      "relative_path": "scripts/plot_tables_figures.py",
+      "path": "artifacts/released/plot_tables_figures.py",
+      "bytes": 6048,
+      "sha256": "88580ba2b617cf5e33961fb91ab1bc72832428c900b8c6b33a9afee20b3447fd",
+      "original": "artifacts/released/plot_tables_figures.py"
+    },
+    {
+      "relative_path": "scripts/prepare_kelmarsh.py",
+      "path": "artifacts/released/prepare_kelmarsh.py",
+      "bytes": 10656,
+      "sha256": "49149790f47fb73105123711cd49806aa962300249d6b535670945260d229e62",
+      "original": "artifacts/released/prepare_kelmarsh.py"
+    },
+    {
+      "relative_path": "scripts/prepare_multifarm_trials.py",
+      "path": "artifacts/released/prepare_multifarm_trials.py",
+      "bytes": 15147,
+      "sha256": "750c839ee49ce51f6798a66ca9613919d089b44f186cc3b33f33be6948a98a78",
+      "original": "artifacts/released/prepare_multifarm_trials.py"
+    },
+    {
+      "relative_path": "scripts/prepare_revision_scalability.py",
+      "path": "artifacts/released/prepare_revision_scalability.py",
+      "bytes": 24908,
+      "sha256": "a6084a6248cbc85d63216236b247cc9afe12d9e4965082a6e9b21ec5b2463c28",
+      "original": "artifacts/released/prepare_revision_scalability.py"
+    },
+    {
+      "relative_path": "scripts/prepare_revision_sites.py",
+      "path": "artifacts/released/prepare_revision_sites.py",
+      "bytes": 4997,
+      "sha256": "b63e546b119af75c9cef4f4c0d05e8e7c74041b74a11f8ef78c0ead2115b2a54",
+      "original": "artifacts/released/prepare_revision_sites.py"
+    },
+    {
+      "relative_path": "scripts/publish_revision_queues.py",
+      "path": "artifacts/released/publish_revision_queues.py",
+      "bytes": 59210,
+      "sha256": "0b9dd623f5f8b5e5a84a510617dd70b2f9bdd59b66dc63b89a5de667dc815670",
+      "original": "artifacts/released/publish_revision_queues.py"
+    },
+    {
+      "relative_path": "scripts/record_metrics.py",
+      "path": "artifacts/released/record_metrics.py",
+      "bytes": 5056,
+      "sha256": "64b5763f52da9a16a8f6f537c3b5538bc965055995d16397423e5d1e9c93f6ee",
+      "original": "artifacts/released/record_metrics.py"
+    },
+    {
+      "relative_path": "scripts/repair_artifact_paths.py",
+      "path": "artifacts/released/repair_artifact_paths.py",
+      "bytes": 2922,
+      "sha256": "b98e2c798676d06410105e94cb73b590dab0598d7571d5790fbea4dac294c887",
+      "original": "artifacts/released/repair_artifact_paths.py"
+    },
+    {
+      "relative_path": "scripts/repair_main_ledger_schema.py",
+      "path": "artifacts/released/repair_main_ledger_schema.py",
+      "bytes": 1318,
+      "sha256": "7f82fabd82523f8466ed4d7b53989fb79b14fd71775406e3c14e77ec3e8b7521",
+      "original": "artifacts/released/repair_main_ledger_schema.py"
+    },
+    {
+      "relative_path": "scripts/report_revision_results.py",
+      "path": "artifacts/released/report_revision_results.py",
+      "bytes": 821,
+      "sha256": "3e5ecc8a893befe47a350832a0965e51c2532212afc447353d3fcf779c734c00",
+      "original": "artifacts/released/report_revision_results.py"
+    },
+    {
+      "relative_path": "scripts/round3_cuda_microcheck.py",
+      "path": "artifacts/released/round3_cuda_microcheck.py",
+      "bytes": 11268,
+      "sha256": "1b7b8ca39f18966e83931ea68ee2f29fc42cc80f0ba39b23bd1fa3b573cbf198",
+      "original": "artifacts/released/round3_cuda_microcheck.py"
+    },
+    {
+      "relative_path": "scripts/round3_gate.py",
+      "path": "artifacts/released/round3_gate.py",
+      "bytes": 3857,
+      "sha256": "467797fdc8c9b2b693e19b8a0b4f1ca0f239b5a9886c4cae4b5c027ba7c2cc77",
+      "original": "artifacts/released/round3_gate.py"
+    },
+    {
+      "relative_path": "scripts/run_ablation.py",
+      "path": "artifacts/released/run_ablation.py",
+      "bytes": 10286,
+      "sha256": "ab798e88f275cd9152e6a8a404e1e0277dc10e6489e6dcbe4f2e0358d7fa7efa",
+      "original": "artifacts/released/run_ablation.py"
+    },
+    {
+      "relative_path": "scripts/run_efficiency.py",
+      "path": "artifacts/released/run_efficiency.py",
+      "bytes": 13408,
+      "sha256": "5f71989709eeed0d51415d852b0b3bba5b08b08b5a3bff9c3edc68213e2e89eb",
+      "original": "artifacts/released/run_efficiency.py"
+    },
+    {
+      "relative_path": "scripts/run_main_huber_stage3_sweep.py",
+      "path": "artifacts/released/run_main_huber_stage3_sweep.py",
+      "bytes": 5905,
+      "sha256": "6e831e31650986b35051c1eb3a09e6af9a838d5c20eb00dc05b92375695b6406",
+      "original": "artifacts/released/run_main_huber_stage3_sweep.py"
+    },
+    {
+      "relative_path": "scripts/run_multifarm_when_ready.py",
+      "path": "artifacts/released/run_multifarm_when_ready.py",
+      "bytes": 11777,
+      "sha256": "295c91285f8cc765cd37c884f30d43687c7d8012e1f791dbf50e9872da31701d",
+      "original": "artifacts/released/run_multifarm_when_ready.py"
+    },
+    {
+      "relative_path": "scripts/run_revision.py",
+      "path": "artifacts/released/run_revision.py",
+      "bytes": 7732,
+      "sha256": "7548c9edd8671195996d14a6a7150243c808f15e42343d9302adc6a8c14311be",
+      "original": "artifacts/released/run_revision.py"
+    },
+    {
+      "relative_path": "scripts/run_revision_coordinator.py",
+      "path": "artifacts/released/run_revision_coordinator.py",
+      "bytes": 9541,
+      "sha256": "c5bcbe9f5f450119ef1bf93deccf3a2bd46a285e1bcdac4ddb64d2ad5c372a6e",
+      "original": "artifacts/released/run_revision_coordinator.py"
+    },
+    {
+      "relative_path": "scripts/run_revision_cpu_postprocessing.py",
+      "path": "artifacts/released/run_revision_cpu_postprocessing.py",
+      "bytes": 1393,
+      "sha256": "fba38f61802399a399838c058aaa73e645e6cb9409a4af911001412920e83f1a",
+      "original": "artifacts/released/run_revision_cpu_postprocessing.py"
+    },
+    {
+      "relative_path": "scripts/run_revision_faults.py",
+      "path": "artifacts/released/run_revision_faults.py",
+      "bytes": 10348,
+      "sha256": "b9d0d472ef902f46126546c9df7b0f6ebfbbbe0d415ae4c3f4ed59a4a1f30f73",
+      "original": "artifacts/released/run_revision_faults.py"
+    },
+    {
+      "relative_path": "scripts/run_revision_worker.py",
+      "path": "artifacts/released/run_revision_worker.py",
+      "bytes": 78021,
+      "sha256": "bbd85f3d430f65f4d72f0e59e0b9900928c0fdc955bbdc31ccc35810be694b6d",
+      "original": "artifacts/released/run_revision_worker.py"
+    },
+    {
+      "relative_path": "scripts/run_robustness.py",
+      "path": "artifacts/released/run_robustness.py",
+      "bytes": 13745,
+      "sha256": "a81308a6f7ee9dbb44aa26329aac7e0616e3378d8b71d3d306919bac7d4e1b05",
+      "original": "artifacts/released/run_robustness.py"
+    },
+    {
+      "relative_path": "scripts/run_scalability.py",
+      "path": "artifacts/released/run_scalability.py",
+      "bytes": 9755,
+      "sha256": "25d1a33f195d06857e84b53f3711d4625ece5579c126f2dc8b0ef1b11c45bdde",
+      "original": "artifacts/released/run_scalability.py"
+    },
+    {
+      "relative_path": "scripts/run_scalability_when_ready.py",
+      "path": "artifacts/released/run_scalability_when_ready.py",
+      "bytes": 8746,
+      "sha256": "88a7bdd1f7296249080982362335512f81d2805034fbe44c7cff1d9665673001",
+      "original": "artifacts/released/run_scalability_when_ready.py"
+    },
+    {
+      "relative_path": "scripts/run_sensitivity.py",
+      "path": "artifacts/released/run_sensitivity.py",
+      "bytes": 9204,
+      "sha256": "9a833e17b89fbd52b01610fd1b3950e0237bfa76bb97969dc2dc5e4aff79f3b8",
+      "original": "artifacts/released/run_sensitivity.py"
+    },
+    {
+      "relative_path": "scripts/run_shortcut_power_missing.py",
+      "path": "artifacts/released/run_shortcut_power_missing.py",
+      "bytes": 24118,
+      "sha256": "bda379559de1e81a99641474ec7e8809f86fc15da35e4635e38a26fb923ad1c5",
+      "original": "artifacts/released/run_shortcut_power_missing.py"
+    },
+    {
+      "relative_path": "scripts/run_significance.py",
+      "path": "artifacts/released/run_significance.py",
+      "bytes": 1480,
+      "sha256": "a27920f9782751ee916a2c5d40b3678436109594a73c65b59a4e9a00606f95fb",
+      "original": "artifacts/released/run_significance.py"
+    },
+    {
+      "relative_path": "scripts/start_revision_when_ready.py",
+      "path": "artifacts/released/start_revision_when_ready.py",
+      "bytes": 15248,
+      "sha256": "b802e0a0bbf12830e0d8d1c6572129394085deabca777e15910e5fb0db17850c",
+      "original": "artifacts/released/start_revision_when_ready.py"
+    },
+    {
+      "relative_path": "scripts/summarize_efficiency.py",
+      "path": "artifacts/released/summarize_efficiency.py",
+      "bytes": 1810,
+      "sha256": "60adcf08f66f466a4f68bf2057f6ede943aa782d0f24732e1b2ebd49182f5c10",
+      "original": "artifacts/released/summarize_efficiency.py"
+    },
+    {
+      "relative_path": "scripts/summarize_main.py",
+      "path": "artifacts/released/summarize_main.py",
+      "bytes": 1539,
+      "sha256": "a0ac104f0bd85d5a9f9a75132931180e025d8c8335236a25eec15c093e0f1db3",
+      "original": "artifacts/released/summarize_main.py"
+    },
+    {
+      "relative_path": "scripts/summarize_robustness.py",
+      "path": "artifacts/released/summarize_robustness.py",
+      "bytes": 2997,
+      "sha256": "e12457796764ce24b8fb82be2747cb4c1d604bce3ae495b7ddb629d73b8fec32",
+      "original": "artifacts/released/summarize_robustness.py"
+    },
+    {
+      "relative_path": "scripts/summarize_scalability.py",
+      "path": "artifacts/released/summarize_scalability.py",
+      "bytes": 1796,
+      "sha256": "50bc9be2990cfabecbd64ac6a2525e471e97f457b5ef33dbb9862e525c1fd0bb",
+      "original": "artifacts/released/summarize_scalability.py"
+    },
+    {
+      "relative_path": "scripts/summarize_significance.py",
+      "path": "artifacts/released/summarize_significance.py",
+      "bytes": 1337,
+      "sha256": "b747e78fd6cb0ed2e298198b2368f6698a18ed82353da621bc86f2dadac959bc",
+      "original": "artifacts/released/summarize_significance.py"
+    },
+    {
+      "relative_path": "scripts/supplement_wind_farm_A_nwp.py",
+      "path": "artifacts/released/supplement_wind_farm_A_nwp.py",
+      "bytes": 10860,
+      "sha256": "cf02d34326820d5c3f641fb9c4d19cb9f6819666b9c23d4467c5201519458433",
+      "original": "artifacts/released/supplement_wind_farm_A_nwp.py"
+    },
+    {
+      "relative_path": "scripts/sync_revision_worker.py",
+      "path": "artifacts/released/sync_revision_worker.py",
+      "bytes": 62566,
+      "sha256": "89b5bd1ec97c6c2607f83d1b7028b18cd7355e76b192f1f0750b9fb5ca085de6",
+      "original": "artifacts/released/sync_revision_worker.py"
+    },
+    {
+      "relative_path": "scripts/train.py",
+      "path": "artifacts/released/train.py",
+      "bytes": 14375,
+      "sha256": "7cbec3558e760bdf4b3073156d18b2a7aceda1d41398f3cc7e0a7992785e8bfd",
+      "original": "artifacts/released/train.py"
+    },
+    {
+      "relative_path": "scripts/train_baselines.py",
+      "path": "artifacts/released/train_baselines.py",
+      "bytes": 21233,
+      "sha256": "6030d264e5143af2d89849f9d718adc5aa17a913acd25d9f5dbe4278890189e0",
+      "original": "artifacts/released/train_baselines.py"
+    },
+    {
+      "relative_path": "scripts/train_baselines_huber.py",
+      "path": "artifacts/released/train_baselines_huber.py",
+      "bytes": 1140,
+      "sha256": "594a2b2fa1797cb823ac9714bdc20813122255e98d5abb2450933f77089e159a",
+      "original": "artifacts/released/train_baselines_huber.py"
+    },
+    {
+      "relative_path": "scripts/train_baselines_matrix.py",
+      "path": "artifacts/released/train_baselines_matrix.py",
+      "bytes": 2693,
+      "sha256": "72dcd6fef4fec595be3271c16cbe0051a287acbc16c3d39de46082cd7db3d561",
+      "original": "artifacts/released/train_baselines_matrix.py"
+    },
+    {
+      "relative_path": "scripts/train_baselines_matrix_huber.py",
+      "path": "artifacts/released/train_baselines_matrix_huber.py",
+      "bytes": 2920,
+      "sha256": "57de7c888465c32942520eb3797046dfef9536c04ff446f2159fab8c6cd06782",
+      "original": "artifacts/released/train_baselines_matrix_huber.py"
+    },
+    {
+      "relative_path": "scripts/train_main.py",
+      "path": "artifacts/released/train_main.py",
+      "bytes": 2386,
+      "sha256": "2e073a61563db2c1351985bc27ae90b811a8f40f28ccdfbb9f8a145a0fbb6c7a",
+      "original": "artifacts/released/train_main.py"
+    },
+    {
+      "relative_path": "scripts/train_main_mse.py",
+      "path": "artifacts/released/train_main_mse.py",
+      "bytes": 1041,
+      "sha256": "b574fa5e65041efcd2677ef9e3e1c41ca8d6854e110c0ef75c2288fde06efe8f",
+      "original": "artifacts/released/train_main_mse.py"
+    },
+    {
+      "relative_path": "scripts/train_matrix.py",
+      "path": "artifacts/released/train_matrix.py",
+      "bytes": 2844,
+      "sha256": "4a8a09cedde1cb15bb475554793a15b7e573349c6e65aaefc4eb482e7b69b4d9",
+      "original": "artifacts/released/train_matrix.py"
+    },
+    {
+      "relative_path": "src/pieef/__init__.py",
+      "path": "artifacts/released/__init__.py",
+      "bytes": 507,
+      "sha256": "11d49d9491596419fe3d889bcbe730fd7f61f5ce9102fddf01aa90f2a00d44bd",
+      "original": "artifacts/released/__init__.py"
+    },
+    {
+      "relative_path": "src/pieef/analysis.py",
+      "path": "artifacts/released/analysis.py",
+      "bytes": 3822,
+      "sha256": "b16f73c94d6681480ec84773bf2e2907f9473d7bcf55528e9c68f14685e7f49e",
+      "original": "artifacts/released/analysis.py"
+    },
+    {
+      "relative_path": "src/pieef/artifacts.py",
+      "path": "artifacts/released/artifacts.py",
+      "bytes": 2492,
+      "sha256": "4b601a2404d7a98507264d0c568bc874c8cf3626867052f50ba1a302abd2e936",
+      "original": "artifacts/released/artifacts.py"
+    },
+    {
+      "relative_path": "src/pieef/baseline_protocol.py",
+      "path": "artifacts/released/baseline_protocol.py",
+      "bytes": 6161,
+      "sha256": "92af18b3693e427b9c8c4f78290a06e39a14cdd8a66a1f18a9486862ddc400aa",
+      "original": "artifacts/released/baseline_protocol.py"
+    },
+    {
+      "relative_path": "src/pieef/baselines.py",
+      "path": "artifacts/released/baselines.py",
+      "bytes": 51278,
+      "sha256": "e81ddd672e865543971194056e40a737995a83b2497db8132368d3f4769d767b",
+      "original": "artifacts/released/baselines.py"
+    },
+    {
+      "relative_path": "src/pieef/core.py",
+      "path": "artifacts/released/core.py",
+      "bytes": 2089,
+      "sha256": "8f6c3c6ff81aa5436f6093412adf823493d0844bbcb3ac3f82df9bb4499e66cd",
+      "original": "artifacts/released/core.py"
+    },
+    {
+      "relative_path": "src/pieef/data.py",
+      "path": "artifacts/released/data.py",
+      "bytes": 12599,
+      "sha256": "c283675175b79f4f3b3bb7dcc17e75365e9751dcabd25ac7d60c36d928d58653",
+      "original": "artifacts/released/data.py"
+    },
+    {
+      "relative_path": "src/pieef/faults.py",
+      "path": "artifacts/released/faults.py",
+      "bytes": 11656,
+      "sha256": "a7c5863af5b9e1984dff6c792eacd912f208e8e52cf3624f250cb0938b7b5956",
+      "original": "artifacts/released/faults.py"
+    },
+    {
+      "relative_path": "src/pieef/forecast_corruption.py",
+      "path": "artifacts/released/forecast_corruption.py",
+      "bytes": 7001,
+      "sha256": "a28760760ad2a7bbbffdc6ad2f857b2cdc7111c851df08828b81563df367aa3b",
+      "original": "artifacts/released/forecast_corruption.py"
+    },
+    {
+      "relative_path": "src/pieef/forecast_vintages.py",
+      "path": "artifacts/released/forecast_vintages.py",
+      "bytes": 9409,
+      "sha256": "682c9d7f22f1b69b33a3ff61c537515d97247e139678db8d33ccbfc1bd5e8caa",
+      "original": "artifacts/released/forecast_vintages.py"
+    },
+    {
+      "relative_path": "src/pieef/gfs_forecasts.py",
+      "path": "artifacts/released/gfs_forecasts.py",
+      "bytes": 29625,
+      "sha256": "eb344791c9f9f6af088596be5b5a6f61f95a20fe4179b40bcd95e25a6b1758d5",
+      "original": "artifacts/released/gfs_forecasts.py"
+    },
+    {
+      "relative_path": "src/pieef/grib1.py",
+      "path": "artifacts/released/grib1.py",
+      "bytes": 9208,
+      "sha256": "1ffcdfdd60aed52a5ab48c754924845be27bd7ecdca8b64048a8af066690027c",
+      "original": "artifacts/released/grib1.py"
+    },
+    {
+      "relative_path": "src/pieef/ledger.py",
+      "path": "artifacts/released/ledger.py",
+      "bytes": 7724,
+      "sha256": "02e38d7b4bcfca97841f969b2b057c24d09a766043c8137f6cbf5ad7b852a055",
+      "original": "artifacts/released/ledger.py"
+    },
+    {
+      "relative_path": "src/pieef/model_factory.py",
+      "path": "artifacts/released/model_factory.py",
+      "bytes": 3053,
+      "sha256": "8cdab98ea89f6ce60c90500380876e6cba78b3f32afd7a416bcd066dae010c73",
+      "original": "artifacts/released/model_factory.py"
+    },
+    {
+      "relative_path": "src/pieef/model_main.py",
+      "path": "artifacts/released/model_main.py",
+      "bytes": 558,
+      "sha256": "ae13fe986302a27898c8a76b30148616de6ef2b21e1bda01742e63ec3a5f6d06",
+      "original": "artifacts/released/model_main.py"
+    },
+    {
+      "relative_path": "src/pieef/model_registry.py",
+      "path": "artifacts/released/model_registry.py",
+      "bytes": 5313,
+      "sha256": "cb8561fcba3abe25fc854006d6415db24c4bfea44837a72b68dd5e9551e38775",
+      "original": "artifacts/released/model_registry.py"
+    },
+    {
+      "relative_path": "src/pieef/models/__init__.py",
+      "path": "artifacts/released/__init__.py",
+      "bytes": 526,
+      "sha256": "62814f6a6e77c50cf1378ca80ee24635a37b369071eca1996406462bb222fece",
+      "original": "artifacts/released/__init__.py"
+    },
+    {
+      "relative_path": "src/pieef/models/e2e.py",
+      "path": "artifacts/released/e2e.py",
+      "bytes": 18917,
+      "sha256": "2f81a286c7b2aa45735eab805ca61a7b9e6dbc60331c7fdbbede3074fa1a44b9",
+      "original": "artifacts/released/e2e.py"
+    },
+    {
+      "relative_path": "src/pieef/models/forecast.py",
+      "path": "artifacts/released/forecast.py",
+      "bytes": 2597,
+      "sha256": "cbf241caca51ef502700ca5fd4c5372819a26811affc9b5bf00ac9ff94401639",
+      "original": "artifacts/released/forecast.py"
+    },
+    {
+      "relative_path": "src/pieef/models/forecast_skip.py",
+      "path": "artifacts/released/forecast_skip.py",
+      "bytes": 3159,
+      "sha256": "a7f7ca829333191dbdfb9a52b9efcedd911b7056d6b7cbac639f96c0dd04d0a8",
+      "original": "artifacts/released/forecast_skip.py"
+    },
+    {
+      "relative_path": "src/pieef/models/graph.py",
+      "path": "artifacts/released/graph.py",
+      "bytes": 7010,
+      "sha256": "c1e78287f1700ed0df0a8ae3db668e10686d0ece31721e256a2256049d2e0bf3",
+      "original": "artifacts/released/graph.py"
+    },
+    {
+      "relative_path": "src/pieef/models/physics.py",
+      "path": "artifacts/released/physics.py",
+      "bytes": 11585,
+      "sha256": "7a26993fad91f4485de7a631a7c08c0ca002e93efcc1a208c089564e31261144",
+      "original": "artifacts/released/physics.py"
+    },
+    {
+      "relative_path": "src/pieef/models/pretrain.py",
+      "path": "artifacts/released/pretrain.py",
+      "bytes": 10986,
+      "sha256": "0d08240689c559df56a4301a26fcbdfe6161241601ffcdebb470b2e31c771beb",
+      "original": "artifacts/released/pretrain.py"
+    },
+    {
+      "relative_path": "src/pieef/monolith_raw.py",
+      "path": "artifacts/released/monolith_raw.py",
+      "bytes": 76843,
+      "sha256": "a47ed0d76662c507334313e7428fd0a777fd45c3ccd9609b757ee3fd234a1758",
+      "original": "artifacts/released/monolith_raw.py"
+    },
+    {
+      "relative_path": "src/pieef/power_training_stats.py",
+      "path": "artifacts/released/power_training_stats.py",
+      "bytes": 6145,
+      "sha256": "31ea99de82c5df30cbc332cc1d6371a1d1dc98262b061958e0832cd6ef1f6867",
+      "original": "artifacts/released/power_training_stats.py"
+    },
+    {
+      "relative_path": "src/pieef/profiling.py",
+      "path": "artifacts/released/profiling.py",
+      "bytes": 3091,
+      "sha256": "6ff794c083a5930f57f73dd4db770f6dff8b79ea31a69b095ff6cdb292c99405",
+      "original": "artifacts/released/profiling.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_analysis_queue.py",
+      "path": "artifacts/released/revision_analysis_queue.py",
+      "bytes": 4478,
+      "sha256": "1b1fa05366d25d7ad5654e4fdaa8aab24d3ebe95c2ce08219ee7e2ee87063942",
+      "original": "artifacts/released/revision_analysis_queue.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_analysis_summary.py",
+      "path": "artifacts/released/revision_analysis_summary.py",
+      "bytes": 9831,
+      "sha256": "8bda2b6394172c36ace7d1c2a726ea5a37e3b0ad15e8e702246eda7e923bcc9c",
+      "original": "artifacts/released/revision_analysis_summary.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_cpu_postprocessing.py",
+      "path": "artifacts/released/revision_cpu_postprocessing.py",
+      "bytes": 33433,
+      "sha256": "ce70fb8172fea9ea48e575412ab9582cadeed64500518f4cf426f01c5945d5e6",
+      "original": "artifacts/released/revision_cpu_postprocessing.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_data.py",
+      "path": "artifacts/released/revision_data.py",
+      "bytes": 18498,
+      "sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+      "original": "artifacts/released/revision_data.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_dispatch.py",
+      "path": "artifacts/released/revision_dispatch.py",
+      "bytes": 10806,
+      "sha256": "b0907e886dfa265c15db6c597cb8f4635cd5377c569585f0e44a57be237a79e3",
+      "original": "artifacts/released/revision_dispatch.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_fault_jobs.py",
+      "path": "artifacts/released/revision_fault_jobs.py",
+      "bytes": 25174,
+      "sha256": "bd888f425a99256783bad9d548ef756383895add9c2acfcb9c106cfac1372813",
+      "original": "artifacts/released/revision_fault_jobs.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_paths.py",
+      "path": "artifacts/released/revision_paths.py",
+      "bytes": 2346,
+      "sha256": "49a46d71e8b01860785014d71ad38ddc0503511bbb3b3e9f91a99a7962fe9ee4",
+      "original": "artifacts/released/revision_paths.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_plan.py",
+      "path": "artifacts/released/revision_plan.py",
+      "bytes": 9296,
+      "sha256": "617d31545f8fe5dcbf6c0b1c8c4cdaa13346fbcb73f58e7d1b313a511a4678b1",
+      "original": "artifacts/released/revision_plan.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_statistics.py",
+      "path": "artifacts/released/revision_statistics.py",
+      "bytes": 14658,
+      "sha256": "fe9239254077af59680d8c9bf506df62544859d07fdc8c8e1d4bb3f1e3e2f30e",
+      "original": "artifacts/released/revision_statistics.py"
+    },
+    {
+      "relative_path": "src/pieef/revision_summary.py",
+      "path": "artifacts/released/revision_summary.py",
+      "bytes": 15508,
+      "sha256": "961726afd2faf0207503207f87aa656d0eff407158fd96398a027f758b731a00",
+      "original": "artifacts/released/revision_summary.py"
+    },
+    {
+      "relative_path": "src/pieef/site_alignment.py",
+      "path": "artifacts/released/site_alignment.py",
+      "bytes": 3860,
+      "sha256": "ec66c8ba4760f83cf9459833331a0c446158acc823fd5c7a355dd770eb252953",
+      "original": "artifacts/released/site_alignment.py"
+    },
+    {
+      "relative_path": "src/pieef/train_main.py",
+      "path": "artifacts/released/train_main.py",
+      "bytes": 25475,
+      "sha256": "38cfbf3a0368d6f438d9b1e6cf2dce1ab7a74d79dc1bd456a53ca867d9ec04a7",
+      "original": "artifacts/released/train_main.py"
+    },
+    {
+      "relative_path": "src/pieef/training_timing.py",
+      "path": "artifacts/released/training_timing.py",
+      "bytes": 4007,
+      "sha256": "b118893ed0e497b10e3708c4df20908ce2b75ca637804a75f55cef00329ea86a",
+      "original": "artifacts/released/training_timing.py"
+    }
+  ],
+  "data_files": [
+    {
+      "path": "artifacts/released/scada_ecmwf_15min.csv",
+      "bytes": 34648122,
+      "sha256": "807922ff81d08dd30aa679abd866a0c58357f21d35ab8cf7a76efaa53fd0f705"
+    },
+    {
+      "path": "artifacts/released/turbines.csv",
+      "bytes": 2459,
+      "sha256": "bf3f5bd0d59f394b64b1c3eef97d47089b014e8ff4af7c10fb963f49228e90e7"
+    },
+    {
+      "path": "data/wind_farm_A/manufacturer_curve.csv",
+      "bytes": 501,
+      "sha256": "5c6f0ad4c7787875223bf50c266806c6c90d62ed7801b61c253631c77e8eb041"
+    }
+  ],
+  "sources": [
+    {
+      "task_id": "staged_h16_seed13",
+      "model_or_mode": "staged",
+      "horizon": 16,
+      "seed": 13,
+      "directory": "artifacts/released/energy_r3_stage2_staged_h16_s13_20261021_094939",
+      "config_id": "energy_r3s2_training_staged_h16_seed13",
+      "stage3_mode": "staged",
+      "config_sha256": "fdd85d085cf3d7dae0beddd86059e416333b540a6f91725f48976fa4f354e41e",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_training_staged_h16_seed13.yaml",
+        "bytes": 3030,
+        "sha256": "5be44b9caeeffd0c40af5208f0c16dd04ddcbda8c28861343f151edbf86c5d33"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4339,
+          "sha256": "43d10cad99cde9b94d3a9fb04ce4d497ec4863eaf0f912f9f67630d4637a9702"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "8af2d900ed73feb888e2ebe1df89a0b1d111a77d93a3edaf8334bf2efddf9bd6"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1166472,
+          "sha256": "f579125fef59c6fbe9cfb51a4ef46a4147cf6d1fd70256c30c26ed8f34f533ce"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "staged_h16_seed21",
+      "model_or_mode": "staged",
+      "horizon": 16,
+      "seed": 21,
+      "directory": "artifacts/released/energy_r3_stage2_staged_h16_s21_20261021_095241",
+      "config_id": "energy_r3s2_training_staged_h16_seed21",
+      "stage3_mode": "staged",
+      "config_sha256": "e512129bf6d75a2a8f6f6bdf797bbc8beaaf41fbb0211a55e0023d3a1c45c962",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_training_staged_h16_seed21.yaml",
+        "bytes": 3030,
+        "sha256": "114b806f1515cd0cc7b8fc898331d1fd66663f478a7383ecda2b2c6aa9596c11"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4337,
+          "sha256": "4b59efbabad1f138e5d08f70a5752ff913ea92403b772a2bf4e86e4fdc5c4f25"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "8c5e797d50e82d231b6c6cda3f5fc5e68e59d0cb0b2609f8fa7071bdb68119c3"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1285215,
+          "sha256": "8a592fcbd0632516514fe39ff768cb2157a5159a4b9e868804c1b3a54803219d"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "staged_h16_seed42",
+      "model_or_mode": "staged",
+      "horizon": 16,
+      "seed": 42,
+      "directory": "artifacts/released/energy_r3_stage2_staged_h16_s42_20261021_095545",
+      "config_id": "energy_r3s2_training_staged_h16_seed42",
+      "stage3_mode": "staged",
+      "config_sha256": "c6cc0df7cf0540850c99428fdd1ff93d8a8ddadcaa761e0b431b90cc3a6cb913",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_training_staged_h16_seed42.yaml",
+        "bytes": 3030,
+        "sha256": "3b79e99ce98fbbe6c6d6ca160e083ac17d0b7217df6d023e5f83e7693a147e53"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4338,
+          "sha256": "9296f74197dfb1e2f4e08c32167410016fceae1e4d6201e0a187e92d7e777970"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "dc6c0b973e75659a31c3bb697473c7a73a1a31266b31c6e5156a8bedda73ffd0"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1186382,
+          "sha256": "737088cabacbbdef1e5724d4e391e0692344ea98cba9ba7660ad28a7befa6933"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "staged_h16_seed87",
+      "model_or_mode": "staged",
+      "horizon": 16,
+      "seed": 87,
+      "directory": "artifacts/released/energy_r3_stage2_staged_h16_s87_20261021_101055",
+      "config_id": "energy_r3s2_training_staged_h16_seed87",
+      "stage3_mode": "staged",
+      "config_sha256": "2b99cae1d070e41075b9c4ca45f569bd83c71ca0bb7e21dd1e54c38d22f5e588",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_training_staged_h16_seed87.yaml",
+        "bytes": 3030,
+        "sha256": "5514ada218e071daf218f1ddc27d5a949bc9e204902c8decfded5c3afa82f47f"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4337,
+          "sha256": "cbc81ddbc313de77d53b9e887641774429a5b05a2ebdedd904217f1b02f439f0"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "fb76e2dc03e3eb592d81655a8454f3bc57e8d54d9aec8f618199363470b94d22"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1268367,
+          "sha256": "f718a6c933ce7eff8514adcbdf1f1be559dbb3a7eb963e6538a47b06ff213e99"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "staged_h16_seed3407",
+      "model_or_mode": "staged",
+      "horizon": 16,
+      "seed": 3407,
+      "directory": "artifacts/released/energy_r3_stage2_staged_h16_s3407_20261021_101057",
+      "config_id": "energy_r3s2_training_staged_h16_seed3407",
+      "stage3_mode": "staged",
+      "config_sha256": "ae726c5dd09cc2b6eb01db628da9fc211c27aa20266ef62b6a98279587fa09e5",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_training_staged_h16_seed3407.yaml",
+        "bytes": 3034,
+        "sha256": "93131657d1be38a14b51562acb11514ac1aea5b618371b447d4f29e22cce747b"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4346,
+          "sha256": "9520193e5eb3b4991bd4b04a8da30c5d94417064dd9efa8943b200f94939c7ce"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "f18942b04065f161540bd6a06303763eb86727fd660bcdaeeea58579a49b1962"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1281905,
+          "sha256": "939365c6aa516e4fa8a9d5948fd5d17c8fb623948b9af692fa9a0e239937012f"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "from-scratch_h16_seed13",
+      "model_or_mode": "from-scratch",
+      "horizon": 16,
+      "seed": 13,
+      "directory": "artifacts/released/energy_r3_stage2_from-scratch_h16_s13_20261021_101059",
+      "config_id": "energy_r3s2_training_from-scratch_h16_seed13",
+      "stage3_mode": "joint",
+      "config_sha256": "5f779e82d36143d88eb98be0c7c53359ab02c3ae11494bb4d3e617043ee02f67",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_training_from-scratch_h16_seed13.yaml",
+        "bytes": 3049,
+        "sha256": "89abfd3bd00f0e53953f015c41b21e7f4752d20aaf8133fa7f3a42f8e2ed3f7e"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4363,
+          "sha256": "e6ba42aac9dc0133f52eb7e06922478cd050069a055fbb7703645331036bd911"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "3adbae3aac530894869a7bca0cfb09e085fd688de766b67eb694d231b254d4d5"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1249477,
+          "sha256": "bc092844f6da8669df309a7e7fa3adc1e2b4c01834aa4206460d3e6245d5fef6"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "from-scratch_h16_seed21",
+      "model_or_mode": "from-scratch",
+      "horizon": 16,
+      "seed": 21,
+      "directory": "artifacts/released/energy_r3_stage2_from-scratch_h16_s21_20261021_101102",
+      "config_id": "energy_r3s2_training_from-scratch_h16_seed21",
+      "stage3_mode": "joint",
+      "config_sha256": "8e4e9f045a721c95bb7f4cf9537543a4b309e501155607930c405e4ac2498475",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_training_from-scratch_h16_seed21.yaml",
+        "bytes": 3049,
+        "sha256": "5f33d81cebe0b1afee9e0d2578fff1dc8ca080a9eb45afe85552214d137d87b5"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4363,
+          "sha256": "3677bb22e127a0c37af85bfabbbbcc44ff4aa69b09c6da2a78cd49cccf7a6aa7"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "4331c91882a9e1e9fad46dd340bad2569643ce92bf6d8e4c269f41d4e7d774f3"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1269571,
+          "sha256": "20246418f8be2d37eae4e37e46b107e9be91113199f509ed597609bf8f8bea5b"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "from-scratch_h16_seed42",
+      "model_or_mode": "from-scratch",
+      "horizon": 16,
+      "seed": 42,
+      "directory": "artifacts/released/energy_r3_stage2_from-scratch_h16_s42_20261021_101405",
+      "config_id": "energy_r3s2_training_from-scratch_h16_seed42",
+      "stage3_mode": "joint",
+      "config_sha256": "4fc499f1ee0923451d411574f001be707a086e88e7bef7b4c76474eb71d1eb59",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_training_from-scratch_h16_seed42.yaml",
+        "bytes": 3049,
+        "sha256": "8e75d40ab19eae44e6eddc675f861c52f8ce1b28632bcd33ee714fd3d660b936"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4361,
+          "sha256": "3a482fff46086f9ffe19403490b113a055b8f96c57edcbb59f03585ff4898188"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "8023991a8a0e1a4e1920b6ada69a1d16c7d5a367bef9a97cc423b2ae342e7ccb"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1240451,
+          "sha256": "a7f048799c58ee6f5a0064488b29917b0b460290af1d86b1a2ed3812642c5867"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "from-scratch_h16_seed87",
+      "model_or_mode": "from-scratch",
+      "horizon": 16,
+      "seed": 87,
+      "directory": "artifacts/released/energy_r3_stage2_from-scratch_h16_s87_20261021_101407",
+      "config_id": "energy_r3s2_training_from-scratch_h16_seed87",
+      "stage3_mode": "joint",
+      "config_sha256": "a32f549741d8586518355c98e1ddb95e194335997ee615e99263c1f254c48751",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_training_from-scratch_h16_seed87.yaml",
+        "bytes": 3049,
+        "sha256": "958ea7828f1196ecd25b10bc0df23c72a86f4cfd5fb7cfc80c31ea84672ca3d9"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4363,
+          "sha256": "2133fd15589c83fe4358d88d4932a04ec196e528db8c1aa69109f9b6dc7a3ec3"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "fb6e6e38f6515b0edcc5d6e8523bc677128eb7b416e71e04db090dead3c79853"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1236903,
+          "sha256": "ff20902d6d34ac5115903f3d23b1658b5f2be33bf110fd64c3502915af0a99f0"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "from-scratch_h16_seed3407",
+      "model_or_mode": "from-scratch",
+      "horizon": 16,
+      "seed": 3407,
+      "directory": "artifacts/released/energy_r3_stage2_from-scratch_h16_s3407_20261021_101712",
+      "config_id": "energy_r3s2_training_from-scratch_h16_seed3407",
+      "stage3_mode": "joint",
+      "config_sha256": "91099c49208518c59fb241c3b159e12a0c3c6e0074942acc56d98ef0829a0df3",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_training_from-scratch_h16_seed3407.yaml",
+        "bytes": 3053,
+        "sha256": "831f49e61f88463ba2952df84711fa2c4e3c9949158f3428bd93e1f62e8b24a3"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4371,
+          "sha256": "19aef890b56ab433cb61bbe2dd857d9c6508282f41c9734cbb08edcef88640ef"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "475d778946969ee4853a2673c7738c94beca23a76beb02d5849d8d87aec7023a"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1270863,
+          "sha256": "106c897d6c3c4a7e4b3bb299cd5ca90a326724a19bb42ce75b1b74b4b35e067b"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "V1_h16_seed13",
+      "model_or_mode": "V1",
+      "horizon": 16,
+      "seed": 13,
+      "directory": "artifacts/released/energy_final_recompute_PI-EEF_h16_s13_20261019_154505",
+      "config_id": "energy_final_main_PI-EEF_h16_seed13",
+      "stage3_mode": "joint",
+      "config_sha256": "fdd16feff5d1a4aac86e91d1f8fe3fd879920bf1a6f81545b118ffdd2f567a64",
+      "config_file": {
+        "path": "artifacts/released/energy_final_main_PI-EEF_h16_seed13.yaml",
+        "bytes": 2885,
+        "sha256": "bf9798443287059dd3a0934b29aebf3809a082648afec0fe3ed3047e7d7a6ff2"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4576,
+          "sha256": "6379067f540c2bd36006dc6ee66904ee48f23944cafd5780ff32f7dee7115b3e"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2758544,
+          "sha256": "0f0e7101f386d01b0296741b4ee5a948a6713b753bd03fb5005a78d55851e2f4"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1316218,
+          "sha256": "cfc6cbaa85b16df88657488d5060efd9c2bda2fd642493a333677641c2dbf814"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "V1_h16_seed21",
+      "model_or_mode": "V1",
+      "horizon": 16,
+      "seed": 21,
+      "directory": "artifacts/released/energy_final_recompute_PI-EEF_h16_s21_20261019_160648",
+      "config_id": "energy_final_main_PI-EEF_h16_seed21",
+      "stage3_mode": "joint",
+      "config_sha256": "f5f5dba1daa213b0119c5f0ed5e9e2aee177c5ac0c86363c6829fd96ed707fe9",
+      "config_file": {
+        "path": "artifacts/released/energy_final_main_PI-EEF_h16_seed21.yaml",
+        "bytes": 2885,
+        "sha256": "f6ecab952d2f57d6154eca5881c0dcd266ec460903f805eadf50a062780b63a8"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4576,
+          "sha256": "9f9612d164a27db91b9658cd08e518ba18ac0f096911bec80cb64a3961d601e4"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2758544,
+          "sha256": "0bb7b443129c7061623dc7f2ca52be73377d52a334b89c691b6ab189bac1251d"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1280587,
+          "sha256": "68ab672a48b0f010696893ab45680b20b7f6f0a9e8e17e72d66a527ce9cd5508"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "V1_h16_seed42",
+      "model_or_mode": "V1",
+      "horizon": 16,
+      "seed": 42,
+      "directory": "artifacts/released/energy_final_recompute_PI-EEF_h16_s42_20261019_163417",
+      "config_id": "energy_final_main_PI-EEF_h16_seed42",
+      "stage3_mode": "joint",
+      "config_sha256": "712873264b5069245d59e416f01c4eb0eceadb826372dc936e025a3c58ba699c",
+      "config_file": {
+        "path": "artifacts/released/energy_final_main_PI-EEF_h16_seed42.yaml",
+        "bytes": 2885,
+        "sha256": "80d43e6acef1f49f5386cec4b71bafc410fe564a265b138189bbfb25459504c8"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4577,
+          "sha256": "c6cca794d6eebde455afbdda78651406ea282cfa2c07e56c0dd5fa56dd205ed5"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2758544,
+          "sha256": "e9dd228fae96d9334173d9935214f38032db77e42e3d22d82daeea1577fc26e3"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1270602,
+          "sha256": "96fd1d17f254c97e75188bde8033acf1470cc06ebcacbfd04fb14320e8eb7c4b"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "V1_h16_seed87",
+      "model_or_mode": "V1",
+      "horizon": 16,
+      "seed": 87,
+      "directory": "artifacts/released/energy_final_recompute_PI-EEF_h16_s87_20261019_170337",
+      "config_id": "energy_final_main_PI-EEF_h16_seed87",
+      "stage3_mode": "joint",
+      "config_sha256": "a059300323822c68ec23ede27c6ebe918296b39f882a726c47ec536a885803ac",
+      "config_file": {
+        "path": "artifacts/released/energy_final_main_PI-EEF_h16_seed87.yaml",
+        "bytes": 2885,
+        "sha256": "4311c98bdf895ee98ce5d3199b9ae103720269f956e71c4d987d484b7814b295"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4576,
+          "sha256": "17eb5b48121aaa9d4d00725014a33005ada79c0d5a398bdd09945c13e4bb4d4b"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2758544,
+          "sha256": "8c9fb70989170d65847816156d84582f4dbae9776698cd4ee44811cfe976c8eb"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1314762,
+          "sha256": "d347dfae5264b2d089400ce78e3efaf4d6f613fbeaf174e7ae3e7eb403351cb5"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "V1_h16_seed3407",
+      "model_or_mode": "V1",
+      "horizon": 16,
+      "seed": 3407,
+      "directory": "artifacts/released/energy_final_recompute_PI-EEF_h16_s3407_20261019_172712",
+      "config_id": "energy_final_main_PI-EEF_h16_seed3407",
+      "stage3_mode": "joint",
+      "config_sha256": "ca944ad19ccec58b1274f6ba6146172bab2c9964da77c5b91e65fe99d8178da6",
+      "config_file": {
+        "path": "artifacts/released/energy_final_main_PI-EEF_h16_seed3407.yaml",
+        "bytes": 2891,
+        "sha256": "bba567993cb3c354f1fab9bdaa0ad222d0cc989725165d8c01e3c47a6b772261"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4586,
+          "sha256": "0df0fb75cc42bd5bc06ce78f3e8b5c16cf668b12de95252cedf7f897c50d1a2d"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2758544,
+          "sha256": "a4d04d9e813449977865695e38193f46d1c2efc4456c08373d660fad65b12b22"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1281522,
+          "sha256": "96e882594ea1b3c956ccf9984fa45fbceeb5babdca19c8acaa300ae9695e431d"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "V1_h96_seed13",
+      "model_or_mode": "V1",
+      "horizon": 96,
+      "seed": 13,
+      "directory": "artifacts/released/energy_final_recompute_PI-EEF_h96_s13_20261019_180555",
+      "config_id": "energy_final_main_PI-EEF_h96_seed13",
+      "stage3_mode": "joint",
+      "config_sha256": "c06469e35a2b80471010a2e61fcf0a113f4b81237505803cac3a2aabdeffb29b",
+      "config_file": {
+        "path": "artifacts/released/energy_final_main_PI-EEF_h96_seed13.yaml",
+        "bytes": 2886,
+        "sha256": "7305ef713ac5103f7ee4f1fa2acf1d6fe129b48492bcfadab35879e065df4682"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4577,
+          "sha256": "beb321fbd44488747d474a9970f55d0698d0083d5d5517ad449912582b1a9496"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2758544,
+          "sha256": "672061e6c66526b13e57e852128c57eeda0d5a867ac64f9ee964512a193842aa"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1347938,
+          "sha256": "aa63641a8fbaef03ed5587bfb307b4a45245bde219ce45b6e0350160538ee9f2"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "V1_h96_seed21",
+      "model_or_mode": "V1",
+      "horizon": 96,
+      "seed": 21,
+      "directory": "artifacts/released/energy_final_recompute_PI-EEF_h96_s21_20261019_160823",
+      "config_id": "energy_final_main_PI-EEF_h96_seed21",
+      "stage3_mode": "joint",
+      "config_sha256": "b356308a7bcfdd4c28291494171d6db8e2b8e1932194aa09d1744625ded61145",
+      "config_file": {
+        "path": "artifacts/released/energy_final_main_PI-EEF_h96_seed21.yaml",
+        "bytes": 2886,
+        "sha256": "f37c13fc21232ba53e2002391189ce4b9b17ae49b811229b07c44f8d877162e9"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4576,
+          "sha256": "9fa8467bde6a590fc9f23ea108a43b890bda178c7afc030a53ab89bfece13a49"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2758544,
+          "sha256": "23c22f9e9db4930c3373f1f334263e5739d28facb1ca04aa9a8cbcc98c819e87"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1205926,
+          "sha256": "a164aee57b6deb1eea67fe59454b924b7a99aa6ce5ca3bf5b2cf528b9672bdbb"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "V1_h96_seed42",
+      "model_or_mode": "V1",
+      "horizon": 96,
+      "seed": 42,
+      "directory": "artifacts/released/energy_final_recompute_PI-EEF_h96_s42_20261019_213330",
+      "config_id": "energy_final_main_PI-EEF_h96_seed42",
+      "stage3_mode": "joint",
+      "config_sha256": "4618426489f751ab6741d3f6b96613da39a939e6a378bc3ed5ccad996f6c4d26",
+      "config_file": {
+        "path": "artifacts/released/energy_final_main_PI-EEF_h96_seed42.yaml",
+        "bytes": 2886,
+        "sha256": "487a17612340fa86705d7a613124a31703b97f31681de41dab2c778472008aa5"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4576,
+          "sha256": "75a1681ef8fde311705c673180e9372b903d908acab04215c6a60dbb8b675c85"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2758544,
+          "sha256": "de9b6015dc2a5356a6e7256b2d4662874903f9447eaf3d7a7a79c268b16ee8ad"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1335309,
+          "sha256": "fdccba9024098b3e3c9a18f97060f939cb43eb8dcee9a7eaa960c9be55001741"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "V1_h96_seed87",
+      "model_or_mode": "V1",
+      "horizon": 96,
+      "seed": 87,
+      "directory": "artifacts/released/energy_final_recompute_PI-EEF_h96_s87_20261019_175647",
+      "config_id": "energy_final_main_PI-EEF_h96_seed87",
+      "stage3_mode": "joint",
+      "config_sha256": "8dadc80197aa2d7f2d2502875dc6c3e1ae8705525d5d15a1b69f9b894d8d1a49",
+      "config_file": {
+        "path": "artifacts/released/energy_final_main_PI-EEF_h96_seed87.yaml",
+        "bytes": 2886,
+        "sha256": "3f48dbbbb62acdff5c3a1af7f87438236a10168b48d4e8f6aba10a37d9393132"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4578,
+          "sha256": "6a78b2ecc9df082487798c12f2993d3e5ea145b4e9b6f847db08c437b39cf4f2"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2758544,
+          "sha256": "ac47da6a5c30aa65671e28dda23bb19245c00d28d62422705d47713829c2a6c7"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1311522,
+          "sha256": "90b8ca4bef5151c8d16b42d8d5f21a789b47012bf130f2277183eeae611b50f3"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    },
+    {
+      "task_id": "V1_h96_seed3407",
+      "model_or_mode": "V1",
+      "horizon": 96,
+      "seed": 3407,
+      "directory": "artifacts/released/energy_final_recompute_PI-EEF_h96_s3407_20261019_204638",
+      "config_id": "energy_final_main_PI-EEF_h96_seed3407",
+      "stage3_mode": "joint",
+      "config_sha256": "da7135fcc18a68f79170a5cede46cf4b0abbe8c69908513cf17139ad5707e378",
+      "config_file": {
+        "path": "artifacts/released/energy_final_main_PI-EEF_h96_seed3407.yaml",
+        "bytes": 2892,
+        "sha256": "74b832c94e1ca148629fca6ee68f49c21343695b51528b8575c1bb71c9df0f2c"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4587,
+          "sha256": "23e2b65c3aee66a228cfafc413a37dea6517ea58fcd1c4a2a9dd7eaf35d888f8"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2758544,
+          "sha256": "6e3998945e0dc8a12d6873e9e0cc0ce083db5c04ddd5a47994afc502db919558"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1318616,
+          "sha256": "52a05c048238f2836bcb3e2a26d4109c4323cba53c2007ee6287d928501da496"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ]
+    }
+  ],
+  "vf_sources": [
+    {
+      "task_id": "VF_h16_seed13",
+      "model_or_mode": "VF",
+      "horizon": 16,
+      "seed": 13,
+      "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s13_20261021_011452",
+      "config_id": "energy_r3s2_main_PI-EEF_h16_seed13",
+      "stage3_mode": "joint",
+      "config_sha256": "1701e16e389b8777b400d249d12ea18ec23714165224e63dccf36053a1bb9984",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h16_seed13.yaml",
+        "bytes": 3015,
+        "sha256": "e8de9fb32875ccdc987ef8e27b39cd4deb4b3c2d014dd4a0b3765db35306451e"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4321,
+          "sha256": "80939ab7032515a53a0b266e85a642e8496bbc8b4afac22825ea4c54f73a5a8e"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "5d72a821f0b51a8ec0f2b3cb57c58d15f97c2517e49099d69809b7d8336069ae"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1281420,
+          "sha256": "c11691fd93a5f893b7be817b07e19bb8979024e31d2c3b99c3512999b015a90b"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ],
+      "fault_directory": "artifacts/released/seed13",
+      "completed": {
+        "path": "artifacts/released/completed.json",
+        "bytes": 28319,
+        "sha256": "66b0c779498226689c18855a3b2e48c3451ca7c563f4b2cdcc5ca086624e1aea"
+      },
+      "reused": true
+    },
+    {
+      "task_id": "VF_h16_seed21",
+      "model_or_mode": "VF",
+      "horizon": 16,
+      "seed": 21,
+      "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s21_20261021_013908",
+      "config_id": "energy_r3s2_main_PI-EEF_h16_seed21",
+      "stage3_mode": "joint",
+      "config_sha256": "73207679f633c6e91529b7819bfa0d210a4d8de9da28d53be47c5af57d41627a",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h16_seed21.yaml",
+        "bytes": 3015,
+        "sha256": "42f3947773722718407a1040507e6749ff558010cd95e838d63a377d4447b2a4"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4323,
+          "sha256": "b9b2c4691ad1a41bc2cd7ea23b8dcb99f0aab79735d5db5ef30e3e32748460cf"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "4389cd00cc28ff4abc434f3d9f7578b8f1a636f1bf3fba66c3d8d714fc06764b"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1281889,
+          "sha256": "b03ad5430d4f2a7c1416d7d7eb5ae4866869dde3b1217b8eb9212da849b9eb0c"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ],
+      "fault_directory": "artifacts/released/seed21",
+      "completed": {
+        "path": "artifacts/released/completed.json",
+        "bytes": 28298,
+        "sha256": "2cd30b9ec0d038adc8dad2f97c319f6756d4d4a6229394ea5349c0304cce2f41"
+      },
+      "reused": true
+    },
+    {
+      "task_id": "VF_h16_seed42",
+      "model_or_mode": "VF",
+      "horizon": 16,
+      "seed": 42,
+      "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s42_20261021_015419",
+      "config_id": "energy_r3s2_main_PI-EEF_h16_seed42",
+      "stage3_mode": "joint",
+      "config_sha256": "efb6bfdadb1e32e708ce3f3feea4eb4d31a6d4e06f844608bb3c978c67172a1b",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h16_seed42.yaml",
+        "bytes": 3015,
+        "sha256": "4a761f0690fc7fbe47c812a8646db8e053ca554df00cfcd2b894b9b804b606e5"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4321,
+          "sha256": "69f409698db88e0a458ce8bc65d6b766c350c8ccf1ef1792a2b277c11c33a729"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "58a1435393edd950a53c3c0c7323567061880778000c5361a0275dadcb1b5a53"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1266385,
+          "sha256": "8e879ab9055cca1d719e06dcf3c5b36a259d13c8e47ff44e9414f0629dc8ea15"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ],
+      "fault_directory": "artifacts/released/seed42",
+      "completed": {
+        "path": "artifacts/released/completed.json",
+        "bytes": 28307,
+        "sha256": "17c1d911a660e6f26f73a02d856a9566bcf37bdd849b2886667c42ddcdeac46f"
+      },
+      "reused": true
+    },
+    {
+      "task_id": "VF_h16_seed87",
+      "model_or_mode": "VF",
+      "horizon": 16,
+      "seed": 87,
+      "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s87_20261021_021233",
+      "config_id": "energy_r3s2_main_PI-EEF_h16_seed87",
+      "stage3_mode": "joint",
+      "config_sha256": "954e71f721c74f3fa3f2708786ea789707a5106cb2d609ee0d4016534131a9d5",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h16_seed87.yaml",
+        "bytes": 3015,
+        "sha256": "15e737d9fce81ed532018ade07f682e29543e5fbe08a5569dca37ecbd73705fd"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4321,
+          "sha256": "78f9450230f7fcd49b63a223c1f37851a0643abf0cba100ad7f9509721d43183"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "a21020b28bd611d97a1bad5e953d6bb7ff8875ef0f26395849aac74ea9592155"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1246052,
+          "sha256": "5f59c1073375250d8f80dfc905eb0964c51b270709c7a167668d3bc50a279630"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ],
+      "fault_directory": "artifacts/released/seed87",
+      "completed": {
+        "path": "artifacts/released/completed.json",
+        "bytes": 28303,
+        "sha256": "9c0fa7be7279412c11c24de309b148b640da8f1267cc0f095f27080d4efc9a38"
+      },
+      "reused": true
+    },
+    {
+      "task_id": "VF_h16_seed3407",
+      "model_or_mode": "VF",
+      "horizon": 16,
+      "seed": 3407,
+      "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s3407_20261021_023047",
+      "config_id": "energy_r3s2_main_PI-EEF_h16_seed3407",
+      "stage3_mode": "joint",
+      "config_sha256": "5ea74b71c0304423182a1db6ebe1f7df916cb0ebfd93a7d54730c29a47fde084",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h16_seed3407.yaml",
+        "bytes": 3019,
+        "sha256": "4833b430d0133ac1822e2512cdc3bf415c0a1edd05ec5606ba8fe9bcd449af64"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4330,
+          "sha256": "3da969a7e1e3b0470cb31c57bcbf7dc92d37f9a14ea44aafa2799b56089dd4a7"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "eacf9f5cbfbebd98756de4ac2b30c3a275cc5983d9f7d90a281cac2870740be6"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1289503,
+          "sha256": "faf76641beac68f3925021673ff8982244568a0c6f8ec2a9f6c619124e72cf88"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ],
+      "fault_directory": "artifacts/released/seed3407",
+      "completed": {
+        "path": "artifacts/released/completed.json",
+        "bytes": 28338,
+        "sha256": "14312b7996b332171e29808f7837ca0ba6ae0fd3e8f3fa092fdf9cb6412575cf"
+      },
+      "reused": true
+    },
+    {
+      "task_id": "VF_h96_seed13",
+      "model_or_mode": "VF",
+      "horizon": 96,
+      "seed": 13,
+      "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h96_s13_20261021_032232",
+      "config_id": "energy_r3s2_main_PI-EEF_h96_seed13",
+      "stage3_mode": "joint",
+      "config_sha256": "699f0a0cba370f452fa953fa2a0e8f8ab850f085191707f0149211739fabae30",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h96_seed13.yaml",
+        "bytes": 3016,
+        "sha256": "fddca3e2008dcaaaf993e26275d8efa6b4ef73027c0561f7a354684f36ffcc53"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4323,
+          "sha256": "0c2defee277065930b4b572011cf8dbbaeb189ce68e17c827e17855932956b8c"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "629b3fe98e5aa7df2a63e5828630a93c5056ac8c93fc0a01f48514e7e5be1397"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1288469,
+          "sha256": "1b6c15a4b5885c7c80a8bdaa1ea60ca363ad784498a810cf893e663553dadbc7"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ],
+      "fault_directory": "artifacts/released/seed13",
+      "completed": {
+        "path": "artifacts/released/completed.json",
+        "bytes": 28119,
+        "sha256": "f33471ad570f7bd6f883b2d55690b5d68eabdd40377c1155eb6af11ef4434421"
+      },
+      "reused": true
+    },
+    {
+      "task_id": "VF_h96_seed21",
+      "model_or_mode": "VF",
+      "horizon": 96,
+      "seed": 21,
+      "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h96_s21_20261021_034045",
+      "config_id": "energy_r3s2_main_PI-EEF_h96_seed21",
+      "stage3_mode": "joint",
+      "config_sha256": "ec727f62a21e6b0c02553a173dee96a026dff72e2e161af27133bac640085a80",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h96_seed21.yaml",
+        "bytes": 3016,
+        "sha256": "8203c6fede5bf6687ffa9d448363359aae83f3cfc9f05137400d65ee86aa2627"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4323,
+          "sha256": "61b56d918ed7d78cac5ba271fa89e514bfaab07be0a3e1ce1db34e69ab1c31f6"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "b51150cc5f03ba7a0da0cc235a005b4d4d68e5611089c4e2c091ab7b274e5042"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1302017,
+          "sha256": "d4fc222efca870c74b38866fc28bd923264544cd5c729db0997153d45a1c8cec"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ],
+      "fault_directory": "artifacts/released/seed21",
+      "completed": {
+        "path": "artifacts/released/completed.json",
+        "bytes": 28106,
+        "sha256": "ca0ecaa3c69e2eb1cf667a65b6bed6f8084e08635ff9e95bcb51dcefa67cc5cb"
+      },
+      "reused": true
+    },
+    {
+      "task_id": "VF_h96_seed42",
+      "model_or_mode": "VF",
+      "horizon": 96,
+      "seed": 42,
+      "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h96_s42_20261021_035558",
+      "config_id": "energy_r3s2_main_PI-EEF_h96_seed42",
+      "stage3_mode": "joint",
+      "config_sha256": "1c4a2bc1b3e40ac921430a96bd921b72f403db2a6a3051dd50e52dd5428218ae",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h96_seed42.yaml",
+        "bytes": 3016,
+        "sha256": "9791b45f826fb77f5249e011b6754d36726cbea51bbe62292939c835ded7ff4d"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4324,
+          "sha256": "da48bb066f9de28950f0a7caa574d5fd42c4eafe50629d36d6367114f066cda6"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "468b69ed7463a0c9e8703d88c4547b0ab99060bb164ac778397680f6da2321f0"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1276147,
+          "sha256": "0a8800c50f062fee631446ecbc1621e2f493432fe88d6b6ede355b2a51fef4a3"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ],
+      "fault_directory": "artifacts/released/seed42",
+      "completed": {
+        "path": "artifacts/released/completed.json",
+        "bytes": 28126,
+        "sha256": "b7fdf69a21234ea7c5481a4fa5c783caa76ac1202841285067405113ea9c848e"
+      },
+      "reused": true
+    },
+    {
+      "task_id": "VF_h96_seed87",
+      "model_or_mode": "VF",
+      "horizon": 96,
+      "seed": 87,
+      "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h96_s87_20261021_040504",
+      "config_id": "energy_r3s2_main_PI-EEF_h96_seed87",
+      "stage3_mode": "joint",
+      "config_sha256": "4ebd77fb0851001d42769d771487cb7a53ee9ad9ea36e3f681a927c1222fc7d1",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h96_seed87.yaml",
+        "bytes": 3016,
+        "sha256": "f045a4e8edf40563dadc001a241e3f4f1fb998b43359f9d75654867b90b0d906"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4323,
+          "sha256": "90c86eb097a6283731abbdb88bd0b183e26a87f52d0a28cf4000a6158c678ddd"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "c4af7d8c72e20fedbcf06cd52e33c3cd27aa893ee6a9ae4abab7bd3970fc689a"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1277448,
+          "sha256": "fe73de64f7ab6bd3a9480a703e34d424516f9e9b6dfc5490467abb328e2467f7"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ],
+      "fault_directory": "artifacts/released/seed87",
+      "completed": {
+        "path": "artifacts/released/completed.json",
+        "bytes": 28092,
+        "sha256": "d0133e5895f39fe6a95ab08e6e663c0dfd42aed48fd535f4761edf54cd870d79"
+      },
+      "reused": true
+    },
+    {
+      "task_id": "VF_h96_seed3407",
+      "model_or_mode": "VF",
+      "horizon": 96,
+      "seed": 3407,
+      "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h96_s3407_20261021_041109",
+      "config_id": "energy_r3s2_main_PI-EEF_h96_seed3407",
+      "stage3_mode": "joint",
+      "config_sha256": "020dd8db7d03ce67c2486f2bd3464e465d6ce73548ae44d8c7dddce5fccab3ed",
+      "config_file": {
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h96_seed3407.yaml",
+        "bytes": 3020,
+        "sha256": "c71cea776035862bbba3e53e725a46ebd52e81fe7aa77a9e0fc717592e821e3b"
+      },
+      "config_scientific_fields_equal": true,
+      "data_protocol_equal": true,
+      "identity_status": "PASS",
+      "files": [
+        {
+          "path": "artifacts/released/metrics.json",
+          "bytes": 4334,
+          "sha256": "e17d145a907342ad319f39941e452aa9754437e0f116446554bbebacb0b8155c"
+        },
+        {
+          "path": "artifacts/released/data_protocol.json",
+          "bytes": 638,
+          "sha256": "b7409813867d9a1b34933eeb3b20ea757d08a19e23c15ab0532f8c1ac4d8ba9e"
+        },
+        {
+          "path": "artifacts/released/weights_best.pt",
+          "bytes": 2759830,
+          "sha256": "92839777db07f59ae50a8e6f4365618d71ad537623a19a0a25285a15e1aba3ca"
+        },
+        {
+          "path": "artifacts/released/predictions.npz",
+          "bytes": 1280298,
+          "sha256": "1045d1af206fed1c3da67607296ebf0822999c40fc91bc8d87d54595f5343ecf"
+        },
+        {
+          "path": "artifacts/released/preprocessing.npz",
+          "bytes": 4582,
+          "sha256": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f"
+        }
+      ],
+      "fault_directory": "artifacts/released/seed3407",
+      "completed": {
+        "path": "artifacts/released/completed.json",
+        "bytes": 28139,
+        "sha256": "5138f3c5a859a477c2a3e35aac8fc2e161baac93d07cd8be2c77476c6a0cf8cf"
+      },
+      "reused": true
+    }
+  ],
+  "operator_sha_comparison": [
+    {
+      "file": "src/pieef/faults.py",
+      "horizon": "h16",
+      "actual_sha256": "a7c5863af5b9e1984dff6c792eacd912f208e8e52cf3624f250cb0938b7b5956",
+      "l1_sha256": "a7c5863af5b9e1984dff6c792eacd912f208e8e52cf3624f250cb0938b7b5956",
+      "vf_sha256": "a7c5863af5b9e1984dff6c792eacd912f208e8e52cf3624f250cb0938b7b5956",
+      "equal": true
+    },
+    {
+      "file": "src/pieef/revision_data.py",
+      "horizon": "h16",
+      "actual_sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+      "l1_sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+      "vf_sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+      "equal": true
+    },
+    {
+      "file": "scripts/evaluate_revision.py",
+      "horizon": "h16",
+      "actual_sha256": "bd1a32f6ecee55fd823139b2463dddc3f08463383d6b07e98a2052e49dc7500a",
+      "l1_sha256": "bd1a32f6ecee55fd823139b2463dddc3f08463383d6b07e98a2052e49dc7500a",
+      "vf_sha256": "bd1a32f6ecee55fd823139b2463dddc3f08463383d6b07e98a2052e49dc7500a",
+      "equal": true
+    },
+    {
+      "file": "src/pieef/faults.py",
+      "horizon": "h96",
+      "actual_sha256": "a7c5863af5b9e1984dff6c792eacd912f208e8e52cf3624f250cb0938b7b5956",
+      "l1_sha256": "a7c5863af5b9e1984dff6c792eacd912f208e8e52cf3624f250cb0938b7b5956",
+      "vf_sha256": "a7c5863af5b9e1984dff6c792eacd912f208e8e52cf3624f250cb0938b7b5956",
+      "equal": true
+    },
+    {
+      "file": "src/pieef/revision_data.py",
+      "horizon": "h96",
+      "actual_sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+      "l1_sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+      "vf_sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+      "equal": true
+    },
+    {
+      "file": "scripts/evaluate_revision.py",
+      "horizon": "h96",
+      "actual_sha256": "bd1a32f6ecee55fd823139b2463dddc3f08463383d6b07e98a2052e49dc7500a",
+      "l1_sha256": "bd1a32f6ecee55fd823139b2463dddc3f08463383d6b07e98a2052e49dc7500a",
+      "vf_sha256": "bd1a32f6ecee55fd823139b2463dddc3f08463383d6b07e98a2052e49dc7500a",
+      "equal": true
+    }
+  ],
+  "normal_atol_pu": 1e-05,
+  "normal_rtol": 1e-05,
+  "max_concurrent": 3,
+  "reference_protocol": {
+    "path": "artifacts/released/protocol.json",
+    "bytes": 50916,
+    "sha256": "2ad949567e776acb5905092d9b6a3335a329632937e7a97f9f083a676e3f8e81"
+  },
+  "helper": {
+    "path": "artifacts/released/reference_helpers.py",
+    "bytes": 20466,
+    "sha256": "ef37de8d31f1846d5e73d93770c0de124fada0e3f5ba62c54756d63493a9f62d"
+  }
+}

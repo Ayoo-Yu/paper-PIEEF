@@ -1,0 +1,1300 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-10-23T09:57:15.411934+00:00",
+  "scope": "C1 C2 C3 CFD only, plus two predeclared roughness sensitivity cases; frozen VF and model training unchanged",
+  "direction": "meteorological from, north0 clockwise; atan2(-uEast,-vNorth)",
+  "wind_frequency_source_sha256": "f597f4b0d5bacbc58cb2992f61d63ab3674f3b0ad236689a855412db265f4228",
+  "wind_frequency": {
+    "schema_version": 1,
+    "status": "frozen",
+    "frozen_utc": "2026-10-23T09:56:58.556968+00:00",
+    "counting_rule_sha256": "70f8571cffd7ba3debb093c733f189d4bc4449356cca7f679f57d1a47e34cbf2",
+    "dominant_sectors_deg": {
+      "wind_farm_A": [
+        90.0,
+        112.5,
+        337.5,
+        135.0
+      ],
+      "kelmarsh": [
+        240
+      ]
+    },
+    "c1_wind_farm_A_sector_centers_deg": [
+      0.0,
+      22.5,
+      45.0,
+      67.5,
+      90.0,
+      112.5,
+      135.0,
+      157.5,
+      180.0,
+      202.5,
+      225.0,
+      247.5,
+      270.0,
+      292.5,
+      315.0,
+      337.5
+    ],
+    "c1_wind_farm_A_check_directions_deg": [
+      101.25,
+      123.75,
+      348.75,
+      146.25
+    ],
+    "c2_wind_farm_A_wake_directions_deg": [
+      90.0,
+      112.5,
+      337.5,
+      135.0
+    ],
+    "c3_kelmarsh_sector_centers_deg": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150,
+      180,
+      210,
+      240,
+      270,
+      300,
+      330
+    ],
+    "roughness_sensitivity_direction_deg": {
+      "wind_farm_A": 90.0,
+      "kelmarsh": 240
+    },
+    "statistics": {
+      "wind_farm_A": {
+        "site": "wind_farm_A",
+        "sector_width_deg": 22.5,
+        "counts": [
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 0.0,
+            "sector_width_deg": 22.5,
+            "count": 1236,
+            "fraction": 0.04644695802487693,
+            "rank": 9
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 22.5,
+            "sector_width_deg": 22.5,
+            "count": 785,
+            "fraction": 0.029499079328097404,
+            "rank": 14
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 45.0,
+            "sector_width_deg": 22.5,
+            "count": 874,
+            "fraction": 0.032843560933448576,
+            "rank": 13
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 67.5,
+            "sector_width_deg": 22.5,
+            "count": 1773,
+            "fraction": 0.0666265829919958,
+            "rank": 6
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 90.0,
+            "sector_width_deg": 22.5,
+            "count": 4926,
+            "fraction": 0.1851114200894367,
+            "rank": 1
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 112.5,
+            "sector_width_deg": 22.5,
+            "count": 3605,
+            "fraction": 0.13547029423922438,
+            "rank": 2
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 135.0,
+            "sector_width_deg": 22.5,
+            "count": 2148,
+            "fraction": 0.08071849986847544,
+            "rank": 4
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 157.5,
+            "sector_width_deg": 22.5,
+            "count": 1390,
+            "fraction": 0.05223403855548457,
+            "rank": 8
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 180.0,
+            "sector_width_deg": 22.5,
+            "count": 1480,
+            "fraction": 0.055616098605839694,
+            "rank": 7
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 202.5,
+            "sector_width_deg": 22.5,
+            "count": 1118,
+            "fraction": 0.04201270151441133,
+            "rank": 10
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 225.0,
+            "sector_width_deg": 22.5,
+            "count": 941,
+            "fraction": 0.035361316748712936,
+            "rank": 11
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 247.5,
+            "sector_width_deg": 22.5,
+            "count": 604,
+            "fraction": 0.022697380782383224,
+            "rank": 16
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 270.0,
+            "sector_width_deg": 22.5,
+            "count": 610,
+            "fraction": 0.022922851452406898,
+            "rank": 15
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 292.5,
+            "sector_width_deg": 22.5,
+            "count": 887,
+            "fraction": 0.03333208071849987,
+            "rank": 12
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 315.0,
+            "sector_width_deg": 22.5,
+            "count": 1965,
+            "fraction": 0.07384164443275337,
+            "rank": 5
+          },
+          {
+            "site": "wind_farm_A",
+            "sector_center_from_deg": 337.5,
+            "sector_width_deg": 22.5,
+            "count": 2269,
+            "fraction": 0.08526549171395288,
+            "rank": 3
+          }
+        ],
+        "ranked_sectors_deg": [
+          90.0,
+          112.5,
+          337.5,
+          135.0,
+          315.0,
+          67.5,
+          180.0,
+          157.5,
+          0.0,
+          202.5,
+          225.0,
+          292.5,
+          45.0,
+          22.5,
+          270.0,
+          247.5
+        ],
+        "counted_time_rows": 26611,
+        "training_time_rows": 26611,
+        "unavailable_rows": 0,
+        "nonfinite_uv_rows": 0,
+        "undefined_calm_rows": 0,
+        "included_first_time": "2023-01-01 00:00:00+08:00",
+        "included_last_time": "2023-10-05 04:30:00+08:00",
+        "training_first_time": "2023-01-01 00:00:00+08:00",
+        "training_last_time": "2023-10-05 04:30:00+08:00",
+        "first_included_index": 0,
+        "last_included_index": 26610,
+        "row_unit": "one unique valid-time row, not per turbine, not per seed",
+        "power_or_event_filter": "none: no measured power/events used",
+        "window_filter": "none: full training-period time grid, no seq_len trimming",
+        "direction_columns": [
+          "nwp_u10_ms",
+          "nwp_v10_ms"
+        ],
+        "direction_height_m": 10,
+        "full_source_time_rows": 38016,
+        "training_end_index_exclusive": 26611
+      },
+      "kelmarsh": {
+        "site": "kelmarsh",
+        "sector_width_deg": 30,
+        "counts": [
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 0,
+            "sector_width_deg": 30,
+            "count": 1260,
+            "fraction": 0.05122992478145964,
+            "rank": 8
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 30,
+            "sector_width_deg": 30,
+            "count": 1478,
+            "fraction": 0.060093514942061395,
+            "rank": 6
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 60,
+            "sector_width_deg": 30,
+            "count": 1263,
+            "fraction": 0.051351900792844074,
+            "rank": 7
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 90,
+            "sector_width_deg": 30,
+            "count": 974,
+            "fraction": 0.03960154502947753,
+            "rank": 10
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 120,
+            "sector_width_deg": 30,
+            "count": 874,
+            "fraction": 0.03553567798332995,
+            "rank": 12
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 150,
+            "sector_width_deg": 30,
+            "count": 901,
+            "fraction": 0.0366334620857898,
+            "rank": 11
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 180,
+            "sector_width_deg": 30,
+            "count": 1933,
+            "fraction": 0.07859321000203294,
+            "rank": 5
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 210,
+            "sector_width_deg": 30,
+            "count": 3859,
+            "fraction": 0.15690180931083553,
+            "rank": 2
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 240,
+            "sector_width_deg": 30,
+            "count": 4908,
+            "fraction": 0.19955275462492378,
+            "rank": 1
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 270,
+            "sector_width_deg": 30,
+            "count": 3466,
+            "fraction": 0.1409229518194755,
+            "rank": 3
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 300,
+            "sector_width_deg": 30,
+            "count": 2456,
+            "fraction": 0.09985769465338483,
+            "rank": 4
+          },
+          {
+            "site": "kelmarsh",
+            "sector_center_from_deg": 330,
+            "sector_width_deg": 30,
+            "count": 1223,
+            "fraction": 0.04972555397438504,
+            "rank": 9
+          }
+        ],
+        "ranked_sectors_deg": [
+          240,
+          210,
+          270,
+          300,
+          180,
+          30,
+          60,
+          0,
+          330,
+          90,
+          150,
+          120
+        ],
+        "counted_time_rows": 24595,
+        "training_time_rows": 24595,
+        "unavailable_rows": 0,
+        "nonfinite_uv_rows": 0,
+        "undefined_calm_rows": 0,
+        "included_first_time": "2024-01-01 00:00:00+00:00",
+        "included_last_time": "2024-09-13 04:30:00+00:00",
+        "training_first_time": "2024-01-01 00:00:00+00:00",
+        "training_last_time": "2024-09-13 04:30:00+00:00",
+        "first_included_index": 0,
+        "last_included_index": 24594,
+        "row_unit": "one unique valid-time row, not per turbine, not per seed",
+        "power_or_event_filter": "none: no measured power/events used",
+        "window_filter": "none: full training-period time grid, no seq_len trimming",
+        "direction_columns": [
+          "u100_ms",
+          "v100_ms"
+        ],
+        "direction_height_m": 100,
+        "full_source_time_rows": 35136,
+        "training_end_index_exclusive": 24595,
+        "horizon_for_vintage_frequency": 16
+      }
+    },
+    "sources": [
+      {
+        "path": "artifacts/released/base_vf_config.json",
+        "bytes": 3681,
+        "sha256": "1f2a4c07dda8298efad69eaae5608904366644a7b9e764047479703f7f793db8"
+      },
+      {
+        "path": "artifacts/released/energy_r3s2_multifarm_kelmarsh_h16_seed13.yaml",
+        "bytes": 3086,
+        "sha256": "d01be8d06b01687df10c80a990066f51c45d53789cc86afa012e3d187e5b1c11"
+      },
+      {
+        "path": "artifacts/released/scada_ecmwf_15min.csv",
+        "bytes": 34648122,
+        "sha256": "807922ff81d08dd30aa679abd866a0c58357f21d35ab8cf7a76efaa53fd0f705"
+      },
+      {
+        "path": "artifacts/released/scada_15min.csv",
+        "bytes": 30356711,
+        "sha256": "80f616587c257f89e9572672103b0bba0414b9d02b15a67f730faa62b26fc731"
+      },
+      {
+        "path": "artifacts/released/gfs_forecast_vintages.npz",
+        "bytes": 283611,
+        "sha256": "6d89f5a71ffcfad7215164e5916c310f69c1da053010978748193bdac89bfa0c"
+      },
+      {
+        "path": "artifacts/released/forecast_vintages.py",
+        "bytes": 9409,
+        "sha256": "682c9d7f22f1b69b33a3ff61c537515d97247e139678db8d33ccbfc1bd5e8caa"
+      },
+      {
+        "path": "artifacts/released/revision_data.py",
+        "bytes": 18498,
+        "sha256": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df"
+      },
+      {
+        "path": "artifacts/released/data.py",
+        "bytes": 12599,
+        "sha256": "c283675175b79f4f3b3bb7dcc17e75365e9751dcabd25ac7d60c36d928d58653"
+      },
+      {
+        "path": "artifacts/released/第四轮补充实验方案_交接版_20261023.md",
+        "bytes": 26301,
+        "sha256": "f28d22f4501831bdf6697738b70a7f57e7c1db5a2312708534e03069f6fe0cba"
+      },
+      {
+        "path": "artifacts/released/freeze_wind_sectors.py",
+        "bytes": 11219,
+        "sha256": "304c4aa62f352ff7c6b599b72c779f26424d6950674e076301179110eee150ef"
+      }
+    ],
+    "config_data_consistency": [
+      {
+        "site": "wind_farm_A",
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h16_seed13.yaml",
+        "sha256": "e8de9fb32875ccdc987ef8e27b39cd4deb4b3c2d014dd4a0b3765db35306451e",
+        "horizon": 16,
+        "data_definition_equal": true
+      },
+      {
+        "site": "wind_farm_A",
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h16_seed21.yaml",
+        "sha256": "42f3947773722718407a1040507e6749ff558010cd95e838d63a377d4447b2a4",
+        "horizon": 16,
+        "data_definition_equal": true
+      },
+      {
+        "site": "wind_farm_A",
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h16_seed3407.yaml",
+        "sha256": "4833b430d0133ac1822e2512cdc3bf415c0a1edd05ec5606ba8fe9bcd449af64",
+        "horizon": 16,
+        "data_definition_equal": true
+      },
+      {
+        "site": "wind_farm_A",
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h16_seed42.yaml",
+        "sha256": "4a761f0690fc7fbe47c812a8646db8e053ca554df00cfcd2b894b9b804b606e5",
+        "horizon": 16,
+        "data_definition_equal": true
+      },
+      {
+        "site": "wind_farm_A",
+        "path": "artifacts/released/energy_r3s2_main_PI-EEF_h16_seed87.yaml",
+        "sha256": "15e737d9fce81ed532018ade07f682e29543e5fbe08a5569dca37ecbd73705fd",
+        "horizon": 16,
+        "data_definition_equal": true
+      },
+      {
+        "site": "kelmarsh",
+        "path": "artifacts/released/energy_r3s2_multifarm_kelmarsh_h16_seed13.yaml",
+        "sha256": "d01be8d06b01687df10c80a990066f51c45d53789cc86afa012e3d187e5b1c11",
+        "horizon": 16,
+        "data_definition_equal": true
+      },
+      {
+        "site": "kelmarsh",
+        "path": "artifacts/released/energy_r3s2_multifarm_kelmarsh_h16_seed3407.yaml",
+        "sha256": "b46bff00908e2942c24b31682e8417543ce1b084ea2c7840c9c106870d26cd73",
+        "horizon": 16,
+        "data_definition_equal": true
+      },
+      {
+        "site": "kelmarsh",
+        "path": "artifacts/released/energy_r3s2_multifarm_kelmarsh_h16_seed42.yaml",
+        "sha256": "54443c2445454a2057a12e46eceff7f0893dd44613941e936af90c6399502220",
+        "horizon": 16,
+        "data_definition_equal": true
+      },
+      {
+        "site": "kelmarsh",
+        "path": "artifacts/released/energy_r3s2_multifarm_kelmarsh_h1_seed13.yaml",
+        "sha256": "53c50247e49f194b89e3bea0016f8977d4e649afe19e9de09c6efe6e416cef00",
+        "horizon": 1,
+        "data_definition_equal": true
+      },
+      {
+        "site": "kelmarsh",
+        "path": "artifacts/released/energy_r3s2_multifarm_kelmarsh_h1_seed3407.yaml",
+        "sha256": "c9058b5b22124203b3b81b6a611f5d9819d4da6713f58588d48a222deb26d8de",
+        "horizon": 1,
+        "data_definition_equal": true
+      },
+      {
+        "site": "kelmarsh",
+        "path": "artifacts/released/energy_r3s2_multifarm_kelmarsh_h1_seed42.yaml",
+        "sha256": "ff9243c5e28b62f810f21ed30dca8385bd0edc4d138767ddd1ea81a1493e2275",
+        "horizon": 1,
+        "data_definition_equal": true
+      },
+      {
+        "site": "kelmarsh",
+        "path": "artifacts/released/energy_r3s2_multifarm_kelmarsh_h4_seed13.yaml",
+        "sha256": "c0689ce1c9723a4705ab1a5a031f8359cb8469927187c0988739f372a6cbc576",
+        "horizon": 4,
+        "data_definition_equal": true
+      },
+      {
+        "site": "kelmarsh",
+        "path": "artifacts/released/energy_r3s2_multifarm_kelmarsh_h4_seed3407.yaml",
+        "sha256": "d9dcb29142402724fec8a811a8166f1346467f6a7e4c8800ece46f542f09a3ad",
+        "horizon": 4,
+        "data_definition_equal": true
+      },
+      {
+        "site": "kelmarsh",
+        "path": "artifacts/released/energy_r3s2_multifarm_kelmarsh_h4_seed42.yaml",
+        "sha256": "7c251dcf02153da19d75ba492482580a518c332eebd719db8874d9cc52d1abbd",
+        "horizon": 4,
+        "data_definition_equal": true
+      }
+    ],
+    "scope": "CFD direction selection only; no training or test performance inspected",
+    "immutable": "do not edit after use by CFD settings freeze; later audit goes in another file"
+  },
+  "image": {
+    "tag": "energy-round4:2212-preserve-v1",
+    "base_tag": "energy-cfd-base:2212-20261023",
+    "preserving_run_sha256": "d350074e2e4d1547a5ab01019118014d4bd729c5ea0bfe994ca7206009146d2b",
+    "operational_change": "Skip final cleanup only. Preserve all written checkpoints, mesh intermediates and partitioned fields. No equation/numerical/physical change.",
+    "checkpoint_policy": "writeInterval500, purgeWrite0, final writeNow; retain every written file, not every unsaved iteration",
+    "python_patches": [
+      {
+        "path": "base/solver/validateInput.py",
+        "sha256": "3dc1fab322c9c8a9bd3abb7cea874223596555c908326248d530798e44b5c897"
+      },
+      {
+        "path": "base/solver/makeInput.py",
+        "sha256": "13e3b5fdcef4d000dba0583d9c901ec7cb16b3ab34adb02dc845df7af8f927d7"
+      },
+      {
+        "path": "base/solver/post.py",
+        "sha256": "87c2c6a5399daa4d37d7066f2722e569338c72ae7f1645c3ee1f964d26e57751"
+      }
+    ]
+  },
+  "turbulence": "neutral steady incompressible kEpsilon RANS, d=0, no explicit canopy drag",
+  "roughness": {
+    "wind_farm_A": {
+      "baseline_m": 0.3,
+      "sensitivity_m": 1.5
+    },
+    "kelmarsh": {
+      "baseline_m": 0.05,
+      "sensitivity_m": 0.1
+    },
+    "status": "unmeasured uniform effective aerodynamic assumptions; WorldCover/DTU report archived; no test-score selection",
+    "sensitivity_scope": "one highest training-frequency sector per site, identical geometry/numerics otherwise"
+  },
+  "quality_gates": {
+    "SIMPLE_initial_residual_all_fields_lt": 0.0001,
+    "native_convergence_message": true,
+    "native_normal_End": true,
+    "basic_and_extended_Mesh_OK": true,
+    "all_final_U_p_k_epsilon_nut_finite": true,
+    "positive_k_epsilon_nut": true,
+    "outside_dem_bottom_nodes": 0,
+    "rotor_and_reference_support_valid": true,
+    "pure_terrain_source_strictly_zero": true,
+    "native_continuity_final_sum_local_max": 0.001,
+    "native_continuity_final_abs_global_max": 1e-06,
+    "tail_actuator_reference_wind_relative_span_20_steps_max": 0.01,
+    "quality_is_not_grid_independence_or_site_validation": true
+  },
+  "speedup_definition": "horizontal magnitude at individual hub / analytical inlet horizontal speed at same AGL; retain vertical U separately",
+  "sampling_agl_m": {
+    "wind_farm_A": [
+      40,
+      80,
+      85,
+      100,
+      120
+    ],
+    "kelmarsh": [
+      40,
+      68.5,
+      78.5,
+      100,
+      120
+    ]
+  },
+  "reference_speed_mps": 8.0,
+  "reference_height_m": {
+    "wind_farm_A": 85.0,
+    "kelmarsh": 78.5
+  },
+  "mesh_target_m": {
+    "near": 30.0,
+    "far": 150.0
+  },
+  "domain": {
+    "kelmarsh": {
+      "site": "kelmarsh",
+      "created_utc": "2026-10-23T09:50:25.141971+00:00",
+      "status": "freeze_ready_inputs_only_no_CFD_run",
+      "source_turbines": "artifacts/released/turbines.csv",
+      "source_turbines_sha256": "f70d2bec7a4475b44a8205fba2d824619e50bce65dd273704317ce59b649fc9f",
+      "turbine_count": 6,
+      "terrain_relative_path": "inputs/dem/kelmarsh/terrain.tif",
+      "terrain_sha256": "55c43797fd4044a970403b6dc22acdfd5d168996b70f680df497c3b40d67893b",
+      "terrain_bytes": 980006,
+      "source_tiles": [
+        {
+          "tile": "N52W002",
+          "sha256": "421f11080a0398d1cbe93b6eb8b9bd476409040e12c8e24a24fcffd6f874de55"
+        },
+        {
+          "tile": "N52W001",
+          "sha256": "e58112d5b86e632219dca08d51258aa31cd9f50b110887115a6d06e11332fa3a"
+        }
+      ],
+      "product": "Copernicus GLO-30 DSM",
+      "vertical_datum": "EGM2008",
+      "horizontal_crs": "EPSG:4326",
+      "crop_method": "native pixel-aligned crop from original COG(s), no resampling/no filling",
+      "width": 637,
+      "height": 583,
+      "dtype": "float32",
+      "pixel_size_degrees": [
+        0.00041666666666666664,
+        0.0002777777777777778
+      ],
+      "bounds_W_S_E_N": [
+        -1.0756249999999998,
+        52.32041666666667,
+        -0.8102083333333332,
+        52.48236111111111
+      ],
+      "domain_center_lon": -0.9429166666666665,
+      "domain_center_lat": 52.40138888888889,
+      "local_bounds_m": [
+        -9003.31966753559,
+        9003.31966753559,
+        -9003.700310246884,
+        9003.700310246884
+      ],
+      "domain_side_m": 12000.0,
+      "all_angle_radial_requirement_m": 8485.28137423857,
+      "minimum_all_angle_boundary_buffer_m": 518.0382932970206,
+      "nodata_count": 0,
+      "nonfinite_count": 0,
+      "full_rotated_domain_coverage": true,
+      "outside_DEM_domain_points": 0,
+      "rotated_corner_checks": [
+        {
+          "angle_deg": 0,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 30,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 60,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 90,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 120,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 150,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 180,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 210,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 240,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 270,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 300,
+          "all_four_domain_corners_supported": true
+        },
+        {
+          "angle_deg": 330,
+          "all_four_domain_corners_supported": true
+        }
+      ],
+      "dem_mean_elevation_m": 132.69991325106972,
+      "dem_min_elevation_m": 71.45523071289062,
+      "dem_max_elevation_m": 213.267822265625,
+      "source_elevation_comparison": "Diagnostic only: source vertical datum is not confirmed; no elevation shift applied",
+      "geometry_csv_sha256": "64b9fd15141b8b2ec2e324feb4bd9e96b3bcd03d0da3c9fce0db6abbae0a03d4"
+    }
+  },
+  "preserve_policy": "No final cleanup; writeInterval500 purgeWrite0 finalWriteNow. Every actually written native/checkpoint file retained, not unsaved iterations.",
+  "kelmarsh_hub_correction": "T3 and T6 68.5m, all other turbines78.5m, source static CSV verified",
+  "case_count": 38,
+  "formal_case_count": 36,
+  "case_queue": [
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a090p00-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 90.0,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a090p00-z0p3-ct0-v1",
+      "input_sha256": "c3e4bccfdc36d94f17197f6064bd7d5fc81c51b1f802a39f771d459a8a65da5a",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a000p00-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 0.0,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a000p00-z0p3-ct0-v1",
+      "input_sha256": "abc317ba926c855dc4e95dc51bcb7159652db3ba6dc8db98620c4dd7cff42aec",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a022p50-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 22.5,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a022p50-z0p3-ct0-v1",
+      "input_sha256": "9138619ba268f0615fa095992206bff6a8a49cdec1282cc69bba24dfc7b4ee37",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a045p00-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 45.0,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a045p00-z0p3-ct0-v1",
+      "input_sha256": "8911c756683654463c25ed2e6b755646afb4aff6d92a8ed19b9abc6d8202293a",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a067p50-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 67.5,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a067p50-z0p3-ct0-v1",
+      "input_sha256": "2f6111133e4b8883605b1e6f60dc5b43646b1d4cc6f31bde0cfa8305b844b45a",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a112p50-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 112.5,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a112p50-z0p3-ct0-v1",
+      "input_sha256": "335efcb7066791b78e3d41a5b6dd520105c0b18340d6f4cf4cc88c2763f5bb58",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a135p00-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 135.0,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a135p00-z0p3-ct0-v1",
+      "input_sha256": "62adee59a492f9be0e218dfca59f6d3a271fb1bde65b66988b217b234a4ba474",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a157p50-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 157.5,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a157p50-z0p3-ct0-v1",
+      "input_sha256": "a77d577485b9980a194f19eccbe965979fb3f32cbf9bbe0a52765c7b3f6e52a3",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a180p00-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 180.0,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a180p00-z0p3-ct0-v1",
+      "input_sha256": "3ea8d8cc45e25fc929d7fa58505e150ccafb71583927be58862bd7af50a3aff3",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a202p50-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 202.5,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a202p50-z0p3-ct0-v1",
+      "input_sha256": "101a154c9b6dcd174a0b2a10e4bd97aa009bef0dedadf7b6272b60d3734865ba",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a225p00-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 225.0,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a225p00-z0p3-ct0-v1",
+      "input_sha256": "66b183b243bfc38c622c1689ec3174b9432d293eaf4269ccafdb9a7e1902cfd4",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a247p50-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 247.5,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a247p50-z0p3-ct0-v1",
+      "input_sha256": "075ec2c26a4a026e4d5d5183f45687ca6c3af487a919ea1cb3ad9ca9545b172f",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a270p00-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 270.0,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a270p00-z0p3-ct0-v1",
+      "input_sha256": "267e7af5e9474e9a62c5ee7f198f835066839364d4084d9bc1334dfee653f058",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a292p50-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 292.5,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a292p50-z0p3-ct0-v1",
+      "input_sha256": "31156a8d9e4b69ad88d946cae7e5711e2338fe94193336400864e18955440a9f",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a315p00-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 315.0,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a315p00-z0p3-ct0-v1",
+      "input_sha256": "215663e67138f685c116ba697c6f89a62b062fb1a3a21525179b441c8cd5c567",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-sector-a337p50-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 337.5,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-sector-a337p50-z0p3-ct0-v1",
+      "input_sha256": "d8402d34a7c532ea70a2e52f3db5edf201b6b2f6cce4066773803ed18e73915e",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-intersector_check-a101p25-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 101.25,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "intersector_check",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-intersector_check-a101p25-z0p3-ct0-v1",
+      "input_sha256": "4e7e2c9cb4543ab17a72ae500382bbb90291811901bcd1c357fdc1823aaeddd3",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-intersector_check-a123p75-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 123.75,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "intersector_check",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-intersector_check-a123p75-z0p3-ct0-v1",
+      "input_sha256": "c62124ffe8dac83d7d3e04fff045fb0e0a9d94d7bb684073f8937152ee7c8158",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-intersector_check-a348p75-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 348.75,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "intersector_check",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-intersector_check-a348p75-z0p3-ct0-v1",
+      "input_sha256": "26f4e9dff4bf5c71dca7256cad73fc64822fd1b284451a893fd7d5c1a3204edb",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-intersector_check-a146p25-z0p3-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 146.25,
+      "ct": 0.0,
+      "z0_m": 0.3,
+      "kind": "intersector_check",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-intersector_check-a146p25-z0p3-ct0-v1",
+      "input_sha256": "2f12e472a715e79c519e1bf5c9801b43c99d294c9ebb60e196b851c91f64f31b",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a240p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 240,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a240p00-z0p05-ct0-v1",
+      "input_sha256": "9188f1080680b172aa2bba2d5ea7ff21aad8a44969a804621060b441f35c442d",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a000p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 0.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a000p00-z0p05-ct0-v1",
+      "input_sha256": "1b706f4bccc66c5b27bf8b56eca7d7219ec6ad4bf8f97276818917087b619bb8",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a030p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 30.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a030p00-z0p05-ct0-v1",
+      "input_sha256": "a7914a402d358b7753792f9f51c7d5370cb4d97e8523fcdf9b3ecb3dfea2c2c2",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a060p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 60.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a060p00-z0p05-ct0-v1",
+      "input_sha256": "785fe55bf766922213f09b66b64f8fe92375b4ff30ff59587266cb233b8c8978",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a090p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 90.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a090p00-z0p05-ct0-v1",
+      "input_sha256": "1198d139549c7e2d5596c3570298f86d432f008378279fba7ece7f3c35fc6ea2",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a120p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 120.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a120p00-z0p05-ct0-v1",
+      "input_sha256": "f70a5a1ab35102af3c2e655b7a2cdf8108178d53162134ec12c956ac063f1e67",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a150p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 150.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a150p00-z0p05-ct0-v1",
+      "input_sha256": "06f72b8099e2654e2ec162a5f2b0f7180fba9eff46cd9ace50b15a87089b19c4",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a180p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 180.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a180p00-z0p05-ct0-v1",
+      "input_sha256": "b968ebbc87a780d094a57cef00cabf1e5fb8b990b5465a576a70b41dbc920a2d",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a210p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 210.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a210p00-z0p05-ct0-v1",
+      "input_sha256": "5b4dab860b722ec2400257e26272835355542503959e2e54ebdd4e96bfd86709",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a270p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 270.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a270p00-z0p05-ct0-v1",
+      "input_sha256": "7053e93f2fcdaa076ed57dc2ae4ae24aea8126174828f5b834f84ebcd10a5f4b",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a300p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 300.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a300p00-z0p05-ct0-v1",
+      "input_sha256": "332abd28f368a6b0ac765ea6c7c3c38ffe19afb7fc511eb72181e45f1ee08a54",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-sector-a330p00-z0p05-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 330.0,
+      "ct": 0.0,
+      "z0_m": 0.05,
+      "kind": "sector",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-sector-a330p00-z0p05-ct0-v1",
+      "input_sha256": "35932fb21485376c9e12181ba93443f8fb08ed1f90e7d20012547c8e6769ae73",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-wake_pair-a090p00-z0p3-ct0p8-v1",
+      "group": "C2",
+      "site": "wind_farm_A",
+      "angle_deg": 90.0,
+      "ct": 0.8,
+      "z0_m": 0.3,
+      "kind": "wake_pair",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-wake_pair-a090p00-z0p3-ct0p8-v1",
+      "input_sha256": "876bb021d82ea8b193af112ae9e18492936700d9faed7c1e81ee3197ba966d96",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-wake_pair-a112p50-z0p3-ct0p8-v1",
+      "group": "C2",
+      "site": "wind_farm_A",
+      "angle_deg": 112.5,
+      "ct": 0.8,
+      "z0_m": 0.3,
+      "kind": "wake_pair",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-wake_pair-a112p50-z0p3-ct0p8-v1",
+      "input_sha256": "d75e3fe3742c1955484c6e05f67e63f67bd177b593b85fcc31969389be6f0c23",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-wake_pair-a337p50-z0p3-ct0p8-v1",
+      "group": "C2",
+      "site": "wind_farm_A",
+      "angle_deg": 337.5,
+      "ct": 0.8,
+      "z0_m": 0.3,
+      "kind": "wake_pair",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-wake_pair-a337p50-z0p3-ct0p8-v1",
+      "input_sha256": "598b89e88c55037c69a1a602667a4feaf76b8fde40110fc7e251fab2bb9104e0",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-wake_pair-a135p00-z0p3-ct0p8-v1",
+      "group": "C2",
+      "site": "wind_farm_A",
+      "angle_deg": 135.0,
+      "ct": 0.8,
+      "z0_m": 0.3,
+      "kind": "wake_pair",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-wake_pair-a135p00-z0p3-ct0p8-v1",
+      "input_sha256": "a33a1bd72107881904cf329bc1dd984c67f768ec50b0ee8b5403ecaa7baa5141",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-wind_farm_A-roughness_sensitivity-a090p00-z1p5-ct0-v1",
+      "group": "C1",
+      "site": "wind_farm_A",
+      "angle_deg": 90.0,
+      "ct": 0.0,
+      "z0_m": 1.5,
+      "kind": "roughness_sensitivity",
+      "bundle": "artifacts/released/energy-r4-wind_farm_A-roughness_sensitivity-a090p00-z1p5-ct0-v1",
+      "input_sha256": "9f4f125fb6d04c67b3e80cbe61dff044a49ba4723d325a5cbab2f8874aa7a90f",
+      "owner": "release_host",
+      "cpu_cores": 8,
+      "memory_gib": 10,
+      "state": "frozen_not_launched"
+    },
+    {
+      "run_id": "energy-r4-kelmarsh-roughness_sensitivity-a240p00-z0p1-ct0-v1",
+      "group": "C3",
+      "site": "kelmarsh",
+      "angle_deg": 240,
+      "ct": 0.0,
+      "z0_m": 0.1,
+      "kind": "roughness_sensitivity",
+      "bundle": "artifacts/released/energy-r4-kelmarsh-roughness_sensitivity-a240p00-z0p1-ct0-v1",
+      "input_sha256": "52ac9e1f8426298cfb12c1f7c6cc46e8f760610072d31d1c24cee5fe8176cd49",
+      "owner": "local",
+      "cpu_cores": 8,
+      "memory_gib": 8,
+      "state": "frozen_not_launched"
+    }
+  ]
+}

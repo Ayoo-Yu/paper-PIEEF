@@ -1,0 +1,5 @@
+Category,Criterion
+Low-power operation,Wind speed exceeds 5 m/s and valid measured power is below 10 kW.
+Frozen wind-speed readings,At least five consecutive wind-speed readings are identical.
+Missing or invalid data,"Observations are missing or non-finite, wind speed is negative, or measured power is at or below −0.02 MW."
+Statistical power anomaly,"For wind speeds of [equation: figures/table_equations/table_2_p1_r5_c2_e1.wmf] m/s, measured power deviates by more than three standard deviations from the turbine-specific mean within its 1 m/s wind-speed bin. The mean and standard deviation are calculated from training data."

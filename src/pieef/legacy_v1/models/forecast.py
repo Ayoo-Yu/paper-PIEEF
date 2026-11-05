@@ -1,0 +1,44 @@
+from __future__ import annotations
+
+import torch
+import torch.nn as nn
+
+
+class ForecastHead(nn.Module):
+    def __init__(
+        self, d_model: int, policy: str = "legacy", nwp_dim: int = 12,
+    ) -> None:
+        super().__init__()
+        if policy not in ("legacy", "target_nwp_physics_mlp"):
+            raise ValueError("forecast_head_policy must be legacy or target_nwp_physics_mlp")
+        self.policy = policy
+        if policy == "legacy":
+            # Keep the original module name and sole RNG-consuming initialization.
+            self.head = nn.Linear(d_model + 1, 1)
+        else:
+            if d_model != 128 or nwp_dim != 12:
+                raise ValueError("F4 is fixed at graph128 and target NWP12; widths are not candidates")
+            self.nwp_embedding = nn.Sequential(nn.Linear(12, 16), nn.GELU())
+            self.head = nn.Sequential(nn.Linear(146, 64), nn.GELU(), nn.Linear(64, 1))
+
+    def forward(
+        self, feat_graph: torch.Tensor, v_cal: torch.Tensor,
+        *, x_nwp_target: torch.Tensor | None = None, p_phys: torch.Tensor | None = None,
+    ) -> torch.Tensor:
+        if self.policy == "legacy":
+            feat_final = torch.cat([feat_graph, v_cal], dim=-1)
+            return self.head(feat_final).squeeze(-1)
+        if feat_graph.ndim != 3 or feat_graph.shape[-1] != 128:
+            raise ValueError("F4 graph features must have shape [batch, turbine, 128]")
+        prefix = feat_graph.shape[:2]
+        if v_cal.shape != (*prefix, 1):
+            raise ValueError("F4 v_cal must have shape [batch, turbine, 1]")
+        if x_nwp_target is None or x_nwp_target.shape != (*prefix, 12):
+            raise ValueError("F4 target NWP must have shape [batch, turbine, 12]")
+        if p_phys is None or p_phys.shape != (*prefix, 1):
+            raise ValueError("F4 P_phys must have shape [batch, turbine, 1]")
+        # Use exactly the train-standardized target NWP already supplied to DCN.
+        # P_phys comes from its calibrated weather/physical curve, never a target label.
+        embedded_nwp = self.nwp_embedding(x_nwp_target)
+        feat_final = torch.cat([feat_graph, v_cal, embedded_nwp, p_phys], dim=-1)
+        return self.head(feat_final).squeeze(-1)

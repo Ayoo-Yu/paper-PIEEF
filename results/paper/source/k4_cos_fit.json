@@ -1,0 +1,1880 @@
+{
+  "status": "completed",
+  "bootstrap": {
+    "block": "UTC calendar day jointly across all six turbines",
+    "n_days": 257,
+    "replicates": 1000,
+    "seed": 2026,
+    "method": "multinomial day weights, percentile 95% interval; re-estimate P_ref per replicate; original eligible speed-bin support retained",
+    "minimum_reference_count": 30,
+    "minimum_fit_bin_count": 200
+  },
+  "reference_curves": [
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 265,
+      "reference_power_mw": 0.13519300530650322,
+      "eligible": true,
+      "n_ratio_records": 2194
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 386,
+      "reference_power_mw": 0.19853369066968535,
+      "eligible": true,
+      "n_ratio_records": 2664
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 411,
+      "reference_power_mw": 0.28284141469401075,
+      "eligible": true,
+      "n_ratio_records": 2753
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 530,
+      "reference_power_mw": 0.3793717834441245,
+      "eligible": true,
+      "n_ratio_records": 2954
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 608,
+      "reference_power_mw": 0.49426512753797003,
+      "eligible": true,
+      "n_ratio_records": 2839
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 693,
+      "reference_power_mw": 0.6393469909101213,
+      "eligible": true,
+      "n_ratio_records": 2667
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 714,
+      "reference_power_mw": 0.7828461835670507,
+      "eligible": true,
+      "n_ratio_records": 2421
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 636,
+      "reference_power_mw": 0.9584090326632275,
+      "eligible": true,
+      "n_ratio_records": 2031
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 494,
+      "reference_power_mw": 1.1470729901828114,
+      "eligible": true,
+      "n_ratio_records": 1615
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 404,
+      "reference_power_mw": 1.3448121825158914,
+      "eligible": true,
+      "n_ratio_records": 1256
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 364,
+      "reference_power_mw": 1.54506938548455,
+      "eligible": true,
+      "n_ratio_records": 1105
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 293,
+      "reference_power_mw": 1.715676313037424,
+      "eligible": true,
+      "n_ratio_records": 890
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 251,
+      "reference_power_mw": 1.8441322367934736,
+      "eligible": true,
+      "n_ratio_records": 707
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 1,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 183,
+      "reference_power_mw": 1.940626766051019,
+      "eligible": true,
+      "n_ratio_records": 566
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 285,
+      "reference_power_mw": 0.13143030376931292,
+      "eligible": true,
+      "n_ratio_records": 2081
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 318,
+      "reference_power_mw": 0.1962491792719412,
+      "eligible": true,
+      "n_ratio_records": 2364
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 377,
+      "reference_power_mw": 0.2713533530376585,
+      "eligible": true,
+      "n_ratio_records": 2595
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 496,
+      "reference_power_mw": 0.369953822390734,
+      "eligible": true,
+      "n_ratio_records": 2766
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 596,
+      "reference_power_mw": 0.48883630112127907,
+      "eligible": true,
+      "n_ratio_records": 2774
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 735,
+      "reference_power_mw": 0.61796075236053,
+      "eligible": true,
+      "n_ratio_records": 2744
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 762,
+      "reference_power_mw": 0.7695063029288034,
+      "eligible": true,
+      "n_ratio_records": 2587
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 710,
+      "reference_power_mw": 0.9352749903074649,
+      "eligible": true,
+      "n_ratio_records": 2443
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 590,
+      "reference_power_mw": 1.1238063979267847,
+      "eligible": true,
+      "n_ratio_records": 1946
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 528,
+      "reference_power_mw": 1.322182502865946,
+      "eligible": true,
+      "n_ratio_records": 1550
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 403,
+      "reference_power_mw": 1.5265205986871886,
+      "eligible": true,
+      "n_ratio_records": 1300
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 310,
+      "reference_power_mw": 1.7164075561895222,
+      "eligible": true,
+      "n_ratio_records": 993
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 228,
+      "reference_power_mw": 1.8552503980856763,
+      "eligible": true,
+      "n_ratio_records": 773
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 2,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 224,
+      "reference_power_mw": 1.9466680143578625,
+      "eligible": true,
+      "n_ratio_records": 687
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 395,
+      "reference_power_mw": 0.1411443555135482,
+      "eligible": true,
+      "n_ratio_records": 2716
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 393,
+      "reference_power_mw": 0.21077766135972628,
+      "eligible": true,
+      "n_ratio_records": 2876
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 458,
+      "reference_power_mw": 0.30122601564317325,
+      "eligible": true,
+      "n_ratio_records": 3017
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 537,
+      "reference_power_mw": 0.3984879604119785,
+      "eligible": true,
+      "n_ratio_records": 3055
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 595,
+      "reference_power_mw": 0.5178752463986002,
+      "eligible": true,
+      "n_ratio_records": 2730
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 691,
+      "reference_power_mw": 0.6543556846945997,
+      "eligible": true,
+      "n_ratio_records": 2537
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 643,
+      "reference_power_mw": 0.8106227589655413,
+      "eligible": true,
+      "n_ratio_records": 2215
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 516,
+      "reference_power_mw": 0.9848738640265773,
+      "eligible": true,
+      "n_ratio_records": 1764
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 433,
+      "reference_power_mw": 1.185352945170804,
+      "eligible": true,
+      "n_ratio_records": 1441
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 394,
+      "reference_power_mw": 1.3792917862660627,
+      "eligible": true,
+      "n_ratio_records": 1207
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 293,
+      "reference_power_mw": 1.5728364465283446,
+      "eligible": true,
+      "n_ratio_records": 903
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 234,
+      "reference_power_mw": 1.7478006825257812,
+      "eligible": true,
+      "n_ratio_records": 781
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 210,
+      "reference_power_mw": 1.8740841627895268,
+      "eligible": true,
+      "n_ratio_records": 609
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 3,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 131,
+      "reference_power_mw": 1.9415979018932101,
+      "eligible": true,
+      "n_ratio_records": 486
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 302,
+      "reference_power_mw": 0.14526558918653407,
+      "eligible": true,
+      "n_ratio_records": 2187
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 349,
+      "reference_power_mw": 0.21819673247108137,
+      "eligible": true,
+      "n_ratio_records": 2593
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 427,
+      "reference_power_mw": 0.3001256374235965,
+      "eligible": true,
+      "n_ratio_records": 2803
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 429,
+      "reference_power_mw": 0.40491518182774855,
+      "eligible": true,
+      "n_ratio_records": 2709
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 562,
+      "reference_power_mw": 0.5281182409879199,
+      "eligible": true,
+      "n_ratio_records": 2489
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 628,
+      "reference_power_mw": 0.6690843821812416,
+      "eligible": true,
+      "n_ratio_records": 2376
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 661,
+      "reference_power_mw": 0.8278454073007887,
+      "eligible": true,
+      "n_ratio_records": 2249
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 574,
+      "reference_power_mw": 1.006105830413763,
+      "eligible": true,
+      "n_ratio_records": 1819
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 414,
+      "reference_power_mw": 1.1962879926872114,
+      "eligible": true,
+      "n_ratio_records": 1394
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 391,
+      "reference_power_mw": 1.3849761118042756,
+      "eligible": true,
+      "n_ratio_records": 1181
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 305,
+      "reference_power_mw": 1.5803385677519313,
+      "eligible": true,
+      "n_ratio_records": 907
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 227,
+      "reference_power_mw": 1.7491437624241115,
+      "eligible": true,
+      "n_ratio_records": 706
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 187,
+      "reference_power_mw": 1.8642878162790353,
+      "eligible": true,
+      "n_ratio_records": 592
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 4,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 144,
+      "reference_power_mw": 1.9479525790350098,
+      "eligible": true,
+      "n_ratio_records": 482
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 356,
+      "reference_power_mw": 0.1495017464199828,
+      "eligible": true,
+      "n_ratio_records": 2451
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 362,
+      "reference_power_mw": 0.2128965661252273,
+      "eligible": true,
+      "n_ratio_records": 2689
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 430,
+      "reference_power_mw": 0.3018413987728059,
+      "eligible": true,
+      "n_ratio_records": 2755
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 487,
+      "reference_power_mw": 0.39895666054927975,
+      "eligible": true,
+      "n_ratio_records": 2751
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 597,
+      "reference_power_mw": 0.5172719637459573,
+      "eligible": true,
+      "n_ratio_records": 2840
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 635,
+      "reference_power_mw": 0.6546273822957953,
+      "eligible": true,
+      "n_ratio_records": 2451
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 620,
+      "reference_power_mw": 0.8089049954236989,
+      "eligible": true,
+      "n_ratio_records": 2184
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 538,
+      "reference_power_mw": 0.9859986879662063,
+      "eligible": true,
+      "n_ratio_records": 1775
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 420,
+      "reference_power_mw": 1.1647963230311829,
+      "eligible": true,
+      "n_ratio_records": 1466
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 342,
+      "reference_power_mw": 1.3587300432733922,
+      "eligible": true,
+      "n_ratio_records": 1142
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 296,
+      "reference_power_mw": 1.5505455056878292,
+      "eligible": true,
+      "n_ratio_records": 960
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 229,
+      "reference_power_mw": 1.7246320144630847,
+      "eligible": true,
+      "n_ratio_records": 752
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 189,
+      "reference_power_mw": 1.850570156820411,
+      "eligible": true,
+      "n_ratio_records": 557
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 5,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 136,
+      "reference_power_mw": 1.9359657626042808,
+      "eligible": true,
+      "n_ratio_records": 459
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 396,
+      "reference_power_mw": 0.13632776630606783,
+      "eligible": true,
+      "n_ratio_records": 2593
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 433,
+      "reference_power_mw": 0.2059405320346644,
+      "eligible": true,
+      "n_ratio_records": 2925
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 500,
+      "reference_power_mw": 0.28150261372489027,
+      "eligible": true,
+      "n_ratio_records": 2949
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 507,
+      "reference_power_mw": 0.3821598415462114,
+      "eligible": true,
+      "n_ratio_records": 2764
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 527,
+      "reference_power_mw": 0.5064830920758562,
+      "eligible": true,
+      "n_ratio_records": 2388
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 528,
+      "reference_power_mw": 0.6353803208545333,
+      "eligible": true,
+      "n_ratio_records": 2024
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 491,
+      "reference_power_mw": 0.795406846373287,
+      "eligible": true,
+      "n_ratio_records": 1760
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 434,
+      "reference_power_mw": 0.965979584654263,
+      "eligible": true,
+      "n_ratio_records": 1384
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 384,
+      "reference_power_mw": 1.1481502662946028,
+      "eligible": true,
+      "n_ratio_records": 1207
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 308,
+      "reference_power_mw": 1.3335774629932555,
+      "eligible": true,
+      "n_ratio_records": 975
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 211,
+      "reference_power_mw": 1.5203998678630732,
+      "eligible": true,
+      "n_ratio_records": 676
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 175,
+      "reference_power_mw": 1.6975506270300156,
+      "eligible": true,
+      "n_ratio_records": 603
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 129,
+      "reference_power_mw": 1.8451263721567244,
+      "eligible": true,
+      "n_ratio_records": 474
+    },
+    {
+      "reference_speed": "own_nacelle",
+      "turbine": 6,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 118,
+      "reference_power_mw": 1.918809808876387,
+      "eligible": true,
+      "n_ratio_records": 405
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 332,
+      "reference_power_mw": 0.18579593689041182,
+      "eligible": true,
+      "n_ratio_records": 2380
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 398,
+      "reference_power_mw": 0.26322506053913985,
+      "eligible": true,
+      "n_ratio_records": 2730
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 504,
+      "reference_power_mw": 0.33546082260416293,
+      "eligible": true,
+      "n_ratio_records": 2943
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 555,
+      "reference_power_mw": 0.4621632993676232,
+      "eligible": true,
+      "n_ratio_records": 3042
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 600,
+      "reference_power_mw": 0.569708326575082,
+      "eligible": true,
+      "n_ratio_records": 2783
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 667,
+      "reference_power_mw": 0.7090773895537695,
+      "eligible": true,
+      "n_ratio_records": 2641
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 700,
+      "reference_power_mw": 0.828345842194154,
+      "eligible": true,
+      "n_ratio_records": 2426
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 532,
+      "reference_power_mw": 0.9921293452736754,
+      "eligible": true,
+      "n_ratio_records": 1906
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 459,
+      "reference_power_mw": 1.1694771506093349,
+      "eligible": true,
+      "n_ratio_records": 1507
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 414,
+      "reference_power_mw": 1.3576988705399704,
+      "eligible": true,
+      "n_ratio_records": 1277
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 315,
+      "reference_power_mw": 1.5414256310615346,
+      "eligible": true,
+      "n_ratio_records": 946
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 273,
+      "reference_power_mw": 1.7121185735089786,
+      "eligible": true,
+      "n_ratio_records": 779
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 191,
+      "reference_power_mw": 1.8128364795208978,
+      "eligible": true,
+      "n_ratio_records": 598
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 1,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 176,
+      "reference_power_mw": 1.9080369910489552,
+      "eligible": true,
+      "n_ratio_records": 517
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 371,
+      "reference_power_mw": 0.2439984141120004,
+      "eligible": true,
+      "n_ratio_records": 2367
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 449,
+      "reference_power_mw": 0.31233497851472064,
+      "eligible": true,
+      "n_ratio_records": 2765
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 518,
+      "reference_power_mw": 0.4003814582333921,
+      "eligible": true,
+      "n_ratio_records": 3011
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 624,
+      "reference_power_mw": 0.5375565159792677,
+      "eligible": true,
+      "n_ratio_records": 3119
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 689,
+      "reference_power_mw": 0.6493283572243267,
+      "eligible": true,
+      "n_ratio_records": 2826
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 722,
+      "reference_power_mw": 0.8041752587404022,
+      "eligible": true,
+      "n_ratio_records": 2581
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 710,
+      "reference_power_mw": 0.9366795517310328,
+      "eligible": true,
+      "n_ratio_records": 2395
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 554,
+      "reference_power_mw": 1.1333881262393537,
+      "eligible": true,
+      "n_ratio_records": 1867
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 455,
+      "reference_power_mw": 1.2881327606294835,
+      "eligible": true,
+      "n_ratio_records": 1461
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 420,
+      "reference_power_mw": 1.4845541861496596,
+      "eligible": true,
+      "n_ratio_records": 1240
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 305,
+      "reference_power_mw": 1.6612033720074169,
+      "eligible": true,
+      "n_ratio_records": 944
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 243,
+      "reference_power_mw": 1.7980638211550042,
+      "eligible": true,
+      "n_ratio_records": 763
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 174,
+      "reference_power_mw": 1.8923906532047607,
+      "eligible": true,
+      "n_ratio_records": 598
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 2,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 158,
+      "reference_power_mw": 1.980254974612651,
+      "eligible": true,
+      "n_ratio_records": 507
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 355,
+      "reference_power_mw": 0.14700218012481603,
+      "eligible": true,
+      "n_ratio_records": 2240
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 388,
+      "reference_power_mw": 0.22104004950425912,
+      "eligible": true,
+      "n_ratio_records": 2701
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 486,
+      "reference_power_mw": 0.33126634911036523,
+      "eligible": true,
+      "n_ratio_records": 2910
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 499,
+      "reference_power_mw": 0.41140430464003896,
+      "eligible": true,
+      "n_ratio_records": 2978
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 576,
+      "reference_power_mw": 0.5353109437740314,
+      "eligible": true,
+      "n_ratio_records": 2762
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 642,
+      "reference_power_mw": 0.6591439297556029,
+      "eligible": true,
+      "n_ratio_records": 2668
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 614,
+      "reference_power_mw": 0.7788564704472443,
+      "eligible": true,
+      "n_ratio_records": 2501
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 489,
+      "reference_power_mw": 0.9111068097009153,
+      "eligible": true,
+      "n_ratio_records": 1974
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 449,
+      "reference_power_mw": 1.0954531583780185,
+      "eligible": true,
+      "n_ratio_records": 1557
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 402,
+      "reference_power_mw": 1.2320515595704056,
+      "eligible": true,
+      "n_ratio_records": 1278
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 312,
+      "reference_power_mw": 1.409044760312521,
+      "eligible": true,
+      "n_ratio_records": 1010
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 261,
+      "reference_power_mw": 1.5652422916104796,
+      "eligible": true,
+      "n_ratio_records": 802
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 202,
+      "reference_power_mw": 1.7190296486459904,
+      "eligible": true,
+      "n_ratio_records": 643
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 3,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 159,
+      "reference_power_mw": 1.7796147704648806,
+      "eligible": true,
+      "n_ratio_records": 527
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 320,
+      "reference_power_mw": 0.18228474839699443,
+      "eligible": true,
+      "n_ratio_records": 2158
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 377,
+      "reference_power_mw": 0.24323309331046877,
+      "eligible": true,
+      "n_ratio_records": 2574
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 417,
+      "reference_power_mw": 0.3555064073519896,
+      "eligible": true,
+      "n_ratio_records": 2787
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 534,
+      "reference_power_mw": 0.44784646610258655,
+      "eligible": true,
+      "n_ratio_records": 2925
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 542,
+      "reference_power_mw": 0.5991919859250672,
+      "eligible": true,
+      "n_ratio_records": 2657
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 613,
+      "reference_power_mw": 0.7170180238664795,
+      "eligible": true,
+      "n_ratio_records": 2403
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 602,
+      "reference_power_mw": 0.8575689128288387,
+      "eligible": true,
+      "n_ratio_records": 2204
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 558,
+      "reference_power_mw": 1.024169872355759,
+      "eligible": true,
+      "n_ratio_records": 1829
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 453,
+      "reference_power_mw": 1.2001433915912627,
+      "eligible": true,
+      "n_ratio_records": 1417
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 347,
+      "reference_power_mw": 1.3623326277556915,
+      "eligible": true,
+      "n_ratio_records": 1133
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 265,
+      "reference_power_mw": 1.4989792255031145,
+      "eligible": true,
+      "n_ratio_records": 865
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 248,
+      "reference_power_mw": 1.6795402367476915,
+      "eligible": true,
+      "n_ratio_records": 668
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 153,
+      "reference_power_mw": 1.8011875980637324,
+      "eligible": true,
+      "n_ratio_records": 538
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 4,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 140,
+      "reference_power_mw": 1.8989933724878898,
+      "eligible": true,
+      "n_ratio_records": 472
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 298,
+      "reference_power_mw": 0.1265614077845573,
+      "eligible": true,
+      "n_ratio_records": 2091
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 352,
+      "reference_power_mw": 0.18083503998225872,
+      "eligible": true,
+      "n_ratio_records": 2556
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 428,
+      "reference_power_mw": 0.27093630776235766,
+      "eligible": true,
+      "n_ratio_records": 2726
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 537,
+      "reference_power_mw": 0.37920113340799577,
+      "eligible": true,
+      "n_ratio_records": 2919
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 511,
+      "reference_power_mw": 0.500540545168589,
+      "eligible": true,
+      "n_ratio_records": 2678
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 604,
+      "reference_power_mw": 0.6215676334276753,
+      "eligible": true,
+      "n_ratio_records": 2627
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 643,
+      "reference_power_mw": 0.7730890691108008,
+      "eligible": true,
+      "n_ratio_records": 2535
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 543,
+      "reference_power_mw": 0.9199697516757868,
+      "eligible": true,
+      "n_ratio_records": 2064
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 464,
+      "reference_power_mw": 1.0902494001157004,
+      "eligible": true,
+      "n_ratio_records": 1629
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 384,
+      "reference_power_mw": 1.2443426826480937,
+      "eligible": true,
+      "n_ratio_records": 1312
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 317,
+      "reference_power_mw": 1.4090202099486966,
+      "eligible": true,
+      "n_ratio_records": 1019
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 250,
+      "reference_power_mw": 1.555489104546912,
+      "eligible": true,
+      "n_ratio_records": 847
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 180,
+      "reference_power_mw": 1.710233618419348,
+      "eligible": true,
+      "n_ratio_records": 636
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 5,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 179,
+      "reference_power_mw": 1.8482852260545872,
+      "eligible": true,
+      "n_ratio_records": 571
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 4.0,
+      "wind_upper_ms": 4.5,
+      "n_aligned_records": 295,
+      "reference_power_mw": 0.10703022153967155,
+      "eligible": true,
+      "n_ratio_records": 2044
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 4.5,
+      "wind_upper_ms": 5.0,
+      "n_aligned_records": 392,
+      "reference_power_mw": 0.1478828263438451,
+      "eligible": true,
+      "n_ratio_records": 2418
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 5.0,
+      "wind_upper_ms": 5.5,
+      "n_aligned_records": 380,
+      "reference_power_mw": 0.21140352292030526,
+      "eligible": true,
+      "n_ratio_records": 2533
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 5.5,
+      "wind_upper_ms": 6.0,
+      "n_aligned_records": 440,
+      "reference_power_mw": 0.2833370187586318,
+      "eligible": true,
+      "n_ratio_records": 2744
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 6.0,
+      "wind_upper_ms": 6.5,
+      "n_aligned_records": 511,
+      "reference_power_mw": 0.39795039461180887,
+      "eligible": true,
+      "n_ratio_records": 2605
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 6.5,
+      "wind_upper_ms": 7.0,
+      "n_aligned_records": 508,
+      "reference_power_mw": 0.5000067060352557,
+      "eligible": true,
+      "n_ratio_records": 2489
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 7.0,
+      "wind_upper_ms": 7.5,
+      "n_aligned_records": 583,
+      "reference_power_mw": 0.6334748692904277,
+      "eligible": true,
+      "n_ratio_records": 2354
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 7.5,
+      "wind_upper_ms": 8.0,
+      "n_aligned_records": 538,
+      "reference_power_mw": 0.7736294534087758,
+      "eligible": true,
+      "n_ratio_records": 1952
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 8.0,
+      "wind_upper_ms": 8.5,
+      "n_aligned_records": 409,
+      "reference_power_mw": 0.9642221642326628,
+      "eligible": true,
+      "n_ratio_records": 1483
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 8.5,
+      "wind_upper_ms": 9.0,
+      "n_aligned_records": 353,
+      "reference_power_mw": 1.084138286775911,
+      "eligible": true,
+      "n_ratio_records": 1204
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 9.0,
+      "wind_upper_ms": 9.5,
+      "n_aligned_records": 292,
+      "reference_power_mw": 1.2943960818668723,
+      "eligible": true,
+      "n_ratio_records": 974
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 9.5,
+      "wind_upper_ms": 10.0,
+      "n_aligned_records": 237,
+      "reference_power_mw": 1.4468235744922928,
+      "eligible": true,
+      "n_ratio_records": 782
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 10.0,
+      "wind_upper_ms": 10.5,
+      "n_aligned_records": 177,
+      "reference_power_mw": 1.5981670041714287,
+      "eligible": true,
+      "n_ratio_records": 621
+    },
+    {
+      "reference_speed": "other_five_median",
+      "turbine": 6,
+      "wind_lower_ms": 10.5,
+      "wind_upper_ms": 11.0,
+      "n_aligned_records": 150,
+      "reference_power_mw": 1.7792250050340634,
+      "eligible": true,
+      "n_ratio_records": 510
+    }
+  ],
+  "fits": [
+    {
+      "reference_speed": "own_nacelle",
+      "p": 0.08982587018602849,
+      "ci95_lower": -0.142810571756435,
+      "ci95_upper": 0.3405290572484858,
+      "eligible_two_degree_bins": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "eligible_bin_centers_deg": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23
+      ],
+      "eligible_bin_counts": [
+        35095,
+        32835,
+        27769,
+        21113,
+        13588,
+        8358,
+        5748,
+        3980,
+        2398,
+        1325,
+        676,
+        330
+      ],
+      "n_valid_bootstrap": 1000,
+      "unconstrained_p": true,
+      "least_squares": "unweighted bin means vs cos(bin midpoint)^p; same original n>=200 eligible bins in bootstrap",
+      "filter_counts": [
+        {
+          "turbine": 1,
+          "n_normal_training": 36486,
+          "n_speed_range_with_phi": 26662,
+          "n_missing_reference_speed": 0
+        },
+        {
+          "turbine": 2,
+          "n_normal_training": 36578,
+          "n_speed_range_with_phi": 27603,
+          "n_missing_reference_speed": 0
+        },
+        {
+          "turbine": 3,
+          "n_normal_training": 36518,
+          "n_speed_range_with_phi": 26337,
+          "n_missing_reference_speed": 0
+        },
+        {
+          "turbine": 4,
+          "n_normal_training": 33413,
+          "n_speed_range_with_phi": 24487,
+          "n_missing_reference_speed": 0
+        },
+        {
+          "turbine": 5,
+          "n_normal_training": 34861,
+          "n_speed_range_with_phi": 25232,
+          "n_missing_reference_speed": 0
+        },
+        {
+          "turbine": 6,
+          "n_normal_training": 33157,
+          "n_speed_range_with_phi": 23127,
+          "n_missing_reference_speed": 0
+        }
+      ]
+    },
+    {
+      "reference_speed": "other_five_median",
+      "p": 7.940713528954946,
+      "ci95_lower": 7.223002535019536,
+      "ci95_upper": 8.586911237593506,
+      "eligible_two_degree_bins": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "eligible_bin_centers_deg": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25
+      ],
+      "eligible_bin_counts": [
+        34866,
+        32659,
+        27711,
+        21064,
+        13784,
+        8574,
+        6051,
+        4325,
+        2738,
+        1560,
+        847,
+        446,
+        201
+      ],
+      "n_valid_bootstrap": 1000,
+      "unconstrained_p": true,
+      "least_squares": "unweighted bin means vs cos(bin midpoint)^p; same original n>=200 eligible bins in bootstrap",
+      "filter_counts": [
+        {
+          "turbine": 1,
+          "n_normal_training": 36486,
+          "n_speed_range_with_phi": 26475,
+          "n_missing_reference_speed": 745
+        },
+        {
+          "turbine": 2,
+          "n_normal_training": 36578,
+          "n_speed_range_with_phi": 26444,
+          "n_missing_reference_speed": 805
+        },
+        {
+          "turbine": 3,
+          "n_normal_training": 36518,
+          "n_speed_range_with_phi": 26551,
+          "n_missing_reference_speed": 767
+        },
+        {
+          "turbine": 4,
+          "n_normal_training": 33413,
+          "n_speed_range_with_phi": 24630,
+          "n_missing_reference_speed": 358
+        },
+        {
+          "turbine": 5,
+          "n_normal_training": 34861,
+          "n_speed_range_with_phi": 26210,
+          "n_missing_reference_speed": 668
+        },
+        {
+          "turbine": 6,
+          "n_normal_training": 33157,
+          "n_speed_range_with_phi": 24713,
+          "n_missing_reference_speed": 385
+        }
+      ]
+    }
+  ],
+  "wind_range_ms": "[4,11)",
+  "reference_speed_alternative": "median of all other five nacelle wind speeds; missing if any of five nonfinite",
+  "normal_filter": "raw valid, no low-power candidate, no frozen wind, no overlapping Stop/derating; NO 3-sigma filter"
+}

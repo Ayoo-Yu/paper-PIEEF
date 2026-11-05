@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "scope": "E4 graph-neighbour-only ablation",
+  "author_request_approved": true,
+  "plan_sha256": "627fea93ee7e8f1f7e0fca950b1e13d72065f3c47e62612678eda21d29816c13",
+  "n_trainings": 5,
+  "seeds": [
+    13,
+    21,
+    42,
+    87,
+    3407
+  ],
+  "horizon": 16,
+  "forecast_minutes": 240,
+  "variant": "self_only",
+  "control": "energy-r3-vf-F2F3F6",
+  "tasks": [
+    {
+      "seed": 13,
+      "owner": "local4070",
+      "config": "configs/seed13.json",
+      "config_sha256": "a6a2ca84ba21af04d6408122e4f2bb0e66dec15e7344845e42f9d6185286c097",
+      "control_source": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s13_20261021_011452",
+      "control_files_sha256": {
+        "metrics.json": "80939ab7032515a53a0b266e85a642e8496bbc8b4afac22825ea4c54f73a5a8e",
+        "weights_best.pt": "5d72a821f0b51a8ec0f2b3cb57c58d15f97c2517e49099d69809b7d8336069ae",
+        "preprocessing.npz": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f",
+        "predictions.npz": "c11691fd93a5f893b7be817b07e19bb8979024e31d2c3b99c3512999b015a90b"
+      }
+    },
+    {
+      "seed": 21,
+      "owner": "release_host",
+      "config": "configs/seed21.json",
+      "config_sha256": "f6e052bb45e56145cf0de8612768f4ea2287bb8b075a1dc2aac4d316322d2fe5",
+      "control_source": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s21_20261021_013908",
+      "control_files_sha256": {
+        "metrics.json": "b9b2c4691ad1a41bc2cd7ea23b8dcb99f0aab79735d5db5ef30e3e32748460cf",
+        "weights_best.pt": "4389cd00cc28ff4abc434f3d9f7578b8f1a636f1bf3fba66c3d8d714fc06764b",
+        "preprocessing.npz": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f",
+        "predictions.npz": "b03ad5430d4f2a7c1416d7d7eb5ae4866869dde3b1217b8eb9212da849b9eb0c"
+      }
+    },
+    {
+      "seed": 42,
+      "owner": "release_host",
+      "config": "configs/seed42.json",
+      "config_sha256": "d8609f6d1fc9d38f172a04dd4fa90dc1ac7bd998ee169e6c146ad072df7a67d3",
+      "control_source": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s42_20261021_015419",
+      "control_files_sha256": {
+        "metrics.json": "69f409698db88e0a458ce8bc65d6b766c350c8ccf1ef1792a2b277c11c33a729",
+        "weights_best.pt": "58a1435393edd950a53c3c0c7323567061880778000c5361a0275dadcb1b5a53",
+        "preprocessing.npz": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f",
+        "predictions.npz": "8e879ab9055cca1d719e06dcf3c5b36a259d13c8e47ff44e9414f0629dc8ea15"
+      }
+    },
+    {
+      "seed": 87,
+      "owner": "release_host",
+      "config": "configs/seed87.json",
+      "config_sha256": "ef16d3c6c2e7f3185f68dbf9fc618c378561613836ae63653bb4d60852f48fc3",
+      "control_source": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s87_20261021_021233",
+      "control_files_sha256": {
+        "metrics.json": "78f9450230f7fcd49b63a223c1f37851a0643abf0cba100ad7f9509721d43183",
+        "weights_best.pt": "a21020b28bd611d97a1bad5e953d6bb7ff8875ef0f26395849aac74ea9592155",
+        "preprocessing.npz": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f",
+        "predictions.npz": "5f59c1073375250d8f80dfc905eb0964c51b270709c7a167668d3bc50a279630"
+      }
+    },
+    {
+      "seed": 3407,
+      "owner": "release_host",
+      "config": "configs/seed3407.json",
+      "config_sha256": "3cbf631bc43b8d595aa2c12eed26ae4f54154242283ad2902d81ac28ed469521",
+      "control_source": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s3407_20261021_023047",
+      "control_files_sha256": {
+        "metrics.json": "3da969a7e1e3b0470cb31c57bcbf7dc92d37f9a14ea44aafa2799b56089dd4a7",
+        "weights_best.pt": "eacf9f5cbfbebd98756de4ac2b30c3a275cc5983d9f7d90a281cac2870740be6",
+        "preprocessing.npz": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f",
+        "predictions.npz": "faf76641beac68f3925021673ff8982244568a0c6f8ec2a9f6c619124e72cf88"
+      }
+    }
+  ],
+  "unchanged": [
+    "raw data",
+    "split",
+    "targets",
+    "batch16",
+    "FP32",
+    "budget5/5/20",
+    "learning rates",
+    "early stopping",
+    "validation NRMSE checkpoint",
+    "F2 training corruption"
+  ],
+  "faults": {
+    "kernel": "frozen E1 v2 and production revision_fault_jobs.scada_scenarios(structured_39)",
+    "count": 39,
+    "fault_seed": 2026,
+    "inference_only_after_successful_training": true,
+    "do_not_change_NWP_or_targets": true
+  },
+  "statistics": {
+    "unit": "five matched training seeds",
+    "test": "two-sided paired t",
+    "P1": {
+      "metrics": [
+        "NRMSE",
+        "NMAE"
+      ],
+      "scope": "normal test",
+      "BH_family_size": 2
+    },
+    "P2": {
+      "metrics": [
+        "NRMSE",
+        "NMAE"
+      ],
+      "scope": "within-seed equal-weight mean over 39 faults",
+      "BH_family_size": 2
+    },
+    "P3": {
+      "metric": "NMAE",
+      "scope": "within-seed equal-weight mean over 8 missing 24h scenarios",
+      "secondary": true
+    },
+    "report_sample_sd_ddof": 1,
+    "report_control_better_seed_count": true,
+    "decision_conditions_from_plan": true
+  },
+  "no_search_or_seed_selection": true,
+  "no_Word_edits": true,
+  "all_failed_and_unfavourable_results_retained": true,
+  "frozen_data_sha256": {
+    "scada_ecmwf_15min.csv": "807922ff81d08dd30aa679abd866a0c58357f21d35ab8cf7a76efaa53fd0f705",
+    "turbines.csv": "bf3f5bd0d59f394b64b1c3eef97d47089b014e8ff4af7c10fb963f49228e90e7",
+    "manufacturer_curve.csv": "5c6f0ad4c7787875223bf50c266806c6c90d62ed7801b61c253631c77e8eb041"
+  },
+  "official_e1_copy_sha256": {
+    "e1_aggregate.py": "e48cc3bdc258d95b885bea410f7d49d26c78d7030f2ab16743aa85ce3c5ae798",
+    "e1_common.py": "bc666ed5de824b4dec0b4090bfae7fbf73bf5d02228a7ef55724a39461c08929",
+    "e1_compare.py": "6fd30ade3c15061a7c34618f4caaa94315ae58984221cff1174874b760714175",
+    "e1_huber_legacy_contract.json": "80b732c24f3a21e435da5511ac132a91e9770f4f9ad6634588365b9847926b5d",
+    "e1_legacy_schema.py": "6e56efc6d5d80f03346ea96fffc4044b5a3f5bfa0eb4d4f5e2f94dc190b2955d",
+    "e1_run.py": "28fc890e49ca75c1144bc9eae0068cafd95a621af58d5dcf1c3a625d3bde9357",
+    "e2_cost.py": "f91ab672b8f00f0ef57b0be91d17f7ae0d76b309a9a7b3246cbe9ec796ff2212",
+    "e2_table.py": "2891b0b7ff27be1576519b6ffbefebad7a34f06ee30a6075c6e471585609b704"
+  }
+}

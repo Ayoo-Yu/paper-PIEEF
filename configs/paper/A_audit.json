@@ -1,0 +1,1562 @@
+{
+  "status": "PASS",
+  "scope": [
+    "prior-off",
+    "bound-off",
+    "derivative-regularizer-off",
+    "calibration-off",
+    "manufacturer-curve",
+    "cutout-off",
+    "density-0_terrain-1"
+  ],
+  "seeds": [
+    13,
+    21,
+    42,
+    87,
+    3407
+  ],
+  "forecast_horizon_steps": 16,
+  "rated_power_mw": 2.0,
+  "environment": {
+    "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.16.0"
+  },
+  "source_sha256": {
+    "artifacts/released/analyze_physics_regimes.py": "7ce78790884de8cc66ad27ad6339967f6525250f82bea80b80b57e7343aff06e",
+    "artifacts/released/brief_r2_common.md": "6649aed4dcb732d3ba8ac691cd9d551d7a4a259176d6bd1a4f0634f775346640",
+    "artifacts/released/m_user.txt": "df47ca06e9dc3b98ca23677bffb9322e7a543ab5277a255bc5d616771440b625",
+    "artifacts/released/s_user.txt": "8dcdfffdb137086507f6e4f8b124fa58b85b672e4813ca13a7421755de81638f",
+    "artifacts/released/make_fig13_events_all_models.py": "fbf725239c925424386ab60d9c86ca3d8b0abd45ab2a310d936193e38f2bdd8e",
+    "artifacts/released/table_ablation.csv": "613d6509549f3cf38cdb93026c14c93ba7ec032f31b37a97c8e55ddd043fa6e9",
+    "artifacts/released/input_provenance.json": "83be58ab5f3b872228db50242b22a3f351c40448d5abaa922f9810889599a0b1",
+    "artifacts/released/round3_stage2_metrics.json": "b3353b8e9c71e0281bdaf2806476436fe60c5601a4419e8d6f776f24c0380495",
+    "artifacts/released/core.py": "8f6c3c6ff81aa5436f6093412adf823493d0844bbcb3ac3f82df9bb4499e66cd",
+    "artifacts/released/predictions.npz": "77745645494af81e3c43fdd1a5c22bcdc485135a113d6b717e4fc507258832b9",
+    "artifacts/released/metrics.json": "6946464da02ba6323f5c059d88710e95bd2c90f4eca41925e9292c45bc1d2cf6",
+    "artifacts/released/preprocessing.npz": "59dcd15a817326ff060915a35edc5c84473e5684e48339268d970531e8ed086f",
+    "artifacts/released/revision_data.py": "bba2f3886b3a9cca646b5263d8632ac99432c9126c18c00c21ea5e74fd9981df",
+    "artifacts/released/data.py": "c283675175b79f4f3b3bb7dcc17e75365e9751dcabd25ac7d60c36d928d58653",
+    "artifacts/released/model_factory.py": "8cdab98ea89f6ce60c90500380876e6cba78b3f32afd7a416bcd066dae010c73",
+    "artifacts/released/e2e.py": "2f81a286c7b2aa45735eab805ca61a7b9e6dbc60331c7fdbbede3074fa1a44b9",
+    "artifacts/released/scada_ecmwf_15min.csv": "807922ff81d08dd30aa679abd866a0c58357f21d35ab8cf7a76efaa53fd0f705",
+    "artifacts/released/turbines.csv": "bf3f5bd0d59f394b64b1c3eef97d47089b014e8ff4af7c10fb963f49228e90e7"
+  },
+  "gate": {
+    "status": "PASS",
+    "run_metric_checks": 80,
+    "mean_metric_checks": 16,
+    "tolerance_percentage_points": 0.01,
+    "max_absolute_run_delta_pp": 7.105427357601002e-15,
+    "max_absolute_mean_delta_pp": 2.6600375235830143e-09,
+    "identity_checks": [
+      {
+        "variant": "PI-EEF",
+        "seed": 13,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "PI-EEF",
+        "seed": 21,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "PI-EEF",
+        "seed": 42,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "PI-EEF",
+        "seed": 87,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "PI-EEF",
+        "seed": 3407,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "prior-off",
+        "seed": 13,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "prior-off",
+        "seed": 21,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "prior-off",
+        "seed": 42,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "prior-off",
+        "seed": 87,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "prior-off",
+        "seed": 3407,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "bound-off",
+        "seed": 13,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "bound-off",
+        "seed": 21,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "bound-off",
+        "seed": 42,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "bound-off",
+        "seed": 87,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "bound-off",
+        "seed": 3407,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "seed": 13,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "seed": 21,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "seed": 42,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "seed": 87,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "seed": 3407,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "calibration-off",
+        "seed": 13,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "calibration-off",
+        "seed": 21,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "calibration-off",
+        "seed": 42,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "calibration-off",
+        "seed": 87,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "calibration-off",
+        "seed": 3407,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "manufacturer-curve",
+        "seed": 13,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "manufacturer-curve",
+        "seed": 21,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "manufacturer-curve",
+        "seed": 42,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "manufacturer-curve",
+        "seed": 87,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "manufacturer-curve",
+        "seed": 3407,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "cutout-off",
+        "seed": 13,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "cutout-off",
+        "seed": 21,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "cutout-off",
+        "seed": 42,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "cutout-off",
+        "seed": 87,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "cutout-off",
+        "seed": 3407,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "seed": 13,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "seed": 21,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "seed": 42,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "seed": 87,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "seed": 3407,
+        "prediction_sha256_matches": true,
+        "array_identity": {
+          "timestamp": true,
+          "origin_timestamp": true,
+          "turbine_ids": true,
+          "target_valid": true,
+          "events": true,
+          "y_true_mw": true
+        },
+        "n_valid_targets": 220401
+      }
+    ],
+    "selected_runs": [
+      {
+        "variant": "PI-EEF",
+        "seed": 13,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[0]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "PI-EEF",
+        "seed": 21,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[1]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "PI-EEF",
+        "seed": 42,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[3]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "PI-EEF",
+        "seed": 87,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[4]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "PI-EEF",
+        "seed": 3407,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[2]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "prior-off",
+        "seed": 13,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[50]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "prior-off",
+        "seed": 21,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[51]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "prior-off",
+        "seed": 42,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[52]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "prior-off",
+        "seed": 87,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[53]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "prior-off",
+        "seed": 3407,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[54]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "bound-off",
+        "seed": 13,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[25]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "bound-off",
+        "seed": 21,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[26]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "bound-off",
+        "seed": 42,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[27]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "bound-off",
+        "seed": 87,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[28]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "bound-off",
+        "seed": 3407,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[29]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "seed": 13,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[35]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "seed": 21,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[36]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "seed": 42,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[37]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "seed": 87,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[38]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "seed": 3407,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[39]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "calibration-off",
+        "seed": 13,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[30]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "calibration-off",
+        "seed": 21,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[31]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "calibration-off",
+        "seed": 42,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[32]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "calibration-off",
+        "seed": 87,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[33]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "calibration-off",
+        "seed": 3407,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[34]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "manufacturer-curve",
+        "seed": 13,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[45]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "manufacturer-curve",
+        "seed": 21,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[46]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "manufacturer-curve",
+        "seed": 42,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[47]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "manufacturer-curve",
+        "seed": 87,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[48]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "manufacturer-curve",
+        "seed": 3407,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[49]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "cutout-off",
+        "seed": 13,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[65]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "cutout-off",
+        "seed": 21,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[66]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "cutout-off",
+        "seed": 42,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[67]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "cutout-off",
+        "seed": 87,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[68]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "cutout-off",
+        "seed": 3407,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[69]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "seed": 13,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[75]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "seed": 21,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[76]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "seed": 42,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[77]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "seed": 87,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[78]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "seed": 3407,
+        "source_file": "artifacts/released/predictions.npz",
+        "source_locator": "$.sources[79]",
+        "source_provenance": "artifacts/released/input_provenance.json",
+        "config_source_file": "artifacts/released/metrics.json",
+        "seq_len": 96
+      }
+    ]
+  },
+  "alignment": {
+    "raw_rows": 38016,
+    "test_times": 7604,
+    "test_start": "2023-11-13 19:00:00+08:00",
+    "test_end": "2024-01-31 23:45:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "test_first_raw_index": 30412,
+    "test_last_raw_index": 38015,
+    "target_power_exact_identity": true,
+    "valid_mask_exact_identity": true,
+    "turbine_order_exact_identity": true,
+    "target_origin_offset_steps": 16,
+    "seq_len": 96,
+    "history_window": "origin-95 through origin inclusive; 15 min steps",
+    "input_power_validity": "isfinite(raw_power_mw) & (raw_power_mw > -0.02)",
+    "input_filling": "forward only; missingness evaluated BEFORE filling",
+    "nwp_speed_column": "nwp_wind_speed100_ms",
+    "nwp_feature_zero_based_index": 7,
+    "nwp_alignment": "raw prepared NWP target row; same field broadcast to all turbines",
+    "wind_speed_min_ms": 0.02659270167350769,
+    "wind_speed_max_ms": 10.94050121307373,
+    "raw_source_file": "artifacts/released/scada_ecmwf_15min.csv",
+    "project_source_file": "artifacts/released/revision_data.py",
+    "project_source_locators": [
+      "ForecastWindows.__getitem__:46-56",
+      "_power_events:66",
+      "build_revision_bundle:119-166",
+      "NWP semantic and target alignment:181-247",
+      "models/e2e.py:188-205 raw_nwp and _raw_target_wind"
+    ]
+  },
+  "regime_definitions": [
+    {
+      "regime": "nwp_wind_speed",
+      "bin": "lt3",
+      "label": "<3 m/s",
+      "definition": "target-time nwp_wind_speed100_ms; lower inclusive, upper exclusive",
+      "n_targets": 103260,
+      "n_times": 3563,
+      "n_days": 71
+    },
+    {
+      "regime": "nwp_wind_speed",
+      "bin": "3to6",
+      "label": "3–6 m/s",
+      "definition": "target-time nwp_wind_speed100_ms; lower inclusive, upper exclusive",
+      "n_targets": 88352,
+      "n_times": 3048,
+      "n_days": 76
+    },
+    {
+      "regime": "nwp_wind_speed",
+      "bin": "6to9",
+      "label": "6–9 m/s",
+      "definition": "target-time nwp_wind_speed100_ms; lower inclusive, upper exclusive",
+      "n_targets": 26092,
+      "n_times": 900,
+      "n_days": 30
+    },
+    {
+      "regime": "nwp_wind_speed",
+      "bin": "9to12",
+      "label": "9–12 m/s",
+      "definition": "target-time nwp_wind_speed100_ms; lower inclusive, upper exclusive",
+      "n_targets": 2697,
+      "n_times": 93,
+      "n_days": 5
+    },
+    {
+      "regime": "nwp_wind_speed",
+      "bin": "ge12",
+      "label": "≥12 m/s",
+      "definition": "target-time nwp_wind_speed100_ms; lower inclusive, upper exclusive",
+      "n_targets": 0,
+      "n_times": 0,
+      "n_days": 0
+    },
+    {
+      "regime": "measured_power",
+      "bin": "lt005",
+      "label": "<0.05 rated",
+      "definition": "target measured MW / 2 MW; lower inclusive, upper exclusive",
+      "n_targets": 132826,
+      "n_times": 7003,
+      "n_days": 80
+    },
+    {
+      "regime": "measured_power",
+      "bin": "005to03",
+      "label": "0.05–0.3 rated",
+      "definition": "target measured MW / 2 MW; lower inclusive, upper exclusive",
+      "n_targets": 49082,
+      "n_times": 4517,
+      "n_days": 71
+    },
+    {
+      "regime": "measured_power",
+      "bin": "03to07",
+      "label": "0.3–0.7 rated",
+      "definition": "target measured MW / 2 MW; lower inclusive, upper exclusive",
+      "n_targets": 20197,
+      "n_times": 2568,
+      "n_days": 64
+    },
+    {
+      "regime": "measured_power",
+      "bin": "07to095",
+      "label": "0.7–0.95 rated",
+      "definition": "target measured MW / 2 MW; lower inclusive, upper exclusive",
+      "n_targets": 8181,
+      "n_times": 1483,
+      "n_days": 49
+    },
+    {
+      "regime": "measured_power",
+      "bin": "ge095",
+      "label": "≥0.95 rated",
+      "definition": "target measured MW / 2 MW; lower inclusive, upper exclusive",
+      "n_targets": 10115,
+      "n_times": 1051,
+      "n_days": 45
+    },
+    {
+      "regime": "ramp",
+      "bin": "top10",
+      "label": "Top 10% ramps",
+      "definition": "both endpoints valid; abs(P[t]-P[t-4]) >= test q90; retain ties",
+      "n_targets": 22033,
+      "n_times": 2767,
+      "n_days": 64
+    },
+    {
+      "regime": "ramp",
+      "bin": "rest",
+      "label": "Other ramps",
+      "definition": "both endpoints valid; abs(P[t]-P[t-4]) < test q90",
+      "n_targets": 198254,
+      "n_times": 7601,
+      "n_days": 80
+    },
+    {
+      "regime": "history",
+      "bin": "incomplete",
+      "label": "Incomplete history",
+      "definition": "at least one invalid power in 96 raw observations ending at origin inclusive",
+      "n_targets": 10092,
+      "n_times": 5109,
+      "n_days": 70
+    },
+    {
+      "regime": "history",
+      "bin": "complete",
+      "label": "Complete history",
+      "definition": "all 96 raw power observations ending at origin inclusive valid",
+      "n_targets": 210309,
+      "n_times": 7604,
+      "n_days": 80
+    },
+    {
+      "regime": "event",
+      "bin": "normal",
+      "label": "Event-free operation",
+      "definition": "frozen saved events label; candidate status only",
+      "n_targets": 191205,
+      "n_times": 7533,
+      "n_days": 80
+    },
+    {
+      "regime": "event",
+      "bin": "low_power_candidate",
+      "label": "Low-power candidates",
+      "definition": "frozen saved events label; candidate status only",
+      "n_targets": 22578,
+      "n_times": 2474,
+      "n_days": 72
+    },
+    {
+      "regime": "event",
+      "bin": "frozen_wind_candidate",
+      "label": "Frozen wind-speed candidates",
+      "definition": "frozen saved events label; candidate status only",
+      "n_targets": 94,
+      "n_times": 88,
+      "n_days": 7
+    },
+    {
+      "regime": "event",
+      "bin": "power_outlier",
+      "label": "Statistical power anomalies",
+      "definition": "frozen saved events label; candidate status only",
+      "n_targets": 6524,
+      "n_times": 2151,
+      "n_days": 77
+    }
+  ],
+  "regime_cross_checks": {
+    "partitions": {
+      "nwp_wind_speed": "PASS",
+      "measured_power": "PASS",
+      "history": "PASS",
+      "event": "PASS",
+      "ramp": "PASS"
+    },
+    "valid_targets": 220401,
+    "invalid_targets": 115,
+    "ramp_eligible": 220287,
+    "ramp_lag_unavailable_valid_targets": 114,
+    "ramp_q90_mw": 0.4259999990463257,
+    "ramp_quantile_method": "numpy linear q90 over valid test turbine-target cells; FP64 subtraction of model-loader FP32 powers",
+    "ramp_threshold_ties": 5,
+    "ramp_top_share": 0.10001951998983145,
+    "day_blocks": 80,
+    "day_block_lengths_times": {
+      "2023-11-13 00:00:00+08:00": 20,
+      "2023-11-14 00:00:00+08:00": 96,
+      "2023-11-15 00:00:00+08:00": 96,
+      "2023-11-16 00:00:00+08:00": 96,
+      "2023-11-17 00:00:00+08:00": 96,
+      "2023-11-18 00:00:00+08:00": 96,
+      "2023-11-19 00:00:00+08:00": 96,
+      "2023-11-20 00:00:00+08:00": 96,
+      "2023-11-21 00:00:00+08:00": 96,
+      "2023-11-22 00:00:00+08:00": 96,
+      "2023-11-23 00:00:00+08:00": 96,
+      "2023-11-24 00:00:00+08:00": 96,
+      "2023-11-25 00:00:00+08:00": 96,
+      "2023-11-26 00:00:00+08:00": 96,
+      "2023-11-27 00:00:00+08:00": 96,
+      "2023-11-28 00:00:00+08:00": 96,
+      "2023-11-29 00:00:00+08:00": 96,
+      "2023-11-30 00:00:00+08:00": 96,
+      "2023-12-01 00:00:00+08:00": 96,
+      "2023-12-02 00:00:00+08:00": 96,
+      "2023-12-03 00:00:00+08:00": 96,
+      "2023-12-04 00:00:00+08:00": 96,
+      "2023-12-05 00:00:00+08:00": 96,
+      "2023-12-06 00:00:00+08:00": 96,
+      "2023-12-07 00:00:00+08:00": 96,
+      "2023-12-08 00:00:00+08:00": 96,
+      "2023-12-09 00:00:00+08:00": 96,
+      "2023-12-10 00:00:00+08:00": 96,
+      "2023-12-11 00:00:00+08:00": 96,
+      "2023-12-12 00:00:00+08:00": 96,
+      "2023-12-13 00:00:00+08:00": 96,
+      "2023-12-14 00:00:00+08:00": 96,
+      "2023-12-15 00:00:00+08:00": 96,
+      "2023-12-16 00:00:00+08:00": 96,
+      "2023-12-17 00:00:00+08:00": 96,
+      "2023-12-18 00:00:00+08:00": 96,
+      "2023-12-19 00:00:00+08:00": 96,
+      "2023-12-20 00:00:00+08:00": 96,
+      "2023-12-21 00:00:00+08:00": 96,
+      "2023-12-22 00:00:00+08:00": 96,
+      "2023-12-23 00:00:00+08:00": 96,
+      "2023-12-24 00:00:00+08:00": 96,
+      "2023-12-25 00:00:00+08:00": 96,
+      "2023-12-26 00:00:00+08:00": 96,
+      "2023-12-27 00:00:00+08:00": 96,
+      "2023-12-28 00:00:00+08:00": 96,
+      "2023-12-29 00:00:00+08:00": 96,
+      "2023-12-30 00:00:00+08:00": 96,
+      "2023-12-31 00:00:00+08:00": 96,
+      "2024-01-01 00:00:00+08:00": 96,
+      "2024-01-02 00:00:00+08:00": 96,
+      "2024-01-03 00:00:00+08:00": 96,
+      "2024-01-04 00:00:00+08:00": 96,
+      "2024-01-05 00:00:00+08:00": 96,
+      "2024-01-06 00:00:00+08:00": 96,
+      "2024-01-07 00:00:00+08:00": 96,
+      "2024-01-08 00:00:00+08:00": 96,
+      "2024-01-09 00:00:00+08:00": 96,
+      "2024-01-10 00:00:00+08:00": 96,
+      "2024-01-11 00:00:00+08:00": 96,
+      "2024-01-12 00:00:00+08:00": 96,
+      "2024-01-13 00:00:00+08:00": 96,
+      "2024-01-14 00:00:00+08:00": 96,
+      "2024-01-15 00:00:00+08:00": 96,
+      "2024-01-16 00:00:00+08:00": 96,
+      "2024-01-17 00:00:00+08:00": 96,
+      "2024-01-18 00:00:00+08:00": 96,
+      "2024-01-19 00:00:00+08:00": 96,
+      "2024-01-20 00:00:00+08:00": 96,
+      "2024-01-21 00:00:00+08:00": 96,
+      "2024-01-22 00:00:00+08:00": 96,
+      "2024-01-23 00:00:00+08:00": 96,
+      "2024-01-24 00:00:00+08:00": 96,
+      "2024-01-25 00:00:00+08:00": 96,
+      "2024-01-26 00:00:00+08:00": 96,
+      "2024-01-27 00:00:00+08:00": 96,
+      "2024-01-28 00:00:00+08:00": 96,
+      "2024-01-29 00:00:00+08:00": 96,
+      "2024-01-30 00:00:00+08:00": 96,
+      "2024-01-31 00:00:00+08:00": 96
+    },
+    "bootstrap_weight_matrix_sha256": "906724e6c5bb413d67639bfe3df1cc96bac5a8ec090b58a3bd899a391c4e9a1e"
+  },
+  "statistics_protocol": {
+    "comparisons_per_test_family": 252,
+    "seed_test": "two-sided t test of five paired relative changes against zero; df=4",
+    "time_test": "two-sided null-centered paired calendar-day block bootstrap of pooled seed-averaged normalized loss difference, variant minus full",
+    "day_timezone": "Asia/Shanghai",
+    "bootstrap_resamples": 2000,
+    "bootstrap_rng_seed": 2026,
+    "bootstrap_rng": "numpy default_rng PCG64; multinomial day counts; shared draws for all comparisons",
+    "bootstrap_p": "(1 + sum(abs(centered bootstrap mean) >= abs(observed mean))) / (1 + valid resamples)",
+    "bootstrap_centering": "day_loss_sum minus observed_pooled_mean_difference times day_bin_count",
+    "bootstrap_ci": "2.5th and 97.5th percentiles of uncentered pooled bootstrap means; descriptive unadjusted interval",
+    "bootstrap_weighting": "ratio of resampled day sums to resampled target-cell counts, not equal mean of day means",
+    "sparse_rule": "fewer than two occupied days: time p=1 and insufficient_nonempty_days; zero-denominator resamples omitted and counted",
+    "empty_bin_rule": "retain all empty bins; p=1 in both complete BH families; metrics unavailable",
+    "bh": "separate BH corrections for 252 seed tests and 252 time tests, metrics and bins pooled",
+    "relative_effect": "mean of five values 100 * (variant metric / same-seed full metric - 1); positive favors full",
+    "clear_advantage": ">=4 positive seed changes AND time q<0.05 AND mean relative change>=2%",
+    "clear_disadvantage": ">=4 negative seed changes AND time q<0.05 AND mean relative change<=-2%",
+    "seed_q_not_part_of_clear_rule": true,
+    "power_difference_precision": "FP64 after reproducing raw-loader FP32 conversion",
+    "limitations": [
+      "Day bootstrap measures conditional time variability after averaging five fitted seeds; it is not a hierarchical joint seed-time population test.",
+      "2000 resamples gives minimum corrected bootstrap p=1/2001; retain the requested finite resolution.",
+      "Overlapping history/forecast windows can span calendar-day boundaries; within-day dependence is clustered, longer dependence is not fully modeled.",
+      "Regime families overlap; these are conditional accuracy associations, not causal regime interactions.",
+      "No clear effect under these rules is not statistical equivalence."
+    ]
+  },
+  "results": {
+    "per_seed_rows": 1260,
+    "summary_rows": 252,
+    "test_rows": 504,
+    "clear_advantage_comparisons": 9,
+    "clear_disadvantage_comparisons": 20,
+    "clear_advantage_variants": [
+      "prior-off",
+      "derivative-regularizer-off",
+      "density-0_terrain-1"
+    ],
+    "clear_advantage_regime_families": [
+      "measured_power",
+      "ramp"
+    ],
+    "clear_comparison_direction_conflicts": 0,
+    "minimum_time_q": 0.003935532233883058,
+    "minimum_seed_q": 0.31181249075588124,
+    "empty_comparisons": 14
+  },
+  "current_text_checks": {
+    "table4_checks": [
+      {
+        "variant": "VF",
+        "metric": "nrmse",
+        "printed": "19.99 ± 0.37",
+        "expected": "19.99 ± 0.37",
+        "status": "PASS"
+      },
+      {
+        "variant": "VF",
+        "metric": "nmae",
+        "printed": "11.54 ± 0.34",
+        "expected": "11.54 ± 0.34",
+        "status": "PASS"
+      },
+      {
+        "variant": "prior-off",
+        "metric": "nrmse",
+        "printed": "20.02 ± 0.25",
+        "expected": "20.02 ± 0.25",
+        "status": "PASS"
+      },
+      {
+        "variant": "prior-off",
+        "metric": "nrmse_change",
+        "printed": "+0.19%",
+        "expected": "+0.19%",
+        "status": "PASS"
+      },
+      {
+        "variant": "prior-off",
+        "metric": "nmae",
+        "printed": "11.29 ± 0.13",
+        "expected": "11.29 ± 0.13",
+        "status": "PASS"
+      },
+      {
+        "variant": "prior-off",
+        "metric": "nmae_change",
+        "printed": "−2.21%",
+        "expected": "−2.21%",
+        "status": "PASS"
+      },
+      {
+        "variant": "bound-off",
+        "metric": "nrmse",
+        "printed": "19.99 ± 0.28",
+        "expected": "19.99 ± 0.28",
+        "status": "PASS"
+      },
+      {
+        "variant": "bound-off",
+        "metric": "nrmse_change",
+        "printed": "+0.03%",
+        "expected": "+0.03%",
+        "status": "PASS"
+      },
+      {
+        "variant": "bound-off",
+        "metric": "nmae",
+        "printed": "11.42 ± 0.29",
+        "expected": "11.42 ± 0.29",
+        "status": "PASS"
+      },
+      {
+        "variant": "bound-off",
+        "metric": "nmae_change",
+        "printed": "−1.06%",
+        "expected": "−1.06%",
+        "status": "PASS"
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "metric": "nrmse",
+        "printed": "20.06 ± 0.22",
+        "expected": "20.06 ± 0.22",
+        "status": "PASS"
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "metric": "nrmse_change",
+        "printed": "+0.39%",
+        "expected": "+0.39%",
+        "status": "PASS"
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "metric": "nmae",
+        "printed": "11.14 ± 0.05",
+        "expected": "11.14 ± 0.05",
+        "status": "PASS"
+      },
+      {
+        "variant": "derivative-regularizer-off",
+        "metric": "nmae_change",
+        "printed": "−3.50%",
+        "expected": "−3.50%",
+        "status": "PASS"
+      },
+      {
+        "variant": "calibration-off",
+        "metric": "nrmse",
+        "printed": "20.00 ± 0.26",
+        "expected": "20.00 ± 0.26",
+        "status": "PASS"
+      },
+      {
+        "variant": "calibration-off",
+        "metric": "nrmse_change",
+        "printed": "+0.09%",
+        "expected": "+0.09%",
+        "status": "PASS"
+      },
+      {
+        "variant": "calibration-off",
+        "metric": "nmae",
+        "printed": "11.50 ± 0.26",
+        "expected": "11.50 ± 0.26",
+        "status": "PASS"
+      },
+      {
+        "variant": "calibration-off",
+        "metric": "nmae_change",
+        "printed": "−0.33%",
+        "expected": "−0.33%",
+        "status": "PASS"
+      },
+      {
+        "variant": "manufacturer-curve",
+        "metric": "nrmse",
+        "printed": "19.93 ± 0.13",
+        "expected": "19.93 ± 0.13",
+        "status": "PASS"
+      },
+      {
+        "variant": "manufacturer-curve",
+        "metric": "nrmse_change",
+        "printed": "−0.27%",
+        "expected": "−0.27%",
+        "status": "PASS"
+      },
+      {
+        "variant": "manufacturer-curve",
+        "metric": "nmae",
+        "printed": "11.34 ± 0.27",
+        "expected": "11.34 ± 0.27",
+        "status": "PASS"
+      },
+      {
+        "variant": "manufacturer-curve",
+        "metric": "nmae_change",
+        "printed": "−1.72%",
+        "expected": "−1.72%",
+        "status": "PASS"
+      },
+      {
+        "variant": "cutout-off",
+        "metric": "nrmse",
+        "printed": "20.04 ± 0.31",
+        "expected": "20.04 ± 0.31",
+        "status": "PASS"
+      },
+      {
+        "variant": "cutout-off",
+        "metric": "nrmse_change",
+        "printed": "+0.26%",
+        "expected": "+0.26%",
+        "status": "PASS"
+      },
+      {
+        "variant": "cutout-off",
+        "metric": "nmae",
+        "printed": "11.41 ± 0.34",
+        "expected": "11.41 ± 0.34",
+        "status": "PASS"
+      },
+      {
+        "variant": "cutout-off",
+        "metric": "nmae_change",
+        "printed": "−1.13%",
+        "expected": "−1.13%",
+        "status": "PASS"
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "metric": "nrmse",
+        "printed": "19.79 ± 0.15",
+        "expected": "19.79 ± 0.15",
+        "status": "PASS"
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "metric": "nrmse_change",
+        "printed": "−1.00%",
+        "expected": "−1.00%",
+        "status": "PASS"
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "metric": "nmae",
+        "printed": "11.09 ± 0.13",
+        "expected": "11.09 ± 0.13",
+        "status": "PASS"
+      },
+      {
+        "variant": "density-0_terrain-1",
+        "metric": "nmae_change",
+        "printed": "−3.89%",
+        "expected": "−3.89%",
+        "status": "PASS"
+      }
+    ],
+    "mismatches": [],
+    "supplementary_seed_direction": "Current S5 counts seeds favouring the VARIANT; Job A counts seeds favouring FULL. These signs are opposite.",
+    "supplementary_test_scope": "Current S5 tests overall errors; these tests cannot be reused for conditional regimes or for the relative-change t test.",
+    "supplemental_file_read": true,
+    "supplementary_table5_present": true,
+    "regime_values_in_current_exports": false,
+    "new_values": "Regime analysis is new; no existing regime numbers in the exports to overwrite."
+  },
+  "completed_utc": "2026-10-27T22:18:37.542321+00:00",
+  "independent_numeric_review": {
+    "status": "PASS",
+    "method": "Independent reviewer rebuilt raw masks and recomputed all seed rows without importing this analysis implementation; additionally sampled seven cross-family bootstrap comparisons.",
+    "per_seed_metric_rows": 1260,
+    "maximum_metric_delta_pp": 7.11e-14,
+    "maximum_relative_delta_pp": 8.53e-14,
+    "seed_p_values": 252,
+    "maximum_seed_p_delta": 6.66e-16,
+    "bh_families": 2,
+    "bh_q_match": "exact",
+    "independent_bootstrap_cases": 7,
+    "bootstrap_p_match": "exact",
+    "bootstrap_ci_statistic_delta_below": 1e-12,
+    "clear_advantages": 9,
+    "clear_disadvantages": 20,
+    "direction_conflicts": 0
+  }
+}

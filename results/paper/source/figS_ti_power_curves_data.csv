@@ -1,0 +1,45 @@
+panel,record_type,ti_class,wind_center_ms,value,units,n_records,source_locator,aggregation
+a,curve_vertex,high,4.5,0.18299402320952035,MW,4676,turbine=pooled; stratum=high; wind_lower_ms=4; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,4.5,0.15775442730916567,MW,2902,turbine=pooled; stratum=low; wind_lower_ms=4; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,4.5,0.17297521886249947,MW,2554,turbine=pooled; stratum=medium; wind_lower_ms=4; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,high,5.5,0.35428654474220039,MW,4018,turbine=pooled; stratum=high; wind_lower_ms=5; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,5.5,0.3047664249269188,MW,3831,turbine=pooled; stratum=low; wind_lower_ms=5; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,5.5,0.32758070178226723,MW,3314,turbine=pooled; stratum=medium; wind_lower_ms=5; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,high,6.5,0.59641470422448517,MW,3216,turbine=pooled; stratum=high; wind_lower_ms=6; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,6.5,0.52531105599978623,MW,3629,turbine=pooled; stratum=low; wind_lower_ms=6; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,6.5,0.5644401619378443,MW,3392,turbine=pooled; stratum=medium; wind_lower_ms=6; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,high,7.5,0.9068891016220253,MW,2307,turbine=pooled; stratum=high; wind_lower_ms=7; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,7.5,0.83108734845680976,MW,3040,turbine=pooled; stratum=low; wind_lower_ms=7; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,7.5,0.87230274252340267,MW,2894,turbine=pooled; stratum=medium; wind_lower_ms=7; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,high,8.5,1.2584281876987582,MW,1526,turbine=pooled; stratum=high; wind_lower_ms=8; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,8.5,1.2035736784086264,MW,1734,turbine=pooled; stratum=low; wind_lower_ms=8; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,8.5,1.2454789381331355,MW,2136,turbine=pooled; stratum=medium; wind_lower_ms=8; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,high,9.5,1.5800235456158032,MW,779,turbine=pooled; stratum=high; wind_lower_ms=9; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,9.5,1.6435753458451983,MW,1225,turbine=pooled; stratum=low; wind_lower_ms=9; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,9.5,1.6201303381677299,MW,1560,turbine=pooled; stratum=medium; wind_lower_ms=9; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,high,10.5,1.8233342799716037,MW,378,turbine=pooled; stratum=high; wind_lower_ms=10; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,10.5,1.938054340356608,MW,938,turbine=pooled; stratum=low; wind_lower_ms=10; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,10.5,1.884015211183135,MW,947,turbine=pooled; stratum=medium; wind_lower_ms=10; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,high,11.5,1.9517010797604337,MW,246,turbine=pooled; stratum=high; wind_lower_ms=11; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,11.5,2.0241017034573683,MW,448,turbine=pooled; stratum=low; wind_lower_ms=11; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,11.5,2.0020128794909597,MW,598,turbine=pooled; stratum=medium; wind_lower_ms=11; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,high,12.5,2.0058973892403791,MW,178,turbine=pooled; stratum=high; wind_lower_ms=12; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,12.5,2.0467076904785189,MW,151,turbine=pooled; stratum=low; wind_lower_ms=12; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,12.5,2.0372083668819276,MW,341,turbine=pooled; stratum=medium; wind_lower_ms=12; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,high,13.5,2.0275814257920439,MW,127,turbine=pooled; stratum=high; wind_lower_ms=13; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,13.5,2.0506859103732662,MW,61,turbine=pooled; stratum=low; wind_lower_ms=13; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,13.5,2.0427850499306848,MW,185,turbine=pooled; stratum=medium; wind_lower_ms=13; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,high,14.5,2.033263904163396,MW,67,turbine=pooled; stratum=high; wind_lower_ms=14; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,low,14.5,2.0495566756399071,MW,19,turbine=pooled; stratum=low; wind_lower_ms=14; column=mean_power_mw,identity; original pooled mean
+a,curve_vertex,medium,14.5,2.0427182750683439,MW,105,turbine=pooled; stratum=medium; wind_lower_ms=14; column=mean_power_mw,identity; original pooled mean
+b,bar,high minus low,4.5,0.025239595900354683,MW,,turbine=pooled; wind_center_ms=4.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low
+b,bar,high minus low,5.5,0.049520119815281594,MW,,turbine=pooled; wind_center_ms=5.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low
+b,bar,high minus low,6.5,0.071103648224698945,MW,,turbine=pooled; wind_center_ms=6.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low
+b,bar,high minus low,7.5,0.075801753165215535,MW,,turbine=pooled; wind_center_ms=7.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low
+b,bar,high minus low,8.5,0.054854509290131803,MW,,turbine=pooled; wind_center_ms=8.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low
+b,bar,high minus low,9.5,-0.063551800229395106,MW,,turbine=pooled; wind_center_ms=9.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low
+b,bar,high minus low,10.5,-0.11472006038500426,MW,,turbine=pooled; wind_center_ms=10.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low
+b,bar,high minus low,11.5,-0.072400623696934563,MW,,turbine=pooled; wind_center_ms=11.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low
+b,bar,high minus low,12.5,-0.040810301238139779,MW,,turbine=pooled; wind_center_ms=12.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low
+b,bar,high minus low,13.5,-0.023104484581222273,MW,,turbine=pooled; wind_center_ms=13.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low
+b,bar,high minus low,14.5,-0.016292771476511092,MW,,turbine=pooled; wind_center_ms=14.5; stratum=high minus stratum=low; column=mean_power_mw,mean_power_mw high minus low

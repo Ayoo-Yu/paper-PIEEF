@@ -1,0 +1,115 @@
+{
+  "experiment": {
+    "exp_type": "energy_revision",
+    "model": "Persistence",
+    "variant": "fixed_submitted_baseline",
+    "seeds": [
+      13
+    ],
+    "horizon": 4,
+    "eval_scope": "measured-target",
+    "group": "multifarm",
+    "site": "wind_farm_B",
+    "finalized": false,
+    "models": [
+      "Persistence"
+    ],
+    "independent_baseline_protocol": true
+  },
+  "data": {
+    "data_version": "energy_revision_wind_farm_B_15min_native22_author_prepared_EC",
+    "scada_path": "data/wind_farm_B/scada_ecmwf_15min.csv",
+    "turbines_path": "data/wind_farm_B/turbines.csv",
+    "seq_len": 96,
+    "split": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "revision_protocol": {
+      "nwp_alignment_verified": false,
+      "timezone": "Asia/Shanghai",
+      "step_minutes": 15,
+      "power_unit": "kW",
+      "wind_height_m": 100,
+      "input_power_prefix": "input_power",
+      "capacity_column": "capacity_mw",
+      "nwp_timing_rule": "author_prepared_ecmwf",
+      "nwp_feature_columns": [
+        "nwp_u100_ms",
+        "nwp_v100_ms",
+        "nwp_u10_ms",
+        "nwp_v10_ms",
+        "nwp_u200_ms",
+        "nwp_v200_ms",
+        "nwp_dewpoint_2m_k",
+        "nwp_temperature_2m_k",
+        "nwp_direct_solar_radiation",
+        "nwp_geopotential",
+        "nwp_high_cloud_cover",
+        "nwp_mean_sea_level_pressure_pa",
+        "nwp_skin_temperature_k",
+        "nwp_surface_pressure_pa",
+        "nwp_surface_solar_radiation_clear_sky",
+        "nwp_surface_shortwave_downwards",
+        "nwp_total_cloud_cover",
+        "nwp_total_column_water_vapour",
+        "nwp_toa_incident_solar_radiation",
+        "nwp_wind_speed100_ms",
+        "nwp_wind_speed10_ms",
+        "nwp_wind_speed200_ms"
+      ],
+      "input_filling": "forward-only",
+      "target_policy": "raw-measured-valid-power",
+      "history_sampling": "latest-observation-before-origin",
+      "target_sampling": "actual-grid-observations-only",
+      "nwp_preparation_author_confirmed": true,
+      "nwp_pressure_column": "nwp_surface_pressure_pa",
+      "nwp_temperature_column": "nwp_temperature_2m_k",
+      "nwp_u_column": "nwp_u100_ms",
+      "nwp_v_column": "nwp_v100_ms",
+      "nwp_target_speed_column": "nwp_wind_speed100_ms"
+    }
+  },
+  "model": {
+    "baseline_factory": "Persistence",
+    "architecture": {
+      "rule": "last_causal_power_observation"
+    },
+    "weather_dimension": "declared_site_fields_plus_3",
+    "weather_semantics": "actual_data_bundle"
+  },
+  "train": {
+    "batch_size": 16
+  },
+  "baseline_protocol": {
+    "version": 1,
+    "scope": "fixed_multifarm_baseline",
+    "model": "Persistence",
+    "factory": "scripts/train_baselines.py",
+    "model_settings": {
+      "baseline_factory": "Persistence",
+      "architecture": {
+        "rule": "last_causal_power_observation"
+      },
+      "weather_dimension": "declared_site_fields_plus_3",
+      "weather_semantics": "actual_data_bundle"
+    },
+    "training_settings": {
+      "batch_size": 16
+    },
+    "loss": "fixed_estimator_or_persistence",
+    "checkpoint_selection": "fixed_protocol",
+    "pi_selection_dependency": false
+  },
+  "baselines": {
+    "models": [
+      "Persistence"
+    ]
+  },
+  "tracking": {
+    "artifact_root": "artifacts/public",
+    "ledger_dir": "artifacts/public/summary",
+    "source_manifest": "provenance/source_manifest.json"
+  }
+}

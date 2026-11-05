@@ -1,0 +1,27 @@
+Panel a
+Turbine,Hub height (m),Runs,Training median [equation: figures/table_equations/table_s23_p1_r1_c4_e1.wmf] (°),Training fraction [equation: figures/table_equations/table_s23_p1_r1_c5_e1.wmf]
+1,78.5,9,5.1205,0.2210
+2,78.5,9,4.9077,0.1934
+3,68.5,9,5.3295,0.2288
+4,78.5,9,5.5287,0.2522
+5,78.5,9,5.4296,0.2393
+6,68.5,9,5.7771,0.2766
+
+Panel b
+Turbine,Learned [equation: figures/table_equations/table_s23_p2_r1_c2_e1.wmf] (m/s) (mean ± SD),Measured All normal [equation: figures/table_equations/table_s23_p2_r1_c3_e1.wmf] (m/s),[equation: figures/table_equations/table_s23_p2_r1_c4_e1.wmf] vs All normal (m/s) (mean ± SD),Measured Aligned [equation: figures/table_equations/table_s23_p2_r1_c5_e1.wmf] [equation: figures/table_equations/table_s23_p2_r1_c5_e2.wmf] (m/s),[equation: figures/table_equations/table_s23_p2_r1_c6_e1.wmf] vs Aligned [equation: figures/table_equations/table_s23_p2_r1_c6_e2.wmf] (m/s) (mean ± SD)
+1,10.211 ± 0.024,7.9473,2.264 ± 0.024,7.9265,2.285 ± 0.024
+2,9.759 ± 0.048,8.0082,1.751 ± 0.048,7.9880,1.771 ± 0.048
+3,10.641 ± 0.029,7.8930,2.748 ± 0.029,7.8501,2.791 ± 0.029
+4,10.126 ± 0.026,7.8186,2.307 ± 0.026,7.7997,2.326 ± 0.026
+5,10.521 ± 0.025,7.8982,2.622 ± 0.025,7.8591,2.661 ± 0.025
+6,11.010 ± 0.034,7.9445,3.065 ± 0.034,7.9120,3.098 ± 0.034
+
+Panel c
+Turbine,Learned [equation: figures/table_equations/table_s23_p3_r1_c2_e1.wmf] (m/s) (mean ± SD),Measured All normal [equation: figures/table_equations/table_s23_p3_r1_c3_e1.wmf] (m/s),[equation: figures/table_equations/table_s23_p3_r1_c4_e1.wmf] vs All normal (m/s) (mean ± SD),Measured Aligned [equation: figures/table_equations/table_s23_p3_r1_c5_e1.wmf] [equation: figures/table_equations/table_s23_p3_r1_c5_e2.wmf] (m/s),[equation: figures/table_equations/table_s23_p3_r1_c6_e1.wmf] vs Aligned [equation: figures/table_equations/table_s23_p3_r1_c6_e2.wmf] (m/s) (mean ± SD)
+1,14.472 ± 0.082,10.2476,4.225 ± 0.082,10.2545,4.218 ± 0.082
+2,13.648 ± 0.119,10.2129,3.435 ± 0.119,10.2131,3.435 ± 0.119
+3,15.329 ± 0.095,10.1653,5.164 ± 0.095,10.1348,5.194 ± 0.095
+4,14.694 ± 0.144,10.1420,4.552 ± 0.144,10.1662,4.528 ± 0.144
+5,15.248 ± 0.116,10.2845,4.964 ± 0.116,10.2279,5.020 ± 0.116
+6,15.466 ± 0.093,10.3117,5.154 ± 0.093,10.2496,5.217 ± 0.093
+

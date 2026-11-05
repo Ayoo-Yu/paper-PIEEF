@@ -1,0 +1,37 @@
+Wind farm,Horizon,Model,NRMSE (%),NMAE (%)
+Kelmarsh,15 min,PI-EEF,9.31 ± 0.09,5.63 ± 0.08
+Kelmarsh,15 min,Persistence,9.79 ± 0.00,5.65 ± 0.00
+Kelmarsh,15 min,XGBoost,9.52 ± 0.05,5.97 ± 0.05
+Kelmarsh,15 min,DLinear,9.43 ± 0.05,5.85 ± 0.12
+Kelmarsh,15 min,Jensen-Net,9.55 ± 0.03,6.15 ± 0.09
+Kelmarsh,15 min,Wake-GNN,9.46 ± 0.00,5.86 ± 0.01
+Kelmarsh,1 h,PI-EEF,12.45 ± 0.15,7.84 ± 0.10
+Kelmarsh,1 h,Persistence,13.84 ± 0.00,8.26 ± 0.00
+Kelmarsh,1 h,XGBoost,12.68 ± 0.06,8.30 ± 0.00
+Kelmarsh,1 h,DLinear,12.47 ± 0.11,8.22 ± 0.24
+Kelmarsh,1 h,Jensen-Net,13.25 ± 0.03,9.03 ± 0.09
+Kelmarsh,1 h,Wake-GNN,13.10 ± 0.06,8.71 ± 0.31
+Kelmarsh,4 h,PI-EEF,15.41 ± 0.39,9.95 ± 0.35
+Kelmarsh,4 h,Persistence,20.55 ± 0.00,12.93 ± 0.00
+Kelmarsh,4 h,XGBoost,15.52 ± 0.04,10.42 ± 0.01
+Kelmarsh,4 h,DLinear,15.83 ± 0.05,10.94 ± 0.16
+Kelmarsh,4 h,Jensen-Net,19.94 ± 0.22,14.40 ± 0.47
+Kelmarsh,4 h,Wake-GNN,20.05 ± 0.06,14.89 ± 0.19
+Wind Farm B,15 min,PI-EEF,9.46 ± 0.07,6.55 ± 0.05
+Wind Farm B,15 min,Persistence,9.82 ± 0.00,6.35 ± 0.00
+Wind Farm B,15 min,XGBoost,16.89 ± 0.33,13.36 ± 0.36
+Wind Farm B,15 min,DLinear,10.18 ± 0.48,7.35 ± 0.45
+Wind Farm B,15 min,Jensen-Net,9.74 ± 0.05,6.79 ± 0.15
+Wind Farm B,15 min,Wake-GNN,9.60 ± 0.05,6.83 ± 0.07
+Wind Farm B,1 h,PI-EEF,13.64 ± 0.09,9.87 ± 0.17
+Wind Farm B,1 h,Persistence,14.72 ± 0.00,9.80 ± 0.00
+Wind Farm B,1 h,XGBoost,19.86 ± 0.39,16.02 ± 0.57
+Wind Farm B,1 h,DLinear,14.81 ± 0.07,11.13 ± 0.14
+Wind Farm B,1 h,Jensen-Net,14.05 ± 0.24,10.36 ± 0.29
+Wind Farm B,1 h,Wake-GNN,13.91 ± 0.06,10.24 ± 0.23
+Wind Farm B,4 h,PI-EEF,19.23 ± 0.36,14.25 ± 0.48
+Wind Farm B,4 h,Persistence,23.65 ± 0.00,17.07 ± 0.00
+Wind Farm B,4 h,XGBoost,20.77 ± 0.18,16.14 ± 0.13
+Wind Farm B,4 h,DLinear,20.47 ± 0.56,15.58 ± 0.60
+Wind Farm B,4 h,Jensen-Net,20.48 ± 0.23,16.25 ± 0.39
+Wind Farm B,4 h,Wake-GNN,21.09 ± 0.19,17.20 ± 0.41

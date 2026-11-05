@@ -1,0 +1,153 @@
+panel,outage_type,affected_turbines,outage_duration_h,metric,value,display,sd,n_seeds,seeds,source_locator,aggregate_source_locator,manuscript_locator,manuscript_value,manuscript_check,group,group_label,n_scenarios,model,nmae_mean_pct,nmae_seed_sd_pct,relative_to_pi_eef_pct
+a,Power-only,1,1,relative_nrmse_increase_percent,0.2220458154953775,0.20000000000000001,0.052308622471399016,5,13/21/42/87/3407,scenario=missing_power_1t_1h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_1t_1h;column=nrmse_degradation_mean,Table S8;row=Power-only / 1;column=1 h / 4 h,0.22,True,,,,,,,
+a,Power-only,1,4,relative_nrmse_increase_percent,0.36680187258419927,0.40000000000000002,0.054151909833836782,5,13/21/42/87/3407,scenario=missing_power_1t_4h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_1t_4h;column=nrmse_degradation_mean,Table S8;row=Power-only / 1;column=4 h / 4 h,0.37,True,,,,,,,
+a,Power-only,1,12,relative_nrmse_increase_percent,0.79310858478354618,0.80000000000000004,0.080478535221721409,5,13/21/42/87/3407,scenario=missing_power_1t_12h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_1t_12h;column=nrmse_degradation_mean,Table S8;row=Power-only / 1;column=12 h / 4 h,0.79000000000000004,True,,,,,,,
+a,Power-only,1,24,relative_nrmse_increase_percent,1.3111110435263473,1.3,0.3260094020859412,5,13/21/42/87/3407,scenario=missing_power_1t_24h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_1t_24h;column=nrmse_degradation_mean,Table S8;row=Power-only / 1;column=24 h / 4 h,1.3100000000000001,True,,,,,,,
+a,Power-only,3,1,relative_nrmse_increase_percent,0.69664757413250733,0.69999999999999996,0.19227593260419582,5,13/21/42/87/3407,scenario=missing_power_3t_1h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_3t_1h;column=nrmse_degradation_mean,Table S8;row=Power-only / 3;column=1 h / 4 h,0.69999999999999996,True,,,,,,,
+a,Power-only,3,4,relative_nrmse_increase_percent,1.1934372863432374,1.2,0.11680898050701703,5,13/21/42/87/3407,scenario=missing_power_3t_4h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_3t_4h;column=nrmse_degradation_mean,Table S8;row=Power-only / 3;column=4 h / 4 h,1.1899999999999999,True,,,,,,,
+a,Power-only,3,12,relative_nrmse_increase_percent,2.4557879387807802,2.5,0.20838282390423199,5,13/21/42/87/3407,scenario=missing_power_3t_12h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_3t_12h;column=nrmse_degradation_mean,Table S8;row=Power-only / 3;column=12 h / 4 h,2.46,True,,,,,,,
+a,Power-only,3,24,relative_nrmse_increase_percent,3.9092502630631336,3.8999999999999999,0.91218393772495543,5,13/21/42/87/3407,scenario=missing_power_3t_24h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_3t_24h;column=nrmse_degradation_mean,Table S8;row=Power-only / 3;column=24 h / 4 h,3.9100000000000001,True,,,,,,,
+a,Power-only,6,1,relative_nrmse_increase_percent,1.4407185150831747,1.3999999999999999,0.4129757171877288,5,13/21/42/87/3407,scenario=missing_power_6t_1h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_6t_1h;column=nrmse_degradation_mean,Table S8;row=Power-only / 6;column=1 h / 4 h,1.4399999999999999,True,,,,,,,
+a,Power-only,6,4,relative_nrmse_increase_percent,2.4344354447087468,2.3999999999999999,0.30387913537921191,5,13/21/42/87/3407,scenario=missing_power_6t_4h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_6t_4h;column=nrmse_degradation_mean,Table S8;row=Power-only / 6;column=4 h / 4 h,2.4300000000000002,True,,,,,,,
+a,Power-only,6,12,relative_nrmse_increase_percent,4.9508224635081488,5,0.51284629399239634,5,13/21/42/87/3407,scenario=missing_power_6t_12h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_6t_12h;column=nrmse_degradation_mean,Table S8;row=Power-only / 6;column=12 h / 4 h,4.9500000000000002,True,,,,,,,
+a,Power-only,6,24,relative_nrmse_increase_percent,7.7585794904164418,7.7999999999999998,1.7602160126885738,5,13/21/42/87/3407,scenario=missing_power_6t_24h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_6t_24h;column=nrmse_degradation_mean,Table S8;row=Power-only / 6;column=24 h / 4 h,7.7599999999999998,True,,,,,,,
+a,Power-only,10,1,relative_nrmse_increase_percent,2.5916354112777462,2.6000000000000001,0.68067490331032598,5,13/21/42/87/3407,scenario=missing_power_10t_1h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_10t_1h;column=nrmse_degradation_mean,Table S8;row=Power-only / 10;column=1 h / 4 h,2.5899999999999999,True,,,,,,,
+a,Power-only,10,4,relative_nrmse_increase_percent,4.1522182996759316,4.2000000000000002,0.52750067652859089,5,13/21/42/87/3407,scenario=missing_power_10t_4h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_10t_4h;column=nrmse_degradation_mean,Table S8;row=Power-only / 10;column=4 h / 4 h,4.1500000000000004,True,,,,,,,
+a,Power-only,10,12,relative_nrmse_increase_percent,8.073477251943455,8.0999999999999996,0.88843862056405987,5,13/21/42/87/3407,scenario=missing_power_10t_12h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_10t_12h;column=nrmse_degradation_mean,Table S8;row=Power-only / 10;column=12 h / 4 h,8.0700000000000003,True,,,,,,,
+a,Power-only,10,24,relative_nrmse_increase_percent,12.668894025524121,12.699999999999999,2.7668736106984921,5,13/21/42/87/3407,scenario=missing_power_10t_24h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_power_10t_24h;column=nrmse_degradation_mean,Table S8;row=Power-only / 10;column=24 h / 4 h,12.67,True,,,,,,,
+a,Synchronised,1,1,relative_nrmse_increase_percent,0.29436206154074274,0.29999999999999999,0.080721364929203537,5,13/21/42/87/3407,scenario=missing_both_1t_1h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_1t_1h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 1;column=1 h / 4 h,0.28999999999999998,True,,,,,,,
+a,Synchronised,1,4,relative_nrmse_increase_percent,0.43158226870919858,0.40000000000000002,0.063404366718407865,5,13/21/42/87/3407,scenario=missing_both_1t_4h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_1t_4h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 1;column=4 h / 4 h,0.42999999999999999,True,,,,,,,
+a,Synchronised,1,12,relative_nrmse_increase_percent,0.84880854164484099,0.80000000000000004,0.053478666105682429,5,13/21/42/87/3407,scenario=missing_both_1t_12h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_1t_12h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 1;column=12 h / 4 h,0.84999999999999998,True,,,,,,,
+a,Synchronised,1,24,relative_nrmse_increase_percent,1.426977023220215,1.3999999999999999,1.0084478640616164,5,13/21/42/87/3407,scenario=missing_both_1t_24h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_1t_24h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 1;column=24 h / 4 h,1.4299999999999999,True,,,,,,,
+a,Synchronised,3,1,relative_nrmse_increase_percent,0.94493628885217618,0.90000000000000002,0.24036462940513958,5,13/21/42/87/3407,scenario=missing_both_3t_1h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_3t_1h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 3;column=1 h / 4 h,0.93999999999999995,True,,,,,,,
+a,Synchronised,3,4,relative_nrmse_increase_percent,1.4188257463855658,1.3999999999999999,0.19595678508623235,5,13/21/42/87/3407,scenario=missing_both_3t_4h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_3t_4h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 3;column=4 h / 4 h,1.4199999999999999,True,,,,,,,
+a,Synchronised,3,12,relative_nrmse_increase_percent,2.6332472367674686,2.6000000000000001,0.15532345163729147,5,13/21/42/87/3407,scenario=missing_both_3t_12h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_3t_12h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 3;column=12 h / 4 h,2.6299999999999999,True,,,,,,,
+a,Synchronised,3,24,relative_nrmse_increase_percent,4.2610870831654069,4.2999999999999998,2.9609207060235847,5,13/21/42/87/3407,scenario=missing_both_3t_24h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_3t_24h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 3;column=24 h / 4 h,4.2599999999999998,True,,,,,,,
+a,Synchronised,6,1,relative_nrmse_increase_percent,1.909238690777606,1.8999999999999999,0.52780726339156103,5,13/21/42/87/3407,scenario=missing_both_6t_1h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_6t_1h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 6;column=1 h / 4 h,1.9099999999999999,True,,,,,,,
+a,Synchronised,6,4,relative_nrmse_increase_percent,2.8617623052138348,2.8999999999999999,0.44361899048403075,5,13/21/42/87/3407,scenario=missing_both_6t_4h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_6t_4h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 6;column=4 h / 4 h,2.8599999999999999,True,,,,,,,
+a,Synchronised,6,12,relative_nrmse_increase_percent,5.3519577321313747,5.4000000000000004,0.41764475557693376,5,13/21/42/87/3407,scenario=missing_both_6t_12h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_6t_12h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 6;column=12 h / 4 h,5.3499999999999996,True,,,,,,,
+a,Synchronised,6,24,relative_nrmse_increase_percent,8.3606369986106692,8.4000000000000004,5.7516936546452939,5,13/21/42/87/3407,scenario=missing_both_6t_24h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_6t_24h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 6;column=24 h / 4 h,8.3599999999999994,True,,,,,,,
+a,Synchronised,10,1,relative_nrmse_increase_percent,3.3299423066410183,3.2999999999999998,0.85236501536607401,5,13/21/42/87/3407,scenario=missing_both_10t_1h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_10t_1h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 10;column=1 h / 4 h,3.3300000000000001,True,,,,,,,
+a,Synchronised,10,4,relative_nrmse_increase_percent,4.7985408743045976,4.7999999999999998,0.6892529184117232,5,13/21/42/87/3407,scenario=missing_both_10t_4h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_10t_4h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 10;column=4 h / 4 h,4.7999999999999998,True,,,,,,,
+a,Synchronised,10,12,relative_nrmse_increase_percent,8.7089806654629207,8.6999999999999993,0.73040744758914555,5,13/21/42/87/3407,scenario=missing_both_10t_12h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_10t_12h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 10;column=12 h / 4 h,8.7100000000000009,True,,,,,,,
+a,Synchronised,10,24,relative_nrmse_increase_percent,13.814209204291251,13.800000000000001,9.1807343398574091,5,13/21/42/87/3407,scenario=missing_both_10t_24h;seed=13/21/42/87/3407;100*(nrmse_percent/normal_for_same_seed-1),scenario=missing_both_10t_24h;column=nrmse_degradation_mean,Table S8;row=Synchronised / 10;column=24 h / 4 h,13.81,True,,,,,,,
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,PI-EEF,11.540675216032518,0.3403105164003698,0
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,PI-EEF,11.711027233884735,0.36598103396349102,0
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,PI-EEF,11.837613276552981,0.34141204708147582,0
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,PI-EEF,12.06547826458365,0.34672999220850909,0
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,PI-EEF,13.00681644316596,0.43708435244056054,0
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,PI-EEF,11.61816159530397,0.31996373146300394,0
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,PI-EEF,11.544074635234981,0.33569157441821573,0
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,PI-EEF,12.053137231600498,0.35119981912043935,0
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,Persistence,13.102025093481021,0,13.529103351591143
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,Persistence,13.366926056194435,0,14.139654782105836
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,Persistence,13.883097748925195,0,17.279534519207097
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,Persistence,14.266192703122332,0,18.239761327974378
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,Persistence,13.538492965729827,0,4.0876760649853017
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,Persistence,13.316741770170527,0,14.620042602550122
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,Persistence,13.102025093481021,0,13.495672086966959
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,Persistence,13.666941491099987,0,13.389080606072179
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,LightGBM,12.817440087362552,0.099293843481808933,11.063173059028021
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,LightGBM,12.890534969226186,0.099544633733051655,10.071770065811636
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,LightGBM,13.064962586766233,0.099502956684101571,10.368215970057836
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,LightGBM,13.208382533749301,0.095636352321562326,9.4725152547037403
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,LightGBM,13.060767269527194,0.091408702509366821,0.41478886549199956
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,LightGBM,12.882951740786728,0.098682910466967005,10.886319105717913
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,LightGBM,12.815138536909647,0.098689008642533729,11.010530872653113
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,LightGBM,13.019856447385312,0.096752956329739612,8.0204779652744982
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,XGBoost,13.339122419894711,0.17038175913961875,15.583552696845304
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,XGBoost,13.418728807861616,0.1706290202832679,14.581996436963362
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,XGBoost,13.589752313580911,0.17232980251132884,14.80145529418866
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,XGBoost,13.731333348691752,0.17177376039561174,13.806788654188406
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,XGBoost,13.551848182065788,0.16570328900003012,4.1903546596615326
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,XGBoost,13.407974521655063,0.17025993953282667,15.405302393749887
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,XGBoost,13.336826444163501,0.17025339002612253,15.529627671122803
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,XGBoost,13.537837913761825,0.16998331886572848,12.317960491388003
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,GRU,14.328197451852631,0.40887260552456051,24.153892069916626
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,GRU,14.397780249584518,0.41376388103903211,22.942078111866394
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,GRU,14.585963848692387,0.41750125326066057,23.217100507778234
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,GRU,14.764745774889255,0.40839479665507472,22.371823570631989
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,GRU,14.539916324314413,0.37505600357400076,11.78689564696651
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,GRU,14.39423925772401,0.41354330316590959,23.894293771418383
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,GRU,14.324132235783926,0.41040825994754959,24.08211734930763
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,GRU,14.534784700463907,0.4049603477934034,20.589224375186845
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,TCN,13.770080165854617,0.95730390244698993,19.317803404821319
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,TCN,13.85099146962096,0.96046802005517151,18.273070269569878
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,TCN,14.029179005019378,0.96512813454707214,18.513577672006566
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,TCN,14.143944335192435,0.97309016317046315,17.226553519306421
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,TCN,14.030658970846369,0.93254802469753706,7.8715843508221139
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,TCN,13.848746469252493,0.95998807758529991,19.199120752891918
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,TCN,13.775822542113223,0.9601693601927116,19.332410586349379
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,TCN,13.978478044840585,0.95787259920086698,15.973773269521029
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,DLinear,13.835035578860126,0.56482902332271256,19.880642335729547
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,DLinear,13.932091681164433,0.5643589887614946,18.965581779651753
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,DLinear,14.165084714644712,0.56121543850221511,19.661661381537133
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,DLinear,14.356941916776467,0.55734994516484571,18.991900709970654
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,DLinear,13.986975634384979,0.539661682426269,7.5357347856939594
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,DLinear,13.916285159178448,0.56441434526603729,19.780440692126145
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,DLinear,13.827102109657607,0.56427393802280545,19.776617412489173
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,DLinear,14.068594834396189,0.55702374474825711,16.72143578944436
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,iTransformer,15.133859020140616,0.727959797917068,31.134952997519427
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,iTransformer,15.173322232510419,0.72765769770577349,29.564400538732105
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,iTransformer,15.263601945436019,0.73082472209093952,28.941549186008373
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,iTransformer,15.321551588837178,0.7319976949368745,26.986690894891652
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,iTransformer,15.277251124539188,0.7161720420737443,17.45572939615181
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,iTransformer,15.179356966683173,0.73007084921977505,30.651969695606816
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,iTransformer,15.149762152929785,0.72890822537338251,31.234097419029805
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,iTransformer,15.242372550156526,0.72672033715998552,26.459794303134633
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,TimesNet,14.208203953413312,1.2899528145864123,23.114147893833923
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,TimesNet,14.260725322923173,1.2876730259706466,21.771771494657031
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,TimesNet,14.401113690249556,1.2764415435126417,21.655551282234885
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,TimesNet,14.509998293387786,1.2612956696579329,20.260448655231912
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,TimesNet,14.514855997985663,1.2816183478489358,11.594224931282525
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,TimesNet,14.270298645726228,1.2869347143922383,22.827510434131383
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,TimesNet,14.222756902819807,1.2946685983529125,23.203958326888461
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,TimesNet,14.390846454557277,1.2791305448211123,19.395027021080068
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,TimeMixer,13.491121591184456,1.2991166262316123,16.900626164770173
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,TimeMixer,13.551852286404971,1.2968990871333574,15.718732573637828
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,TimeMixer,13.705992236294765,1.2940504730746898,15.783409341835174
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,TimeMixer,13.803496022765964,1.2690259433330777,14.404880768663752
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,TimeMixer,13.676079343782254,1.2269171881211935,5.1454781693943019
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,TimeMixer,13.548952777879373,1.2969690260015532,16.618732376349655
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,TimeMixer,13.492665294116168,1.2986716303374102,16.879574331005042
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,TimeMixer,13.65572220789358,1.2762776594511673,13.295998755340488
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,PatchTST,14.633558115999936,0.71111200972769228,26.79984352796556
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,PatchTST,14.709301493073792,0.7058866102806497,25.602145732475435
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,PatchTST,14.882098042989881,0.6993868659662329,25.718738189117719
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,PatchTST,15.044346041771282,0.69327046821095895,24.689181082291945
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,PatchTST,14.743730143800672,0.74416394639216676,13.353872626897267
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,PatchTST,14.700939829807831,0.71246705094132368,26.534131146444984
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,PatchTST,14.63274403207212,0.71421309192368221,26.755452424136795
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,PatchTST,14.813789671500837,0.70888468038125663,22.904015667079246
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,ACFormer,12.549778363542403,0.34268275546318216,8.7438830798047142
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,ACFormer,12.64696217420779,0.34571228301206325,7.991911568739396
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,ACFormer,12.83907663390992,0.34141615463397634,8.4600107636609412
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,ACFormer,13.144342980205698,0.32051427902695101,8.9417484492835264
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,ACFormer,12.994743349755108,0.32751574236214781,-0.092821279239274634
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,ACFormer,12.627486676812547,0.3402913286938512,8.6874766995541197
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,ACFormer,12.548903990572304,0.3414917634780848,8.7042867192695503
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,ACFormer,12.850196404707569,0.33302083052196424,6.6128772766095079
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,STAN,15.242614032508323,1.1461263844895262,32.077315643828207
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,STAN,15.314651683321454,1.1508036789241971,30.771207149189927
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,STAN,15.43569575591834,1.1498648246934582,30.395337263569509
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,STAN,15.586198468271089,1.1588014151696664,29.1801131002156
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,STAN,15.16132616081018,1.0900184144532266,16.564466232444165
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,STAN,15.297452031766735,1.1544887545571609,31.66843916123463
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,STAN,15.242614032508323,1.1461263844895253,32.038422430019729
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,STAN,15.356426327465652,1.1392979113321107,27.406052319762075
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,Wake-GNN,13.884879613947572,0.75479185082534694,20.312541112485704
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,Wake-GNN,14.041057635341597,0.74719081524704378,19.896037767849627
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,Wake-GNN,14.361298404315075,0.73198956437547535,21.319205728411596
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,Wake-GNN,14.616670428341294,0.71206763468421852,21.144558945883453
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,Wake-GNN,14.230394110734517,0.68979996302396795,9.4072033146239242
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,Wake-GNN,14.012824629824138,0.74877725080473978,20.611376549350837
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,Wake-GNN,13.884879613947575,0.75479185082534617,20.277112308057642
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,Wake-GNN,14.248751333102541,0.72544270228320751,18.216121324377333
+b,,,,,,,,,,,,,,,fault_free,Fault-free,1,Jensen-Net,14.094917228890324,0.72251839120629968,22.132517942359264
+b,,,,,,,,,,,,,,,outage_1h,1 h,8,Jensen-Net,14.230913277279658,0.72012239933223543,21.517207611847013
+b,,,,,,,,,,,,,,,outage_4h,4 h,8,Jensen-Net,14.518609073497947,0.71496627861488637,22.648111019602844
+b,,,,,,,,,,,,,,,outage_12h,12 h,8,Jensen-Net,14.727507220662508,0.70242971442186608,22.063186371093412
+b,,,,,,,,,,,,,,,outage_24h,24 h,8,Jensen-Net,14.38489645608843,0.66923167332181843,10.595060051351313
+b,,,,,,,,,,,,,,,frozen,Frozen sensors,4,Jensen-Net,14.210267098405748,0.72029366706704101,22.310806075803757
+b,,,,,,,,,,,,,,,drift,Wind-speed drift,3,Jensen-Net,14.094917228890324,0.72251839120629924,22.096553203750325
+b,,,,,,,,,,,,,,,all_faults,All 39 faults,39,Jensen-Net,14.41080072565442,0.70506150761064934,19.5605795300553

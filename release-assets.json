@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "filename": "pieef_wind_farm_A.zip",
+      "bytes": 91881657,
+      "sha256": "cf19e4f1cf06d5eeac263082c36ac3ff63513c6791af6f31b2a6f5fb9d437983",
+      "members": 126,
+      "url": "https://github.com/Ayoo-Yu/paper-PIEEF/releases/download/r1-submission-20261103/pieef_wind_farm_A.zip"
+    },
+    {
+      "filename": "pieef_kelmarsh.zip",
+      "bytes": 24663837,
+      "sha256": "491235b5db0544fae017304008281492e5e0eb30063e93e8ed88108a997fe891",
+      "members": 46,
+      "url": "https://github.com/Ayoo-Yu/paper-PIEEF/releases/download/r1-submission-20261103/pieef_kelmarsh.zip"
+    },
+    {
+      "filename": "pieef_wind_farm_B.zip",
+      "bytes": 25642015,
+      "sha256": "1d696f288a47d05a615f03f9fb628ee2f841905c027ab76cbb2351462a328b5a",
+      "members": 46,
+      "url": "https://github.com/Ayoo-Yu/paper-PIEEF/releases/download/r1-submission-20261103/pieef_wind_farm_B.zip"
+    },
+    {
+      "filename": "kelmarsh_auxiliary_scada.zip",
+      "bytes": 16882420,
+      "sha256": "ae2d2ce4c6bded7e0bfa87dceb009c8210dfdfaea1eba60e8e8c6a558dee7427",
+      "members": 2,
+      "url": "https://github.com/Ayoo-Yu/paper-PIEEF/releases/download/r1-submission-20261103/kelmarsh_auxiliary_scada.zip"
+    }
+  ],
+  "installation": "Extract PI-EEF archives into assets/<zip filename without .zip>/; auxiliary SCADA is optional."
+}

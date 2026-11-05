@@ -1,0 +1,63 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    location    "0";
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+// 内部流场的初始速度，由环境变量 $Ux, $Uy, $Uz 设定
+internalField   uniform ($Ux $Uy $Uz);
+
+boundaryField
+{
+    // 入口边界条件
+    inlet
+    {
+        type            fixedValue;         // 类型：固定值
+        value           uniform ($Ux $Uy $Uz); // 值：由环境变量设定
+    }
+
+    // 出口边界条件
+    outlet
+    {
+        type            zeroGradient;       // 类型：零梯度，表示流出自然
+    }
+
+    // 前后边界
+    back
+    {
+        type            symmetry;           // 类型：对称面
+    }
+    front
+    {
+        type            symmetry;           // 类型：对称面
+    }
+
+    // 底部边界（地面）
+    bot
+    {
+        type            fixedValue;         // 类型：固定值
+        value           uniform (0 0 0);    // 值：无滑移壁面，速度为零
+    }
+
+    // 顶部边界
+    top
+    {
+        type            symmetry;           // 类型：对称面
+    }
+}
+
+
+// ************************************************************************* //

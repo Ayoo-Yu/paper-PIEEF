@@ -1,0 +1,122 @@
+[
+  {
+    "horizon": 1,
+    "seed": 13,
+    "config_id": "b5_staged_h1_seed13",
+    "file": "artifacts/released/b5_staged_h1_seed13.yaml",
+    "sha256": "0853934857bcff23c20967274c127fd5d03fb6ed82f51b4a9a6ccf41fc7b6725",
+    "source_config": "artifacts/released/energy_r3s2_main_PI-EEF_h1_seed13.yaml",
+    "source_sha256": "9a36b064961243a931eddbe52464e883fabbb91110ba03d580d504482fb4f4bb",
+    "joint_run": "artifacts/released/energy_r3_stage2_PI-EEF_h1_s13_20261020_222157",
+    "joint_metrics_sha256": "77401d7680c5cc1f219a6922432971cdef09b62134acce97aa7ca44e081a45c9",
+    "identity": "PASS"
+  },
+  {
+    "horizon": 1,
+    "seed": 21,
+    "config_id": "b5_staged_h1_seed21",
+    "file": "artifacts/released/b5_staged_h1_seed21.yaml",
+    "sha256": "59e45df86dcf4e6bfa08b0628c1758836be871e226194efd5a980543aa69a760",
+    "source_config": "artifacts/released/energy_r3s2_main_PI-EEF_h1_seed21.yaml",
+    "source_sha256": "fea4813c6276f75b0d9850d03d041f03c958b0f44564777109affe9c57b586f4",
+    "joint_run": "artifacts/released/energy_r3_stage2_PI-EEF_h1_s21_20261020_234032",
+    "joint_metrics_sha256": "a561a1cdf165448610a92cfec268f9865ba1cd4524dbd636a866cd161d54f6ce",
+    "identity": "PASS"
+  },
+  {
+    "horizon": 1,
+    "seed": 42,
+    "config_id": "b5_staged_h1_seed42",
+    "file": "artifacts/released/b5_staged_h1_seed42.yaml",
+    "sha256": "2328e97a5dc2b86c1dba88daee732b8f7e2bcd746163c3bf9801bc98139b2ba7",
+    "source_config": "artifacts/released/energy_r3s2_main_PI-EEF_h1_seed42.yaml",
+    "source_sha256": "b79f4187e72ceca906979087c722bf049d3e2a2e4e76665659075cb7d868bfbc",
+    "joint_run": "artifacts/released/energy_r3_stage2_PI-EEF_h1_s42_20261020_235242",
+    "joint_metrics_sha256": "6009c99b790337538e337f87f9708aa462d236cc5b4c6cd079dd1db5d764b551",
+    "identity": "PASS"
+  },
+  {
+    "horizon": 1,
+    "seed": 87,
+    "config_id": "b5_staged_h1_seed87",
+    "file": "artifacts/released/b5_staged_h1_seed87.yaml",
+    "sha256": "4e1eeebc4f3fd38022e22453dfea2af307b69f414caf9f071c67aef1355ae9ba",
+    "source_config": "artifacts/released/energy_r3s2_main_PI-EEF_h1_seed87.yaml",
+    "source_sha256": "7c67a4a937d99bc6b08209b0a3538a6ca23bc5b426fb7bd74aa49c0ef90ae1f2",
+    "joint_run": "artifacts/released/energy_r3_stage2_PI-EEF_h1_s87_20261021_000152",
+    "joint_metrics_sha256": "f6c3fb0aec23ae58b49c44d9b0f06edca70185d09084ed5b7d048ae3176f4e83",
+    "identity": "PASS"
+  },
+  {
+    "horizon": 1,
+    "seed": 3407,
+    "config_id": "b5_staged_h1_seed3407",
+    "file": "artifacts/released/b5_staged_h1_seed3407.yaml",
+    "sha256": "87db72416f3ed969c7af11e257994818931cd4b37056b205fd0a0d1e4317ae19",
+    "source_config": "artifacts/released/energy_r3s2_main_PI-EEF_h1_seed3407.yaml",
+    "source_sha256": "434de02e007d81a2175bfbb1fbd06f21862c1f21d39a3c7e039ccc756bdd7192",
+    "joint_run": "artifacts/released/energy_r3_stage2_PI-EEF_h1_s3407_20261021_003214",
+    "joint_metrics_sha256": "461fda443d439cf07caa6b28808e2e430c35b4c6bc11f22bed45ea9ffb5d1948",
+    "identity": "PASS"
+  },
+  {
+    "horizon": 4,
+    "seed": 13,
+    "config_id": "b5_staged_h4_seed13",
+    "file": "artifacts/released/b5_staged_h4_seed13.yaml",
+    "sha256": "91330c42f4374d48affacd718c8c9b0c0458f6758d8561bfb62014ee3eb60e2c",
+    "source_config": "artifacts/released/energy_r3s2_main_PI-EEF_h4_seed13.yaml",
+    "source_sha256": "4661af35394158222dc478ca4bbb5049fc9fd020182536195d29c523db57a796",
+    "joint_run": "artifacts/released/energy_r3_stage2_PI-EEF_h4_s13_20261020_231359",
+    "joint_metrics_sha256": "86500743ea1bd9cedebde62fdb4252b9cfefe7b0ae740514ccabefb831cfc564",
+    "identity": "PASS"
+  },
+  {
+    "horizon": 4,
+    "seed": 21,
+    "config_id": "b5_staged_h4_seed21",
+    "file": "artifacts/released/b5_staged_h4_seed21.yaml",
+    "sha256": "9c95b8db49facbe7428462ca3d6220acde25561f40711de2f4bbdda287b28668",
+    "source_config": "artifacts/released/energy_r3s2_main_PI-EEF_h4_seed21.yaml",
+    "source_sha256": "a8c29c8bf787a70694d9b14cf4f64d2d706b16ae3df306fe9c5ff11fbff43f52",
+    "joint_run": "artifacts/released/energy_r3_stage2_PI-EEF_h4_s21_20261020_231402",
+    "joint_metrics_sha256": "5f1581f7ba19ed86c6236e8f19502de69d75733e9a844c93ef30d386fb7e3e4a",
+    "identity": "PASS"
+  },
+  {
+    "horizon": 4,
+    "seed": 42,
+    "config_id": "b5_staged_h4_seed42",
+    "file": "artifacts/released/b5_staged_h4_seed42.yaml",
+    "sha256": "b7c478c8bad66526759502bdd26c747b2e09485f1eab3f7e423490986b3c37e4",
+    "source_config": "artifacts/released/energy_r3s2_main_PI-EEF_h4_seed42.yaml",
+    "source_sha256": "2a9b604d2bdc76ff8338dc7501e4d20401734013141fe3c48c859a0d9dbadf9a",
+    "joint_run": "artifacts/released/energy_r3_stage2_PI-EEF_h4_s42_20261020_231404",
+    "joint_metrics_sha256": "101058106f5885b0bcc552f88075fba939d7aef0bdbbaf3fa49fab39ceb2c0b5",
+    "identity": "PASS"
+  },
+  {
+    "horizon": 4,
+    "seed": 87,
+    "config_id": "b5_staged_h4_seed87",
+    "file": "artifacts/released/b5_staged_h4_seed87.yaml",
+    "sha256": "f1139e061047d99a54004fae39dca822b2a8a2f44e25981781486e73abae9b48",
+    "source_config": "artifacts/released/energy_r3s2_main_PI-EEF_h4_seed87.yaml",
+    "source_sha256": "4c718b7cf982b6da2e16b07924c5ba612637b64c0cd30b4d1f6fc7dc740428c8",
+    "joint_run": "artifacts/released/energy_r3_stage2_PI-EEF_h4_s87_20261021_005938",
+    "joint_metrics_sha256": "5fa6736f82859efb038c78658697cef67e3b7f10faa032a2edaa7127d22dd450",
+    "identity": "PASS"
+  },
+  {
+    "horizon": 4,
+    "seed": 3407,
+    "config_id": "b5_staged_h4_seed3407",
+    "file": "artifacts/released/b5_staged_h4_seed3407.yaml",
+    "sha256": "96c34282c2a28ed32824bc7fe6a5916d629ed13975c373d4dd4360feb9b44825",
+    "source_config": "artifacts/released/energy_r3s2_main_PI-EEF_h4_seed3407.yaml",
+    "source_sha256": "1720bf0deed5fefbec0ae64f4bd48ce9e3e46536b91615ae9bedc2cb7e15d6aa",
+    "joint_run": "artifacts/released/energy_r3_stage2_PI-EEF_h4_s3407_20261021_005940",
+    "joint_metrics_sha256": "4d673f332f0cfbe1ecbb4ba4eae802830cf950f9437ad424091499d3333a4a2c",
+    "identity": "PASS"
+  }
+]

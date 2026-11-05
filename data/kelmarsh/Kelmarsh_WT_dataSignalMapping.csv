@@ -1,0 +1,61 @@
+Greenbyte Signal ID,Greenbyte Title,Manufacturer Title,Unit
+359,Ambient temperature (converter),Temperature of converter inlet air,degC
+323,Apparent power,Actual value of apparent power,kVA
+80,Blade angle (pitch position) A,Pitch angle for blade 1,deg
+81,Blade angle (pitch position) B,Pitch angle for blade 2,deg
+82,Blade angle (pitch position) C,Pitch angle for blade 3,deg
+450,Cable windings from calibration point,Cable winding: number of windings from calibration point,
+1624,CPU temperature,CPU temperature 1s,degC
+49,Current L1 / U,Phase A current,A
+50,Current L2 / V,Phase B current,A
+51,Current L3 / W,Phase C current,A
+456,Drive train acceleration,Drive train osc. z 10min,mm/ss
+4,Energy Export,Entire active energy generation,kWh
+90,Energy Import,Active energy demand,kWh
+9,Front bearing temperature,Axle bearing temperature 1,degC
+317,Gear oil inlet pressure,Pressure gearb.inlet 1s,bar
+117,Gear oil inlet temperature,Temp. gearb. inlet 1s,degC
+455,Gear oil pump pressure,Pressure gear pump 1s,bar
+178,Gear oil temperature,Gear oil temperature,degC
+448,Gearbox speed,Gearbox speed,RPM
+119,Generator bearing front temperature,Temperature of bearing 1,degC
+118,Generator bearing rear temperature,Temperature of bearing 2,degC
+86,Generator RPM,Generator speed,RPM
+297,Grid current,Line current,A
+85,Grid frequency,Frequency,Hz
+298,Grid voltage,Line voltage,V
+294,Hub temperature,Rotor hub temperature,degC
+1618,Metal particle count,Metalscan particl. g.oil,
+413,Motor current axis 1,Current axis 1 1s,A
+414,Motor current axis 2,Current axis 2 1s,A
+415,Motor current axis 3,Current axis 3 1s,A
+24,Nacelle ambient temperature,Outdoor temp. nacelle,degC
+3,Nacelle position,Nacelle orientation,deg
+25,Nacelle temperature,Inside temperature nacelle,degC
+5,Power,Actual value of active power,kWh
+6,Power factor (cosphi),Power  factor,
+87,Reactive Energy Export,Entire reactive energy generation,kvarh
+91,Reactive Energy Import,Reactive energy demand,kvarh
+7,Reactive power,Actual value of reactive power,kvar
+10,Rear bearing temperature,Axle bearing temperature 2,degC
+447,Rotor bearing temp,Temperature of rotor bearing,degC
+54,Rotor speed,Value of rotor speed,RPM
+22,Stator temperature 1,Temperature for generator stator,degC
+260,Temp. top box,Top box temperature,degC
+1621,Temperature motor axis 1,Temp. Motor A1 1s,degC
+1622,Temperature motor axis 2,Temp. Motor A2 1s,degC
+1623,Temperature motor axis 3,Temp. Motor A3 1s,degC
+491,Tower Acceleration X,Tower oscill. x 1s,mm/ss
+492,Tower Acceleration Y,Tower oscill. y 1s,mm/ss
+449,Transformer cell temperature,Temp. transformer cell,degC
+34,Transformer temperature,Temp. transf.,degC
+1702,Turbine Power setpoint,Actual P setpoint,kW
+1625,Vane position 1+2,Vane position 1+2 1s,deg
+46,Voltage L1 / U,Phase A voltage,V
+47,Voltage L2 / V,Phase B voltage,V
+48,Voltage L3 / W,Phase C voltage,V
+2,Wind direction,Wind direction,deg
+1,Wind speed,Wind speed,m/s
+1475,Wind speed Sensor 1,Wind speed 1 1s,m/s
+1479,Wind speed Sensor 2,Wind speed 2 1s,m/s
+451,Yaw bearing angle,Angle of rotation of yaw bearing relative to geographical north,deg

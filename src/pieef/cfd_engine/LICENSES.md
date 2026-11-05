@@ -1,0 +1,1 @@
+roughFoam and the OpenFOAM-derived solvers retain GPL-3.0-or-later, as declared in their source headers. See COPYING. The bundled cJSON files retain their MIT licence; see LICENSE-cJSON and their source headers. These component licences are separate from the top-level MIT licence.

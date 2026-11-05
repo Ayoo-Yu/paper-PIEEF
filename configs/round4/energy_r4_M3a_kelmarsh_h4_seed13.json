@@ -1,0 +1,136 @@
+{
+  "experiment": {
+    "model": "PI-EEF",
+    "horizon": 4,
+    "eval_scope": "measured-target",
+    "finalized": true,
+    "group": "M3a",
+    "site": "kelmarsh",
+    "exp_type": "energy_r4_prediction",
+    "models": [
+      "PI-EEF"
+    ],
+    "variant": "K-cfd",
+    "seeds": [
+      13
+    ]
+  },
+  "data": {
+    "data_version": "energy_revision_kelmarsh_15min_GFS_vintages",
+    "scada_path": "data/kelmarsh/scada_15min.csv",
+    "turbines_path": "data/kelmarsh/turbines.csv",
+    "seq_len": 96,
+    "split": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "revision_protocol": {
+      "nwp_alignment_verified": true,
+      "timezone": "UTC",
+      "step_minutes": 15,
+      "power_unit": "kW",
+      "wind_height_m": 100,
+      "input_power_prefix": "input_power",
+      "capacity_column": "capacity_mw",
+      "nwp_timing_rule": "forecast_vintages",
+      "nwp_feature_columns": [
+        "u10_ms",
+        "v10_ms",
+        "surface_pressure_pa",
+        "temperature_2m_k",
+        "u100_ms",
+        "v100_ms",
+        "dewpoint_2m_k",
+        "wind_speed100_ms",
+        "wind_speed10_ms"
+      ],
+      "input_filling": "forward-only",
+      "target_policy": "raw-measured-valid-power",
+      "history_sampling": "latest-observation-before-origin",
+      "target_sampling": "actual-grid-observations-only",
+      "nwp_vintages_path": "data/kelmarsh/gfs_forecast_vintages.npz"
+    },
+    "local_wind": {
+      "mode": "cfd",
+      "site": "kelmarsh",
+      "turbine_id_map": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "lut_path": "data/cfd/cfd_kelmarsh_turbine_sector.csv",
+      "lut_sha256": "00e70569382a02e822a7b768c56686ffb4754fb408e87fb2a6e442a432010b47",
+      "summary_path": "data/cfd/cfd_results_summary.json",
+      "summary_sha256": "5933027e0ba66de2e487552937aed019a0a14de77b67f93fe0c30f6f7111aac5",
+      "direction_u_column": "u100_ms",
+      "direction_v_column": "v100_ms",
+      "measured_direction_columns": [
+        "wind_direction1",
+        "wind_direction2",
+        "wind_direction3",
+        "wind_direction4",
+        "wind_direction5",
+        "wind_direction6"
+      ]
+    }
+  },
+  "model": {
+    "d_model": 128,
+    "encoder_depth": 3,
+    "graph_depth": 1,
+    "mask_ratio": 0.4,
+    "num_control_points": 15,
+    "use_prior_input": true,
+    "use_bound_loss": true,
+    "use_derivative_loss": true,
+    "use_density": true,
+    "use_terrain_bias": true,
+    "use_mask_indicators": true,
+    "joint_masking": false,
+    "sensitivity_mode": "symmetric",
+    "use_calibration": true,
+    "use_physics_curve": true,
+    "curve_mode": "bspline",
+    "use_direction_bias": true,
+    "use_sensitivity_gate": true,
+    "revin_missing_policy": "train_stats_20",
+    "forecast_head_policy": "target_nwp_physics_mlp",
+    "use_turbine_operating_limits": true,
+    "graph_score_policy": "cosine_temperature",
+    "forecast_skip_policy": "last_obs_linear",
+    "direction_source": "per_turbine",
+    "nwp_speed_correction": "none"
+  },
+  "train": {
+    "batch_size": 16,
+    "epochs_stage1": 5,
+    "epochs_stage2": 5,
+    "epochs_stage3": 20,
+    "lr_stage1": 0.001,
+    "lr_stage2": 0.001,
+    "lr_stage3": 0.0003,
+    "stage3_mode": "joint",
+    "loss_name": "huber",
+    "huber_delta": 0.1,
+    "quantile": 0.5,
+    "patience": 5,
+    "checkpoint_metric": "nrmse",
+    "reconstruction_weight": 0.05,
+    "calibration_weight": 0.05,
+    "auxiliary_decay": 0.1,
+    "record_gradient_conflicts": false,
+    "epochs": 50,
+    "lr": 0.001,
+    "stage3_decoder_policy": "frozen",
+    "stage3_forecast_corruption": "f2_block"
+  },
+  "tracking": {
+    "artifact_root": "artifacts/public",
+    "ledger_dir": "artifacts/public/summary",
+    "source_manifest": "provenance/source_manifest.json"
+  }
+}

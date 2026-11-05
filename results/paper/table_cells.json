@@ -1,0 +1,4447 @@
+{
+  "table_1": {
+    "caption": "Table 1. Design features of representative learning and forecasting methods.",
+    "rows": [
+      [
+        "Study",
+        "Approach",
+        "Physical guidance",
+        "Missing inputs",
+        "Representation reconstruction",
+        "Forecast-driven calibration",
+        "Spatial dependencies"
+      ],
+      [
+        "Tawn et al. [14]",
+        "Multiple imputation, retraining",
+        "◐",
+        "●",
+        "○",
+        "○",
+        "●"
+      ],
+      [
+        "Wen et al. [15]",
+        "Joint imputation–forecasting",
+        "◐",
+        "●",
+        "○",
+        "○",
+        "●"
+      ],
+      [
+        "Stratigakos et al. [16]",
+        "Robust feature deletion",
+        "○",
+        "●",
+        "○",
+        "○",
+        "○"
+      ],
+      [
+        "Wen [17]",
+        "Adaptive quantile regression",
+        "○",
+        "●",
+        "○",
+        "○",
+        "○"
+      ],
+      [
+        "Wang et al. [20]",
+        "Power-curve-constrained Transformer",
+        "●",
+        "◐",
+        "○",
+        "○",
+        "○"
+      ],
+      [
+        "Phipps et al. [22]",
+        "Ensemble post-processing",
+        "◐",
+        "○",
+        "○",
+        "○",
+        "○"
+      ],
+      [
+        "Fu et al. [23]",
+        "Spatiotemporal attention",
+        "○",
+        "○",
+        "○",
+        "○",
+        "●"
+      ],
+      [
+        "Raissi et al. [24]",
+        "PDE-residual learning",
+        "●",
+        "○",
+        "○",
+        "—",
+        "—"
+      ],
+      [
+        "Read et al. [25]",
+        "Process-guided pre-training",
+        "●",
+        "○",
+        "○",
+        "—",
+        "—"
+      ],
+      [
+        "Vincent et al. [26]",
+        "Denoising autoencoder",
+        "○",
+        "●",
+        "●",
+        "—",
+        "—"
+      ],
+      [
+        "PI-EEF (this study)",
+        "Physics-guided end-to-end learning",
+        "●",
+        "●",
+        "●",
+        "●",
+        "●"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted manuscript"
+  },
+  "table_2": {
+    "caption": "Table 2. Classification criteria for non-ideal observations.",
+    "rows": [
+      [
+        "Category",
+        "Criterion"
+      ],
+      [
+        "Low-power operation",
+        "Wind speed exceeds 5 m/s and valid measured power is below 10 kW."
+      ],
+      [
+        "Frozen wind-speed readings",
+        "At least five consecutive wind-speed readings are identical."
+      ],
+      [
+        "Missing or invalid data",
+        "Observations are missing or non-finite, wind speed is negative, or measured power is at or below −0.02 MW."
+      ],
+      [
+        "Statistical power anomaly",
+        "For wind speeds of [equation: figures/table_equations/table_2_p1_r5_c2_e1.wmf] m/s, measured power deviates by more than three standard deviations from the turbine-specific mean within its 1 m/s wind-speed bin. The mean and standard deviation are calculated from training data."
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted manuscript"
+  },
+  "table_3": {
+    "caption": "Table 3. Ablation of physical and spatial components at Wind Farm A at 4 h (means ± standard deviations over five seeds in percent).",
+    "rows": [
+      [
+        "Variant",
+        "NRMSE (%)",
+        "Change",
+        "NMAE (%)",
+        "Change"
+      ],
+      [
+        "Full model",
+        "19.99 ± 0.37",
+        "—",
+        "11.54 ± 0.34",
+        "—"
+      ],
+      [
+        "Physical prior and reconstruction",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Without physical prior of Eq. (2)",
+        "20.02 ± 0.25",
+        "+0.19%",
+        "11.29 ± 0.13",
+        "−2.21%"
+      ],
+      [
+        "Without boundary penalty",
+        "19.99 ± 0.28",
+        "+0.03%",
+        "11.42 ± 0.29",
+        "−1.06%"
+      ],
+      [
+        "Without temporal-difference penalty",
+        "20.06 ± 0.22",
+        "+0.39%",
+        "11.14 ± 0.05",
+        "−3.50%"
+      ],
+      [
+        "Joint power and wind masking in pre-training",
+        "20.84 ± 0.65",
+        "+4.28%",
+        "12.06 ± 0.95",
+        "+4.49%"
+      ],
+      [
+        "Calibration and power curve",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Without wind-speed calibration",
+        "20.00 ± 0.26",
+        "+0.09%",
+        "11.50 ± 0.26",
+        "−0.33%"
+      ],
+      [
+        "Manufacturer power curve instead of learned spline",
+        "19.93 ± 0.13",
+        "−0.27%",
+        "11.34 ± 0.27",
+        "−1.72%"
+      ],
+      [
+        "Without cut-out boundary",
+        "20.04 ± 0.31",
+        "+0.26%",
+        "11.41 ± 0.34",
+        "−1.13%"
+      ],
+      [
+        "Without density correction",
+        "19.79 ± 0.15",
+        "−1.00%",
+        "11.09 ± 0.13",
+        "−3.89%"
+      ],
+      [
+        "Spatial attention",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Without spatial aggregation",
+        "20.09 ± 0.10",
+        "+0.52%",
+        "11.49 ± 0.08",
+        "−0.47%"
+      ],
+      [
+        "Without direction bias",
+        "19.89 ± 0.35",
+        "−0.46%",
+        "11.28 ± 0.27",
+        "−2.28%"
+      ],
+      [
+        "Without terrain bias",
+        "20.00 ± 0.09",
+        "+0.08%",
+        "11.42 ± 0.19",
+        "−1.03%"
+      ],
+      [
+        "Without density correction and terrain bias",
+        "20.09 ± 0.34",
+        "+0.52%",
+        "11.53 ± 0.29",
+        "−0.12%"
+      ],
+      [
+        "Without operating-point weighting",
+        "19.87 ± 0.19",
+        "−0.59%",
+        "11.21 ± 0.31",
+        "−2.83%"
+      ],
+      [
+        "Learned-curve derivative as operating-point weight",
+        "19.84 ± 0.12",
+        "−0.75%",
+        "11.16 ± 0.20",
+        "−3.32%"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted manuscript"
+  },
+  "table_4": {
+    "caption": "Table 4. Errors of the training modes at Wind Farm A at 4 h without faults and averaged over the 39 fault scenarios, in percent, as means over five seeds.",
+    "rows": [
+      [
+        "Training mode",
+        "Fault-free NRMSE",
+        "Fault-free NMAE",
+        "Faults NRMSE",
+        "Faults NMAE"
+      ],
+      [
+        "Joint fine-tuning, adopted",
+        "19.99",
+        "11.54",
+        "20.59",
+        "12.05"
+      ],
+      [
+        "Sequential training",
+        "19.99",
+        "11.31",
+        "20.58",
+        "11.84"
+      ],
+      [
+        "Without pre-training",
+        "20.23",
+        "11.43",
+        "20.95",
+        "12.00"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted manuscript"
+  },
+  "table_5": {
+    "caption": "Table 5. Errors at 4 h for alternative settings in percent (mean ± standard deviation over three seeds; adopted settings in bold).",
+    "rows": [
+      [
+        "Setting",
+        "Validation NRMSE (%)",
+        "Validation NMAE (%)",
+        "Test NRMSE (%)",
+        "Test NMAE (%)"
+      ],
+      [
+        "Encoder layers"
+      ],
+      [
+        "2",
+        "17.82 ± 0.13",
+        "11.01 ± 0.33",
+        "—",
+        "—"
+      ],
+      [
+        "3",
+        "17.89 ± 0.21",
+        "11.09 ± 0.25",
+        "—",
+        "—"
+      ],
+      [
+        "4",
+        "17.96 ± 0.39",
+        "11.01 ± 0.13",
+        "—",
+        "—"
+      ],
+      [
+        "Graph-attention layers"
+      ],
+      [
+        "1",
+        "17.89 ± 0.21",
+        "11.09 ± 0.25",
+        "—",
+        "—"
+      ],
+      [
+        "2",
+        "17.83 ± 0.36",
+        "11.01 ± 0.22",
+        "—",
+        "—"
+      ],
+      [
+        "Hidden dimension"
+      ],
+      [
+        "64",
+        "18.07 ± 0.17",
+        "11.08 ± 0.25",
+        "—",
+        "—"
+      ],
+      [
+        "128",
+        "17.89 ± 0.21",
+        "11.09 ± 0.25",
+        "—",
+        "—"
+      ],
+      [
+        "256",
+        "18.08 ± 0.00",
+        "11.15 ± 0.27",
+        "—",
+        "—"
+      ],
+      [
+        "Forecasting loss"
+      ],
+      [
+        "Huber [equation: figures/table_equations/table_5_p1_r14_c1_e1.wmf]",
+        "17.89 ± 0.21",
+        "11.09 ± 0.25",
+        "20.09 ± 0.48",
+        "11.57 ± 0.41"
+      ],
+      [
+        "Mean squared error",
+        "18.00 ± 0.11",
+        "11.43 ± 0.13",
+        "19.99 ± 0.15",
+        "11.59 ± 0.12"
+      ],
+      [
+        "Median pinball [equation: figures/table_equations/table_5_p1_r16_c1_e1.wmf]",
+        "18.34 ± 0.54",
+        "11.00 ± 0.20",
+        "20.22 ± 0.35",
+        "11.35 ± 0.44"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted manuscript"
+  },
+  "table_6": {
+    "caption": "Table 6. Forecast errors at the extension wind farms, in percent. Values are means over three seeds, and stars indicate significant differences from PI-EEF: *** , **  and * , from time-level DM tests with BH correction at Kelmarsh and seed-level paired t tests at Wind Farm B.",
+    "rows": [
+      [
+        "Model",
+        "Kelmarsh",
+        "Wind Farm B"
+      ],
+      [
+        "",
+        "15 min",
+        "1 h",
+        "4 h",
+        "15 min",
+        "1 h",
+        "4 h"
+      ],
+      [
+        "NRMSE"
+      ],
+      [
+        "PI-EEF",
+        "9.31",
+        "12.45",
+        "15.41",
+        "9.46",
+        "13.64",
+        "19.23"
+      ],
+      [
+        "Persistence",
+        "9.79***",
+        "13.84***",
+        "20.55***",
+        "9.82*",
+        "14.72**",
+        "23.65*"
+      ],
+      [
+        "XGBoost",
+        "9.52",
+        "12.68",
+        "15.52",
+        "16.89**",
+        "19.86**",
+        "20.77*"
+      ],
+      [
+        "DLinear",
+        "9.43*",
+        "12.47",
+        "15.83",
+        "10.18",
+        "14.81**",
+        "20.47*"
+      ],
+      [
+        "Jensen-Net",
+        "9.55***",
+        "13.25***",
+        "19.94***",
+        "9.74",
+        "14.05",
+        "20.48*"
+      ],
+      [
+        "Wake-GNN",
+        "9.46**",
+        "13.10***",
+        "20.05***",
+        "9.60",
+        "13.91",
+        "21.09*"
+      ],
+      [
+        "NMAE"
+      ],
+      [
+        "PI-EEF",
+        "5.63",
+        "7.84",
+        "9.95",
+        "6.55",
+        "9.87",
+        "14.25"
+      ],
+      [
+        "Persistence",
+        "5.65",
+        "8.26***",
+        "12.93***",
+        "6.35*",
+        "9.80",
+        "17.07*"
+      ],
+      [
+        "XGBoost",
+        "5.97***",
+        "8.30***",
+        "10.42**",
+        "13.36*",
+        "16.02*",
+        "16.14*"
+      ],
+      [
+        "DLinear",
+        "5.85***",
+        "8.22***",
+        "10.94***",
+        "7.35",
+        "11.13",
+        "15.58*"
+      ],
+      [
+        "Jensen-Net",
+        "6.15***",
+        "9.03***",
+        "14.40***",
+        "6.79",
+        "10.36",
+        "16.25*"
+      ],
+      [
+        "Wake-GNN",
+        "5.86***",
+        "8.71***",
+        "14.89***",
+        "6.83",
+        "10.24",
+        "17.20*"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted manuscript"
+  },
+  "table_7": {
+    "caption": "Table 7. Inference cost of PI-EEF and the strongest baselines.",
+    "rows": [
+      [
+        "Model",
+        "Parameters",
+        "Batch size",
+        "Batch latency (ms)",
+        "Throughput (windows/s)",
+        "Time per window (ms)"
+      ],
+      [
+        "PI-EEF",
+        "678,131",
+        "16",
+        "14.22",
+        "1,125",
+        "0.889"
+      ],
+      [
+        "ACFormer",
+        "48,213",
+        "64",
+        "4.08",
+        "15,702",
+        "0.064"
+      ],
+      [
+        "TimesNet",
+        "93,889",
+        "64",
+        "2.21",
+        "29,031",
+        "0.035"
+      ],
+      [
+        "TCN",
+        "4,929",
+        "64",
+        "0.56",
+        "114,560",
+        "0.009"
+      ],
+      [
+        "LightGBM on CPU",
+        "—",
+        "1,856",
+        "35.19",
+        "52,743",
+        "0.019"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted manuscript"
+  },
+  "table_8": {
+    "caption": "Table 8. Computational cost versus turbine count.",
+    "rows": [
+      [
+        "Turbines",
+        "Parameters",
+        "Inference per window, single (ms)",
+        "Inference per window, batch of 16 (ms)",
+        "Peak inference memory (MiB)",
+        "Training step (ms)",
+        "Peak training memory (MiB)"
+      ],
+      [
+        "10",
+        "677,789",
+        "3.95",
+        "0.43",
+        "137",
+        "22.6",
+        "268"
+      ],
+      [
+        "20",
+        "677,969",
+        "3.88",
+        "0.64",
+        "209",
+        "26.6",
+        "483"
+      ],
+      [
+        "29",
+        "678,131",
+        "4.13",
+        "0.85",
+        "272",
+        "33.1",
+        "644"
+      ],
+      [
+        "50",
+        "678,509",
+        "4.08",
+        "1.29",
+        "418",
+        "50.3",
+        "1,056"
+      ],
+      [
+        "72",
+        "678,905",
+        "4.57",
+        "1.76",
+        "570",
+        "69.6",
+        "1,488"
+      ],
+      [
+        "100",
+        "679,409",
+        "5.51",
+        "2.37",
+        "770",
+        "94.2",
+        "2,043"
+      ],
+      [
+        "200",
+        "681,209",
+        "7.97",
+        "4.77",
+        "1,466",
+        "181.3",
+        "3,972"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted manuscript"
+  },
+  "table_s1": {
+    "caption": "Table S1. Baseline configurations.",
+    "rows": [
+      [
+        "Baseline",
+        "Architecture settings",
+        "Learning rate",
+        "Batch size",
+        "Maximum epochs / trees",
+        "Early stopping"
+      ],
+      [
+        "Persistence",
+        "Last causal power observation",
+        "—",
+        "—",
+        "—",
+        "Not applicable"
+      ],
+      [
+        "LightGBM",
+        "trees 300; leaves 64; row subsampling 0.8; column subsampling 0.8",
+        "0.05",
+        "—",
+        "300 trees",
+        "Fixed tree count"
+      ],
+      [
+        "XGBoost",
+        "trees 200; max depth 6; row subsampling 0.8; column subsampling 0.8; tree method hist",
+        "0.05",
+        "—",
+        "200 trees",
+        "Fixed tree count"
+      ],
+      [
+        "GRU",
+        "hidden 64",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ],
+      [
+        "TCN",
+        "channels 32",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ],
+      [
+        "DLinear",
+        "One linear layer over the input window, without the moving-average decomposition",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ],
+      [
+        "iTransformer",
+        "model width 128; heads 4",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ],
+      [
+        "TimesNet",
+        "model width 64",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ],
+      [
+        "TimeMixer",
+        "hidden 64",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ],
+      [
+        "PatchTST",
+        "patch length 16; stride 8; model width 64",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ],
+      [
+        "ACFormer",
+        "model width 96; patch kernel 10; stride 2; heads 8; layers 1",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ],
+      [
+        "STAN",
+        "hidden 64; GRU hidden 200; GAT hidden 64; gravity α 0.35; gravity β 0.37; gravity radius 30.0",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ],
+      [
+        "Wake-GNN",
+        "hidden 64; wake expansion 0.05",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ],
+      [
+        "Jensen-Net",
+        "hidden 64; wake expansion 0.05",
+        "0.001",
+        "16",
+        "50",
+        "Validation loss; patience 5; min Δ 0"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s2": {
+    "caption": "Table S2. PI-EEF hyperparameters.",
+    "rows": [
+      [
+        "Module",
+        "Hyperparameter",
+        "Value"
+      ],
+      [
+        "PI-MAE",
+        "Transformer layers / hidden dimension / heads / FFN dimension / dropout",
+        "3 / 128 / 4 / 512 / 0.1"
+      ],
+      [
+        "",
+        "Mask ratio",
+        "0.4 (38 of 96 positions)"
+      ],
+      [
+        "",
+        "Initial block length",
+        "6–24 steps (1.5–6 h)"
+      ],
+      [
+        "",
+        "RevIN fallback to training-period statistics",
+        "20% or less of a window available"
+      ],
+      [
+        "",
+        "Reconstruction weights [equation: figures/table_equations/table_s2_p1_r6_c2_e1.wmf], [equation: figures/table_equations/table_s2_p1_r6_c2_e2.wmf]",
+        "0.1, 0.05"
+      ],
+      [
+        "TD-DCN",
+        "Calibration network",
+        "One hidden layer of 32 units"
+      ],
+      [
+        "",
+        "Calibration range [equation: figures/table_equations/table_s2_p1_r8_c2_e1.wmf]",
+        "±3.0 m/s"
+      ],
+      [
+        "",
+        "Offset regularisation [equation: figures/table_equations/table_s2_p1_r9_c2_e1.wmf]",
+        "0.05"
+      ],
+      [
+        "",
+        "Calibration target threshold [equation: figures/table_equations/table_s2_p1_r10_c2_e1.wmf]",
+        "0.01 (1% of rated capacity)"
+      ],
+      [
+        "",
+        "B-spline degree / control points [equation: figures/table_equations/table_s2_p1_r11_c2_e1.wmf]",
+        "3 (cubic) / 15"
+      ],
+      [
+        "",
+        "Rated cap [equation: figures/table_equations/table_s2_p1_r12_c2_e1.wmf]",
+        "Learnable, clipped to [0.8, 1.0]"
+      ],
+      [
+        "",
+        "Cut-in / rated / cut-out wind speeds",
+        "3 / 10 / 22 m/s"
+      ],
+      [
+        "SA-DWGN",
+        "Graph-attention layers / hidden dimension",
+        "1 / 128"
+      ],
+      [
+        "",
+        "Temperature cap",
+        "50"
+      ],
+      [
+        "",
+        "Direction and terrain bias networks",
+        "Two layers, 16 hidden units"
+      ],
+      [
+        "Prediction head",
+        "MLP / NWP embedding",
+        "64 hidden units / 16 units"
+      ],
+      [
+        "Training",
+        "Historical window / batch size / optimiser",
+        "96 steps / 16 / Adam"
+      ],
+      [
+        "",
+        "Learning rates (Stages 1/2/3)",
+        "1×10⁻³ / 1×10⁻³ / 3×10⁻⁴"
+      ],
+      [
+        "",
+        "Epochs (Stages 1/2/3) and early stopping",
+        "5 / 5 / at most 20; patience 5 on validation NRMSE"
+      ],
+      [
+        "",
+        "Auxiliary weights [equation: figures/table_equations/table_s2_p1_r21_c2_e1.wmf] / decay rate [equation: figures/table_equations/table_s2_p1_r21_c2_e2.wmf] (Eq. (26))",
+        "0.05, 0.05 / 0.1"
+      ],
+      [
+        "",
+        "Huber threshold [equation: figures/table_equations/table_s2_p1_r22_c2_e1.wmf]",
+        "0.1"
+      ],
+      [
+        "Corruption (Stage 3)",
+        "Batch probability [equation: figures/table_equations/table_s2_p1_r23_c2_e1.wmf] / anchor and nearest neighbours / block length",
+        "0.5 / 1–10 turbines / 4–96 steps (1–24 h)"
+      ],
+      [
+        "",
+        "Block ending at the forecast origin / power and wind removed together",
+        "Probability 0.5 / probability 0.5"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s3": {
+    "caption": "Table S3. NRMSE and NMAE of PI-EEF and the baselines at Wind Farm A, as percentages of rated capacity; values are means with standard deviations, and the lowest value among the learning-based models is in bold. (a) NRMSE; (b) NMAE.",
+    "rows": [
+      [
+        "Panel a"
+      ],
+      [
+        "Model",
+        "15 min",
+        "1 h",
+        "4 h",
+        "12 h",
+        "24 h"
+      ],
+      [
+        "Persistence",
+        "9.01",
+        "14.52",
+        "24.54",
+        "33.37",
+        "34.05"
+      ],
+      [
+        "LightGBM",
+        "8.77 (0.02)",
+        "13.66 (0.02)",
+        "19.98 (0.12)",
+        "23.76 (0.25)",
+        "24.91 (0.11)"
+      ],
+      [
+        "XGBoost",
+        "8.76 (0.02)",
+        "13.60 (0.03)",
+        "20.28 (0.10)",
+        "23.89 (0.19)",
+        "25.04 (0.12)"
+      ],
+      [
+        "GRU",
+        "8.82 (0.12)",
+        "13.80 (0.45)",
+        "20.69 (0.35)",
+        "24.24 (1.01)",
+        "24.48 (1.26)"
+      ],
+      [
+        "TCN",
+        "8.85 (0.05)",
+        "13.71 (0.12)",
+        "20.49 (0.40)",
+        "23.21 (0.45)",
+        "24.92 (0.71)"
+      ],
+      [
+        "DLinear",
+        "8.87 (0.11)",
+        "13.68 (0.07)",
+        "20.44 (0.30)",
+        "24.20 (0.55)",
+        "23.90 (0.85)"
+      ],
+      [
+        "iTransformer",
+        "8.92 (0.05)",
+        "14.28 (0.12)",
+        "22.06 (0.40)",
+        "26.01 (0.99)",
+        "25.35 (0.63)"
+      ],
+      [
+        "TimesNet",
+        "8.79 (0.03)",
+        "13.84 (0.12)",
+        "20.94 (0.65)",
+        "24.14 (1.11)",
+        "23.74 (0.39)"
+      ],
+      [
+        "TimeMixer",
+        "8.87 (0.10)",
+        "13.83 (0.16)",
+        "20.67 (1.06)",
+        "23.34 (1.02)",
+        "24.27 (1.97)"
+      ],
+      [
+        "PatchTST",
+        "8.80 (0.04)",
+        "13.85 (0.08)",
+        "21.01 (0.46)",
+        "24.78 (0.51)",
+        "24.40 (1.14)"
+      ],
+      [
+        "ACFormer",
+        "8.62 (0.01)",
+        "13.75 (0.05)",
+        "20.95 (0.13)",
+        "23.32 (0.34)",
+        "23.86 (0.36)"
+      ],
+      [
+        "STAN",
+        "12.99 (1.69)",
+        "15.26 (0.84)",
+        "22.53 (0.69)",
+        "27.34 (1.62)",
+        "27.57 (0.62)"
+      ],
+      [
+        "Wake-GNN",
+        "8.67 (0.04)",
+        "13.71 (0.06)",
+        "21.64 (0.12)",
+        "25.84 (0.17)",
+        "26.55 (0.19)"
+      ],
+      [
+        "Jensen-Net",
+        "8.77 (0.04)",
+        "13.92 (0.03)",
+        "21.72 (0.11)",
+        "25.84 (0.23)",
+        "26.14 (0.13)"
+      ],
+      [
+        "PI-EEF (ours)",
+        "8.54 (0.03)",
+        "13.57 (0.08)",
+        "19.99 (0.37)",
+        "23.97 (0.42)",
+        "24.52 (0.67)"
+      ],
+      [],
+      [
+        "Panel b"
+      ],
+      [
+        "Model",
+        "15 min",
+        "1 h",
+        "4 h",
+        "12 h",
+        "24 h"
+      ],
+      [
+        "Persistence",
+        "3.89",
+        "6.89",
+        "13.10",
+        "19.31",
+        "19.71"
+      ],
+      [
+        "LightGBM",
+        "4.43 (0.03)",
+        "7.85 (0.04)",
+        "12.82 (0.10)",
+        "16.48 (0.29)",
+        "17.72 (0.10)"
+      ],
+      [
+        "XGBoost",
+        "4.39 (0.02)",
+        "7.83 (0.05)",
+        "13.34 (0.17)",
+        "16.56 (0.22)",
+        "17.73 (0.17)"
+      ],
+      [
+        "GRU",
+        "4.58 (0.30)",
+        "8.26 (0.91)",
+        "14.33 (0.41)",
+        "17.02 (1.46)",
+        "16.98 (1.57)"
+      ],
+      [
+        "TCN",
+        "4.41 (0.23)",
+        "7.90 (0.27)",
+        "13.77 (0.96)",
+        "16.32 (0.85)",
+        "18.18 (0.80)"
+      ],
+      [
+        "DLinear",
+        "4.81 (0.36)",
+        "7.88 (0.15)",
+        "13.84 (0.56)",
+        "17.09 (0.58)",
+        "16.91 (1.38)"
+      ],
+      [
+        "iTransformer",
+        "4.44 (0.18)",
+        "8.37 (0.55)",
+        "15.13 (0.73)",
+        "18.28 (0.87)",
+        "18.35 (0.54)"
+      ],
+      [
+        "TimesNet",
+        "4.32 (0.05)",
+        "8.29 (0.26)",
+        "14.21 (1.29)",
+        "17.09 (1.76)",
+        "16.71 (0.54)"
+      ],
+      [
+        "TimeMixer",
+        "4.55 (0.24)",
+        "7.70 (0.52)",
+        "13.49 (1.30)",
+        "15.41 (1.11)",
+        "16.53 (2.39)"
+      ],
+      [
+        "PatchTST",
+        "4.56 (0.09)",
+        "8.16 (0.31)",
+        "14.63 (0.71)",
+        "18.17 (0.74)",
+        "17.61 (1.67)"
+      ],
+      [
+        "ACFormer",
+        "4.02 (0.13)",
+        "7.10 (0.22)",
+        "12.55 (0.34)",
+        "14.86 (0.39)",
+        "15.12 (0.42)"
+      ],
+      [
+        "STAN",
+        "7.07 (1.13)",
+        "9.14 (0.88)",
+        "15.24 (1.15)",
+        "19.70 (1.28)",
+        "21.37 (1.60)"
+      ],
+      [
+        "Wake-GNN",
+        "4.09 (0.05)",
+        "7.51 (0.22)",
+        "13.88 (0.75)",
+        "18.90 (1.01)",
+        "19.96 (0.90)"
+      ],
+      [
+        "Jensen-Net",
+        "4.36 (0.30)",
+        "7.67 (0.15)",
+        "14.09 (0.72)",
+        "18.52 (0.51)",
+        "18.63 (0.52)"
+      ],
+      [
+        "PI-EEF (ours)",
+        "3.98 (0.06)",
+        "7.01 (0.14)",
+        "11.54 (0.34)",
+        "13.83 (0.54)",
+        "14.71 (0.43)"
+      ],
+      []
+    ],
+    "panels": 2,
+    "source": "submitted supplementary material"
+  },
+  "table_s4": {
+    "caption": "Table S4. Mean loss differences, PI-EEF minus baseline, multiplied by 10³, with BH significance. (a) Squared error; (b) absolute error.",
+    "rows": [
+      [
+        "Panel a"
+      ],
+      [
+        "Baseline",
+        "15 min",
+        "1 h",
+        "4 h",
+        "12 h",
+        "24 h"
+      ],
+      [
+        "Persistence",
+        "−0.813***",
+        "−2.665***",
+        "−20.259***",
+        "−53.901***",
+        "−55.797***"
+      ],
+      [
+        "LightGBM",
+        "−0.394***",
+        "−0.249",
+        "0.037",
+        "1.000",
+        "−1.894"
+      ],
+      [
+        "XGBoost",
+        "−0.374***",
+        "−0.060",
+        "−1.183",
+        "0.409",
+        "−2.557"
+      ],
+      [
+        "GRU",
+        "−0.474***",
+        "−0.628*",
+        "−2.885*",
+        "−1.381",
+        "0.118"
+      ],
+      [
+        "TCN",
+        "−0.539***",
+        "−0.365",
+        "−2.030",
+        "3.596",
+        "−1.981"
+      ],
+      [
+        "DLinear",
+        "−0.566***",
+        "−0.287",
+        "−1.841",
+        "−1.115",
+        "2.999"
+      ],
+      [
+        "iTransformer",
+        "−0.664***",
+        "−1.957***",
+        "−8.735***",
+        "−10.241*",
+        "−4.129"
+      ],
+      [
+        "TimesNet",
+        "−0.420***",
+        "−0.744*",
+        "−3.921**",
+        "−0.880",
+        "3.809"
+      ],
+      [
+        "TimeMixer",
+        "−0.560***",
+        "−0.713**",
+        "−2.874*",
+        "2.934",
+        "0.953"
+      ],
+      [
+        "PatchTST",
+        "−0.434***",
+        "−0.762**",
+        "−4.208**",
+        "−3.971",
+        "0.515"
+      ],
+      [
+        "ACFormer",
+        "−0.131**",
+        "−0.485**",
+        "−3.957**",
+        "3.075",
+        "3.211"
+      ],
+      [
+        "STAN",
+        "−9.801***",
+        "−4.928***",
+        "−10.826***",
+        "−17.495**",
+        "−15.874"
+      ],
+      [
+        "Wake-GNN",
+        "−0.211***",
+        "−0.379",
+        "−6.876***",
+        "−9.278",
+        "−10.302"
+      ],
+      [
+        "Jensen-Net",
+        "−0.388***",
+        "−0.961***",
+        "−7.211***",
+        "−9.304",
+        "−8.181"
+      ],
+      [],
+      [
+        "Panel b"
+      ],
+      [
+        "Baseline",
+        "15 min",
+        "1 h",
+        "4 h",
+        "12 h",
+        "24 h"
+      ],
+      [
+        "Persistence",
+        "0.928***",
+        "1.228*",
+        "−15.615***",
+        "−54.824***",
+        "−50.030***"
+      ],
+      [
+        "LightGBM",
+        "−4.502***",
+        "−8.453***",
+        "−12.772***",
+        "−26.517***",
+        "−30.146**"
+      ],
+      [
+        "XGBoost",
+        "−4.090***",
+        "−8.204***",
+        "−17.989***",
+        "−27.331***",
+        "−30.232**"
+      ],
+      [
+        "GRU",
+        "−5.963***",
+        "−12.477***",
+        "−27.881***",
+        "−31.985***",
+        "−22.682**"
+      ],
+      [
+        "TCN",
+        "−4.246***",
+        "−8.925***",
+        "−22.295***",
+        "−24.932***",
+        "−34.737***"
+      ],
+      [
+        "DLinear",
+        "−8.246***",
+        "−8.672***",
+        "−22.945***",
+        "−32.625***",
+        "−21.986**"
+      ],
+      [
+        "iTransformer",
+        "−4.551***",
+        "−13.630***",
+        "−35.936***",
+        "−44.550***",
+        "−36.450***"
+      ],
+      [
+        "TimesNet",
+        "−3.363***",
+        "−12.861***",
+        "−26.677***",
+        "−32.648***",
+        "−20.064**"
+      ],
+      [
+        "TimeMixer",
+        "−5.617***",
+        "−6.946***",
+        "−19.506***",
+        "−15.851**",
+        "−18.220*"
+      ],
+      [
+        "PatchTST",
+        "−5.784***",
+        "−11.472***",
+        "−30.929***",
+        "−43.454***",
+        "−29.022***"
+      ],
+      [
+        "ACFormer",
+        "−0.338**",
+        "−0.919*",
+        "−10.087***",
+        "−10.361*",
+        "−4.120"
+      ],
+      [
+        "STAN",
+        "−30.809***",
+        "−21.311***",
+        "−37.019***",
+        "−58.690***",
+        "−66.605***"
+      ],
+      [
+        "Wake-GNN",
+        "−1.027***",
+        "−5.061***",
+        "−23.441***",
+        "−50.702***",
+        "−52.564***"
+      ],
+      [
+        "Jensen-Net",
+        "−3.756***",
+        "−6.577***",
+        "−25.539***",
+        "−46.895***",
+        "−39.163***"
+      ],
+      []
+    ],
+    "panels": 2,
+    "source": "submitted supplementary material"
+  },
+  "table_s5": {
+    "caption": "Table S5. Strongest baselines retrained with the Huber loss, with changes of PI-EEF relative to the retrained baseline.",
+    "rows": [
+      [
+        "Horizon",
+        "Retrained baseline",
+        "Baseline NRMSE / NMAE (%)",
+        "PI-EEF NRMSE / NMAE (%)",
+        "NRMSE change",
+        "NMAE change",
+        "Seeds favouring PI-EEF (NRMSE / NMAE)"
+      ],
+      [
+        "15 min",
+        "ACFormer",
+        "8.64 / 4.25",
+        "8.53 / 3.95",
+        "−1.3%",
+        "−7.1%",
+        "3/3, 3/3"
+      ],
+      [
+        "1 h",
+        "ACFormer",
+        "13.75 / 7.21",
+        "13.53 / 6.96",
+        "−1.6%",
+        "−3.5%",
+        "3/3, 3/3"
+      ],
+      [
+        "4 h",
+        "ACFormer",
+        "21.07 / 12.87",
+        "20.09 / 11.57",
+        "−4.6%",
+        "−10.2%",
+        "3/3, 3/3"
+      ],
+      [
+        "12 h",
+        "ACFormer",
+        "23.65 / 15.40",
+        "23.82 / 13.71",
+        "+0.7%",
+        "−11.0%",
+        "1/3, 3/3"
+      ],
+      [
+        "24 h",
+        "ACFormer",
+        "23.97 / 15.73",
+        "24.96 / 14.95",
+        "+4.2%",
+        "−5.0%",
+        "0/3, 3/3"
+      ],
+      [
+        "12 h",
+        "LightGBM",
+        "24.33 / 15.47",
+        "23.82 / 13.71",
+        "−2.1%",
+        "−11.3%",
+        "2/3, 3/3"
+      ],
+      [
+        "24 h",
+        "TCN",
+        "23.47 / 16.12",
+        "24.96 / 14.95",
+        "+6.4%",
+        "−7.2%",
+        "0/3, 2/3"
+      ],
+      [
+        "24 h",
+        "TimesNet",
+        "23.34 / 15.55",
+        "24.96 / 14.95",
+        "+6.9%",
+        "−3.8%",
+        "0/3, 2/3"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s6": {
+    "caption": "Table S6. Seed-level tests of the ablation variants, with BH-adjusted paired t tests.",
+    "rows": [
+      [
+        "Variant",
+        "NRMSE: seeds favouring variant",
+        "NRMSE t-test [equation: figures/table_equations/table_s6_p1_r1_c3_e1.wmf]",
+        "NMAE: seeds favouring variant",
+        "NMAE t-test [equation: figures/table_equations/table_s6_p1_r1_c5_e1.wmf]"
+      ],
+      [
+        "Without physical prior (Eq. (2))",
+        "3/5",
+        "0.98",
+        "3/5",
+        "0.72"
+      ],
+      [
+        "Without boundary penalty",
+        "3/5",
+        "0.98",
+        "3/5",
+        "0.77"
+      ],
+      [
+        "Without temporal-difference penalty",
+        "1/5",
+        "0.98",
+        "4/5",
+        "0.68"
+      ],
+      [
+        "Joint power–wind masking in pre-training",
+        "1/5",
+        "0.68",
+        "1/5",
+        "0.77"
+      ],
+      [
+        "Without wind-speed calibration",
+        "3/5",
+        "0.98",
+        "3/5",
+        "0.98"
+      ],
+      [
+        "Manufacturer power curve instead of learned spline",
+        "2/5",
+        "0.98",
+        "3/5",
+        "0.76"
+      ],
+      [
+        "Without cut-out boundary",
+        "1/5",
+        "0.98",
+        "4/5",
+        "0.97"
+      ],
+      [
+        "Without density correction",
+        "5/5",
+        "0.71",
+        "5/5",
+        "0.68"
+      ],
+      [
+        "Without spatial aggregation",
+        "1/5",
+        "0.78",
+        "3/5",
+        "0.78"
+      ],
+      [
+        "Without direction bias",
+        "4/5",
+        "0.71",
+        "5/5",
+        "0.68"
+      ],
+      [
+        "Without terrain bias",
+        "2/5",
+        "0.98",
+        "2/5",
+        "0.97"
+      ],
+      [
+        "Without density correction and terrain bias",
+        "1/5",
+        "0.97",
+        "3/5",
+        "0.98"
+      ],
+      [
+        "Without operating-point weighting",
+        "3/5",
+        "0.87",
+        "3/5",
+        "0.71"
+      ],
+      [
+        "Learned-curve derivative as operating-point weight",
+        "4/5",
+        "0.77",
+        "4/5",
+        "0.68"
+      ],
+      [
+        "Sequential training (encoder and calibration frozen in Stage 3)",
+        "1/5",
+        "0.98",
+        "4/5",
+        "0.71"
+      ],
+      [
+        "Without pre-training (Stage 3 only)",
+        "1/5",
+        "0.71",
+        "3/5",
+        "0.87"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s7": {
+    "caption": "Table S7. Relative 4-h error change of the physical ablation variants by operating regime, in percent; positive values mean that the full model has the lower error. (a) NRMSE; (b) NMAE. Below 0.05 of rated power, 75% and 68% of the NMAE differences from the variants without the temporal-difference penalty and without the density correction arise at measured wind speeds below the 3-m/s cut-in.",
+    "rows": [
+      [
+        "Panel a"
+      ],
+      [
+        "(a) NRMSE"
+      ],
+      [
+        "Regime",
+        "No physical prior",
+        "No boundary penalty",
+        "No temporal penalty",
+        "No calibration",
+        "Manufacturer curve",
+        "No cut-out",
+        "No density correction"
+      ],
+      [
+        "NWP wind speed"
+      ],
+      [
+        "<3 m/s",
+        "−0.8",
+        "−1.8",
+        "−0.1",
+        "−0.6",
+        "−0.2",
+        "−1.4",
+        "−0.0"
+      ],
+      [
+        "3–6 m/s",
+        "+1.0",
+        "+0.2",
+        "+0.9",
+        "+1.4",
+        "−0.2",
+        "+0.7",
+        "−0.6"
+      ],
+      [
+        "6–9 m/s",
+        "−0.3",
+        "+1.2",
+        "+0.3",
+        "−0.9",
+        "−0.2",
+        "+1.1",
+        "−2.1"
+      ],
+      [
+        "9–12 m/s",
+        "+0.5",
+        "+1.0",
+        "−0.6",
+        "−4.1",
+        "−0.9",
+        "−0.3",
+        "−2.4"
+      ],
+      [
+        "Measured power"
+      ],
+      [
+        "<0.05 rated",
+        "−1.9",
+        "−1.4",
+        "−6.2",
+        "−3.2",
+        "−0.7",
+        "−0.6",
+        "−10.4"
+      ],
+      [
+        "0.05–0.3 rated",
+        "+3.5",
+        "+0.7",
+        "+2.0",
+        "−1.0",
+        "+1.9",
+        "+3.7",
+        "−3.0"
+      ],
+      [
+        "0.3–0.7 rated",
+        "+2.7",
+        "+0.7",
+        "+4.7",
+        "+1.7",
+        "+1.3",
+        "+2.2",
+        "+2.8"
+      ],
+      [
+        "0.7–0.95 rated",
+        "+0.5",
+        "+0.8",
+        "+2.2",
+        "+2.3",
+        "−0.6",
+        "−0.2",
+        "+3.3"
+      ],
+      [
+        "≥0.95 rated",
+        "−1.2",
+        "+0.7",
+        "+1.2",
+        "+2.8",
+        "−1.5",
+        "−1.4",
+        "+3.7"
+      ],
+      [
+        "One-hour ramp"
+      ],
+      [
+        "Top 10% ramps",
+        "+1.8",
+        "+1.0",
+        "+2.9",
+        "+0.8",
+        "+0.8",
+        "+1.2",
+        "+0.9"
+      ],
+      [
+        "Other ramps",
+        "−0.6",
+        "−0.4",
+        "−0.9",
+        "−0.2",
+        "−0.8",
+        "−0.2",
+        "−2.0"
+      ],
+      [
+        "Input history"
+      ],
+      [
+        "Incomplete history",
+        "+0.0",
+        "+0.0",
+        "+0.8",
+        "−0.2",
+        "+0.0",
+        "+0.5",
+        "+0.2"
+      ],
+      [
+        "Complete history",
+        "+0.2",
+        "+0.1",
+        "+0.4",
+        "+0.1",
+        "−0.3",
+        "+0.3",
+        "−1.0"
+      ],
+      [
+        "Candidate event class"
+      ],
+      [
+        "Event-free operation",
+        "+0.4",
+        "+0.2",
+        "+0.7",
+        "+0.6",
+        "−0.4",
+        "+0.5",
+        "−0.2"
+      ],
+      [
+        "Low-power candidates",
+        "−0.6",
+        "−1.1",
+        "−2.4",
+        "−6.1",
+        "+2.5",
+        "−1.2",
+        "−11.0"
+      ],
+      [
+        "Frozen wind-speed candidates",
+        "−19.5",
+        "−10.5",
+        "−30.2",
+        "+28.4",
+        "−13.4",
+        "+22.3",
+        "−23.3"
+      ],
+      [
+        "Statistical power anomalies",
+        "−0.9",
+        "−1.0",
+        "−1.7",
+        "−2.4",
+        "−1.6",
+        "+0.1",
+        "−3.6"
+      ],
+      [],
+      [
+        "Panel b"
+      ],
+      [
+        "(b) NMAE"
+      ],
+      [
+        "Regime",
+        "No physical prior",
+        "No boundary penalty",
+        "No temporal penalty",
+        "No calibration",
+        "Manufacturer curve",
+        "No cut-out",
+        "No density correction"
+      ],
+      [
+        "NWP wind speed"
+      ],
+      [
+        "<3 m/s",
+        "−4.9",
+        "−3.5",
+        "−7.1",
+        "−1.6",
+        "−2.7",
+        "−3.7",
+        "−6.1"
+      ],
+      [
+        "3–6 m/s",
+        "−1.3",
+        "−0.7",
+        "−2.8",
+        "+1.2",
+        "−1.5",
+        "−0.6",
+        "−3.3"
+      ],
+      [
+        "6–9 m/s",
+        "−0.9",
+        "+1.2",
+        "−0.4",
+        "−1.0",
+        "−0.7",
+        "+1.1",
+        "−2.3"
+      ],
+      [
+        "9–12 m/s",
+        "+1.6",
+        "+0.7",
+        "+0.2",
+        "−0.5",
+        "−1.0",
+        "+3.1",
+        "−0.1"
+      ],
+      [
+        "Measured power"
+      ],
+      [
+        "<0.05 rated",
+        "−8.9",
+        "−4.7",
+        "−17.9",
+        "−2.8",
+        "−5.1",
+        "−4.1",
+        "−17.3"
+      ],
+      [
+        "0.05–0.3 rated",
+        "+3.0",
+        "+0.2",
+        "+3.9",
+        "−0.7",
+        "+1.9",
+        "+3.1",
+        "−1.0"
+      ],
+      [
+        "0.3–0.7 rated",
+        "+3.4",
+        "+1.2",
+        "+5.4",
+        "+2.3",
+        "+1.5",
+        "+2.5",
+        "+3.4"
+      ],
+      [
+        "0.7–0.95 rated",
+        "−0.2",
+        "+1.1",
+        "+1.6",
+        "+3.0",
+        "−1.4",
+        "−0.7",
+        "+4.7"
+      ],
+      [
+        "≥0.95 rated",
+        "−2.7",
+        "+0.8",
+        "−0.0",
+        "+3.7",
+        "−2.9",
+        "−2.5",
+        "+5.0"
+      ],
+      [
+        "One-hour ramp"
+      ],
+      [
+        "Top 10% ramps",
+        "+1.9",
+        "+1.2",
+        "+3.3",
+        "+0.9",
+        "+0.8",
+        "+1.3",
+        "+1.0"
+      ],
+      [
+        "Other ramps",
+        "−3.5",
+        "−1.8",
+        "−5.8",
+        "−0.5",
+        "−2.5",
+        "−1.8",
+        "−5.5"
+      ],
+      [
+        "Input history"
+      ],
+      [
+        "Incomplete history",
+        "−2.7",
+        "−1.6",
+        "−4.0",
+        "−1.5",
+        "−1.8",
+        "−1.3",
+        "−3.5"
+      ],
+      [
+        "Complete history",
+        "−2.1",
+        "−1.0",
+        "−3.4",
+        "−0.2",
+        "−1.7",
+        "−1.0",
+        "−3.8"
+      ],
+      [
+        "Candidate event class"
+      ],
+      [
+        "Event-free operation",
+        "−2.2",
+        "−1.0",
+        "−3.4",
+        "+0.0",
+        "−1.9",
+        "−1.2",
+        "−3.3"
+      ],
+      [
+        "Low-power candidates",
+        "+1.2",
+        "−0.7",
+        "−1.3",
+        "−2.5",
+        "+4.6",
+        "+5.3",
+        "−10.5"
+      ],
+      [
+        "Frozen wind-speed candidates",
+        "−19.7",
+        "−10.1",
+        "−33.1",
+        "+37.0",
+        "−8.6",
+        "+25.6",
+        "−19.5"
+      ],
+      [
+        "Statistical power anomalies",
+        "−2.2",
+        "−1.7",
+        "−4.7",
+        "−2.5",
+        "−2.6",
+        "−2.0",
+        "−5.0"
+      ],
+      []
+    ],
+    "panels": 2,
+    "source": "submitted supplementary material"
+  },
+  "table_s8": {
+    "caption": "Table S8. Errors of raw and calibrated NWP wind speed against measured nacelle wind speed, by measured wind-speed bin, in m/s.",
+    "rows": [
+      [
+        "Bin (m/s)",
+        "Raw NWP RMSE / MAE / bias",
+        "Calibrated RMSE / MAE / bias"
+      ],
+      [
+        "All",
+        "2.53 / 1.92 / −0.93",
+        "2.49 / 1.89 / −0.98"
+      ],
+      [
+        "< 3",
+        "1.64 / 1.25 / 0.80",
+        "1.57 / 1.20 / 0.75"
+      ],
+      [
+        "3–10",
+        "2.60 / 2.08 / −1.64",
+        "2.57 / 2.06 / −1.68"
+      ],
+      [
+        "10–15",
+        "5.12 / 4.66 / −4.66",
+        "5.07 / 4.67 / −4.66"
+      ],
+      [
+        "> 15",
+        "8.88 / 8.68 / −8.68",
+        "8.98 / 8.80 / −8.80"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s9": {
+    "caption": "Table S9. Errors of joint fine-tuning and sequential training at 15 min and 1 h.",
+    "rows": [
+      [
+        "Horizon / condition",
+        "Joint fine-tuning NRMSE / NMAE (%)",
+        "Sequential NRMSE / NMAE (%)"
+      ],
+      [
+        "15 min",
+        "8.54 / 3.98",
+        "8.58 / 4.04"
+      ],
+      [
+        "1 h",
+        "13.57 / 7.01",
+        "13.43 / 6.92"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s10": {
+    "caption": "Table S10. Validation errors for the learning-rate schedules.",
+    "rows": [
+      [
+        "Schedule (Stages 1/2/3)",
+        "NRMSE (%)",
+        "NMAE (%)"
+      ],
+      [
+        "1×10⁻³ / 1×10⁻³ / 3×10⁻⁴ (default)",
+        "17.77",
+        "10.98"
+      ],
+      [
+        "1×10⁻³ / 1×10⁻³ / 1×10⁻³",
+        "17.84",
+        "10.68"
+      ],
+      [
+        "3×10⁻⁴ / 3×10⁻⁴ / 3×10⁻⁴",
+        "18.06",
+        "11.20"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s11": {
+    "caption": "Table S11. Errors of PI-EEF trained with different forecasting losses, by candidate event class.",
+    "rows": [
+      [
+        "Forecasting loss",
+        "Event class (targets per seed)",
+        "NRMSE (%)",
+        "NMAE (%)"
+      ],
+      [
+        "Huber ([equation: figures/table_equations/table_s11_p1_r2_c1_e1.wmf])",
+        "Frozen wind-speed candidates (94)",
+        "10.40 ± 3.07",
+        "8.08 ± 2.71"
+      ],
+      [
+        "Huber ([equation: figures/table_equations/table_s11_p1_r3_c1_e1.wmf])",
+        "Low-power (curtailment) candidates (22578)",
+        "15.95 ± 2.25",
+        "5.66 ± 0.93"
+      ],
+      [
+        "Huber ([equation: figures/table_equations/table_s11_p1_r4_c1_e1.wmf])",
+        "Event-free operation (191205)",
+        "20.54 ± 0.34",
+        "12.23 ± 0.37"
+      ],
+      [
+        "Huber ([equation: figures/table_equations/table_s11_p1_r5_c1_e1.wmf])",
+        "Statistical power anomalies (6524)",
+        "19.59 ± 0.99",
+        "12.66 ± 0.59"
+      ],
+      [
+        "Mean squared error",
+        "Frozen wind-speed candidates (94)",
+        "6.74 ± 6.40",
+        "4.19 ± 4.64"
+      ],
+      [
+        "Mean squared error",
+        "Low-power (curtailment) candidates (22578)",
+        "14.94 ± 1.74",
+        "5.12 ± 0.80"
+      ],
+      [
+        "Mean squared error",
+        "Event-free operation (191205)",
+        "20.51 ± 0.15",
+        "12.31 ± 0.04"
+      ],
+      [
+        "Mean squared error",
+        "Statistical power anomalies (6524)",
+        "19.63 ± 0.68",
+        "12.85 ± 0.34"
+      ],
+      [
+        "Median (pinball, [equation: figures/table_equations/table_s11_p1_r10_c1_e1.wmf])",
+        "Frozen wind-speed candidates (94)",
+        "5.35 ± 1.70",
+        "3.60 ± 1.52"
+      ],
+      [
+        "Median (pinball, [equation: figures/table_equations/table_s11_p1_r11_c1_e1.wmf])",
+        "Low-power (curtailment) candidates (22578)",
+        "15.51 ± 0.65",
+        "4.76 ± 0.31"
+      ],
+      [
+        "Median (pinball, [equation: figures/table_equations/table_s11_p1_r12_c1_e1.wmf])",
+        "Event-free operation (191205)",
+        "20.72 ± 0.31",
+        "12.08 ± 0.45"
+      ],
+      [
+        "Median (pinball, [equation: figures/table_equations/table_s11_p1_r13_c1_e1.wmf])",
+        "Statistical power anomalies (6524)",
+        "20.03 ± 0.84",
+        "12.85 ± 0.61"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s12": {
+    "caption": "Table S12. Relative NRMSE / NMAE changes for PI-EEF under SCADA faults, as percentages. Column headings give outage duration / forecast horizon.",
+    "rows": [
+      [
+        "Outage / turbines",
+        "1 h / 4 h",
+        "1 h / 24 h",
+        "4 h / 4 h",
+        "4 h / 24 h",
+        "12 h / 4 h",
+        "12 h / 24 h",
+        "24 h / 4 h",
+        "24 h / 24 h"
+      ],
+      [
+        "Power-only / 1",
+        "+0.22 / +0.19",
+        "+0.30 / +0.22",
+        "+0.37 / +0.41",
+        "+0.31 / +0.26",
+        "+0.79 / +0.82",
+        "+0.44 / +0.41",
+        "+1.31 / +2.51",
+        "+0.62 / +1.63"
+      ],
+      [
+        "Power-only / 3",
+        "+0.70 / +0.55",
+        "+0.85 / +0.62",
+        "+1.19 / +1.28",
+        "+0.94 / +0.81",
+        "+2.46 / +2.49",
+        "+1.43 / +1.33",
+        "+3.91 / +7.47",
+        "+1.85 / +4.88"
+      ],
+      [
+        "Power-only / 6",
+        "+1.44 / +1.23",
+        "+1.65 / +1.21",
+        "+2.43 / +2.67",
+        "+1.81 / +1.58",
+        "+4.95 / +5.10",
+        "+2.83 / +2.69",
+        "+7.76 / +15.07",
+        "+3.62 / +9.63"
+      ],
+      [
+        "Power-only / 10",
+        "+2.59 / +2.30",
+        "+2.67 / +2.01",
+        "+4.15 / +4.57",
+        "+3.02 / +2.74",
+        "+8.07 / +8.49",
+        "+4.69 / +4.57",
+        "+12.67 / +25.35",
+        "+6.44 / +16.64"
+      ],
+      [
+        "Synchronised / 1",
+        "+0.29 / +0.39",
+        "+0.29 / +0.32",
+        "+0.43 / +0.58",
+        "+0.29 / +0.35",
+        "+0.85 / +0.98",
+        "+0.42 / +0.51",
+        "+1.43 / +2.57",
+        "+0.88 / +1.69"
+      ],
+      [
+        "Synchronised / 3",
+        "+0.94 / +1.08",
+        "+0.86 / +0.91",
+        "+1.42 / +1.74",
+        "+0.91 / +1.05",
+        "+2.63 / +2.92",
+        "+1.40 / +1.59",
+        "+4.26 / +7.57",
+        "+2.54 / +4.92"
+      ],
+      [
+        "Synchronised / 6",
+        "+1.91 / +2.22",
+        "+1.70 / +1.74",
+        "+2.86 / +3.52",
+        "+1.79 / +2.03",
+        "+5.35 / +5.91",
+        "+2.82 / +3.08",
+        "+8.36 / +15.22",
+        "+4.98 / +9.79"
+      ],
+      [
+        "Synchronised / 10",
+        "+3.33 / +3.82",
+        "+2.78 / +2.89",
+        "+4.80 / +5.85",
+        "+3.01 / +3.45",
+        "+8.71 / +9.70",
+        "+4.66 / +5.09",
+        "+13.81 / +25.93",
+        "+8.56 / +16.93"
+      ],
+      [
+        "Frozen or drift scenario",
+        "4 h",
+        "24 h"
+      ],
+      [
+        "Frozen sensors, 1 turbine, 1 h",
+        "+0.06 / +0.13",
+        "−0.02 / −0.00"
+      ],
+      [
+        "Frozen sensors, 1 turbine, 4 h",
+        "+0.37 / +0.53",
+        "+0.03 / +0.11"
+      ],
+      [
+        "Frozen sensors, 3 turbines, 1 h",
+        "+0.35 / +0.46",
+        "−0.04 / −0.00"
+      ],
+      [
+        "Frozen sensors, 3 turbines, 4 h",
+        "+1.32 / +1.59",
+        "+0.21 / +0.31"
+      ],
+      [
+        "Wind-speed drift 0.5 m/s, 4 h",
+        "+0.00 / −0.00",
+        "−0.02 / −0.04"
+      ],
+      [
+        "Wind-speed drift 1 m/s, 4 h",
+        "+0.01 / +0.01",
+        "−0.05 / −0.07"
+      ],
+      [
+        "Wind-speed drift 2 m/s, 4 h",
+        "+0.02 / +0.09",
+        "−0.10 / −0.04"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s13": {
+    "caption": "Table S13. Forecast errors of all models under the 39 SCADA fault scenarios at 4 h.",
+    "rows": [
+      [
+        "Model",
+        "Fault-free NRMSE / NMAE (%)",
+        "Under faults NRMSE / NMAE (%)",
+        "Mean increase NRMSE / NMAE (%)",
+        "Scenarios with lower NRMSE for PI-EEF",
+        "Scenarios with lower NMAE for PI-EEF"
+      ],
+      [
+        "PI-EEF",
+        "19.99 / 11.54",
+        "20.59 / 12.05",
+        "3.04 / 4.44",
+        "",
+        ""
+      ],
+      [
+        "Persistence",
+        "24.54 / 13.10",
+        "25.57 / 13.67",
+        "4.22 / 4.31",
+        "39/39",
+        "37/39"
+      ],
+      [
+        "LightGBM",
+        "19.98 / 12.82",
+        "20.45 / 13.02",
+        "2.34 / 1.58",
+        "6/39",
+        "35/39"
+      ],
+      [
+        "XGBoost",
+        "20.28 / 13.34",
+        "20.70 / 13.54",
+        "2.07 / 1.49",
+        "30/39",
+        "37/39"
+      ],
+      [
+        "GRU",
+        "20.69 / 14.33",
+        "21.13 / 14.53",
+        "2.09 / 1.44",
+        "36/39",
+        "39/39"
+      ],
+      [
+        "TCN",
+        "20.49 / 13.77",
+        "20.88 / 13.98",
+        "1.94 / 1.52",
+        "35/39",
+        "37/39"
+      ],
+      [
+        "DLinear",
+        "20.44 / 13.84",
+        "20.93 / 14.07",
+        "2.41 / 1.69",
+        "35/39",
+        "37/39"
+      ],
+      [
+        "iTransformer",
+        "22.06 / 15.13",
+        "22.27 / 15.24",
+        "0.92 / 0.72",
+        "38/39",
+        "39/39"
+      ],
+      [
+        "TimesNet",
+        "20.94 / 14.21",
+        "21.28 / 14.39",
+        "1.66 / 1.30",
+        "37/39",
+        "39/39"
+      ],
+      [
+        "TimeMixer",
+        "20.67 / 13.49",
+        "20.99 / 13.66",
+        "1.54 / 1.24",
+        "34/39",
+        "37/39"
+      ],
+      [
+        "PatchTST",
+        "21.01 / 14.63",
+        "21.40 / 14.81",
+        "1.88 / 1.23",
+        "37/39",
+        "39/39"
+      ],
+      [
+        "ACFormer",
+        "20.95 / 12.55",
+        "21.66 / 12.85",
+        "3.35 / 2.40",
+        "39/39",
+        "35/39"
+      ],
+      [
+        "STAN",
+        "22.53 / 15.24",
+        "22.63 / 15.36",
+        "0.45 / 0.75",
+        "38/39",
+        "39/39"
+      ],
+      [
+        "Wake-GNN",
+        "21.64 / 13.88",
+        "22.46 / 14.25",
+        "3.81 / 2.64",
+        "39/39",
+        "39/39"
+      ],
+      [
+        "Jensen-Net",
+        "21.72 / 14.09",
+        "22.44 / 14.41",
+        "3.34 / 2.25",
+        "39/39",
+        "39/39"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s14": {
+    "caption": "Table S14. Mean errors across fault scenarios and counts of scenarios with lower errors for PI-EEF than the strongest baselines.",
+    "rows": [
+      [
+        "Horizon",
+        "Baseline",
+        "PI-EEF NRMSE / NMAE (%)",
+        "Baseline NRMSE / NMAE (%)",
+        "Scenarios with lower NRMSE",
+        "Scenarios with lower NMAE"
+      ],
+      [
+        "4 h",
+        "ACFormer (original loss)",
+        "20.69 / 12.03",
+        "21.65 / 12.67",
+        "39/39",
+        "35/39"
+      ],
+      [
+        "4 h",
+        "ACFormer (Huber loss)",
+        "20.69 / 12.03",
+        "21.69 / 13.14",
+        "39/39",
+        "37/39"
+      ],
+      [
+        "24 h",
+        "ACFormer (original loss)",
+        "25.39 / 15.34",
+        "24.03 / 15.26",
+        "0/39",
+        "27/39"
+      ],
+      [
+        "24 h",
+        "ACFormer (Huber loss)",
+        "25.39 / 15.34",
+        "23.97 / 15.71",
+        "0/39",
+        "34/39"
+      ],
+      [
+        "24 h",
+        "TCN (Huber loss)",
+        "25.39 / 15.34",
+        "23.48 / 16.12",
+        "0/39",
+        "35/39"
+      ],
+      [
+        "24 h",
+        "TimesNet (Huber loss)",
+        "25.39 / 15.34",
+        "23.37 / 15.56",
+        "0/39",
+        "31/39"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s15": {
+    "caption": "Table S15. Errors by candidate event class at Wind Farm A. (a) NRMSE; (b) NMAE.",
+    "rows": [
+      [
+        "Panel a"
+      ],
+      [
+        "Model",
+        "All valid targets",
+        "Event-free operation",
+        "Low-power candidates",
+        "Frozen wind-speed candidates",
+        "Statistical power anomalies"
+      ],
+      [
+        "PI-EEF",
+        "19.99 ± 0.37",
+        "20.45 ± 0.28",
+        "15.60 ± 1.66",
+        "9.99 ± 3.35",
+        "19.77 ± 0.89"
+      ],
+      [
+        "Persistence",
+        "24.54 ± 0.00",
+        "25.32 ± 0.00",
+        "16.39 ± 0.00",
+        "1.30 ± 0.00",
+        "25.07 ± 0.00"
+      ],
+      [
+        "LightGBM",
+        "19.98 ± 0.12",
+        "20.18 ± 0.11",
+        "18.30 ± 0.34",
+        "9.32 ± 1.48",
+        "19.66 ± 0.19"
+      ],
+      [
+        "XGBoost",
+        "20.28 ± 0.10",
+        "20.35 ± 0.09",
+        "19.96 ± 0.55",
+        "8.63 ± 1.03",
+        "19.58 ± 0.07"
+      ],
+      [
+        "GRU",
+        "20.69 ± 0.35",
+        "20.58 ± 0.32",
+        "21.93 ± 3.79",
+        "12.94 ± 6.03",
+        "18.56 ± 0.36"
+      ],
+      [
+        "TCN",
+        "20.49 ± 0.40",
+        "20.60 ± 0.20",
+        "19.83 ± 3.13",
+        "13.17 ± 6.11",
+        "18.70 ± 0.38"
+      ],
+      [
+        "DLinear",
+        "20.44 ± 0.30",
+        "20.48 ± 0.12",
+        "20.49 ± 2.35",
+        "19.04 ± 3.02",
+        "18.79 ± 0.38"
+      ],
+      [
+        "iTransformer",
+        "22.06 ± 0.40",
+        "21.50 ± 0.67",
+        "26.68 ± 3.55",
+        "18.92 ± 5.71",
+        "19.66 ± 0.85"
+      ],
+      [
+        "TimesNet",
+        "20.94 ± 0.65",
+        "20.85 ± 0.34",
+        "21.72 ± 4.19",
+        "12.62 ± 6.25",
+        "19.78 ± 1.34"
+      ],
+      [
+        "TimeMixer",
+        "20.67 ± 1.06",
+        "20.53 ± 0.51",
+        "21.27 ± 6.59",
+        "18.29 ± 9.50",
+        "20.39 ± 1.41"
+      ],
+      [
+        "PatchTST",
+        "21.01 ± 0.46",
+        "20.76 ± 0.37",
+        "23.49 ± 3.23",
+        "22.49 ± 4.91",
+        "18.23 ± 0.70"
+      ],
+      [
+        "ACFormer",
+        "20.95 ± 0.13",
+        "21.36 ± 0.17",
+        "17.69 ± 1.49",
+        "17.54 ± 2.82",
+        "19.26 ± 0.33"
+      ],
+      [
+        "STAN",
+        "22.53 ± 0.69",
+        "22.59 ± 0.49",
+        "22.37 ± 3.23",
+        "19.73 ± 6.52",
+        "20.49 ± 1.02"
+      ],
+      [
+        "Wake-GNN",
+        "21.64 ± 0.12",
+        "22.44 ± 0.13",
+        "13.42 ± 0.84",
+        "6.85 ± 2.28",
+        "20.94 ± 0.26"
+      ],
+      [
+        "Jensen-Net",
+        "21.72 ± 0.11",
+        "22.32 ± 0.08",
+        "16.11 ± 1.02",
+        "14.59 ± 1.10",
+        "20.82 ± 0.17"
+      ],
+      [],
+      [
+        "Panel b"
+      ],
+      [
+        "Model",
+        "All valid targets",
+        "Event-free operation",
+        "Low-power candidates",
+        "Frozen wind-speed candidates",
+        "Statistical power anomalies"
+      ],
+      [
+        "PI-EEF",
+        "11.54 ± 0.34",
+        "12.22 ± 0.33",
+        "5.43 ± 0.75",
+        "7.51 ± 2.92",
+        "12.84 ± 0.68"
+      ],
+      [
+        "Persistence",
+        "13.10 ± 0.00",
+        "14.11 ± 0.00",
+        "3.94 ± 0.00",
+        "0.44 ± 0.00",
+        "15.60 ± 0.00"
+      ],
+      [
+        "LightGBM",
+        "12.82 ± 0.10",
+        "13.15 ± 0.07",
+        "9.78 ± 0.40",
+        "6.54 ± 1.00",
+        "13.59 ± 0.18"
+      ],
+      [
+        "XGBoost",
+        "13.34 ± 0.17",
+        "13.50 ± 0.13",
+        "11.93 ± 0.75",
+        "6.33 ± 1.26",
+        "13.53 ± 0.12"
+      ],
+      [
+        "GRU",
+        "14.33 ± 0.41",
+        "14.15 ± 0.30",
+        "16.06 ± 3.63",
+        "10.72 ± 5.68",
+        "13.68 ± 0.36"
+      ],
+      [
+        "TCN",
+        "13.77 ± 0.96",
+        "13.69 ± 0.69",
+        "14.58 ± 4.11",
+        "10.58 ± 5.57",
+        "13.32 ± 0.47"
+      ],
+      [
+        "DLinear",
+        "13.84 ± 0.56",
+        "13.70 ± 0.46",
+        "15.12 ± 2.62",
+        "15.87 ± 2.49",
+        "13.23 ± 0.33"
+      ],
+      [
+        "iTransformer",
+        "15.13 ± 0.73",
+        "14.63 ± 0.70",
+        "19.66 ± 3.38",
+        "15.87 ± 5.17",
+        "14.28 ± 0.54"
+      ],
+      [
+        "TimesNet",
+        "14.21 ± 1.29",
+        "13.96 ± 0.95",
+        "16.35 ± 4.93",
+        "10.55 ± 6.06",
+        "14.07 ± 1.08"
+      ],
+      [
+        "TimeMixer",
+        "13.49 ± 1.30",
+        "13.40 ± 0.86",
+        "14.14 ± 6.93",
+        "13.66 ± 8.17",
+        "13.94 ± 1.27"
+      ],
+      [
+        "PatchTST",
+        "14.63 ± 0.71",
+        "14.17 ± 0.62",
+        "18.95 ± 4.24",
+        "17.67 ± 4.25",
+        "13.11 ± 0.69"
+      ],
+      [
+        "ACFormer",
+        "12.55 ± 0.34",
+        "12.98 ± 0.29",
+        "8.85 ± 1.37",
+        "13.48 ± 3.09",
+        "12.64 ± 0.29"
+      ],
+      [
+        "STAN",
+        "15.24 ± 1.15",
+        "15.21 ± 0.92",
+        "15.65 ± 3.48",
+        "14.80 ± 5.47",
+        "14.73 ± 1.11"
+      ],
+      [
+        "Wake-GNN",
+        "13.88 ± 0.75",
+        "14.63 ± 0.65",
+        "7.50 ± 1.83",
+        "6.45 ± 2.33",
+        "14.24 ± 0.30"
+      ],
+      [
+        "Jensen-Net",
+        "14.09 ± 0.72",
+        "14.50 ± 0.60",
+        "10.74 ± 1.85",
+        "13.47 ± 1.10",
+        "13.93 ± 0.39"
+      ],
+      []
+    ],
+    "panels": 2,
+    "source": "submitted supplementary material"
+  },
+  "table_s16": {
+    "caption": "Table S16. Test errors at the extension wind farms.",
+    "rows": [
+      [
+        "Wind farm",
+        "Horizon",
+        "Model",
+        "NRMSE (%)",
+        "NMAE (%)"
+      ],
+      [
+        "Kelmarsh",
+        "15 min",
+        "PI-EEF",
+        "9.31 ± 0.09",
+        "5.63 ± 0.08"
+      ],
+      [
+        "Kelmarsh",
+        "15 min",
+        "Persistence",
+        "9.79 ± 0.00",
+        "5.65 ± 0.00"
+      ],
+      [
+        "Kelmarsh",
+        "15 min",
+        "XGBoost",
+        "9.52 ± 0.05",
+        "5.97 ± 0.05"
+      ],
+      [
+        "Kelmarsh",
+        "15 min",
+        "DLinear",
+        "9.43 ± 0.05",
+        "5.85 ± 0.12"
+      ],
+      [
+        "Kelmarsh",
+        "15 min",
+        "Jensen-Net",
+        "9.55 ± 0.03",
+        "6.15 ± 0.09"
+      ],
+      [
+        "Kelmarsh",
+        "15 min",
+        "Wake-GNN",
+        "9.46 ± 0.00",
+        "5.86 ± 0.01"
+      ],
+      [
+        "Kelmarsh",
+        "1 h",
+        "PI-EEF",
+        "12.45 ± 0.15",
+        "7.84 ± 0.10"
+      ],
+      [
+        "Kelmarsh",
+        "1 h",
+        "Persistence",
+        "13.84 ± 0.00",
+        "8.26 ± 0.00"
+      ],
+      [
+        "Kelmarsh",
+        "1 h",
+        "XGBoost",
+        "12.68 ± 0.06",
+        "8.30 ± 0.00"
+      ],
+      [
+        "Kelmarsh",
+        "1 h",
+        "DLinear",
+        "12.47 ± 0.11",
+        "8.22 ± 0.24"
+      ],
+      [
+        "Kelmarsh",
+        "1 h",
+        "Jensen-Net",
+        "13.25 ± 0.03",
+        "9.03 ± 0.09"
+      ],
+      [
+        "Kelmarsh",
+        "1 h",
+        "Wake-GNN",
+        "13.10 ± 0.06",
+        "8.71 ± 0.31"
+      ],
+      [
+        "Kelmarsh",
+        "4 h",
+        "PI-EEF",
+        "15.41 ± 0.39",
+        "9.95 ± 0.35"
+      ],
+      [
+        "Kelmarsh",
+        "4 h",
+        "Persistence",
+        "20.55 ± 0.00",
+        "12.93 ± 0.00"
+      ],
+      [
+        "Kelmarsh",
+        "4 h",
+        "XGBoost",
+        "15.52 ± 0.04",
+        "10.42 ± 0.01"
+      ],
+      [
+        "Kelmarsh",
+        "4 h",
+        "DLinear",
+        "15.83 ± 0.05",
+        "10.94 ± 0.16"
+      ],
+      [
+        "Kelmarsh",
+        "4 h",
+        "Jensen-Net",
+        "19.94 ± 0.22",
+        "14.40 ± 0.47"
+      ],
+      [
+        "Kelmarsh",
+        "4 h",
+        "Wake-GNN",
+        "20.05 ± 0.06",
+        "14.89 ± 0.19"
+      ],
+      [
+        "Wind Farm B",
+        "15 min",
+        "PI-EEF",
+        "9.46 ± 0.07",
+        "6.55 ± 0.05"
+      ],
+      [
+        "Wind Farm B",
+        "15 min",
+        "Persistence",
+        "9.82 ± 0.00",
+        "6.35 ± 0.00"
+      ],
+      [
+        "Wind Farm B",
+        "15 min",
+        "XGBoost",
+        "16.89 ± 0.33",
+        "13.36 ± 0.36"
+      ],
+      [
+        "Wind Farm B",
+        "15 min",
+        "DLinear",
+        "10.18 ± 0.48",
+        "7.35 ± 0.45"
+      ],
+      [
+        "Wind Farm B",
+        "15 min",
+        "Jensen-Net",
+        "9.74 ± 0.05",
+        "6.79 ± 0.15"
+      ],
+      [
+        "Wind Farm B",
+        "15 min",
+        "Wake-GNN",
+        "9.60 ± 0.05",
+        "6.83 ± 0.07"
+      ],
+      [
+        "Wind Farm B",
+        "1 h",
+        "PI-EEF",
+        "13.64 ± 0.09",
+        "9.87 ± 0.17"
+      ],
+      [
+        "Wind Farm B",
+        "1 h",
+        "Persistence",
+        "14.72 ± 0.00",
+        "9.80 ± 0.00"
+      ],
+      [
+        "Wind Farm B",
+        "1 h",
+        "XGBoost",
+        "19.86 ± 0.39",
+        "16.02 ± 0.57"
+      ],
+      [
+        "Wind Farm B",
+        "1 h",
+        "DLinear",
+        "14.81 ± 0.07",
+        "11.13 ± 0.14"
+      ],
+      [
+        "Wind Farm B",
+        "1 h",
+        "Jensen-Net",
+        "14.05 ± 0.24",
+        "10.36 ± 0.29"
+      ],
+      [
+        "Wind Farm B",
+        "1 h",
+        "Wake-GNN",
+        "13.91 ± 0.06",
+        "10.24 ± 0.23"
+      ],
+      [
+        "Wind Farm B",
+        "4 h",
+        "PI-EEF",
+        "19.23 ± 0.36",
+        "14.25 ± 0.48"
+      ],
+      [
+        "Wind Farm B",
+        "4 h",
+        "Persistence",
+        "23.65 ± 0.00",
+        "17.07 ± 0.00"
+      ],
+      [
+        "Wind Farm B",
+        "4 h",
+        "XGBoost",
+        "20.77 ± 0.18",
+        "16.14 ± 0.13"
+      ],
+      [
+        "Wind Farm B",
+        "4 h",
+        "DLinear",
+        "20.47 ± 0.56",
+        "15.58 ± 0.60"
+      ],
+      [
+        "Wind Farm B",
+        "4 h",
+        "Jensen-Net",
+        "20.48 ± 0.23",
+        "16.25 ± 0.39"
+      ],
+      [
+        "Wind Farm B",
+        "4 h",
+        "Wake-GNN",
+        "21.09 ± 0.19",
+        "17.20 ± 0.41"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s17": {
+    "caption": "Table S17. Relative NRMSE / NMAE changes of PI-EEF against five baselines at the extension wind farms, as percentages. Stars refer separately to each metric.",
+    "rows": [
+      [
+        "Farm / horizon",
+        "Persistence",
+        "XGBoost",
+        "DLinear",
+        "Jensen-Net",
+        "Wake-GNN"
+      ],
+      [
+        "Kelmarsh / 15 min",
+        "−5.0*** / −0.4",
+        "−2.2 / −5.7***",
+        "−1.3* / −3.7***",
+        "−2.6*** / −8.5***",
+        "−1.6** / −3.9***"
+      ],
+      [
+        "Kelmarsh / 1 h",
+        "−10.1*** / −5.0***",
+        "−1.8 / −5.5***",
+        "−0.1 / −4.6***",
+        "−6.0*** / −13.2***",
+        "−4.9*** / −10.0***"
+      ],
+      [
+        "Kelmarsh / 4 h",
+        "−25.0*** / −23.0***",
+        "−0.7 / −4.5**",
+        "−2.6 / −9.0***",
+        "−22.7*** / −30.9***",
+        "−23.1*** / −33.2***"
+      ],
+      [
+        "Wind Farm B / 15 min",
+        "−3.7* / +3.2*",
+        "−44.0** / −51.0*",
+        "−7.1 / −10.8",
+        "−2.9 / −3.5",
+        "−1.5 / −4.1"
+      ],
+      [
+        "Wind Farm B / 1 h",
+        "−7.4** / +0.7",
+        "−31.4** / −38.4*",
+        "−7.9** / −11.3",
+        "−2.9 / −4.7",
+        "−2.0 / −3.6"
+      ],
+      [
+        "Wind Farm B / 4 h",
+        "−18.7* / −16.5*",
+        "−7.4* / −11.7*",
+        "−6.1* / −8.5*",
+        "−6.1* / −12.3*",
+        "−8.8* / −17.1*"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s18": {
+    "caption": "Table S18. Accuracy of PI-EEF trained on subsets of Wind Farm A.",
+    "rows": [
+      [
+        "Turbines",
+        "NRMSE (%)",
+        "NMAE (%)"
+      ],
+      [
+        "10",
+        "8.04",
+        "3.76"
+      ],
+      [
+        "20",
+        "8.31",
+        "3.87"
+      ],
+      [
+        "29 (all)",
+        "8.53",
+        "3.94"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s19": {
+    "caption": "Table S19. Test errors at Kelmarsh by turbulence-intensity class and horizon, as percentages of rated capacity. Each error cell is mean NRMSE / NMAE; wins are numbers of seeds favouring PI-EEF for NRMSE / NMAE.",
+    "rows": [
+      [
+        "TI class / horizon",
+        "PI-EEF",
+        "Strongest learned baseline",
+        "Baseline",
+        "Persistence",
+        "Wins vs baseline",
+        "Wins vs Persistence"
+      ],
+      [
+        "Low / 15 min",
+        "10.302 / 7.203",
+        "DLinear",
+        "10.297 / 7.362",
+        "10.339 / 7.095",
+        "1/3 / 1/3",
+        "2/3 / 1/3"
+      ],
+      [
+        "Low / 1 h",
+        "14.172 / 10.107",
+        "DLinear",
+        "13.946 / 10.061",
+        "15.183 / 10.626",
+        "0/3 / 1/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "Low / 4 h",
+        "18.290 / 13.115",
+        "XGBoost",
+        "18.799 / 13.821",
+        "23.953 / 17.237",
+        "3/3 / 3/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "Medium / 15 min",
+        "10.712 / 7.200",
+        "DLinear",
+        "10.853 / 7.443",
+        "11.518 / 7.464",
+        "2/3 / 3/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "Medium / 1 h",
+        "14.074 / 9.725",
+        "DLinear",
+        "13.886 / 9.745",
+        "16.226 / 10.781",
+        "0/3 / 2/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "Medium / 4 h",
+        "16.772 / 11.696",
+        "XGBoost",
+        "17.184 / 12.848",
+        "23.317 / 16.183",
+        "2/3 / 3/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "High / 15 min",
+        "12.215 / 7.926",
+        "DLinear",
+        "12.456 / 8.207",
+        "13.299 / 8.269",
+        "2/3 / 2/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "High / 1 h",
+        "15.910 / 10.787",
+        "DLinear",
+        "15.936 / 10.928",
+        "18.010 / 11.644",
+        "1/3 / 2/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "High / 4 h",
+        "18.956 / 12.980",
+        "XGBoost",
+        "18.401 / 13.440",
+        "24.711 / 16.961",
+        "1/3 / 2/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "Very high / 15 min",
+        "14.107 / 9.064",
+        "DLinear",
+        "14.405 / 9.284",
+        "15.313 / 9.580",
+        "2/3 / 2/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "Very high / 1 h",
+        "17.902 / 12.117",
+        "DLinear",
+        "18.202 / 12.497",
+        "20.253 / 13.056",
+        "3/3 / 3/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "Very high / 4 h",
+        "21.853 / 15.445",
+        "XGBoost",
+        "20.151 / 14.772",
+        "26.322 / 18.158",
+        "0/3 / 1/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "All / 15 min",
+        "9.31 / 5.63",
+        "DLinear",
+        "9.43 / 5.85",
+        "9.79 / 5.65",
+        "3/3 / 3/3",
+        "3/3 / 2/3"
+      ],
+      [
+        "All / 1 h",
+        "12.45 / 7.84",
+        "DLinear",
+        "12.47 / 8.22",
+        "13.84 / 8.26",
+        "2/3 / 3/3",
+        "3/3 / 3/3"
+      ],
+      [
+        "All / 4 h",
+        "15.41 / 9.95",
+        "XGBoost",
+        "15.52 / 10.42",
+        "20.55 / 12.93",
+        "2/3 / 3/3",
+        "3/3 / 3/3"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s20": {
+    "caption": "Table S20. Benefit of a turbulence-conditioned residual correction at Kelmarsh.",
+    "rows": [
+      [
+        "Panel a"
+      ],
+      [
+        "Horizon",
+        "[equation: figures/table_equations/table_s20_p1_r1_c2_e1.wmf] normal-operation cells per seed",
+        "NRMSE Before (mean ± SD)",
+        "NRMSE After (a) (mean ± SD)",
+        "NRMSE After (b) (mean ± SD)",
+        "NRMSE Additional (b) minus (a) (pp) (mean ± SD)",
+        "NRMSE Additional relative change (%) (mean ± SD)"
+      ],
+      [
+        "15 min",
+        "20593, 20593, 20593",
+        "9.106 ± 0.120",
+        "8.918 ± 0.028",
+        "8.793 ± 0.071",
+        "−0.125 ± 0.042",
+        "−1.406 ± 0.477"
+      ],
+      [
+        "1 h",
+        "20593, 20593, 20593",
+        "12.211 ± 0.138",
+        "11.850 ± 0.388",
+        "11.671 ± 0.312",
+        "−0.179 ± 0.077",
+        "−1.499 ± 0.606"
+      ],
+      [
+        "4 h",
+        "20593, 20593, 20593",
+        "15.074 ± 0.372",
+        "14.718 ± 0.784",
+        "14.539 ± 0.689",
+        "−0.179 ± 0.121",
+        "−1.199 ± 0.749"
+      ],
+      [],
+      [
+        "Panel b"
+      ],
+      [
+        "Horizon",
+        "[equation: figures/table_equations/table_s20_p2_r1_c2_e1.wmf] normal-operation cells per seed",
+        "NMAE Before (mean ± SD)",
+        "NMAE After (a) (mean ± SD)",
+        "NMAE After (b) (mean ± SD)",
+        "NMAE Additional (b) minus (a) (pp) (mean ± SD)",
+        "NMAE Additional relative change (%) (mean ± SD)"
+      ],
+      [
+        "15 min",
+        "20593, 20593, 20593",
+        "5.608 ± 0.089",
+        "5.642 ± 0.063",
+        "5.502 ± 0.037",
+        "−0.140 ± 0.031",
+        "−2.483 ± 0.517"
+      ],
+      [
+        "1 h",
+        "20593, 20593, 20593",
+        "7.801 ± 0.105",
+        "7.777 ± 0.264",
+        "7.577 ± 0.207",
+        "−0.200 ± 0.059",
+        "−2.555 ± 0.692"
+      ],
+      [
+        "4 h",
+        "20593, 20593, 20593",
+        "9.857 ± 0.342",
+        "10.030 ± 0.531",
+        "9.761 ± 0.507",
+        "−0.269 ± 0.096",
+        "−2.676 ± 0.897"
+      ],
+      []
+    ],
+    "panels": 2,
+    "source": "submitted supplementary material"
+  },
+  "table_s21": {
+    "caption": "Table S21. Attention diagnostics by TI class and horizon at Kelmarsh; values are mean ± SD. DSI is the directional selectivity index.",
+    "rows": [
+      [
+        "Site / TI class / horizon",
+        "Observed DSI",
+        "Uniform expectation",
+        "Difference",
+        "Entropy",
+        "Maximum weight"
+      ],
+      [
+        "Kelmarsh / Low / 15 min",
+        "0.436 ± 0.024",
+        "0.387 ± 0.000",
+        "0.048 ± 0.024",
+        "0.951 ± 0.017",
+        "0.261 ± 0.024"
+      ],
+      [
+        "Kelmarsh / Medium / 15 min",
+        "0.521 ± 0.021",
+        "0.483 ± 0.000",
+        "0.039 ± 0.021",
+        "0.952 ± 0.013",
+        "0.260 ± 0.020"
+      ],
+      [
+        "Kelmarsh / High / 15 min",
+        "0.688 ± 0.026",
+        "0.640 ± 0.000",
+        "0.049 ± 0.026",
+        "0.951 ± 0.015",
+        "0.261 ± 0.020"
+      ],
+      [
+        "Kelmarsh / Very high / 15 min",
+        "0.781 ± 0.034",
+        "—",
+        "—",
+        "0.948 ± 0.018",
+        "0.264 ± 0.021"
+      ],
+      [
+        "Kelmarsh / Undefined / 15 min",
+        "0.579 ± 0.026",
+        "0.544 ± 0.000",
+        "0.035 ± 0.026",
+        "0.973 ± 0.012",
+        "0.236 ± 0.024"
+      ],
+      [
+        "Kelmarsh / Low / 1 h",
+        "0.389 ± 0.033",
+        "0.387 ± 0.000",
+        "0.002 ± 0.033",
+        "0.941 ± 0.026",
+        "0.272 ± 0.042"
+      ],
+      [
+        "Kelmarsh / Medium / 1 h",
+        "0.480 ± 0.028",
+        "0.483 ± 0.000",
+        "−0.002 ± 0.028",
+        "0.944 ± 0.019",
+        "0.272 ± 0.034"
+      ],
+      [
+        "Kelmarsh / High / 1 h",
+        "0.641 ± 0.040",
+        "0.640 ± 0.000",
+        "0.001 ± 0.040",
+        "0.938 ± 0.021",
+        "0.278 ± 0.036"
+      ],
+      [
+        "Kelmarsh / Very high / 1 h",
+        "0.721 ± 0.057",
+        "—",
+        "—",
+        "0.932 ± 0.026",
+        "0.284 ± 0.042"
+      ],
+      [
+        "Kelmarsh / Undefined / 1 h",
+        "0.543 ± 0.031",
+        "0.544 ± 0.000",
+        "−0.001 ± 0.031",
+        "0.963 ± 0.009",
+        "0.252 ± 0.010"
+      ],
+      [
+        "Kelmarsh / Low / 4 h",
+        "0.411 ± 0.010",
+        "0.387 ± 0.000",
+        "0.024 ± 0.010",
+        "0.910 ± 0.011",
+        "0.319 ± 0.010"
+      ],
+      [
+        "Kelmarsh / Medium / 4 h",
+        "0.509 ± 0.007",
+        "0.483 ± 0.000",
+        "0.025 ± 0.007",
+        "0.917 ± 0.005",
+        "0.311 ± 0.007"
+      ],
+      [
+        "Kelmarsh / High / 4 h",
+        "0.677 ± 0.006",
+        "0.640 ± 0.000",
+        "0.037 ± 0.006",
+        "0.920 ± 0.006",
+        "0.308 ± 0.008"
+      ],
+      [
+        "Kelmarsh / Very high / 4 h",
+        "0.768 ± 0.008",
+        "—",
+        "—",
+        "0.914 ± 0.010",
+        "0.316 ± 0.012"
+      ],
+      [
+        "Kelmarsh / Undefined / 4 h",
+        "0.572 ± 0.006",
+        "0.544 ± 0.000",
+        "0.027 ± 0.006",
+        "0.948 ± 0.013",
+        "0.271 ± 0.022"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s22": {
+    "caption": "Table S22. Yaw misalignment at Kelmarsh. (a) Training-period median and 90th percentile of absolute yaw by turbine; (b) fitted exponents and 95% confidence limits for two reference wind speeds.",
+    "rows": [
+      [
+        "Panel a"
+      ],
+      [
+        "Turbine",
+        "Training median |φ| (°)",
+        "Training P90 |φ| (°)"
+      ],
+      [
+        "1",
+        "5.1205",
+        "15.2601"
+      ],
+      [
+        "2",
+        "4.9077",
+        "14.0787"
+      ],
+      [
+        "3",
+        "5.3295",
+        "15.3421"
+      ],
+      [
+        "4",
+        "5.5287",
+        "16.0400"
+      ],
+      [
+        "5",
+        "5.4296",
+        "15.8234"
+      ],
+      [
+        "6",
+        "5.7771",
+        "18.1177"
+      ],
+      [],
+      [
+        "Panel b"
+      ],
+      [
+        "Reference wind speed",
+        "[equation: figures/table_equations/table_s22_p2_r1_c2_e1.wmf]",
+        "[equation: figures/table_equations/table_s22_p2_r1_c3_e1.wmf] 95% CI lower",
+        "[equation: figures/table_equations/table_s22_p2_r1_c4_e1.wmf] 95% CI upper",
+        "2° bins used"
+      ],
+      [
+        "Own nacelle anemometer",
+        "0.0898",
+        "−0.1428",
+        "0.3405",
+        "12"
+      ],
+      [
+        "Median of the other five turbines",
+        "7.9407",
+        "7.2230",
+        "8.5869",
+        "13"
+      ],
+      []
+    ],
+    "panels": 2,
+    "source": "submitted supplementary material"
+  },
+  "table_s23": {
+    "caption": "Table S23. Learned versus measured power curves at Kelmarsh.",
+    "rows": [
+      [
+        "Panel a"
+      ],
+      [
+        "Turbine",
+        "Hub height (m)",
+        "Runs",
+        "Training median [equation: figures/table_equations/table_s23_p1_r1_c4_e1.wmf] (°)",
+        "Training fraction [equation: figures/table_equations/table_s23_p1_r1_c5_e1.wmf]"
+      ],
+      [
+        "1",
+        "78.5",
+        "9",
+        "5.1205",
+        "0.2210"
+      ],
+      [
+        "2",
+        "78.5",
+        "9",
+        "4.9077",
+        "0.1934"
+      ],
+      [
+        "3",
+        "68.5",
+        "9",
+        "5.3295",
+        "0.2288"
+      ],
+      [
+        "4",
+        "78.5",
+        "9",
+        "5.5287",
+        "0.2522"
+      ],
+      [
+        "5",
+        "78.5",
+        "9",
+        "5.4296",
+        "0.2393"
+      ],
+      [
+        "6",
+        "68.5",
+        "9",
+        "5.7771",
+        "0.2766"
+      ],
+      [],
+      [
+        "Panel b"
+      ],
+      [
+        "Turbine",
+        "Learned [equation: figures/table_equations/table_s23_p2_r1_c2_e1.wmf] (m/s) (mean ± SD)",
+        "Measured All normal [equation: figures/table_equations/table_s23_p2_r1_c3_e1.wmf] (m/s)",
+        "[equation: figures/table_equations/table_s23_p2_r1_c4_e1.wmf] vs All normal (m/s) (mean ± SD)",
+        "Measured Aligned [equation: figures/table_equations/table_s23_p2_r1_c5_e1.wmf] [equation: figures/table_equations/table_s23_p2_r1_c5_e2.wmf] (m/s)",
+        "[equation: figures/table_equations/table_s23_p2_r1_c6_e1.wmf] vs Aligned [equation: figures/table_equations/table_s23_p2_r1_c6_e2.wmf] (m/s) (mean ± SD)"
+      ],
+      [
+        "1",
+        "10.211 ± 0.024",
+        "7.9473",
+        "2.264 ± 0.024",
+        "7.9265",
+        "2.285 ± 0.024"
+      ],
+      [
+        "2",
+        "9.759 ± 0.048",
+        "8.0082",
+        "1.751 ± 0.048",
+        "7.9880",
+        "1.771 ± 0.048"
+      ],
+      [
+        "3",
+        "10.641 ± 0.029",
+        "7.8930",
+        "2.748 ± 0.029",
+        "7.8501",
+        "2.791 ± 0.029"
+      ],
+      [
+        "4",
+        "10.126 ± 0.026",
+        "7.8186",
+        "2.307 ± 0.026",
+        "7.7997",
+        "2.326 ± 0.026"
+      ],
+      [
+        "5",
+        "10.521 ± 0.025",
+        "7.8982",
+        "2.622 ± 0.025",
+        "7.8591",
+        "2.661 ± 0.025"
+      ],
+      [
+        "6",
+        "11.010 ± 0.034",
+        "7.9445",
+        "3.065 ± 0.034",
+        "7.9120",
+        "3.098 ± 0.034"
+      ],
+      [],
+      [
+        "Panel c"
+      ],
+      [
+        "Turbine",
+        "Learned [equation: figures/table_equations/table_s23_p3_r1_c2_e1.wmf] (m/s) (mean ± SD)",
+        "Measured All normal [equation: figures/table_equations/table_s23_p3_r1_c3_e1.wmf] (m/s)",
+        "[equation: figures/table_equations/table_s23_p3_r1_c4_e1.wmf] vs All normal (m/s) (mean ± SD)",
+        "Measured Aligned [equation: figures/table_equations/table_s23_p3_r1_c5_e1.wmf] [equation: figures/table_equations/table_s23_p3_r1_c5_e2.wmf] (m/s)",
+        "[equation: figures/table_equations/table_s23_p3_r1_c6_e1.wmf] vs Aligned [equation: figures/table_equations/table_s23_p3_r1_c6_e2.wmf] (m/s) (mean ± SD)"
+      ],
+      [
+        "1",
+        "14.472 ± 0.082",
+        "10.2476",
+        "4.225 ± 0.082",
+        "10.2545",
+        "4.218 ± 0.082"
+      ],
+      [
+        "2",
+        "13.648 ± 0.119",
+        "10.2129",
+        "3.435 ± 0.119",
+        "10.2131",
+        "3.435 ± 0.119"
+      ],
+      [
+        "3",
+        "15.329 ± 0.095",
+        "10.1653",
+        "5.164 ± 0.095",
+        "10.1348",
+        "5.194 ± 0.095"
+      ],
+      [
+        "4",
+        "14.694 ± 0.144",
+        "10.1420",
+        "4.552 ± 0.144",
+        "10.1662",
+        "4.528 ± 0.144"
+      ],
+      [
+        "5",
+        "15.248 ± 0.116",
+        "10.2845",
+        "4.964 ± 0.116",
+        "10.2279",
+        "5.020 ± 0.116"
+      ],
+      [
+        "6",
+        "15.466 ± 0.093",
+        "10.3117",
+        "5.154 ± 0.093",
+        "10.2496",
+        "5.217 ± 0.093"
+      ],
+      []
+    ],
+    "panels": 3,
+    "source": "submitted supplementary material"
+  },
+  "table_s24": {
+    "caption": "Table S24. Configuration of the terrain CFD simulations at Wind Farm A and Kelmarsh.",
+    "rows": [
+      [
+        "Item",
+        "Wind Farm A",
+        "Kelmarsh"
+      ],
+      [
+        "Solver",
+        "OpenFOAM v2212; neutral steady incompressible RANS; [equation: figures/table_equations/table_s24_p1_r2_c2_e1.wmf]; SIMPLE",
+        "Same"
+      ],
+      [
+        "Terrain",
+        "Copernicus GLO-30 DSM; EGM2008",
+        "Same"
+      ],
+      [
+        "Domain and top-height setting",
+        "20 × 20 km; 6000 m",
+        "12 × 12 km; 6000 m"
+      ],
+      [
+        "Target horizontal spacing",
+        "Near 30 m; far 150 m",
+        "Near 30 m; far 150 m"
+      ],
+      [
+        "Advection",
+        "First-order upwind",
+        "First-order upwind"
+      ],
+      [
+        "Reference inflow",
+        "8 m/s at 85 m",
+        "8 m/s at 78.5 m"
+      ],
+      [
+        "Turbine hub heights",
+        "All 29 turbines: 85 m",
+        "T3/T6: 68.5 m; others: 78.5 m"
+      ],
+      [
+        "Default roughness [equation: figures/table_equations/table_s24_p1_r9_c1_e1.wmf]",
+        "0.3 m",
+        "0.05 m"
+      ],
+      [
+        "Alternative roughness/direction",
+        "1.5 m / 90°",
+        "0.1 m / 240°"
+      ],
+      [
+        "Default directions/turbines",
+        "16 / 29",
+        "12 / 6"
+      ],
+      [
+        "Closure coefficients",
+        "[equation: figures/table_equations/table_s24_p1_r12_c2_e1.wmf]; [equation: figures/table_equations/table_s24_p1_r12_c2_e2.wmf]; [equation: figures/table_equations/table_s24_p1_r12_c2_e3.wmf]; [equation: figures/table_equations/table_s24_p1_r12_c2_e4.wmf]; [equation: figures/table_equations/table_s24_p1_r12_c2_e5.wmf]; [equation: figures/table_equations/table_s24_p1_r12_c2_e6.wmf]",
+        "Same"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s25": {
+    "caption": "Table S25. Hub-height speed-up factors and absolute direction deflections in the default terrain-only lookup tables.",
+    "rows": [
+      [
+        "Site",
+        "Entries",
+        "Speed-up range",
+        "Median abs. deflection (°)",
+        "90th percentile (°)",
+        "Maximum (°)"
+      ],
+      [
+        "Wind Farm A",
+        "464",
+        "0.48–1.72",
+        "7.3",
+        "14.6",
+        "25.8"
+      ],
+      [
+        "Kelmarsh",
+        "72",
+        "0.94–1.03",
+        "0.5",
+        "0.9",
+        "1.2"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s26": {
+    "caption": "Table S26. Test errors of the forecasting variants using CFD information; NRMSE and NMAE are percentages of rated capacity, expressed as mean ± standard deviation across seeds.",
+    "rows": [
+      [
+        "Site",
+        "Variant",
+        "Horizon",
+        "Seeds",
+        "NRMSE (%)",
+        "NMAE (%)"
+      ],
+      [
+        "Wind Farm A",
+        "PI-EEF (10-m farm-level direction)",
+        "4 h",
+        "5",
+        "19.99 ± 0.37",
+        "11.54 ± 0.34"
+      ],
+      [
+        "Wind Farm A",
+        "100-m farm-level direction",
+        "4 h",
+        "5",
+        "19.89 ± 0.18",
+        "11.33 ± 0.12"
+      ],
+      [
+        "Wind Farm A",
+        "CFD local directions",
+        "4 h",
+        "5",
+        "19.99 ± 0.14",
+        "11.35 ± 0.26"
+      ],
+      [
+        "Wind Farm A",
+        "CFD local directions + speed-up correction",
+        "4 h",
+        "5",
+        "20.01 ± 0.06",
+        "11.37 ± 0.16"
+      ],
+      [
+        "Wind Farm A",
+        "Without direction bias",
+        "4 h",
+        "5",
+        "19.89 ± 0.35",
+        "11.28 ± 0.27"
+      ],
+      [
+        "Wind Farm A",
+        "LightGBM",
+        "4 h",
+        "5",
+        "19.98 ± 0.12",
+        "12.82 ± 0.10"
+      ],
+      [
+        "Wind Farm A",
+        "LightGBM with CFD features",
+        "4 h",
+        "5",
+        "19.91 ± 0.08",
+        "12.74 ± 0.03"
+      ],
+      [
+        "Kelmarsh",
+        "PI-EEF (100-m farm-level direction)",
+        "15 min",
+        "3",
+        "9.31 ± 0.09",
+        "5.63 ± 0.08"
+      ],
+      [
+        "Kelmarsh",
+        "CFD local directions",
+        "15 min",
+        "3",
+        "9.30 ± 0.06",
+        "5.61 ± 0.13"
+      ],
+      [
+        "Kelmarsh",
+        "Measured direction anomalies",
+        "15 min",
+        "3",
+        "9.36 ± 0.05",
+        "5.74 ± 0.04"
+      ],
+      [
+        "Kelmarsh",
+        "PI-EEF (100-m farm-level direction)",
+        "1 h",
+        "3",
+        "12.45 ± 0.15",
+        "7.84 ± 0.10"
+      ],
+      [
+        "Kelmarsh",
+        "CFD local directions",
+        "1 h",
+        "3",
+        "12.43 ± 0.07",
+        "7.89 ± 0.08"
+      ],
+      [
+        "Kelmarsh",
+        "Measured direction anomalies",
+        "1 h",
+        "3",
+        "12.44 ± 0.08",
+        "7.81 ± 0.01"
+      ],
+      [
+        "Kelmarsh",
+        "PI-EEF (100-m farm-level direction)",
+        "4 h",
+        "3",
+        "15.41 ± 0.39",
+        "9.95 ± 0.35"
+      ],
+      [
+        "Kelmarsh",
+        "CFD local directions",
+        "4 h",
+        "3",
+        "15.46 ± 0.09",
+        "10.01 ± 0.25"
+      ],
+      [
+        "Kelmarsh",
+        "Measured direction anomalies",
+        "4 h",
+        "3",
+        "15.18 ± 0.20",
+        "9.92 ± 0.18"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s27": {
+    "caption": "Table S27. Pre-specified paired comparisons of the CFD variants: relative improvement ; seeds with lower/higher error; and Benjamini–Hochberg-adjusted -values within each family.",
+    "rows": [
+      [
+        "Family",
+        "Candidate vs control",
+        "Horizon",
+        "Metric",
+        "Improvement (%)",
+        "Seeds L/H",
+        "Paired t [equation: figures/table_equations/table_s27_p1_r1_c7_e1.wmf]",
+        "Sign test [equation: figures/table_equations/table_s27_p1_r1_c8_e1.wmf]"
+      ],
+      [
+        "Wind Farm A, CFD",
+        "CFD local directions vs PI-EEF (10-m farm-level direction)",
+        "4 h",
+        "NRMSE",
+        "−0.02",
+        "2/3",
+        "0.99",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, CFD",
+        "CFD local directions vs PI-EEF (10-m farm-level direction)",
+        "4 h",
+        "NMAE",
+        "+1.63",
+        "3/2",
+        "0.99",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, CFD",
+        "CFD local directions + speed-up correction vs PI-EEF (10-m farm-level direction)",
+        "4 h",
+        "NRMSE",
+        "−0.12",
+        "1/4",
+        "0.99",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, CFD",
+        "CFD local directions + speed-up correction vs PI-EEF (10-m farm-level direction)",
+        "4 h",
+        "NMAE",
+        "+1.49",
+        "3/2",
+        "0.99",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, CFD",
+        "CFD local directions vs Without direction bias",
+        "4 h",
+        "NRMSE",
+        "−0.48",
+        "1/4",
+        "0.99",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, CFD",
+        "CFD local directions vs Without direction bias",
+        "4 h",
+        "NMAE",
+        "−0.67",
+        "2/3",
+        "0.99",
+        "1.00"
+      ],
+      [
+        "Kelmarsh",
+        "CFD local directions vs PI-EEF (100-m farm-level direction)",
+        "15 min",
+        "NMAE",
+        "+0.42",
+        "1/2",
+        "0.85",
+        "1.00"
+      ],
+      [
+        "Kelmarsh",
+        "CFD local directions vs PI-EEF (100-m farm-level direction)",
+        "1 h",
+        "NMAE",
+        "−0.66",
+        "1/2",
+        "0.85",
+        "1.00"
+      ],
+      [
+        "Kelmarsh",
+        "CFD local directions vs PI-EEF (100-m farm-level direction)",
+        "4 h",
+        "NMAE",
+        "−0.64",
+        "2/1",
+        "0.85",
+        "1.00"
+      ],
+      [
+        "Kelmarsh",
+        "Measured direction anomalies vs PI-EEF (100-m farm-level direction)",
+        "15 min",
+        "NMAE",
+        "−1.97",
+        "0/3",
+        "0.29",
+        "1.00"
+      ],
+      [
+        "Kelmarsh",
+        "Measured direction anomalies vs PI-EEF (100-m farm-level direction)",
+        "1 h",
+        "NMAE",
+        "+0.40",
+        "2/1",
+        "0.85",
+        "1.00"
+      ],
+      [
+        "Kelmarsh",
+        "Measured direction anomalies vs PI-EEF (100-m farm-level direction)",
+        "4 h",
+        "NMAE",
+        "+0.36",
+        "2/1",
+        "0.85",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, NWP height",
+        "100-m farm-level direction vs PI-EEF (10-m farm-level direction)",
+        "4 h",
+        "NRMSE",
+        "+0.49",
+        "2/3",
+        "0.67",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, NWP height",
+        "100-m farm-level direction vs PI-EEF (10-m farm-level direction)",
+        "4 h",
+        "NMAE",
+        "+1.80",
+        "3/2",
+        "0.67",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, NWP height",
+        "CFD local directions vs 100-m farm-level direction",
+        "4 h",
+        "NRMSE",
+        "−0.51",
+        "3/2",
+        "0.67",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, NWP height",
+        "CFD local directions vs 100-m farm-level direction",
+        "4 h",
+        "NMAE",
+        "−0.17",
+        "3/2",
+        "0.84",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, NWP height",
+        "CFD local directions + speed-up correction vs 100-m farm-level direction",
+        "4 h",
+        "NRMSE",
+        "−0.62",
+        "2/3",
+        "0.67",
+        "1.00"
+      ],
+      [
+        "Wind Farm A, NWP height",
+        "CFD local directions + speed-up correction vs 100-m farm-level direction",
+        "4 h",
+        "NMAE",
+        "−0.32",
+        "2/3",
+        "0.82",
+        "1.00"
+      ],
+      [
+        "LightGBM",
+        "LightGBM with CFD features vs LightGBM",
+        "4 h",
+        "NRMSE",
+        "+0.34",
+        "4/1",
+        "0.41",
+        "0.38"
+      ],
+      [
+        "LightGBM",
+        "LightGBM with CFD features vs LightGBM",
+        "4 h",
+        "NMAE",
+        "+0.60",
+        "4/1",
+        "0.23",
+        "0.38"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  },
+  "table_s28": {
+    "caption": "Table S28. Test-set attention diagnostics of the forecasting variants: mean ± standard deviation of the directional selectivity index across seeds, and mean normalised entropy and maximum weight.",
+    "rows": [
+      [
+        "Site",
+        "Variant",
+        "Horizon",
+        "DSI",
+        "Normalised entropy",
+        "Maximum weight"
+      ],
+      [
+        "Wind Farm A",
+        "PI-EEF (10-m farm-level direction)",
+        "4 h",
+        "0.44 ± 0.02",
+        "0.79",
+        "0.22"
+      ],
+      [
+        "Wind Farm A",
+        "100-m farm-level direction",
+        "4 h",
+        "0.42 ± 0.02",
+        "0.81",
+        "0.19"
+      ],
+      [
+        "Wind Farm A",
+        "CFD local directions",
+        "4 h",
+        "0.43 ± 0.02",
+        "0.82",
+        "0.19"
+      ],
+      [
+        "Wind Farm A",
+        "CFD local directions + speed-up correction",
+        "4 h",
+        "0.44 ± 0.02",
+        "0.74",
+        "0.25"
+      ],
+      [
+        "Wind Farm A",
+        "Without direction bias",
+        "4 h",
+        "0.48 ± 0.01",
+        "0.81",
+        "0.20"
+      ],
+      [
+        "Kelmarsh",
+        "PI-EEF (100-m farm-level direction)",
+        "15 min",
+        "0.54 ± 0.02",
+        "0.96",
+        "0.25"
+      ],
+      [
+        "Kelmarsh",
+        "CFD local directions",
+        "15 min",
+        "0.56 ± 0.02",
+        "0.92",
+        "0.29"
+      ],
+      [
+        "Kelmarsh",
+        "Measured direction anomalies",
+        "15 min",
+        "0.53 ± 0.01",
+        "0.94",
+        "0.27"
+      ],
+      [
+        "Kelmarsh",
+        "PI-EEF (100-m farm-level direction)",
+        "1 h",
+        "0.50 ± 0.03",
+        "0.95",
+        "0.27"
+      ],
+      [
+        "Kelmarsh",
+        "CFD local directions",
+        "1 h",
+        "0.53 ± 0.02",
+        "0.96",
+        "0.26"
+      ],
+      [
+        "Kelmarsh",
+        "Measured direction anomalies",
+        "1 h",
+        "0.53 ± 0.01",
+        "0.96",
+        "0.25"
+      ],
+      [
+        "Kelmarsh",
+        "PI-EEF (100-m farm-level direction)",
+        "4 h",
+        "0.53 ± 0.01",
+        "0.92",
+        "0.30"
+      ],
+      [
+        "Kelmarsh",
+        "CFD local directions",
+        "4 h",
+        "0.53 ± 0.01",
+        "0.93",
+        "0.29"
+      ],
+      [
+        "Kelmarsh",
+        "Measured direction anomalies",
+        "4 h",
+        "0.53 ± 0.01",
+        "0.90",
+        "0.32"
+      ]
+    ],
+    "panels": 1,
+    "source": "submitted supplementary material"
+  }
+}

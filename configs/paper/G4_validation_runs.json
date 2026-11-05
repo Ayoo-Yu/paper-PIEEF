@@ -1,0 +1,818 @@
+[
+  {
+    "archive": "r3_163.tar.gz",
+    "member": "artifacts/energy_revision/round3/stage2/main/energy_r3_stage2_PI-EEF_h16_s13_20261021_011452/metrics.json",
+    "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s13_20261021_011452",
+    "metadata": {
+      "run_id": "energy_r3_stage2_PI-EEF_h16_s13_20261021_011452",
+      "status": "completed",
+      "seed": 13,
+      "horizon": 16,
+      "metrics": {
+        "nmae": 0.11165309305914778,
+        "nrmse": 0.19662966246728705,
+        "r2": 0.483286373156371,
+        "num_samples": 7604,
+        "num_turbines": 29
+      },
+      "validation_metrics": {
+        "nmae": 0.10844653395201245,
+        "nrmse": 0.1810451703041183,
+        "r2": 0.5316087997082275,
+        "num_samples": 3801,
+        "num_turbines": 29
+      },
+      "evaluation_split": "test",
+      "config": {
+        "experiment": {
+          "model": "PI-EEF",
+          "horizon": 16,
+          "eval_scope": "measured-target",
+          "finalized": true,
+          "group": "main",
+          "site": "wind_farm_A",
+          "exp_type": "energy_r3_stage2",
+          "models": [
+            "PI-EEF"
+          ],
+          "variant": "PI-EEF",
+          "seeds": [
+            13
+          ]
+        },
+        "data": {
+          "data_version": "energy_revision_wind_farm_A_author_prepared_EC_20261017",
+          "scada_path": "data/wind_farm_A/scada_ecmwf_15min.csv",
+          "turbines_path": "data/wind_farm_A/turbines.csv",
+          "seq_len": 96,
+          "split": [
+            0.7,
+            0.1,
+            0.2
+          ],
+          "capacity_mw": 2.0,
+          "revision_protocol": {
+            "nwp_alignment_verified": false,
+            "nwp_preparation_author_confirmed": true,
+            "timezone": "Asia/Shanghai",
+            "step_minutes": 15,
+            "power_unit": "kW",
+            "wind_height_m": 10,
+            "nwp_timing_rule": "author_prepared_ecmwf",
+            "nwp_feature_columns": [
+              "nwp_direct_solar_radiation",
+              "nwp_total_sky_direct_shortwave",
+              "nwp_surface_pressure_pa",
+              "nwp_temperature_2m_k",
+              "nwp_u10_ms",
+              "nwp_v10_ms",
+              "nwp_wind_speed200_ms",
+              "nwp_wind_speed100_ms",
+              "nwp_wind_speed10_ms"
+            ],
+            "input_filling": "forward-only",
+            "target_policy": "raw-measured-valid-power"
+          }
+        },
+        "model": {
+          "d_model": 128,
+          "encoder_depth": 3,
+          "graph_depth": 1,
+          "mask_ratio": 0.4,
+          "num_control_points": 15,
+          "use_prior_input": true,
+          "use_bound_loss": true,
+          "use_derivative_loss": true,
+          "use_density": true,
+          "nwp_target_speed_index": 7,
+          "use_terrain_bias": true,
+          "use_mask_indicators": true,
+          "joint_masking": false,
+          "cut_in_speed": 3.0,
+          "rated_wind_speed": 10.0,
+          "cut_out_speed": 22.0,
+          "sensitivity_mode": "symmetric",
+          "manufacturer_curve_path": "data/wind_farm_A/manufacturer_curve.csv",
+          "use_calibration": true,
+          "use_physics_curve": true,
+          "curve_mode": "bspline",
+          "use_direction_bias": true,
+          "use_sensitivity_gate": true,
+          "revin_missing_policy": "train_stats_20",
+          "forecast_head_policy": "target_nwp_physics_mlp",
+          "graph_score_policy": "cosine_temperature",
+          "forecast_skip_policy": "last_obs_linear"
+        },
+        "train": {
+          "batch_size": 16,
+          "epochs_stage1": 5,
+          "epochs_stage2": 5,
+          "epochs_stage3": 20,
+          "lr_stage1": 0.001,
+          "lr_stage2": 0.001,
+          "lr_stage3": 0.0003,
+          "stage3_mode": "joint",
+          "loss_name": "huber",
+          "huber_delta": 0.1,
+          "quantile": 0.5,
+          "patience": 5,
+          "checkpoint_metric": "nrmse",
+          "reconstruction_weight": 0.05,
+          "calibration_weight": 0.05,
+          "auxiliary_decay": 0.1,
+          "record_gradient_conflicts": true,
+          "epochs": 50,
+          "lr": 0.001,
+          "stage3_decoder_policy": "frozen",
+          "stage3_forecast_corruption": "f2_block"
+        },
+        "tracking": {
+          "artifact_root": "artifacts/public",
+          "ledger_dir": "artifacts/public/summary",
+          "source_manifest": "provenance/source_manifest.json"
+        }
+      },
+      "device": "cuda"
+    }
+  },
+  {
+    "archive": "r3_562.tar.gz",
+    "member": "artifacts/energy_revision/round3/stage2/main/energy_r3_stage2_PI-EEF_h16_s42_20261021_015419/metrics.json",
+    "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s42_20261021_015419",
+    "metadata": {
+      "run_id": "energy_r3_stage2_PI-EEF_h16_s42_20261021_015419",
+      "status": "completed",
+      "seed": 42,
+      "horizon": 16,
+      "metrics": {
+        "nmae": 0.11982723199067094,
+        "nrmse": 0.20611114673247968,
+        "r2": 0.43225316831765714,
+        "num_samples": 7604,
+        "num_turbines": 29
+      },
+      "validation_metrics": {
+        "nmae": 0.1109085235513282,
+        "nrmse": 0.17679636946253122,
+        "r2": 0.55333548099717,
+        "num_samples": 3801,
+        "num_turbines": 29
+      },
+      "evaluation_split": "test",
+      "config": {
+        "experiment": {
+          "model": "PI-EEF",
+          "horizon": 16,
+          "eval_scope": "measured-target",
+          "finalized": true,
+          "group": "main",
+          "site": "wind_farm_A",
+          "exp_type": "energy_r3_stage2",
+          "models": [
+            "PI-EEF"
+          ],
+          "variant": "PI-EEF",
+          "seeds": [
+            42
+          ]
+        },
+        "data": {
+          "data_version": "energy_revision_wind_farm_A_author_prepared_EC_20261017",
+          "scada_path": "data/wind_farm_A/scada_ecmwf_15min.csv",
+          "turbines_path": "data/wind_farm_A/turbines.csv",
+          "seq_len": 96,
+          "split": [
+            0.7,
+            0.1,
+            0.2
+          ],
+          "capacity_mw": 2.0,
+          "revision_protocol": {
+            "nwp_alignment_verified": false,
+            "nwp_preparation_author_confirmed": true,
+            "timezone": "Asia/Shanghai",
+            "step_minutes": 15,
+            "power_unit": "kW",
+            "wind_height_m": 10,
+            "nwp_timing_rule": "author_prepared_ecmwf",
+            "nwp_feature_columns": [
+              "nwp_direct_solar_radiation",
+              "nwp_total_sky_direct_shortwave",
+              "nwp_surface_pressure_pa",
+              "nwp_temperature_2m_k",
+              "nwp_u10_ms",
+              "nwp_v10_ms",
+              "nwp_wind_speed200_ms",
+              "nwp_wind_speed100_ms",
+              "nwp_wind_speed10_ms"
+            ],
+            "input_filling": "forward-only",
+            "target_policy": "raw-measured-valid-power"
+          }
+        },
+        "model": {
+          "d_model": 128,
+          "encoder_depth": 3,
+          "graph_depth": 1,
+          "mask_ratio": 0.4,
+          "num_control_points": 15,
+          "use_prior_input": true,
+          "use_bound_loss": true,
+          "use_derivative_loss": true,
+          "use_density": true,
+          "nwp_target_speed_index": 7,
+          "use_terrain_bias": true,
+          "use_mask_indicators": true,
+          "joint_masking": false,
+          "cut_in_speed": 3.0,
+          "rated_wind_speed": 10.0,
+          "cut_out_speed": 22.0,
+          "sensitivity_mode": "symmetric",
+          "manufacturer_curve_path": "data/wind_farm_A/manufacturer_curve.csv",
+          "use_calibration": true,
+          "use_physics_curve": true,
+          "curve_mode": "bspline",
+          "use_direction_bias": true,
+          "use_sensitivity_gate": true,
+          "revin_missing_policy": "train_stats_20",
+          "forecast_head_policy": "target_nwp_physics_mlp",
+          "graph_score_policy": "cosine_temperature",
+          "forecast_skip_policy": "last_obs_linear"
+        },
+        "train": {
+          "batch_size": 16,
+          "epochs_stage1": 5,
+          "epochs_stage2": 5,
+          "epochs_stage3": 20,
+          "lr_stage1": 0.001,
+          "lr_stage2": 0.001,
+          "lr_stage3": 0.0003,
+          "stage3_mode": "joint",
+          "loss_name": "huber",
+          "huber_delta": 0.1,
+          "quantile": 0.5,
+          "patience": 5,
+          "checkpoint_metric": "nrmse",
+          "reconstruction_weight": 0.05,
+          "calibration_weight": 0.05,
+          "auxiliary_decay": 0.1,
+          "record_gradient_conflicts": true,
+          "epochs": 50,
+          "lr": 0.001,
+          "stage3_decoder_policy": "frozen",
+          "stage3_forecast_corruption": "f2_block"
+        },
+        "tracking": {
+          "artifact_root": "artifacts/public",
+          "ledger_dir": "artifacts/public/summary",
+          "source_manifest": "provenance/source_manifest.json"
+        }
+      },
+      "device": "cuda"
+    }
+  },
+  {
+    "archive": "r3_560.tar.gz",
+    "member": "artifacts/energy_revision/round3/stage2/main/energy_r3_stage2_PI-EEF_h16_s3407_20261021_023047/metrics.json",
+    "directory": "artifacts/released/energy_r3_stage2_PI-EEF_h16_s3407_20261021_023047",
+    "metadata": {
+      "run_id": "energy_r3_stage2_PI-EEF_h16_s3407_20261021_023047",
+      "status": "completed",
+      "seed": 3407,
+      "horizon": 16,
+      "metrics": {
+        "nmae": 0.11551790782757182,
+        "nrmse": 0.2000877885949982,
+        "r2": 0.4649517704316861,
+        "num_samples": 7604,
+        "num_turbines": 29
+      },
+      "validation_metrics": {
+        "nmae": 0.11344494535304911,
+        "nrmse": 0.17890496136799797,
+        "r2": 0.5426174274330016,
+        "num_samples": 3801,
+        "num_turbines": 29
+      },
+      "evaluation_split": "test",
+      "config": {
+        "experiment": {
+          "model": "PI-EEF",
+          "horizon": 16,
+          "eval_scope": "measured-target",
+          "finalized": true,
+          "group": "main",
+          "site": "wind_farm_A",
+          "exp_type": "energy_r3_stage2",
+          "models": [
+            "PI-EEF"
+          ],
+          "variant": "PI-EEF",
+          "seeds": [
+            3407
+          ]
+        },
+        "data": {
+          "data_version": "energy_revision_wind_farm_A_author_prepared_EC_20261017",
+          "scada_path": "data/wind_farm_A/scada_ecmwf_15min.csv",
+          "turbines_path": "data/wind_farm_A/turbines.csv",
+          "seq_len": 96,
+          "split": [
+            0.7,
+            0.1,
+            0.2
+          ],
+          "capacity_mw": 2.0,
+          "revision_protocol": {
+            "nwp_alignment_verified": false,
+            "nwp_preparation_author_confirmed": true,
+            "timezone": "Asia/Shanghai",
+            "step_minutes": 15,
+            "power_unit": "kW",
+            "wind_height_m": 10,
+            "nwp_timing_rule": "author_prepared_ecmwf",
+            "nwp_feature_columns": [
+              "nwp_direct_solar_radiation",
+              "nwp_total_sky_direct_shortwave",
+              "nwp_surface_pressure_pa",
+              "nwp_temperature_2m_k",
+              "nwp_u10_ms",
+              "nwp_v10_ms",
+              "nwp_wind_speed200_ms",
+              "nwp_wind_speed100_ms",
+              "nwp_wind_speed10_ms"
+            ],
+            "input_filling": "forward-only",
+            "target_policy": "raw-measured-valid-power"
+          }
+        },
+        "model": {
+          "d_model": 128,
+          "encoder_depth": 3,
+          "graph_depth": 1,
+          "mask_ratio": 0.4,
+          "num_control_points": 15,
+          "use_prior_input": true,
+          "use_bound_loss": true,
+          "use_derivative_loss": true,
+          "use_density": true,
+          "nwp_target_speed_index": 7,
+          "use_terrain_bias": true,
+          "use_mask_indicators": true,
+          "joint_masking": false,
+          "cut_in_speed": 3.0,
+          "rated_wind_speed": 10.0,
+          "cut_out_speed": 22.0,
+          "sensitivity_mode": "symmetric",
+          "manufacturer_curve_path": "data/wind_farm_A/manufacturer_curve.csv",
+          "use_calibration": true,
+          "use_physics_curve": true,
+          "curve_mode": "bspline",
+          "use_direction_bias": true,
+          "use_sensitivity_gate": true,
+          "revin_missing_policy": "train_stats_20",
+          "forecast_head_policy": "target_nwp_physics_mlp",
+          "graph_score_policy": "cosine_temperature",
+          "forecast_skip_policy": "last_obs_linear"
+        },
+        "train": {
+          "batch_size": 16,
+          "epochs_stage1": 5,
+          "epochs_stage2": 5,
+          "epochs_stage3": 20,
+          "lr_stage1": 0.001,
+          "lr_stage2": 0.001,
+          "lr_stage3": 0.0003,
+          "stage3_mode": "joint",
+          "loss_name": "huber",
+          "huber_delta": 0.1,
+          "quantile": 0.5,
+          "patience": 5,
+          "checkpoint_metric": "nrmse",
+          "reconstruction_weight": 0.05,
+          "calibration_weight": 0.05,
+          "auxiliary_decay": 0.1,
+          "record_gradient_conflicts": true,
+          "epochs": 50,
+          "lr": 0.001,
+          "stage3_decoder_policy": "frozen",
+          "stage3_forecast_corruption": "f2_block"
+        },
+        "tracking": {
+          "artifact_root": "artifacts/public",
+          "ledger_dir": "artifacts/public/summary",
+          "source_manifest": "provenance/source_manifest.json"
+        }
+      },
+      "device": "cuda"
+    }
+  },
+  {
+    "archive": "local_stage2.tar.gz",
+    "member": "local_stage2/sensitivity/energy_r3_stage2_hidden-64_h16_s13_20261020_203338/metrics.json",
+    "directory": "artifacts/released/energy_r3_stage2_hidden-64_h16_s13_20261020_203338",
+    "metadata": {
+      "run_id": "energy_r3_stage2_hidden-64_h16_s13_20261020_203338",
+      "status": "completed",
+      "seed": 13,
+      "horizon": 16,
+      "metrics": {
+        "nmae": 0.11045796308532882,
+        "nrmse": 0.1999468039200699,
+        "r2": 0.4657053518977734,
+        "num_samples": 7604,
+        "num_turbines": 29
+      },
+      "validation_metrics": {
+        "nmae": 0.10795035046816238,
+        "nrmse": 0.1824679444448324,
+        "r2": 0.524218049892002,
+        "num_samples": 3801,
+        "num_turbines": 29
+      },
+      "evaluation_split": "test",
+      "config": {
+        "experiment": {
+          "model": "PI-EEF",
+          "horizon": 16,
+          "eval_scope": "measured-target",
+          "finalized": true,
+          "group": "sensitivity",
+          "site": "wind_farm_A",
+          "exp_type": "energy_r3_stage2",
+          "models": [
+            "PI-EEF"
+          ],
+          "variant": "hidden-64",
+          "seeds": [
+            13
+          ]
+        },
+        "data": {
+          "data_version": "energy_revision_wind_farm_A_author_prepared_EC_20261017",
+          "scada_path": "data/wind_farm_A/scada_ecmwf_15min.csv",
+          "turbines_path": "data/wind_farm_A/turbines.csv",
+          "seq_len": 96,
+          "split": [
+            0.7,
+            0.1,
+            0.2
+          ],
+          "capacity_mw": 2.0,
+          "revision_protocol": {
+            "nwp_alignment_verified": false,
+            "nwp_preparation_author_confirmed": true,
+            "timezone": "Asia/Shanghai",
+            "step_minutes": 15,
+            "power_unit": "kW",
+            "wind_height_m": 10,
+            "nwp_timing_rule": "author_prepared_ecmwf",
+            "nwp_feature_columns": [
+              "nwp_direct_solar_radiation",
+              "nwp_total_sky_direct_shortwave",
+              "nwp_surface_pressure_pa",
+              "nwp_temperature_2m_k",
+              "nwp_u10_ms",
+              "nwp_v10_ms",
+              "nwp_wind_speed200_ms",
+              "nwp_wind_speed100_ms",
+              "nwp_wind_speed10_ms"
+            ],
+            "input_filling": "forward-only",
+            "target_policy": "raw-measured-valid-power"
+          }
+        },
+        "model": {
+          "d_model": 64,
+          "encoder_depth": 3,
+          "graph_depth": 1,
+          "mask_ratio": 0.4,
+          "num_control_points": 15,
+          "use_prior_input": true,
+          "use_bound_loss": true,
+          "use_derivative_loss": true,
+          "use_density": true,
+          "nwp_target_speed_index": 7,
+          "use_terrain_bias": true,
+          "use_mask_indicators": true,
+          "joint_masking": false,
+          "cut_in_speed": 3.0,
+          "rated_wind_speed": 10.0,
+          "cut_out_speed": 22.0,
+          "sensitivity_mode": "symmetric",
+          "manufacturer_curve_path": "data/wind_farm_A/manufacturer_curve.csv",
+          "use_calibration": true,
+          "use_physics_curve": true,
+          "curve_mode": "bspline",
+          "use_direction_bias": true,
+          "use_sensitivity_gate": true,
+          "revin_missing_policy": "train_stats_20",
+          "forecast_head_policy": "target_nwp_physics_mlp",
+          "graph_score_policy": "cosine_temperature",
+          "forecast_skip_policy": "last_obs_linear"
+        },
+        "train": {
+          "batch_size": 16,
+          "epochs_stage1": 5,
+          "epochs_stage2": 5,
+          "epochs_stage3": 20,
+          "lr_stage1": 0.001,
+          "lr_stage2": 0.001,
+          "lr_stage3": 0.0003,
+          "stage3_mode": "joint",
+          "loss_name": "huber",
+          "huber_delta": 0.1,
+          "quantile": 0.5,
+          "patience": 5,
+          "checkpoint_metric": "nrmse",
+          "reconstruction_weight": 0.05,
+          "calibration_weight": 0.05,
+          "auxiliary_decay": 0.1,
+          "record_gradient_conflicts": true,
+          "epochs": 50,
+          "lr": 0.001,
+          "stage3_decoder_policy": "frozen",
+          "stage3_forecast_corruption": "f2_block"
+        },
+        "tracking": {
+          "artifact_root": "artifacts/public",
+          "ledger_dir": "artifacts/public/summary",
+          "source_manifest": "provenance/source_manifest.json"
+        }
+      },
+      "device": "cuda"
+    }
+  },
+  {
+    "archive": "local_stage2.tar.gz",
+    "member": "local_stage2/sensitivity/energy_r3_stage2_hidden-64_h16_s42_20261020_211521/metrics.json",
+    "directory": "artifacts/released/energy_r3_stage2_hidden-64_h16_s42_20261020_211521",
+    "metadata": {
+      "run_id": "energy_r3_stage2_hidden-64_h16_s42_20261020_211521",
+      "status": "completed",
+      "seed": 42,
+      "horizon": 16,
+      "metrics": {
+        "nmae": 0.1139478464109471,
+        "nrmse": 0.20003286794929157,
+        "r2": 0.4652454812655532,
+        "num_samples": 7604,
+        "num_turbines": 29
+      },
+      "validation_metrics": {
+        "nmae": 0.11244984437575199,
+        "nrmse": 0.18052406578935698,
+        "r2": 0.5343013374724086,
+        "num_samples": 3801,
+        "num_turbines": 29
+      },
+      "evaluation_split": "test",
+      "config": {
+        "experiment": {
+          "model": "PI-EEF",
+          "horizon": 16,
+          "eval_scope": "measured-target",
+          "finalized": true,
+          "group": "sensitivity",
+          "site": "wind_farm_A",
+          "exp_type": "energy_r3_stage2",
+          "models": [
+            "PI-EEF"
+          ],
+          "variant": "hidden-64",
+          "seeds": [
+            42
+          ]
+        },
+        "data": {
+          "data_version": "energy_revision_wind_farm_A_author_prepared_EC_20261017",
+          "scada_path": "data/wind_farm_A/scada_ecmwf_15min.csv",
+          "turbines_path": "data/wind_farm_A/turbines.csv",
+          "seq_len": 96,
+          "split": [
+            0.7,
+            0.1,
+            0.2
+          ],
+          "capacity_mw": 2.0,
+          "revision_protocol": {
+            "nwp_alignment_verified": false,
+            "nwp_preparation_author_confirmed": true,
+            "timezone": "Asia/Shanghai",
+            "step_minutes": 15,
+            "power_unit": "kW",
+            "wind_height_m": 10,
+            "nwp_timing_rule": "author_prepared_ecmwf",
+            "nwp_feature_columns": [
+              "nwp_direct_solar_radiation",
+              "nwp_total_sky_direct_shortwave",
+              "nwp_surface_pressure_pa",
+              "nwp_temperature_2m_k",
+              "nwp_u10_ms",
+              "nwp_v10_ms",
+              "nwp_wind_speed200_ms",
+              "nwp_wind_speed100_ms",
+              "nwp_wind_speed10_ms"
+            ],
+            "input_filling": "forward-only",
+            "target_policy": "raw-measured-valid-power"
+          }
+        },
+        "model": {
+          "d_model": 64,
+          "encoder_depth": 3,
+          "graph_depth": 1,
+          "mask_ratio": 0.4,
+          "num_control_points": 15,
+          "use_prior_input": true,
+          "use_bound_loss": true,
+          "use_derivative_loss": true,
+          "use_density": true,
+          "nwp_target_speed_index": 7,
+          "use_terrain_bias": true,
+          "use_mask_indicators": true,
+          "joint_masking": false,
+          "cut_in_speed": 3.0,
+          "rated_wind_speed": 10.0,
+          "cut_out_speed": 22.0,
+          "sensitivity_mode": "symmetric",
+          "manufacturer_curve_path": "data/wind_farm_A/manufacturer_curve.csv",
+          "use_calibration": true,
+          "use_physics_curve": true,
+          "curve_mode": "bspline",
+          "use_direction_bias": true,
+          "use_sensitivity_gate": true,
+          "revin_missing_policy": "train_stats_20",
+          "forecast_head_policy": "target_nwp_physics_mlp",
+          "graph_score_policy": "cosine_temperature",
+          "forecast_skip_policy": "last_obs_linear"
+        },
+        "train": {
+          "batch_size": 16,
+          "epochs_stage1": 5,
+          "epochs_stage2": 5,
+          "epochs_stage3": 20,
+          "lr_stage1": 0.001,
+          "lr_stage2": 0.001,
+          "lr_stage3": 0.0003,
+          "stage3_mode": "joint",
+          "loss_name": "huber",
+          "huber_delta": 0.1,
+          "quantile": 0.5,
+          "patience": 5,
+          "checkpoint_metric": "nrmse",
+          "reconstruction_weight": 0.05,
+          "calibration_weight": 0.05,
+          "auxiliary_decay": 0.1,
+          "record_gradient_conflicts": true,
+          "epochs": 50,
+          "lr": 0.001,
+          "stage3_decoder_policy": "frozen",
+          "stage3_forecast_corruption": "f2_block"
+        },
+        "tracking": {
+          "artifact_root": "artifacts/public",
+          "ledger_dir": "artifacts/public/summary",
+          "source_manifest": "provenance/source_manifest.json"
+        }
+      },
+      "device": "cuda"
+    }
+  },
+  {
+    "archive": "local_stage2.tar.gz",
+    "member": "local_stage2/sensitivity/energy_r3_stage2_hidden-64_h16_s3407_20261020_220056/metrics.json",
+    "directory": "artifacts/released/energy_r3_stage2_hidden-64_h16_s3407_20261020_220056",
+    "metadata": {
+      "run_id": "energy_r3_stage2_hidden-64_h16_s3407_20261020_220056",
+      "status": "completed",
+      "seed": 3407,
+      "horizon": 16,
+      "metrics": {
+        "nmae": 0.11651487464295106,
+        "nrmse": 0.20447652704176902,
+        "r2": 0.44122277741813165,
+        "num_samples": 7604,
+        "num_turbines": 29
+      },
+      "validation_metrics": {
+        "nmae": 0.11210489190673066,
+        "nrmse": 0.17912932108108018,
+        "r2": 0.5414695724055371,
+        "num_samples": 3801,
+        "num_turbines": 29
+      },
+      "evaluation_split": "test",
+      "config": {
+        "experiment": {
+          "model": "PI-EEF",
+          "horizon": 16,
+          "eval_scope": "measured-target",
+          "finalized": true,
+          "group": "sensitivity",
+          "site": "wind_farm_A",
+          "exp_type": "energy_r3_stage2",
+          "models": [
+            "PI-EEF"
+          ],
+          "variant": "hidden-64",
+          "seeds": [
+            3407
+          ]
+        },
+        "data": {
+          "data_version": "energy_revision_wind_farm_A_author_prepared_EC_20261017",
+          "scada_path": "data/wind_farm_A/scada_ecmwf_15min.csv",
+          "turbines_path": "data/wind_farm_A/turbines.csv",
+          "seq_len": 96,
+          "split": [
+            0.7,
+            0.1,
+            0.2
+          ],
+          "capacity_mw": 2.0,
+          "revision_protocol": {
+            "nwp_alignment_verified": false,
+            "nwp_preparation_author_confirmed": true,
+            "timezone": "Asia/Shanghai",
+            "step_minutes": 15,
+            "power_unit": "kW",
+            "wind_height_m": 10,
+            "nwp_timing_rule": "author_prepared_ecmwf",
+            "nwp_feature_columns": [
+              "nwp_direct_solar_radiation",
+              "nwp_total_sky_direct_shortwave",
+              "nwp_surface_pressure_pa",
+              "nwp_temperature_2m_k",
+              "nwp_u10_ms",
+              "nwp_v10_ms",
+              "nwp_wind_speed200_ms",
+              "nwp_wind_speed100_ms",
+              "nwp_wind_speed10_ms"
+            ],
+            "input_filling": "forward-only",
+            "target_policy": "raw-measured-valid-power"
+          }
+        },
+        "model": {
+          "d_model": 64,
+          "encoder_depth": 3,
+          "graph_depth": 1,
+          "mask_ratio": 0.4,
+          "num_control_points": 15,
+          "use_prior_input": true,
+          "use_bound_loss": true,
+          "use_derivative_loss": true,
+          "use_density": true,
+          "nwp_target_speed_index": 7,
+          "use_terrain_bias": true,
+          "use_mask_indicators": true,
+          "joint_masking": false,
+          "cut_in_speed": 3.0,
+          "rated_wind_speed": 10.0,
+          "cut_out_speed": 22.0,
+          "sensitivity_mode": "symmetric",
+          "manufacturer_curve_path": "data/wind_farm_A/manufacturer_curve.csv",
+          "use_calibration": true,
+          "use_physics_curve": true,
+          "curve_mode": "bspline",
+          "use_direction_bias": true,
+          "use_sensitivity_gate": true,
+          "revin_missing_policy": "train_stats_20",
+          "forecast_head_policy": "target_nwp_physics_mlp",
+          "graph_score_policy": "cosine_temperature",
+          "forecast_skip_policy": "last_obs_linear"
+        },
+        "train": {
+          "batch_size": 16,
+          "epochs_stage1": 5,
+          "epochs_stage2": 5,
+          "epochs_stage3": 20,
+          "lr_stage1": 0.001,
+          "lr_stage2": 0.001,
+          "lr_stage3": 0.0003,
+          "stage3_mode": "joint",
+          "loss_name": "huber",
+          "huber_delta": 0.1,
+          "quantile": 0.5,
+          "patience": 5,
+          "checkpoint_metric": "nrmse",
+          "reconstruction_weight": 0.05,
+          "calibration_weight": 0.05,
+          "auxiliary_decay": 0.1,
+          "record_gradient_conflicts": true,
+          "epochs": 50,
+          "lr": 0.001,
+          "stage3_decoder_policy": "frozen",
+          "stage3_forecast_corruption": "f2_block"
+        },
+        "tracking": {
+          "artifact_root": "artifacts/public",
+          "ledger_dir": "artifacts/public/summary",
+          "source_manifest": "provenance/source_manifest.json"
+        }
+      },
+      "device": "cuda"
+    }
+  }
+]

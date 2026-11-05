@@ -1,0 +1,15 @@
+Site,Variant,Horizon,DSI,Normalised entropy,Maximum weight
+Wind Farm A,PI-EEF (10-m farm-level direction),4 h,0.44 ± 0.02,0.79,0.22
+Wind Farm A,100-m farm-level direction,4 h,0.42 ± 0.02,0.81,0.19
+Wind Farm A,CFD local directions,4 h,0.43 ± 0.02,0.82,0.19
+Wind Farm A,CFD local directions + speed-up correction,4 h,0.44 ± 0.02,0.74,0.25
+Wind Farm A,Without direction bias,4 h,0.48 ± 0.01,0.81,0.20
+Kelmarsh,PI-EEF (100-m farm-level direction),15 min,0.54 ± 0.02,0.96,0.25
+Kelmarsh,CFD local directions,15 min,0.56 ± 0.02,0.92,0.29
+Kelmarsh,Measured direction anomalies,15 min,0.53 ± 0.01,0.94,0.27
+Kelmarsh,PI-EEF (100-m farm-level direction),1 h,0.50 ± 0.03,0.95,0.27
+Kelmarsh,CFD local directions,1 h,0.53 ± 0.02,0.96,0.26
+Kelmarsh,Measured direction anomalies,1 h,0.53 ± 0.01,0.96,0.25
+Kelmarsh,PI-EEF (100-m farm-level direction),4 h,0.53 ± 0.01,0.92,0.30
+Kelmarsh,CFD local directions,4 h,0.53 ± 0.01,0.93,0.29
+Kelmarsh,Measured direction anomalies,4 h,0.53 ± 0.01,0.90,0.32

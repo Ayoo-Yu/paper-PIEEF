@@ -1,0 +1,24 @@
+Module,Hyperparameter,Value
+PI-MAE,Transformer layers / hidden dimension / heads / FFN dimension / dropout,3 / 128 / 4 / 512 / 0.1
+,Mask ratio,0.4 (38 of 96 positions)
+,Initial block length,6–24 steps (1.5–6 h)
+,RevIN fallback to training-period statistics,20% or less of a window available
+,"Reconstruction weights [equation: figures/table_equations/table_s2_p1_r6_c2_e1.wmf], [equation: figures/table_equations/table_s2_p1_r6_c2_e2.wmf]","0.1, 0.05"
+TD-DCN,Calibration network,One hidden layer of 32 units
+,Calibration range [equation: figures/table_equations/table_s2_p1_r8_c2_e1.wmf],±3.0 m/s
+,Offset regularisation [equation: figures/table_equations/table_s2_p1_r9_c2_e1.wmf],0.05
+,Calibration target threshold [equation: figures/table_equations/table_s2_p1_r10_c2_e1.wmf],0.01 (1% of rated capacity)
+,B-spline degree / control points [equation: figures/table_equations/table_s2_p1_r11_c2_e1.wmf],3 (cubic) / 15
+,Rated cap [equation: figures/table_equations/table_s2_p1_r12_c2_e1.wmf],"Learnable, clipped to [0.8, 1.0]"
+,Cut-in / rated / cut-out wind speeds,3 / 10 / 22 m/s
+SA-DWGN,Graph-attention layers / hidden dimension,1 / 128
+,Temperature cap,50
+,Direction and terrain bias networks,"Two layers, 16 hidden units"
+Prediction head,MLP / NWP embedding,64 hidden units / 16 units
+Training,Historical window / batch size / optimiser,96 steps / 16 / Adam
+,Learning rates (Stages 1/2/3),1×10⁻³ / 1×10⁻³ / 3×10⁻⁴
+,Epochs (Stages 1/2/3) and early stopping,5 / 5 / at most 20; patience 5 on validation NRMSE
+,Auxiliary weights [equation: figures/table_equations/table_s2_p1_r21_c2_e1.wmf] / decay rate [equation: figures/table_equations/table_s2_p1_r21_c2_e2.wmf] (Eq. (26)),"0.05, 0.05 / 0.1"
+,Huber threshold [equation: figures/table_equations/table_s2_p1_r22_c2_e1.wmf],0.1
+Corruption (Stage 3),Batch probability [equation: figures/table_equations/table_s2_p1_r23_c2_e1.wmf] / anchor and nearest neighbours / block length,0.5 / 1–10 turbines / 4–96 steps (1–24 h)
+,Block ending at the forecast origin / power and wind removed together,Probability 0.5 / probability 0.5
